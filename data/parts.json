@@ -1,0 +1,60 @@
+{
+  "_note": "The five clickable reactor parts. 'id' must match the SVG group id in index.html. 'materials' are keys in chains.json.",
+  "parts": [
+    {
+      "id": "hts-magnets",
+      "label": "High-temperature superconducting magnets",
+      "short": "Confine the plasma (compact tokamaks)",
+      "description": "Confine the plasma in compact tokamaks, using magnets wound from REBCO superconducting tape.",
+      "descriptionSources": [],
+      "materials": [
+        "yttrium",
+        "nickel"
+      ],
+      "caseFile": "yttrium"
+    },
+    {
+      "id": "lts-magnets",
+      "label": "Low-temperature superconducting coils",
+      "short": "Confine the plasma (ITER-style reactors)",
+      "description": "Confine the plasma in ITER-style reactors. The superconductor is niobium-tin (Nb₃Sn).",
+      "descriptionSources": [],
+      "materials": [
+        "tin",
+        "niobium"
+      ]
+    },
+    {
+      "id": "divertor",
+      "label": "Divertor & first wall",
+      "short": "Faces the plasma, takes the heat",
+      "description": "The divertor and first wall face the plasma directly and take the heat. They are made with tungsten.",
+      "descriptionSources": [],
+      "materials": [
+        "tungsten"
+      ]
+    },
+    {
+      "id": "blanket",
+      "label": "Breeding blanket",
+      "short": "Breeds tritium fuel, absorbs neutrons",
+      "description": "The breeding blanket breeds tritium fuel and absorbs neutrons. Tritium breeding needs enriched lithium-6; beryllium serves as a neutron multiplier.",
+      "descriptionSources": [],
+      "materials": [
+        "lithium6",
+        "beryllium"
+      ]
+    },
+    {
+      "id": "vacuum-vessel",
+      "label": "Vacuum vessel & structure",
+      "short": "Holds everything",
+      "description": "The vacuum vessel and structure hold everything together. Shown here for contrast: specialty steels matter for supply, but this research has not found a major human rights hotspot at this stage.",
+      "descriptionSources": [],
+      "materials": [
+        "steel"
+      ],
+      "contrast": true
+    }
+  ]
+}

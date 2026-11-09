@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Magnet Problem</title>
+  <meta name="description" content="Fusion promises clean power. Follow one magnet back to the mine. An evidence-led trace of fusion energy materials and the human rights abuses in their supply chains.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz@9..40&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#reactor">Skip to the reactor</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="site-header__title" href="index.html">The Magnet Problem</a>
+      <nav aria-label="Sections">
+        <ul class="site-nav">
+          <li><a href="#reactor">Reactor</a></li>
+          <li><a href="#case-file">Case file</a></li>
+          <li><a href="#scores">Scores</a></li>
+          <li><a href="#policy">Policy brief</a></li>
+          <li><a href="method.html">Method &amp; limits</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="load-error" class="wrap load-error" role="alert" hidden></div>
+
+    <!-- 3.1 Hero -->
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="col-main">
+        <p class="eyebrow">Fusion energy materials · Iteration 1</p>
+        <h1 id="hero-title">The Magnet Problem</h1>
+        <p class="hero__sub">Fusion promises clean power. Follow one magnet back to the mine.</p>
+        <p class="lead">Governments and fusion companies plan these materials as a security problem: <em>can we get it?</em> This site asks the question that conversation leaves out: <em>who paid for it?</em> A supply chain built on human rights abuse is not acceptable, however secure it is.</p>
+        <a class="scroll-cue" href="#lenses">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          Trace a magnet
+        </a>
+      </div>
+    </section>
+
+    <!-- 3.2 Lens framing -->
+    <section id="lenses" class="section wrap" aria-labelledby="lenses-title">
+      <div class="col-main">
+        <h2 id="lenses-title">Two ways to look at a reactor</h2>
+        <p>Every part of a fusion reactor can be read two ways. The diagram below lets you switch between them. Watch what changes, and what doesn't.</p>
+      </div>
+      <div class="lens-compare">
+        <div class="lens-card lens-card--security">
+          <p class="lens-card__name">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            Security lens
+          </p>
+          <ul>
+            <li>Where is supply concentrated?</li>
+            <li>Who controls it?</li>
+            <li>What can be cut off?</li>
+          </ul>
+        </div>
+        <div class="lens-card lens-card--people">
+          <p class="lens-card__name">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            People lens
+          </p>
+          <ul>
+            <li>Who mines it?</li>
+            <li>Under what conditions?</li>
+            <li>Who is harmed?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.3 Reactor -->
+    <section id="reactor" class="section wrap" aria-labelledby="reactor-title">
+      <div class="col-main">
+        <h2 id="reactor-title">The same reactor reads as a supply risk under one lens and a human rights risk under the other.</h2>
+        <p>Click any part to trace its materials back to the mine. Switch lenses to see the same reactor re-coloured by supply risk or by harm.</p>
+      </div>
+
+      <div class="reactor-layout">
+        <div class="reactor-stage">
+          <div class="reactor-toolbar">
+            <div class="lens-toggle" role="group" aria-label="Choose a lens" data-lens-toggle>
+              <button type="button" data-lens="security" aria-pressed="false">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                Security lens
+              </button>
+              <button type="button" data-lens="people" aria-pressed="true">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                People lens
+              </button>
+            </div>
+          </div>
+
+          <figure class="reactor-figure">
+            <svg id="reactor-svg" viewBox="0 0 760 560" role="group" aria-labelledby="reactor-svg-title">
+              <title id="reactor-svg-title">Cutaway cross-section of a generic compact tokamak with five clickable parts</title>
+              <defs>
+                <!-- D-shaped cross-sections, right half. Each ring = outer D + inner D (even-odd). Left half is a mirror. -->
+                <path id="d-tf"      d="M414 58 C800 58 800 502 414 502 Z M436 80 C792 80 792 480 436 480 Z" fill-rule="evenodd"/>
+                <path id="d-vessel"  d="M452 98 C731 98 731 462 452 462 Z M466 112 C708 112 708 448 466 448 Z" fill-rule="evenodd"/>
+                <path id="d-blanket" d="M466 112 C708 112 708 448 466 448 Z M492 138 C665 138 665 422 492 422 Z" fill-rule="evenodd"/>
+                <path id="d-plasma"  d="M506 172 C647 172 647 372 506 372 Z"/>
+                <path id="d-divertor" d="M494 404 L518 388 L536 398 L556 384 L576 392 L578 402 L559 418 L539 428 L494 434 Z"/>
+              </defs>
+
+              <!-- Cryostat (not interactive) -->
+              <rect class="r-cryostat" x="36" y="22" width="688" height="516" />
+              <text class="r-note" x="52" y="46">Cryostat</text>
+              <line class="r-axis" x1="380" y1="30" x2="380" y2="530"/>
+
+              <!-- Plasma (not interactive) -->
+              <g class="r-plasma" aria-hidden="true">
+                <use href="#d-plasma"/>
+                <use href="#d-plasma" transform="translate(760 0) scale(-1 1)"/>
+              </g>
+
+              <g id="vacuum-vessel" class="hotspot" data-part="vacuum-vessel">
+                <use href="#d-vessel"/>
+                <use href="#d-vessel" transform="translate(760 0) scale(-1 1)"/>
+                <g class="marker"><circle cx="476" cy="104" r="12"/><text x="476" y="108">5</text></g>
+              </g>
+
+              <g id="blanket" class="hotspot" data-part="blanket">
+                <use href="#d-blanket"/>
+                <use href="#d-blanket" transform="translate(760 0) scale(-1 1)"/>
+                <g class="marker"><circle cx="636" cy="280" r="12"/><text x="636" y="284">4</text></g>
+              </g>
+
+              <g id="divertor" class="hotspot" data-part="divertor">
+                <use href="#d-divertor"/>
+                <use href="#d-divertor" transform="translate(760 0) scale(-1 1)"/>
+                <g class="marker"><circle cx="536" cy="414" r="12"/><text x="536" y="418">3</text></g>
+              </g>
+
+              <g id="hts-magnets" class="hotspot" data-part="hts-magnets">
+                <use href="#d-tf"/>
+                <use href="#d-tf" transform="translate(760 0) scale(-1 1)"/>
+                <g class="marker"><circle cx="694" cy="280" r="12"/><text x="694" y="284">1</text></g>
+              </g>
+
+              <g id="lts-magnets" class="hotspot" data-part="lts-magnets">
+                <rect x="354" y="96"  width="52" height="56" />
+                <rect x="354" y="158" width="52" height="56" />
+                <rect x="354" y="220" width="52" height="56" />
+                <rect x="354" y="282" width="52" height="56" />
+                <rect x="354" y="344" width="52" height="56" />
+                <rect x="354" y="406" width="52" height="56" />
+                <g class="marker"><circle cx="380" cy="279" r="12"/><text x="380" y="283">2</text></g>
+              </g>
+
+              <text class="r-note" x="560" y="276">Plasma</text>
+            </svg>
+            <div id="reactor-tooltip" class="tooltip" role="tooltip" hidden></div>
+            <figcaption class="r-caption">Original schematic, not to scale. Magnet type varies by design: compact tokamaks use high-temperature superconducting (HTS) magnets, ITER-style reactors use low-temperature (LTS) coils. Both are shown here so each can be traced.</figcaption>
+          </figure>
+        </div>
+
+        <aside class="reactor-side" aria-label="Reactor parts">
+          <p class="legend-hint">Click any part to trace its materials.</p>
+          <ol id="part-list" class="part-list"></ol>
+          <div class="colour-key" id="colour-key" aria-live="polite"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 3.4 Case file -->
+    <section id="case-file" class="section wrap" aria-labelledby="case-title">
+      <div class="col-main">
+        <p class="eyebrow">Case file</p>
+        <h2 id="case-title">From Kachin to cryostat</h2>
+        <p class="lead">Follow yttrium from the mines of Kachin State, Myanmar, to the superconducting tape inside a compact tokamak's magnets. At one stage on the way, the metal's origin is lost.</p>
+      </div>
+      <ol id="case-stages" class="case-stages col-main"></ol>
+      <blockquote id="case-bottom" class="pull-quote"></blockquote>
+    </section>
+
+    <!-- 3.5 Scores -->
+    <section id="scores" class="section wrap" aria-labelledby="scores-title">
+      <div class="col-main">
+        <p class="eyebrow">Exposure Pathway scores</p>
+        <h2 id="scores-title">Exposure Pathway scores</h2>
+        <p>The author's framework scores each material route from 1 (low) to 3 (high) on four dimensions. The first two columns show the evidence behind each route today, so documented findings can be told apart from hypotheses before any score is read.</p>
+      </div>
+      <div class="scores-wrap">
+        <div class="table-scroll" tabindex="0" role="region" aria-labelledby="scores-title">
+          <table id="scores-table" class="scores-table"></table>
+        </div>
+        <dl id="score-dims" class="score-dims"></dl>
+      </div>
+    </section>
+
+    <!-- 3.6 Policy brief -->
+    <section id="policy" class="section wrap" aria-labelledby="policy-title">
+      <div class="col-main prose">
+        <p class="eyebrow">Policy brief</p>
+        <h2 id="policy-title">Traceability before scale</h2>
+
+        <h3>Problem</h3>
+        <p>Fusion materials policy is framed around supply security. Human rights do not appear in the main industry and government supply chain discussions <span data-cite="S10 S11"></span>. Fusion's demand for these materials is tiny (a few tonnes of yttrium), so fusion buyers have little leverage alone.</p>
+
+        <h3>Principle</h3>
+        <p><strong class="principle">People first.</strong> A material sourced through documented abuse fails the test regardless of how secure it makes supply.</p>
+
+        <h3>Proposals</h3>
+        <ol class="proposals">
+          <li>
+            <p class="proposal__title">Conditions on public fusion money</p>
+            <p>Public grants, milestone payments and offtake agreements for fusion require suppliers to trace magnet and plasma-facing materials back to at least the separation or smelting stage, and to disclose origin.</p>
+          </li>
+          <li>
+            <p class="proposal__title">A cross-sector due diligence pool</p>
+            <p>Fusion developers buy rare earths, tin and niobium through verified channels shared with larger buyers that face the same chokepoints, to gain leverage none has alone.</p>
+          </li>
+          <li>
+            <p class="proposal__title">Tech proposal: Fusion Supplier Check</p>
+            <p>A tool where a buyer enters a supplier and sees its upstream exposure, using Sayari corporate and trade data, scored on the Exposure Pathway framework. Iteration 1 describes it; iteration 2 builds it.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="mockup" aria-label="Mock-up of the proposed Fusion Supplier Check tool">
+        <p class="mockup__tag">Mock-up · not a working tool</p>
+        <p class="mockup__title">Fusion Supplier Check</p>
+        <div class="mockup__search" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>Enter a supplier name</span>
+        </div>
+        <div class="mockup__body">
+          <div>
+            <p class="mockup__label">Upstream exposure</p>
+            <ol class="mockup__chain" aria-hidden="true">
+              <li>Supplier</li><li>Tier 2</li><li>Tier 3</li><li>Source region</li>
+            </ol>
+          </div>
+          <div>
+            <p class="mockup__label">Exposure Pathway score</p>
+            <ul class="mockup__scores" id="mockup-scores"></ul>
+          </div>
+        </div>
+        <p class="mockup__foot">Would draw on Sayari corporate ownership and trade records. Every result would carry an evidence level and its source records.</p>
+      </div>
+
+      <div class="col-main prose">
+        <h3>Why now</h3>
+        <p>Fusion is pre-commercial. Building traceability in before scale costs far less than retrofitting it, as batteries showed.</p>
+        <p class="core-line">Secure is not the same as acceptable.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner" id="footer"></div>
+  </footer>
+
+  <!-- 4.3 Trace panel -->
+  <div id="trace-backdrop" class="trace-backdrop" hidden></div>
+  <section id="trace-panel" class="trace-panel" role="dialog" aria-modal="true" aria-labelledby="trace-title" hidden>
+    <div class="trace-panel__head">
+      <h2 id="trace-title" class="trace-panel__title" tabindex="-1"></h2>
+      <button type="button" class="icon-btn" id="trace-close" aria-label="Close trace">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="trace-panel__body" id="trace-body"></div>
+  </section>
+
+  <div id="live" class="visually-hidden" aria-live="polite"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

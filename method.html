@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Method &amp; Limits · The Magnet Problem</title>
+  <meta name="description" content="How The Magnet Problem traces fusion materials, what its evidence levels mean, and what the data cannot show.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz@9..40&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="site-header__title" href="index.html">The Magnet Problem</a>
+      <nav aria-label="Sections">
+        <ul class="site-nav">
+          <li><a href="index.html#reactor">Reactor</a></li>
+          <li><a href="index.html#case-file">Case file</a></li>
+          <li><a href="index.html#scores">Scores</a></li>
+          <li><a href="index.html#policy">Policy brief</a></li>
+          <li><a href="method.html" aria-current="page">Method &amp; limits</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="load-error" class="wrap load-error" role="alert" hidden></div>
+
+    <section class="hero wrap" aria-labelledby="method-title">
+      <div class="col-main">
+        <p class="eyebrow">Method &amp; limits</p>
+        <h1 id="method-title">How this site knows what it claims, and where it doesn't</h1>
+      </div>
+    </section>
+
+    <section class="wrap method-section" aria-labelledby="m1">
+      <div class="col-main">
+        <h2 id="m1">What this site does</h2>
+        <p>The Magnet Problem traces the materials in five parts of a generic fusion reactor back through their supply chains to the mine, and shows the documented human rights findings at each stage next to the supply-security facts that usually frame the conversation. It argues that fusion's supply chain should be planned as a people problem first, and that the pre-commercial stage is the cheapest moment to build traceability in.</p>
+      </div>
+    </section>
+
+    <section class="wrap method-section" aria-labelledby="m2">
+      <div class="col-main">
+        <h2 id="m2">How the trace works</h2>
+        <ul class="method-list">
+          <li><strong>Stages.</strong> Each material is laid out from the reactor back to the mine: reactor or developer, component maker, metal, oxide or alloy, separation or refining, and mine or source region. Where a chain has more than one source, it splits into routes.</li>
+          <li><strong>Lens toggle.</strong> The security lens shows concentration, control, export restrictions and single points of failure, coloured by supply risk. The people lens shows human rights findings on the same stages, coloured by harm severity. The colour ratings are the author's judgement from the cited evidence and are stored in the data files with every stage.</li>
+          <li><strong>Evidence levels.</strong> Every stage carries a badge, described below. A stage can carry two: one for harm at the source, one for the link into fusion's supply chain.</li>
+          <li><strong>Blending points.</strong> Marked where ore from different sources is mixed (at separation plants, smelters or export hubs) and origin can no longer be traced.</li>
+        </ul>
+        <div class="evidence-table" id="evidence-table"></div>
+      </div>
+    </section>
+
+    <section class="wrap method-section" aria-labelledby="m3">
+      <div class="col-main">
+        <h2 id="m3">Data sources</h2>
+        <ul class="method-list">
+          <li><strong>Sayari</strong>: corporate ownership, trade and shipment data. Planned for the tape-maker, alloy-supplier and yttrium shipment traces; no Sayari-derived findings are shown in iteration 1. When added, each will be marked <em>inferred</em> or <em>confirmed</em> following Sayari's own labelling.</li>
+          <li><strong>Tavily</strong>: web research on NGO, UN, government and news sources.</li>
+          <li><strong>Public reports</strong>: every document cited on the site, listed below.</li>
+        </ul>
+        <ol class="source-table" id="source-table"></ol>
+      </div>
+    </section>
+
+    <section class="wrap method-section" aria-labelledby="m4">
+      <div class="col-main">
+        <h2 id="m4">What the data cannot show</h2>
+        <ul class="method-list">
+          <li>Sayari shows recorded relationships and trade flows, not the conditions inside a mine.</li>
+          <li>Trade data loses origin at blending points. After a separation plant or smelter, ore from a conflict area and ore from elsewhere look the same on paper.</li>
+          <li>The absence of a link is not proof that there is no link.</li>
+          <li>Every source has a date. Mines open, close and change hands; findings may have moved on since publication.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="wrap method-section" aria-labelledby="m5">
+      <div class="col-main">
+        <h2 id="m5">Evidence rules</h2>
+        <ul class="method-list">
+          <li>No claim without a public source. Claims still waiting for one are shown with a visible <em>Source needed</em> flag rather than removed or hidden.</li>
+          <li>Harm at a source is kept separate from proof of a link to fusion. A mine can have documented abuses while the route from that mine into a fusion magnet remains a likely pathway or a hypothesis.</li>
+          <li>Stages that have not been researched are shown as greyed <em>Not yet researched</em> nodes, never filled in.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="wrap method-section" aria-labelledby="m6">
+      <div class="col-main">
+        <h2 id="m6">How AI was used</h2>
+        <p>Research was assisted by Claude using Tavily and the Sayari MCP. The site was built with Claude Code in VS Code. The design brief was generated with the author's own tool, Dress Code. All claims were reviewed by the author.</p>
+      </div>
+    </section>
+
+    <section class="wrap method-section" aria-labelledby="m7">
+      <div class="col-main">
+        <h2 id="m7">Iteration log</h2>
+        <ol class="log">
+          <li>
+            <time datetime="2026-11-08">8 Nov 2026</time>
+            <div><p><strong>Iteration 1.</strong> Interactive reactor with five parts, security and people lenses, trace panel with evidence badges and blending points, yttrium case file, Exposure Pathway table (scores pending), policy brief with a Fusion Supplier Check mock-up, and this page. All content is loaded from the JSON files in <code>/data</code>.</p>
+            <p>Open for iteration 2: Sayari research tasks (yttrium shipments, tape-maker and alloy-supplier upstream checks, watchlist screening), USGS shares for niobium and tungsten, an OSHA source on chronic beryllium disease, and the author's Exposure Pathway scores.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner" id="footer"></div>
+  </footer>
+
+  <script type="module" src="js/method.js"></script>
+</body>
+</html>

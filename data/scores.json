@@ -1,0 +1,43 @@
+{
+  "_note": "Exposure Pathway scores (author's framework). Score each dimension 1 (low) to 3 (high); null renders as 'Score pending'. Every score needs a one-line note and source ids. The 'evidence' block is copied from the brief's evidence levels so visitors can see documented vs hypothesised routes before scores are filled.",
+  "dimensions": [
+    { "id": "harm", "label": "Harm severity", "question": "How serious are documented abuses at the source?" },
+    { "id": "evidence", "label": "Evidence strength", "question": "Is the link to fusion proven (3), likely (2), or hypothetical (1)?" },
+    { "id": "traceability", "label": "Traceability break", "question": "Is there a blending point where origin is lost?" },
+    { "id": "leverage", "label": "Fusion leverage", "question": "Inverted: 3 = least leverage. Can fusion buyers alone change anything, or only by pooling with other sectors?" }
+  ],
+  "routes": [
+    { "id": "yttrium-kachin", "label": "Yttrium", "route": "Kachin State, Myanmar", "material": "yttrium",
+      "evidence": { "harm": "documented", "link": "likely" },
+      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
+      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
+    { "id": "yttrium-south-china", "label": "Yttrium", "route": "Southern China ionic clays", "material": "yttrium",
+      "evidence": { "harm": "documented", "link": "not-researched" },
+      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
+      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
+    { "id": "tin-wa", "label": "Tin", "route": "Man Maw, Wa State, Myanmar", "material": "tin",
+      "evidence": { "harm": "documented", "link": "likely" },
+      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
+      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
+    { "id": "niobium-rubaya", "label": "Niobium", "route": "Rubaya, eastern DRC", "material": "niobium",
+      "evidence": { "harm": "documented", "link": "hypothesis" },
+      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
+      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
+    { "id": "nickel-indonesia", "label": "Nickel", "route": "Indonesia (Morowali, Weda Bay)", "material": "nickel",
+      "evidence": { "harm": "documented", "link": "hypothesis" },
+      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
+      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
+    { "id": "tungsten", "label": "Tungsten", "route": "Sector-wide", "material": "tungsten",
+      "evidence": { "harm": "documented", "link": "not-researched" },
+      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
+      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
+    { "id": "lithium6-historical", "label": "Lithium-6", "route": "Oak Ridge (historical)", "material": "lithium6",
+      "evidence": { "harm": "documented", "link": "documented" },
+      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
+      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
+    { "id": "beryllium", "label": "Beryllium", "route": "Materion · Ulba · China", "material": "beryllium",
+      "evidence": { "harm": "documented", "link": "documented" },
+      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
+      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] }
+  ]
+}

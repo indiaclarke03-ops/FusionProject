@@ -1,0 +1,366 @@
+{
+  "_note": "Supply chain traces, ordered from the reactor back to the mine. 'stages' are shared by every route; 'routes' split the chain where there is more than one source. A lens annotation of null renders as 'Not yet researched for this lens'. sourceNeeded:true renders a visible 'Source needed' flag. 'rating' drives node colour only: supply = supply risk (security lens), harm = harm severity (people lens). Values: high | moderate | low | unknown. Ratings are the author's judgement and should be reviewed.",
+  "evidenceLevels": {
+    "documented": { "label": "Documented", "meaning": "Credible public evidence (NGO, UN, government, peer-reviewed) of human rights harm at this stage" },
+    "likely": { "label": "Likely pathway", "meaning": "Harm at the source is documented; the link from that source into fusion's supply chain is plausible by market structure but not proven" },
+    "hypothesis": { "label": "Hypothesis", "meaning": "A link worth testing; no direct evidence yet" },
+    "not-researched": { "label": "Not yet researched", "meaning": "Placeholder for iteration 2" }
+  },
+  "materials": {
+    "yttrium": {
+      "name": "Yttrium",
+      "part": "hts-magnets",
+      "role": "The rare earth in REBCO superconducting tape",
+      "whyItMatters": { "text": "Compact tokamaks use high-temperature superconducting magnets made from REBCO tape (\"rare-earth barium copper oxide\"). The rare earth is usually yttrium. It cannot easily be substituted in this design.", "sources": ["S10"] },
+      "stages": [
+        {
+          "tier": "Reactor / developer",
+          "name": "Compact tokamak developers",
+          "security": { "text": "Compact tokamak developers (e.g. Commonwealth Fusion Systems) depend on HTS tape.", "sources": ["S10", "S11"] },
+          "people": { "text": "Buyers sit several tiers removed from the mine. No public human rights traceability for magnet materials was found.", "sources": ["S10", "S11"] },
+          "evidence": [{ "level": "documented", "scope": "absence of traceability" }],
+          "rating": { "supply": "moderate", "harm": "unknown" }
+        },
+        {
+          "tier": "Component maker",
+          "name": "REBCO tape makers",
+          "security": { "text": "A small number of makers, mainly in Japan, the US, China and South Korea.", "sources": [], "sourceNeeded": true },
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "todo": "Confirm makers and countries with public sources and Sayari; run Sayari upstream on tape makers.",
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        },
+        {
+          "tier": "Metal / oxide / alloy",
+          "name": "Yttrium oxide",
+          "security": { "text": "China added yttrium to export licensing in April 2025; US-bound yttrium exports collapsed afterwards.", "sources": ["S6", "S7"] },
+          "people": null,
+          "evidence": [{ "level": "documented", "scope": "security fact" }],
+          "rating": { "supply": "high", "harm": "unknown" }
+        },
+        {
+          "tier": "Separation / refining",
+          "name": "Heavy rare earth separation, China",
+          "blending": true,
+          "security": { "text": "Separation of heavy rare earths, including yttrium, is overwhelmingly in China.", "sources": ["S6", "S3"] },
+          "people": { "text": "Ore from Myanmar enters Chinese separation plants and leaves as Chinese product. Origin is lost here.", "sources": ["S6", "S3"] },
+          "evidence": [{ "level": "documented", "scope": "market structure" }],
+          "rating": { "supply": "high", "harm": "unknown" }
+        }
+      ],
+      "routes": [
+        {
+          "name": "Kachin State, Myanmar",
+          "stages": [
+            {
+              "tier": "Mine / source region",
+              "name": "Kachin State, Myanmar",
+              "security": { "text": "Myanmar is a significant yttrium source via ionic clays.", "sources": ["S6"] },
+              "people": { "text": "300+ mining sites in militia-controlled Kachin Special Region 1 (40%+ growth 2021–23); acidic, arsenic-contaminated streams; health harms to workers and residents, including deaths; deadly landslides; the trade risks financing conflict.", "sources": ["S1", "S2", "S3", "S4"] },
+              "evidence": [
+                { "level": "documented", "scope": "harm at source" },
+                { "level": "likely", "scope": "link to fusion" }
+              ],
+              "evidenceNote": "Published investigations focus on dysprosium and terbium; yttrium-specific tracing to tape was not found.",
+              "rating": { "supply": "moderate", "harm": "high" }
+            }
+          ]
+        },
+        {
+          "name": "Southern China ionic clays",
+          "stages": [
+            {
+              "tier": "Mine / source region",
+              "name": "Southern China ionic clays (Jiangxi)",
+              "security": { "text": "The main source.", "sources": ["S3"] },
+              "people": { "text": "Severe environmental damage from heavy rare earth mining in Jiangxi: a multi-billion-dollar cleanup, decades to recover.", "sources": ["S3"] },
+              "evidence": [{ "level": "documented", "scope": "environmental harm" }],
+              "rating": { "supply": "high", "harm": "high" }
+            }
+          ]
+        }
+      ],
+      "bottomLine": "The magnets at the heart of compact fusion depend on yttrium separated overwhelmingly in China, where ore from militia-controlled Kachin State is mixed in and its origin lost. Harm at the Kachin mines is documented; that this yttrium reaches fusion magnets is likely, but not yet proven."
+    },
+
+    "nickel": {
+      "name": "Nickel",
+      "part": "hts-magnets",
+      "role": "The alloy backing (Hastelloy) that REBCO tape is deposited on",
+      "whyItMatters": { "text": "REBCO tape is deposited on a nickel-based alloy backing (Hastelloy).", "sources": [], "sourceNeeded": true },
+      "stages": [
+        {
+          "tier": "Component maker",
+          "name": "REBCO tape makers (alloy backing)",
+          "security": null,
+          "people": { "text": "No public evidence yet links tape makers' alloy supply to Indonesian nickel.", "sources": [] },
+          "evidence": [{ "level": "hypothesis" }],
+          "todo": "Sayari upstream on alloy suppliers.",
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        },
+        {
+          "tier": "Metal / oxide / alloy",
+          "name": "Nickel alloy (Hastelloy) suppliers",
+          "security": null,
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "todo": "Sayari upstream on Hastelloy suppliers to tape makers.",
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        },
+        {
+          "tier": "Mine / source region",
+          "name": "Indonesian nickel hubs (Morowali, Weda Bay)",
+          "security": null,
+          "people": { "text": "Indonesia's human rights commission (Komnas HAM, 2026) found the state failed to protect rights around Morowali, with rising respiratory illness. Fatal smelter accidents. Land grabs affecting Indigenous communities at Weda Bay.", "sources": ["S12", "S13"] },
+          "evidence": [
+            { "level": "documented", "scope": "harm at source" },
+            { "level": "hypothesis", "scope": "link to fusion" }
+          ],
+          "rating": { "supply": "unknown", "harm": "high" }
+        }
+      ],
+      "bottomLine": "Indonesia's nickel hubs have documented harms, but there is no public evidence yet that the alloy backing on REBCO tape comes from them. This is a hypothesis to test, not a finding."
+    },
+
+    "tin": {
+      "name": "Tin",
+      "part": "lts-magnets",
+      "role": "Half of the Nb₃Sn superconductor",
+      "stages": [
+        {
+          "tier": "Reactor / developer",
+          "name": "ITER-style reactor developers",
+          "security": null,
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        },
+        {
+          "tier": "Component maker",
+          "name": "Nb₃Sn conductor makers",
+          "security": null,
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        },
+        {
+          "tier": "Separation / refining",
+          "name": "Smelters in Yunnan, China",
+          "blending": true,
+          "security": { "text": "Wa State has no smelters; ore goes to smelters in Yunnan, China.", "sources": ["S9"] },
+          "people": { "text": "Origin is lost at smelting.", "sources": ["S9"] },
+          "evidence": [{ "level": "documented", "scope": "market structure" }],
+          "rating": { "supply": "high", "harm": "unknown" }
+        }
+      ],
+      "routes": [
+        {
+          "name": "Man Maw, Wa State, Myanmar",
+          "stages": [
+            {
+              "tier": "Mine / source region",
+              "name": "Man Maw, Wa State, Myanmar",
+              "security": { "text": "Myanmar was the world's 3rd-largest tin producer, nearly all of it from Man Maw. The mine restarted in 2025–26 after a suspension.", "sources": ["S8", "S9"] },
+              "people": { "text": "Controlled by the United Wa State Army, a non-state armed group under US sanctions since 2003 (narcotics trafficking). Access is tightly restricted.", "sources": ["S8", "S9"] },
+              "evidence": [
+                { "level": "documented", "scope": "harm: armed-group control" },
+                { "level": "likely", "scope": "link to fusion, market level" }
+              ],
+              "rating": { "supply": "high", "harm": "high" }
+            }
+          ]
+        }
+      ],
+      "context": [
+        {
+          "label": "Sector-wide",
+          "text": "Tin is rated the highest-risk of the conflict minerals for labour abuses. Child labour is rated \"extreme risk\" in Myanmar, Indonesia and Bolivia.",
+          "sources": ["S14"],
+          "evidence": [{ "level": "documented", "scope": "sector" }]
+        }
+      ],
+      "bottomLine": "Most of Myanmar's tin comes from a mine controlled by a US-sanctioned armed group, and it is smelted in China, where its origin disappears. The harm is documented; the route into fusion conductors is likely at market level, not traced."
+    },
+
+    "niobium": {
+      "name": "Niobium",
+      "part": "lts-magnets",
+      "role": "Half of the Nb₃Sn superconductor",
+      "stages": [
+        {
+          "tier": "Reactor / developer",
+          "name": "ITER-style reactor developers",
+          "security": null,
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        },
+        {
+          "tier": "Component maker",
+          "name": "Nb₃Sn conductor makers",
+          "security": null,
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        }
+      ],
+      "routes": [
+        {
+          "name": "Main source: Brazil",
+          "stages": [
+            {
+              "tier": "Mine / source region",
+              "name": "Brazil",
+              "security": { "text": "Niobium supply is highly concentrated in Brazil.", "sources": [], "sourceNeeded": true },
+              "people": { "text": "Lower human rights risk at the main source.", "sources": [], "sourceNeeded": true },
+              "evidence": [{ "level": "not-researched" }],
+              "todo": "Public source (USGS) for Brazil's share.",
+              "rating": { "supply": "unknown", "harm": "unknown" }
+            }
+          ]
+        },
+        {
+          "name": "Secondary: eastern DRC via Rwanda",
+          "stages": [
+            {
+              "tier": "Export hub",
+              "name": "Rwanda export",
+              "blending": true,
+              "security": null,
+              "people": { "text": "Smuggled ore is laundered into \"Rwandan\" exports.", "sources": ["S15", "S16"] },
+              "evidence": [{ "level": "documented" }],
+              "rating": { "supply": "unknown", "harm": "high" }
+            },
+            {
+              "tier": "Mine / source region",
+              "name": "Rubaya, eastern DRC",
+              "security": null,
+              "people": { "text": "Coltan (which yields tantalum and niobium) from M23-occupied Rubaya is smuggled to Rwanda and mixed with Rwandan production (UN Group of Experts, 2025). Due-diligence audit schemes failed to catch it.", "sources": ["S15", "S16"] },
+              "evidence": [
+                { "level": "documented", "scope": "harm at source" },
+                { "level": "hypothesis", "scope": "link to fusion" }
+              ],
+              "rating": { "supply": "unknown", "harm": "high" }
+            }
+          ]
+        }
+      ],
+      "bottomLine": "Niobium is reported to come mostly from Brazil (source still to be added). A smaller stream from M23-occupied Rubaya is laundered through Rwanda; whether any of it reaches fusion conductors is a hypothesis."
+    },
+
+    "tungsten": {
+      "name": "Tungsten",
+      "part": "divertor",
+      "role": "Plasma-facing armour for the divertor and first wall",
+      "stages": [
+        {
+          "tier": "Component maker",
+          "name": "Fusion-grade tungsten processors",
+          "security": { "text": "Very few qualified suppliers.", "sources": [], "sourceNeeded": true },
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        },
+        {
+          "tier": "Mine / source region",
+          "name": "Tungsten mining",
+          "security": { "text": "China dominates mining.", "sources": [], "sourceNeeded": true },
+          "people": { "text": "Tungsten is one of the 3TG \"conflict minerals\". Armed groups control some tungsten mining in Colombia.", "sources": ["S14"] },
+          "evidence": [
+            { "level": "documented", "scope": "sector" },
+            { "level": "not-researched", "scope": "link to fusion" }
+          ],
+          "todo": "USGS source for China's share of mining.",
+          "rating": { "supply": "unknown", "harm": "high" }
+        }
+      ],
+      "bottomLine": "Tungsten is a recognised conflict mineral, and armed groups control some mining in Colombia. How fusion-grade tungsten is sourced has not yet been researched."
+    },
+
+    "lithium6": {
+      "name": "Lithium-6",
+      "part": "blanket",
+      "role": "Enriched lithium for breeding tritium fuel",
+      "stages": [
+        {
+          "tier": "Metal / oxide / alloy",
+          "name": "Lithium-6 enrichment today",
+          "security": null,
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        },
+        {
+          "tier": "Lessons from history",
+          "name": "Oak Ridge, Tennessee, 1950s–60s",
+          "history": true,
+          "security": null,
+          "people": { "text": "US lithium enrichment at Oak Ridge used mercury. About 1.1 million kg was lost on site, around 10% of it into East Fork Poplar Creek. About 15 miles of the creek still exceed mercury water-quality criteria.", "sources": ["S17", "S18"] },
+          "evidence": [{ "level": "documented", "scope": "historical" }],
+          "rating": { "supply": "unknown", "harm": "high" }
+        },
+        {
+          "tier": "Mine / source region",
+          "name": "Lithium source",
+          "security": null,
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        }
+      ],
+      "bottomLine": "Fusion's fuel chain has caused harm before: lithium-6 enrichment at Oak Ridge left mercury in a creek that still exceeds water-quality criteria. Where today's lithium-6 would come from has not yet been researched."
+    },
+
+    "beryllium": {
+      "name": "Beryllium",
+      "part": "blanket",
+      "role": "Neutron multiplier",
+      "stages": [
+        {
+          "tier": "Reactor / developer",
+          "name": "Commonwealth Fusion Systems",
+          "security": { "text": "Has a supply agreement with Materion for beryllium fluoride.", "sources": ["S20"] },
+          "people": null,
+          "evidence": [{ "level": "documented", "scope": "supply link" }],
+          "rating": { "supply": "moderate", "harm": "unknown" }
+        },
+        {
+          "tier": "Metal / oxide / alloy",
+          "name": "Materion (Utah, Ohio, US) · Ulba (Kazakhstan, state-owned) · China",
+          "security": { "text": "Supply is concentrated among a few producers.", "sources": ["S19"] },
+          "people": { "text": "The main people risk is worker health (chronic beryllium disease), not conflict.", "sources": ["S19"], "sourceNeeded": true },
+          "evidence": [{ "level": "documented", "scope": "sector" }],
+          "todo": "OSHA source on chronic beryllium disease.",
+          "rating": { "supply": "high", "harm": "moderate" }
+        },
+        {
+          "tier": "Mine / source region",
+          "name": "Beryllium ore sources",
+          "security": null,
+          "people": null,
+          "evidence": [{ "level": "not-researched" }],
+          "rating": { "supply": "unknown", "harm": "unknown" }
+        }
+      ],
+      "bottomLine": "Beryllium supply is concentrated in a few producers, and a fusion developer already has a supply agreement in place. The main people risk is to workers' health from chronic beryllium disease rather than conflict."
+    },
+
+    "steel": {
+      "name": "Specialty steels",
+      "part": "vacuum-vessel",
+      "role": "Low-activation structural steels",
+      "contrast": true,
+      "stages": [
+        {
+          "tier": "Metal / oxide / alloy",
+          "name": "Specialty low-activation steels",
+          "security": { "text": "A manufacturing and supply-security bottleneck.", "sources": [], "sourceNeeded": true },
+          "people": { "text": "No major human rights hotspot identified at this stage of research.", "sources": [] },
+          "evidence": [{ "level": "not-researched" }],
+          "rating": { "supply": "moderate", "harm": "low" }
+        }
+      ],
+      "bottomLine": "Shown for contrast: a real bottleneck for building reactors, but not a human rights hotspot on current research. Lower risk is not the same as no risk; this stage is not yet researched in depth."
+    }
+  }
+}
