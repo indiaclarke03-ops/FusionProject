@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Risk tracer · The Magnet Problem</title>
+  <meta name="description" content="Start from a mine, smelter or mineral and see which magnet makers and fusion developers its risk could reach, or start from a fusion developer and see which harm sites sit upstream. Every route is graded by its weakest link.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="risk">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <div id="load-error" class="wrap load-error" role="alert" hidden></div>
+<section class="section section--first wrap" aria-labelledby="risk-title">
+      <div class="col-main">
+        <p class="eyebrow">03 · Risk tracer</p>
+        <h1 id="risk-title" class="page-title">Follow the risk from a mine or smelter to fusion, and back.</h1>
+        <p class="lead">Risk teams usually start from a smelter list or a mineral. Pick one and the tracer follows every recorded, reported or suspected flow downstream to the fusion developers it could reach. Or start from a developer and work upstream to the harm sites behind it.</p>
+        <details class="more">
+          <summary>How the tracer grades a route</summary>
+          <div class="more__body">
+            <p><strong>A route is only as strong as its weakest link.</strong> If a mine-to-smelter flow is confirmed in customs records but the smelter-to-wire-maker flow is only a hypothesis, the whole route is a hypothesis. The tracer always shows the strongest route available, and names the weak link that holds it back.</p>
+            <ul class="method-list">
+              <li><strong>Confirmed record:</strong> a shipment or registry record in Sayari.</li>
+              <li><strong>Reported:</strong> stated by a credible source, such as a company filing, NGO investigation or government report.</li>
+              <li><strong>Inferred:</strong> follows from market structure or a model, for example where one plant processes most of a country's ore.</li>
+              <li><strong>Hypothesis:</strong> plausible but untested.</li>
+            </ul>
+            <p>This works the same way as a supplier's smelter list (a conflict minerals or extended minerals reporting template): it starts at the processing plant, where origin is usually lost, and asks what sits on either side. A missing route is not proof that no route exists; it means no record was found.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section--tight wrap" aria-labelledby="tracer-h">
+      <h2 id="tracer-h" class="visually-hidden">Tracer</h2>
+      <div class="tracer">
+        <div class="tracer__controls">
+          <div class="view-toggle tracer__dir" role="group" aria-label="Direction">
+            <button type="button" data-dir="down" aria-pressed="true">From a source, downstream</button>
+            <button type="button" data-dir="up" aria-pressed="false">From a buyer, upstream</button>
+          </div>
+          <label class="tracer__pick">Start from
+            <select id="tr-start"></select>
+          </label>
+          <div class="tracer__minerals" id="tr-minerals-wrap">
+            <span class="tracer__k">Or a mineral</span>
+            <div class="chip-group" role="group" aria-label="Start from every mine of a mineral" id="tr-minerals"></div>
+          </div>
+        </div>
+        <div id="tr-out" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="matrix" class="section wrap" aria-labelledby="matrix-title">
+      <div class="col-main">
+        <p class="eyebrow">Exposure matrix</p>
+        <h2 id="matrix-title">Which harm sites could reach which fusion developer</h2>
+        <p>Every mine, trader, separator, smelter or refiner with documented harm, against every fusion developer it could reach. Each cell shows the strongest route's evidence. Select a cell to open that route in the tracer.</p>
+      </div>
+      <div class="matrix-controls">
+        <div class="chip-group" role="group" aria-label="Part of the reactor" id="mx-lanes"></div>
+      </div>
+      <div class="table-scroll matrix-scroll" tabindex="0" role="region" aria-label="Exposure matrix">
+        <table class="matrix" id="mx-table"></table>
+      </div>
+      <p class="matrix-key" id="mx-key"></p>
+    </section>
+
+    <section id="gaps" class="section wrap" aria-labelledby="gaps-title">
+      <div class="col-main">
+        <p class="eyebrow">Where to dig next</p>
+        <h2 id="gaps-title">The weak links that hide the most risk</h2>
+        <p>Links rated inferred or hypothesis that sit on routes from a severe-harm site to a fusion developer. Confirming or ruling out these flows would change the picture most.</p>
+      </div>
+      <ol class="gaps" id="gap-list"></ol>
+    </section>
+    <div class="wrap page-next-wrap"><div id="page-next" class="col-main"></div></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner" id="footer"></div>
+  </footer>
+
+  <div id="live" class="visually-hidden" aria-live="polite"></div>
+  <script type="module" src="js/pages/risk.js"></script>
+</body>
+</html>

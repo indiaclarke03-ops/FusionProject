@@ -104,8 +104,8 @@ function runCheck(id) {
         <p class="action__why">→ confirmed record · ⇢ reported, inferred or hypothesis. Colours show documented harm.</p>
       </div>
     </div>
-    ${passport(res)}
-    <p class="action__why">Built on this site's evidence (as of the last update). A live version would query Sayari directly. <a href="map.html">See the full systems map</a>.</p>`;
+    <details class="more"><summary>What a magnet passport for this supplier would record today</summary><div class="more__body">${passport(res)}</div></details>
+    <p class="action__why">Built on this site's evidence (as of the last update). A live version would query Sayari directly. <a href="risk.html#to=${encodeURIComponent(id)}">Trace this supplier in the risk tracer</a> · <a href="map.html">See the full systems map</a>.</p>`;
 }
 
 function renderPage() {
@@ -117,11 +117,12 @@ function renderPage() {
       <p class="sol-comp__n">${String(i + 1).padStart(2, '0')}</p>
       <p class="sol-comp__name">${esc(c.name)}</p>
       <p>${esc(c.what)}</p>
+      <details class="more"><summary>Evidence it works, and its limits</summary><div class="more__body">
       <dl>
         <div><dt>Evidence it works</dt><dd>${esc(c.evidence)}</dd></div>
         <div><dt>Limits</dt><dd>${esc(c.limits)}</dd></div>
       </dl>
-      ${sourceLinks(c.sources, D.sourceIndex)}
+      ${sourceLinks(c.sources, D.sourceIndex)}</div></details>
     </li>`).join('');
   const flow = document.getElementById('sol-flow');
   flow.style.setProperty('--n', S.steps.length);

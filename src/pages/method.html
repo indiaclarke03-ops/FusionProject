@@ -4,7 +4,7 @@ description: How The Magnet Problem knows what it claims: sources, evidence rule
 -->
     <section class="section section--first wrap" aria-labelledby="method-title">
       <div class="col-main">
-        <p class="eyebrow">09 · Method &amp; limits</p>
+        <p class="eyebrow">10 · Method &amp; limits</p>
         <h1 id="method-title" class="page-title">How this site knows what it claims, and where it doesn't</h1>
       </div>
     </section>
@@ -26,6 +26,7 @@ description: How The Magnet Problem knows what it claims: sources, evidence rule
           <li><strong>Harm rating (people lens colour).</strong> A stage is rated <em>severe</em> when three or more sources document harm there, or when the documented harm is extreme (forced labour, child labour, or any crime against people, such as killings, violence against civilians or armed-group abuses), even if only one source shows it. One or two sources means <em>moderate</em>. A stage with no documented harm is shown as such, not as safe. Sayari risk flags never count as documented harm: they are modelled indicators. Each rated stage says why it got its rating.</li>
           <li><strong>Counting deaths.</strong> The human cost page counts each death once. Disputed tolls use the lowest credible figure. Estimates that overlap dated incidents, figures that cover a wider area than the site, and killings that mix sites are kept in the log but not added to totals. Every count is labelled exact, minimum or estimate, as its source gives it.</li>
           <li><strong>Exposure estimates.</strong> Material per device is our calculation from published tape and strand specifications; each input and assumption is listed. "Could come from" uses each place's share of world mine output as a proxy, which is fair for a buyer as small as fusion, but real exposure depends on which suppliers are used.</li>
+          <li><strong>Upstream and downstream tracing.</strong> The risk tracer walks the systems map in either direction: from a mine, smelter or mineral down to the fusion developers it could reach, or from a developer up to the harm sites behind it. A route's evidence is its weakest link (confirmed record, reported, inferred or hypothesis); the tracer shows the strongest route and names the link that holds it back. A missing route means no record was found, not that none exists.</li>
           <li><strong>Blending points.</strong> Marked where ore from different sources is mixed (at separation plants, smelters or export hubs) and origin can no longer be traced.</li>
         </ul>
         <div class="evidence-table" id="evidence-table"></div>
@@ -40,7 +41,7 @@ description: How The Magnet Problem knows what it claims: sources, evidence rule
           <li><strong>Tavily</strong>: web research on NGO, UN, government and news sources, company filings (stock-market prospectuses, SEC conflict-minerals reports, annual reports) and peer-reviewed papers. Every cited page was opened, not taken from search snippets.</li>
           <li><strong>Public reports</strong>: every document cited on the site, listed below.</li>
         </ul>
-        <ol class="source-table" id="source-table"></ol>
+        <details class="more" id="sources-panel"><summary>Show every source <span class="more__hint" id="sources-hint"></span></summary><div class="more__body"><ol class="source-table" id="source-table"></ol></div></details>
       </div>
     </section>
 
@@ -64,7 +65,8 @@ description: How The Magnet Problem knows what it claims: sources, evidence rule
         <ul class="method-list">
           <li>No claim without a public source. Claims still waiting for one are shown with a visible <em>Source needed</em> flag rather than removed or hidden.</li>
           <li>Harm at a source is kept separate from proof of a link to fusion. A mine can have documented abuses while the route from that mine into a fusion magnet remains a likely pathway or a hypothesis.</li>
-          <li>Stages that have not been researched are shown as greyed <em>Not yet researched</em> nodes, never filled in.</li>
+          <li>Where research found no evidence for a stage, it is shown as <em>No evidence found</em>, never filled in.</li>
+          <li>A route is only as strong as its weakest link. The risk tracer and exposure matrix grade each route from a mine or smelter to a fusion developer by the weakest flow on it.</li>
         </ul>
       </div>
     </section>
@@ -79,7 +81,12 @@ description: How The Magnet Problem knows what it claims: sources, evidence rule
     <section class="wrap method-section" aria-labelledby="m7">
       <div class="col-main">
         <h2 id="m7">Iteration log</h2>
+<details class="more" id="log-panel"><summary>Show the iteration log</summary><div class="more__body">
         <ol class="log">
+          <li>
+            <time datetime="2026-11-09">9 Nov 2026</time>
+            <div><p><strong>Iteration 6.</strong> New "Risk tracer" page: start from a mine, smelter or mineral and follow every recorded, reported or suspected flow downstream to the fusion developers it could reach, or start from a developer and work upstream; each route graded by its weakest link. An exposure matrix of harm sites against fusion developers, and a list of the weak links that hide the most risk. Selecting a box on the systems map now lights up everything upstream and downstream. The harm map is lighter and zoomable. Long pages shortened: case files show one metal at a time, the incident log and secondary detail open on demand.</p></div>
+          </li>
           <li>
             <time datetime="2026-11-09">9 Nov 2026</time>
             <div><p><strong>Iteration 5.</strong> New "Human cost" page: a dated incident log of people killed, injured, forced to work or displaced at the mines and plants in these supply chains, with each death counted once. Where a source's own total covers the same period as dated incidents, the larger figure is used, never both. It also adds a geographic map (with USGS-mapped rare earth leaching tanks in Myanmar), charts of how the harmful mining areas have grown, and an exposure estimator showing how much of each material a fusion device or fleet needs and how much could come from places with documented harm, using world-average supply shares as a proxy.</p></div>
@@ -102,5 +109,6 @@ description: How The Magnet Problem knows what it claims: sources, evidence rule
             <p>Open for iteration 2: Sayari research tasks (yttrium shipments, tape-maker and alloy-supplier upstream checks, watchlist screening), USGS shares for niobium and tungsten, an OSHA source on chronic beryllium disease, and the author's Exposure Pathway scores.</p></div>
           </li>
         </ol>
+</div></details>
       </div>
     </section>

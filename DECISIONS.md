@@ -62,6 +62,18 @@ Judgement calls the site can't make on its own. Each item says where the answer 
 37. **Coordinates.** Man Maw is placed only at township level, and Kachin is a representative point at Pangwa. The leaching-tank layer is USGS satellite mapping, gridded by the researcher.
 38. **Growth charts.** Some values were read by eye from published bar charts (Crisis Group). Part-year 2025 figures are left off the charts and noted instead.
 
+### Iteration 6 (risk tracer, map, page length)
+
+39. **"Weakest link" grading.** A route from a mine or smelter to a fusion developer is graded by its weakest flow: confirmed record, reported, inferred or hypothesis. The tracer shows the strongest route. An alternative is to count only fully confirmed routes, but that would show almost nothing today. Confirm the rule.
+40. **What counts as a harm site in the exposure matrix.** Mines, traders, separators, smelters and refiners rated severe or moderate. Processors that are only sanctions-linked, with no documented harm, are not rows. Their sanctions flag still shows in the tracer.
+41. **No new supply-chain research this round.** The tracer runs on the existing 137 evidence-graded flows. Its "weak links that hide the most risk" list doubles as the research agenda. For example, China's separators to Shanghai Superconductor is inferred, and Western Superconducting to the ITER consortium is a hypothesis. Say if you want a Sayari pass to try to confirm the top ones.
+42. **Page structure.**
+    - Case files now show one metal at a time, as tabs.
+    - The incident log, extra growth charts, source list, iteration log and solution detail open on demand.
+    - Headlines on the reactor, map, case files, records and human-cost pages are shorter.
+    - Check you are happy with the new wording.
+43. **Navigation has 11 items** with the new Risk tracer page. On smaller laptops the menu is tight; one option is merging Scores into Trade records.
+
 ## Still open from earlier
 
 1. **Scores.** Review the numbers and notes in `data/scores.json`. Fusion leverage is the most judgement-heavy column.

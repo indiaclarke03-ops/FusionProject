@@ -29,6 +29,8 @@ function trailHtml(trail, D) {
   }).join('')}</ul>`;
 }
 
+const hasMines = (mat, D) => D.map.nodes.some((n) => n.kind === 'mine' && (n.materials || []).includes(mat));
+
 function caseHtml(c, D) {
   const m = D.chains.materials[c.material];
   const steps = c.steps.map((s, i) => {
@@ -50,7 +52,7 @@ function caseHtml(c, D) {
     </li>`;
   }).join('');
   const gloss = (c.glossary || []).length ? `<dl class="case__gloss">${c.glossary.map((g) => `<div><dt>${esc(g.term)}</dt><dd>${esc(g.def)}</dd></div>`).join('')}</dl>` : '';
-  return `<article class="case" id="${esc(c.material)}" aria-labelledby="case-${esc(c.material)}-t">
+  return `<article class="case" id="${esc(c.material)}" role="tabpanel" aria-labelledby="case-${esc(c.material)}-t">
     <header class="case__head">
       <p class="eyebrow">${esc(m ? m.name : c.material)}${m?.role ? ` · ${esc(m.role)}` : ''}</p>
       <h2 class="case__title" id="case-${esc(c.material)}-t">${esc(c.title)}</h2>
@@ -64,7 +66,8 @@ function caseHtml(c, D) {
     ${m ? `<blockquote class="pull-quote pull-quote--case"><p>${esc(m.bottomLine)}</p><cite>Bottom line · ${esc(m.name)}</cite></blockquote>` : ''}
     <div class="case__ctas">
       ${m ? `<button type="button" class="btn btn--primary" data-trace="${esc(c.material)}">Open the full trace${icon('arrowRight')}</button>` : ''}
-      <a class="btn btn--ghost" href="map.html#${esc(c.material)}">See it on the systems map</a>
+      <a class="btn btn--ghost" href="${hasMines(c.material, D) ? `risk.html#mineral=${esc(c.material)}` : `risk.html`}">Trace it downstream to fusion developers</a>
+      <a class="btn-link" href="map.html#${esc(c.material)}">See it on the systems map${icon('arrowRight', 'icon icon--sm')}</a>
     </div>
     <details class="case__detail">
       <summary>Show every stage with both lenses and all Sayari records</summary>
@@ -73,19 +76,43 @@ function caseHtml(c, D) {
   </article>`;
 }
 
-boot('cases', ['parts', 'chains', 'cases'], (D) => {
+boot('cases', ['parts', 'chains', 'cases', 'map'], (D) => {
   initTrace(D);
   ALL = Object.values(D.chains.materials).flatMap((m) => [...(m.stages || []), ...(m.routes || []).flatMap((r) => r.stages)]);
   const cases = D.cases.cases;
   const aliases = D.cases.aliases || {};
   const navName = (mat) => [D.chains.materials[mat]?.name || mat, ...Object.entries(aliases).filter(([, v]) => v === mat).map(([k]) => D.chains.materials[k]?.name || k)].join(' & ');
-  document.getElementById('case-nav').innerHTML = `<ul>${cases.map((c) => `<li><a href="#${esc(c.material)}">${esc(navName(c.material))}</a></li>`).join('')}</ul>`;
+  // One case at a time: the metals are tabs, so the page stays short.
+  const nav = document.getElementById('case-nav');
+  nav.innerHTML = `<ul role="tablist" aria-label="Choose a metal">${cases.map((c) => `<li role="presentation"><button type="button" role="tab" id="tab-${esc(c.material)}" aria-controls="${esc(c.material)}" data-case="${esc(c.material)}" aria-selected="false">${esc(navName(c.material))}</button></li>`).join('')}</ul>`;
   document.getElementById('case-list').innerHTML = cases.map((c) => caseHtml(c, D)).join('');
+  const show = (mat, focus) => {
+    const id = cases.some((c) => c.material === mat) ? mat : cases[0].material;
+    cases.forEach((c) => {
+      document.getElementById(c.material).hidden = c.material !== id;
+      const b = document.getElementById(`tab-${c.material}`);
+      b.setAttribute('aria-selected', String(c.material === id));
+      b.tabIndex = c.material === id ? 0 : -1;
+    });
+    history.replaceState(null, '', `#${id}`);
+    if (focus) document.getElementById(`tab-${id}`).focus();
+  };
+  nav.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-case]'); if (!b) return;
+    show(b.dataset.case);
+    document.getElementById('case-list').scrollIntoView({ block: 'start' });
+    window.scrollBy(0, -140);
+  });
+  nav.addEventListener('keydown', (e) => {
+    if (!['ArrowRight', 'ArrowLeft'].includes(e.key)) return;
+    const i = cases.findIndex((c) => document.getElementById(`tab-${c.material}`).getAttribute('aria-selected') === 'true');
+    const j = (i + (e.key === 'ArrowRight' ? 1 : -1) + cases.length) % cases.length;
+    show(cases[j].material, true);
+  });
   document.getElementById('case-list').addEventListener('click', (e) => {
     const b = e.target.closest('[data-trace]');
     if (b) openMaterial(b.dataset.trace, b);
   });
   const raw = decodeURIComponent(location.hash.slice(1));
-  const hash = aliases[raw] || raw;
-  if (hash) document.getElementById(hash)?.scrollIntoView();
+  show(aliases[raw] || raw);
 });

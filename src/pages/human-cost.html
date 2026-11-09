@@ -4,19 +4,20 @@ description: A dated log of people killed, injured, forced to work and displaced
 -->
     <section class="section section--first wrap" aria-labelledby="hc-title">
       <div class="col-main">
-        <p class="eyebrow">03 · The human cost</p>
+        <p class="eyebrow">04 · The human cost</p>
         <h1 id="hc-title" class="page-title">The human cost</h1>
         <p class="lead" id="hc-lead"></p>
         <p class="hc-caveat" id="hc-caveat"></p>
       </div>
       <dl class="stats hc-stats" id="hc-stats"></dl>
+      <nav class="onpage" aria-label="On this page"><span class="onpage__k">On this page</span><a href="#where">Map of harm</a><a href="#by-site">By site</a><a href="#timeline">Over time</a><a href="#log">Incident log</a><a href="#growth">Growing footprint</a><a href="#exposure">Exposure estimate</a></nav>
     </section>
 
     <section id="where" class="section wrap" aria-labelledby="where-title">
       <div class="col-main">
         <p class="eyebrow">Where it happens</p>
-        <h2 id="where-title">The harm is concentrated in a few places, far from the fusion labs that will buy the metal.</h2>
-        <p>Each circle is a mine or plant in a fusion supply chain, sized by the number of people documented killed there. Squares are processors, makers and fusion developers. Switch on the routes to see how material is recorded or reported to move towards fusion.</p>
+        <h2 id="where-title">The harm is concentrated in a few places, far from the fusion labs.</h2>
+        <p>Circles are mines and plants, sized by people documented killed. Squares are processors, makers and fusion developers. Zoom with the buttons, a pinch, or Ctrl/⌘ and scroll; drag to pan. Select a circle to see what happened there and where its metal could go.</p>
       </div>
       <div class="geo-controls">
         <div class="chip-group" role="group" aria-label="Zoom to region" id="geo-regions"></div>
@@ -25,6 +26,7 @@ description: A dated log of people killed, injured, forced to work and displaced
       </div>
       <div class="geo-layout">
         <figure class="geo-figure">
+          <div class="geo-zoom" role="group" aria-label="Map zoom"><button type="button" data-zoom="in" aria-label="Zoom in">+</button><button type="button" data-zoom="out" aria-label="Zoom out">−</button><button type="button" data-zoom="reset" class="geo-zoom__reset" aria-label="Reset zoom">Reset</button></div>
           <svg id="geo-svg" role="group" aria-labelledby="where-title"></svg>
           <div class="tooltip" id="geo-tip" role="tooltip" hidden></div>
           <figcaption class="geo-legend" id="geo-legend"></figcaption>
@@ -39,7 +41,7 @@ description: A dated log of people killed, injured, forced to work and displaced
       <div class="col-main">
         <p class="eyebrow">Site by site</p>
         <h2 id="site-title"></h2>
-        <p>Minimum number of people documented killed at each site, from the incidents in the log below. Many deaths are never recorded, so every number is a floor, not a total.</p>
+        <p>Minimum documented deaths at each site. Many deaths are never recorded, so every number is a floor.</p>
       </div>
       <div class="chart-card">
         <div class="chart-card__bar"><p class="chart-card__title">People killed, by site (minimum)</p><button type="button" class="btn-link" data-table="sites">Show as table</button></div>
@@ -51,8 +53,8 @@ description: A dated log of people killed, injured, forced to work and displaced
     <section id="timeline" class="section wrap" aria-labelledby="tl-title">
       <div class="col-main">
         <p class="eyebrow">Over time</p>
-        <h2 id="tl-title">The incidents cluster in the years fusion's suppliers were scaling up.</h2>
-        <p>Every documented incident since 1990, by year and site. Larger dots mean more people killed; hollow dots are incidents with no death count (such as forced labour, child labour or displacement) or counts not added to the totals. Recent years are also better documented, so this partly reflects more reporting.</p>
+        <h2 id="tl-title">Most documented deaths are recent.</h2>
+        <p>Every incident since 1990, by year and site. Bigger dots mean more deaths; hollow dots have no death count (forced labour, child labour, displacement) or are not added to totals. Recent years are also better reported.</p>
       </div>
       <div class="chart-card">
         <div id="tl-chart"></div>
@@ -64,23 +66,32 @@ description: A dated log of people killed, injured, forced to work and displaced
       <div class="col-main">
         <p class="eyebrow">The incident log</p>
         <h2 id="log-title">Every incident, with its source</h2>
-        <p>One row per event, however many outlets reported it. Counts are marked as exact, minimum or estimate, exactly as the source gives them.</p>
+        <p>One row per event, however many outlets reported it. Open the log to filter by site or type of harm; open a row for the details, a quote and the sources.</p>
       </div>
-      <div class="log-filters">
-        <label>Site <select id="log-site"><option value="">All sites</option></select></label>
-        <label>Type of harm <select id="log-type"><option value="">All types</option></select></label>
-        <p class="log-count" id="log-count" aria-live="polite"></p>
-      </div>
-      <ol class="incidents" id="log-list"></ol>
+      <details class="more more--panel log-wrap" id="log-panel">
+        <summary>Open the incident log <span class="more__hint" id="log-hint"></span></summary>
+        <div class="more__body">
+          <div class="log-filters">
+            <label>Site <select id="log-site"><option value="">All sites</option></select></label>
+            <label>Type of harm <select id="log-type"><option value="">All types</option></select></label>
+            <p class="log-count" id="log-count" aria-live="polite"></p>
+          </div>
+          <ol class="incidents--rows" id="log-list"></ol>
+        </div>
+      </details>
     </section>
 
     <section id="growth" class="section wrap" aria-labelledby="growth-title">
       <div class="col-main">
         <p class="eyebrow">The footprint is growing</p>
         <h2 id="growth-title">The harmful mining areas are expanding, not shrinking.</h2>
-        <p>Each chart tracks one hotspot over time, from satellite surveys, customs data and official production figures.</p>
+        <p>Each chart tracks one hotspot over time, from satellite surveys, customs data and official production figures. The four clearest are shown; the rest are one click away.</p>
       </div>
       <div class="multiples" id="growth-charts"></div>
+      <details class="more more--panel" id="growth-more">
+        <summary>Show more charts <span class="more__hint" id="growth-hint"></span></summary>
+        <div class="more__body"><div class="multiples multiples--inner" id="growth-charts-more"></div></div>
+      </details>
     </section>
 
     <section id="exposure" class="section wrap" aria-labelledby="exp-title">

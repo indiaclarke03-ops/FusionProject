@@ -6,6 +6,7 @@ export const NAV = [
   { id: 'home', href: 'index.html', label: 'Overview' },
   { id: 'reactor', href: 'reactor.html', label: 'The reactor' },
   { id: 'map', href: 'map.html', label: 'Systems map' },
+  { id: 'risk', href: 'risk.html', label: 'Risk tracer' },
   { id: 'human-cost', href: 'human-cost.html', label: 'Human cost' },
   { id: 'cases', href: 'cases.html', label: 'Case files' },
   { id: 'records', href: 'records.html', label: 'Trade records' },

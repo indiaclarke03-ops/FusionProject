@@ -16,4 +16,10 @@ boot('method', ['chains'], (D) => {
         ${s.checkNote ? `<span class="src-check">${esc(s.checkNote)}</span>` : ''}
       </span>
     </li>`).join('');
+  document.getElementById('sources-hint').textContent = `${D.sources.sources.length} documents`;
+  // Deep links to a source (#src-S12) open the list first.
+  if (location.hash.startsWith('#src-')) {
+    document.getElementById('sources-panel').open = true;
+    document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  }
 });

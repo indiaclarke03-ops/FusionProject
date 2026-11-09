@@ -2,8 +2,9 @@
 import { boot, announce } from '../core.js';
 import { icon, esc, sourceLinks, SCALE } from '../ui.js';
 import { initTrace, onLensChange, openMaterial, state } from '../trace.js';
+import { makeGraph, reach, developersReached, harmUpstream, rankLabel } from '../reach.js';
 
-let D, M;
+let D, M, G;
 const ui = { lane: 'magnets', policy: false, solution: false, selected: null, view: 'map' };
 
 const COL_W = 230, NODE_W = 184, NODE_H = 58, ROW_H = 74, TOP = 64, LANE_GAP = 34, LEFT = 24;
@@ -91,6 +92,9 @@ function renderMap() {
   const ids = new Set(nodes.map((n) => n.id));
   const edges = M.edges.filter((e) => ids.has(e.from) && ids.has(e.to));
   const { pos, bands, width, height } = layout(nodes);
+  // When a box is selected, keep everything upstream and downstream of it lit and dim the rest.
+  const sel = ui.selected && !ui.selected.startsWith('e') && M.nodes.find((n) => n.id === ui.selected)?.kind !== 'policy' ? ui.selected : null;
+  const related = sel ? new Set([sel, ...reach(G, [sel], 'down').keys(), ...reach(G, [sel], 'up').keys()]) : null;
   const svg = document.getElementById('map-svg');
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
 
@@ -114,8 +118,9 @@ function renderMap() {
       const dx = Math.max(40, (x2 - x1) / 2);
       d = `M${x1} ${y1} C${x1 + dx} ${y1} ${x2 - dx} ${y2} ${x2} ${y2}`;
     }
-    const sel = ui.selected && (ui.selected === `e${i}` || ui.selected === e.from || ui.selected === e.to);
-    return `<g class="m-edge m-edge--${esc(e.status)}${pol ? ' m-edge--policy' : ''}${sel ? ' is-hot' : ''}" data-edge="${i}" tabindex="-1">
+    const hotE = ui.selected && (ui.selected === `e${i}` || ui.selected === e.from || ui.selected === e.to);
+    const rel = related ? (related.has(e.from) && related.has(e.to) && !pol ? ' is-reach' : ' is-dim') : '';
+    return `<g class="m-edge m-edge--${esc(e.status)}${pol ? ' m-edge--policy' : ''}${hotE ? ' is-hot' : ''}${rel}" data-edge="${i}" tabindex="-1">
       <path class="m-edge__hit" d="${d}"/>
       <path class="m-edge__line" d="${d}" stroke-dasharray="${st.dash}" stroke-width="${st.width}" marker-end="url(#arrow)"/>
     </g>`;
@@ -127,13 +132,14 @@ function renderMap() {
     const lines = wrapLabel(n.label, nFlags ? 18 - nFlags : 21);
     const colour = n.kind === 'policy' ? '#8B7BC9' : lensColour(n);
     const sel = ui.selected === n.id;
+    const dim = related && !related.has(n.id) ? ' is-dim' : '';
     const flags = [
       n.blending ? `<g transform="translate(${NODE_W - 22} 6)" class="m-flag"><title>Blending point</title><path d="M3 9a6 6 0 0 0 6 6M3 3v12M15 15a3 3 0 1 1 0-.01M3 3a3 3 0 1 1 0-.01" transform="scale(.8)"/></g>` : '',
       (n.flags || []).includes('sanctioned') ? `<g transform="translate(${NODE_W - (n.blending ? 40 : 22)} 6)" class="m-flag m-flag--warn"><title>Sanctioned or sanctions-linked</title><path d="m10.9 13.5-4-7a1 1 0 0 0-1.8 0l-4 7A1 1 0 0 0 2 15h8a1 1 0 0 0 .9-1.5Z M6 7.5v2.5 M6 12h.01" transform="scale(1.1)"/></g>` : '',
     ].join('');
     const sol = ui.solution && (n.solution || []).length
       ? `<g class="m-sol" transform="translate(4 ${NODE_H - 4})">${n.solution.map((s, i) => `<circle cx="${8 + i * 14}" cy="0" r="5.5"><title>${esc(SOLUTION[s] || s)}</title></circle>`).join('')}</g>` : '';
-    return `<g class="m-node m-node--${esc(n.kind)}${sel ? ' is-selected' : ''}" data-node="${esc(n.id)}" transform="translate(${p.x} ${p.y})" tabindex="0" role="button" aria-label="${esc(n.label)}${n.country ? `, ${esc(n.country)}` : ''}. Show details.">
+    return `<g class="m-node m-node--${esc(n.kind)}${sel ? ' is-selected' : ''}${dim}" data-node="${esc(n.id)}" transform="translate(${p.x} ${p.y})" tabindex="0" role="button" aria-label="${esc(n.label)}${n.country ? `, ${esc(n.country)}` : ''}. Show details.">
       <rect class="m-node__box" width="${NODE_W}" height="${NODE_H}" rx="3"/>
       <rect class="m-node__bar" width="5" height="${NODE_H}" fill="${colour}"/>
       <text class="m-node__label" x="14" y="${lines.length > 1 ? 23 : 31}">${lines.map((l, i) => `<tspan x="14" dy="${i ? 16 : 0}">${esc(l)}</tspan>`).join('')}</text>
@@ -188,8 +194,23 @@ function nodeDetail(n) {
     ${ins.length ? `<p class="map-detail__k">Comes from</p><ul class="flows">${ins.map((e) => flow(e, 'in')).join('')}</ul>` : ''}
     ${outs.length ? `<p class="map-detail__k">${n.kind === 'policy' ? 'Acts on' : 'Goes to'}</p><ul class="flows">${outs.map((e) => flow(e, 'out')).join('')}</ul>` : ''}
     ${rules.length ? `<p class="map-detail__k">Rules acting on it</p><ul class="flows">${rules.map((e) => `<li class="flow flow--rule"><p class="flow__route">${name(e.from)}</p><p class="flow__what">${esc(e.label || '')}${e.basis ? ` · ${esc(e.basis)}` : ''}</p>${sourceLinks(e.sources, D.sourceIndex)}</li>`).join('')}</ul>` : ''}
+    ${n.kind === 'policy' ? '' : reachBlock(n)}
     ${sol}
     ${mats.length ? `<div class="map-detail__ctas">${mats.map((m) => `<button type="button" class="btn btn--ghost btn--sm" data-trace="${esc(m)}">Trace ${esc(D.chains.materials[m].name.toLowerCase())}</button>`).join('')}<a class="btn-link" href="cases.html#${esc(mats[0])}">Case file${icon('arrowRight', 'icon icon--sm')}</a></div>` : ''}`;
+}
+
+// Upstream and downstream reach of a box, graded by the weakest link on the strongest route.
+function reachBlock(n) {
+  const link = (dir) => `<a class="btn-link" href="risk.html#${dir}=${encodeURIComponent(n.id)}">Open in the risk tracer${icon('arrowRight', 'icon icon--sm')}</a>`;
+  if (n.kind === 'developer') {
+    const h = harmUpstream(G, n.id);
+    return `<div class="reach"><p class="reach__h">Harm sites upstream</p>${h.length ? `<ul>${h.slice(0, 8).map((x) => `<li><span><span class="swatch" style="background:${SCALE.people[x.n.harm].colour}"></span>${esc(x.n.label)}</span><span class="evtag">${esc(rankLabel(x.rank).short)}</span></li>`).join('')}</ul>${h.length > 8 ? `<p class="map-detail__muted">and ${h.length - 8} more</p>` : ''}` : '<p class="map-detail__muted">None found in the records.</p>'}${link('to')}</div>`;
+  }
+  const devs = developersReached(G, [n.id]);
+  const h = harmUpstream(G, n.id);
+  return `<div class="reach"><p class="reach__h">Could reach these fusion developers</p>${devs.length ? `<ul>${devs.map((d) => `<li><span>${esc(d.label)}</span><span class="evtag">${esc(rankLabel(d.rank).short)}</span></li>`).join('')}</ul>` : '<p class="map-detail__muted">No route to a fusion developer found in the records.</p>'}
+    ${h.length ? `<p class="reach__h">Harm sites upstream of it</p><p class="map-detail__muted">${esc(h.map((x) => x.n.label).join(', '))}</p>` : ''}
+    <p class="map-detail__muted">Graded by the weakest link on the strongest route. Lit on the map: everything upstream and downstream.</p>${link(devs.length || n.kind === 'mine' ? 'from' : 'to')}</div>`;
 }
 
 const KIND_LABEL = {
@@ -243,7 +264,7 @@ function renderLegend() {
 }
 
 boot('map', ['parts', 'chains', 'map'], (data) => {
-  D = data; M = D.map;
+  D = data; M = D.map; G = makeGraph(M);
   initTrace(D);
   renderLaneFilter();
   renderLegend();

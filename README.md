@@ -9,6 +9,7 @@ An interactive, evidence-led site that traces the materials in a fusion reactor 
 - **Overview:** what fusion is, why it needs magnets and what the magnets are made of, for readers new to the topic.
 - **Interactive reactor:** click a part to trace its materials, and switch between the security lens and the people lens.
 - **Systems map:** the whole magnet supply chain, from mines to fusion developers, with human rights risks and the rules that act on it.
+- **Risk tracer:** start from a mine, smelter or mineral and see which fusion developers its risk could reach, or start from a developer and work upstream; every route is graded by its weakest link, with an exposure matrix of harm sites against developers.
 - **Human cost:** a dated log of people killed and harmed at the mines and plants, mapped, plus an estimate of how much of a fusion magnet could come from those places.
 - **Case files:** plain-language walk-throughs of each material, following company and customs records step by step.
 - **The solution:** MagnetTrace, a tech-enabled traceability system, with a working Supplier Check.
