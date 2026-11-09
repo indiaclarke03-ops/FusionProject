@@ -31,6 +31,37 @@ Judgement calls the site can't make on its own. Each item says where the answer 
 25. **New scored routes.** I scored five new routes: Brazilian niobium, Vietnamese tungsten, US beryllium, Grasberg copper and Limpopo chrome. The scores headline now reads "proven on only 2" (Brazilian niobium via the Western Superconducting prospectus, and US beryllium via the Materion–CFS agreement).
 26. **Design.** I treated DESIGN.md as inspiration, as you said. Medium-weight text is used for emphasis, and several new colours appear: copper and silver in the tape diagram, purple for rules, and teal for solution markers.
 
+## New in iteration 5: the human cost page (please review)
+
+27. **Headline death toll: at least 719.** Counted once per death:
+    - Rubaya 421
+    - Indonesian nickel 101
+    - Cerro Rico 90
+    - Kachin 45
+    - Grasberg 39
+    - Great Lakes tin 14
+    - Man Maw 9
+
+    Each disputed toll uses the lowest credible figure (e.g. Rubaya June 2025: 21, not the 300+ in one report; January 2026: 200, not 226 or 400+). Decide whether to show the higher reported tolls alongside.
+28. **Kept in the log but not added to totals:**
+    - Kachin's "around 50" rainy-season estimate, which overlaps the dated landslides
+    - Amnesty's 18 killings, which combine Rubaya with a gold mine
+    - Rwanda's 81 mining deaths in 2018, which cover all Rwandan mining
+
+    Confirm.
+29. **Indonesian nickel: 101 deaths.** This is Trend Asia's own total for 2015 to mid-2024. It already includes the dated incidents (28 deaths), so the two are never added together. Other totals overlap and use different methods (Public Citizen 107 for 2019–2025; Ministry of Manpower 39 at IMIP), so only one is shown.
+30. **Cerro Rico (Bolivian silver) contributes 90 deaths** (police data, January–October 2025), but nothing links it to fusion tape. It stays because the page counts harm at places in the traced supply chains, and the caveat says most links are unproven. You may prefer to drop sites with no fusion link from the headline.
+31. **Grasberg's 2020 and 2026 shootings** were by armed groups or unknown attackers, not the company. They are counted as deaths at the mine. Decide whether conflict deaths near a mine count as supply-chain harm.
+32. **The Pangwa explosives depot (Kachin)** is shown as October 2026. The exact day was inferred from a news report.
+33. **Left out pending verification:**
+    - the 31 May 2026 Namhkam blast (40–55 dead), whose link to rare earths or tin is unclear
+    - a 6 March 2026 Rubaya landslide (about 300 dead), reported only in an unverified blog
+34. **The Maba Sangaji arrests** involve a company outside the two fusion-linked nickel parks. They are logged under Indonesian nickel; decide whether that node should cover all Indonesian nickel.
+35. **The exposure estimate is our calculation.** Tape is assumed to be 4 mm wide (inferred from SPARC's figures). The niobium and tin shares of ITER's strand are assumptions. Myanmar's share of yttrium is a proxy (20–50%), because USGS only says "a significant percentage". Fusion scenarios are counted company claims, not a forecast. All of this is labelled on the page.
+36. **Two harm columns in the estimator.** "Severe harm" covers places rated severe; "any documented harm" adds places with environmental or occupational harm (e.g. Brazilian niobium, Chinese tungsten). Brazil and China dominate the second column for niobium and tungsten. Confirm that split.
+37. **Coordinates.** Man Maw is placed only at township level, and Kachin is a representative point at Pangwa. The leaching-tank layer is USGS satellite mapping, gridded by the researcher.
+38. **Growth charts.** Some values were read by eye from published bar charts (Crisis Group). Part-year 2025 figures are left off the charts and noted instead.
+
 ## Still open from earlier
 
 1. **Scores.** Review the numbers and notes in `data/scores.json`. Fusion leverage is the most judgement-heavy column.

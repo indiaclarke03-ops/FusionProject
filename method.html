@@ -18,7 +18,7 @@
     <div id="load-error" class="wrap load-error" role="alert" hidden></div>
 <section class="section section--first wrap" aria-labelledby="method-title">
       <div class="col-main">
-        <p class="eyebrow">08 · Method &amp; limits</p>
+        <p class="eyebrow">09 · Method &amp; limits</p>
         <h1 id="method-title" class="page-title">How this site knows what it claims, and where it doesn't</h1>
       </div>
     </section>
@@ -38,6 +38,8 @@
           <li><strong>Lens toggle.</strong> The security lens shows concentration, control, export restrictions and single points of failure, coloured by supply risk. The people lens shows human rights findings on the same stages, coloured by harm severity. Supply-risk colours are the author's judgement from the cited evidence; harm colours follow the rule below.</li>
           <li><strong>Evidence levels.</strong> Every stage carries a badge, described below. A stage can carry two: one for harm at the source, one for the link into fusion's supply chain.</li>
           <li><strong>Harm rating (people lens colour).</strong> A stage is rated <em>severe</em> when three or more sources document harm there, or when the documented harm is extreme (forced labour, child labour, or any crime against people, such as killings, violence against civilians or armed-group abuses), even if only one source shows it. One or two sources means <em>moderate</em>. A stage with no documented harm is shown as such, not as safe. Sayari risk flags never count as documented harm: they are modelled indicators. Each rated stage says why it got its rating.</li>
+          <li><strong>Counting deaths.</strong> The human cost page counts each death once. Disputed tolls use the lowest credible figure. Estimates that overlap dated incidents, figures that cover a wider area than the site, and killings that mix sites are kept in the log but not added to totals. Every count is labelled exact, minimum or estimate, as its source gives it.</li>
+          <li><strong>Exposure estimates.</strong> Material per device is our calculation from published tape and strand specifications; each input and assumption is listed. "Could come from" uses each place's share of world mine output as a proxy, which is fair for a buyer as small as fusion, but real exposure depends on which suppliers are used.</li>
           <li><strong>Blending points.</strong> Marked where ore from different sources is mixed (at separation plants, smelters or export hubs) and origin can no longer be traced.</li>
         </ul>
         <div class="evidence-table" id="evidence-table"></div>
@@ -92,6 +94,10 @@
       <div class="col-main">
         <h2 id="m7">Iteration log</h2>
         <ol class="log">
+          <li>
+            <time datetime="2026-11-09">9 Nov 2026</time>
+            <div><p><strong>Iteration 5.</strong> New "Human cost" page: a dated incident log of people killed, injured, forced to work or displaced at the mines and plants in these supply chains, with each death counted once. Where a source's own total covers the same period as dated incidents, the larger figure is used, never both. It also adds a geographic map (with USGS-mapped rare earth leaching tanks in Myanmar), charts of how the harmful mining areas have grown, and an exposure estimator showing how much of each material a fusion device or fleet needs and how much could come from places with documented harm, using world-average supply shares as a proxy.</p></div>
+          </li>
           <li>
             <time datetime="2026-11-09">9 Nov 2026</time>
             <div><p><strong>Iteration 4.</strong> The site split into separate pages with a plain-language overview. Deeper Sayari and public-source research filled every stage of every material, including the magnet makers, the copper and silver in the tape, and lithium-6 and beryllium. New systems map of the whole magnet supply chain, with the rules and levers that act on it. New case files for every material, following the records step by step. A researched tech-enabled solution (MagnetTrace) with a working Supplier Check. Stages where searching found nothing are now marked "No evidence found" rather than left unresearched.</p></div>

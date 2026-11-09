@@ -1,0 +1,3663 @@
+{
+  "_note": "Iteration 5: human cost data. Incidents and site totals from the incident research; coordinates and footprint series from the geography research; exposure estimator inputs from the exposure research. Built by tools/iter5_human.py.",
+  "lead": "These are the people behind the metals: miners buried in landslides in Kachin and Rubaya, smelter workers burned in Morowali, children working in Cerro Rico. Each death below is dated and sourced, and counted once.",
+  "caveat": "Every number is a minimum: most deaths at informal mines are never recorded, and some tolls are disputed. These are places in the supply chains this site traces. For most of them the link into fusion is likely or a hypothesis, not proven; each site's case file says which.",
+  "incidents": [
+    {
+      "id": "inc-001",
+      "node": "y-kachin",
+      "place": "Pangwa, Chipwi Township, Kachin State, Myanmar (mining plot No. 3, near Chinese border post No. 3)",
+      "date": "2024-06-04",
+      "year": 2024,
+      "type": "deaths",
+      "killed": 20,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": null,
+      "summary": "A landslide at a rare earth mine in Pangwa buried workers; early reports gave 5-7 dead, and RFA later reported more than 20 killed, including three Chinese citizens.",
+      "cause": "Landslide at in-situ leaching rare earth mine in rainy season; acid pumped into hillsides weakens soil (Global Witness); militia-controlled Special Region 1",
+      "counts_are": "minimum",
+      "sources": [
+        "S175",
+        "S174",
+        "S176",
+        "S177",
+        "S4"
+      ],
+      "quote": "A June 4 landslide killed more than 20 people, including three Chinese citizens."
+    },
+    {
+      "id": "inc-002",
+      "node": "y-kachin",
+      "place": "Pang War (Pangwa), Chipwi Township, Kachin State, Myanmar",
+      "date": "2024-06-19",
+      "year": 2024,
+      "type": "deaths",
+      "killed": 15,
+      "injured": null,
+      "missing": 14,
+      "affected": null,
+      "affected_desc": "30 workers trapped",
+      "summary": "A second landslide at around midnight overran a living area and processing facility; 15 bodies were recovered and 14 workers were still missing.",
+      "cause": "Landslide after continuous rainfall at unregulated rare earth mine",
+      "counts_are": "minimum",
+      "sources": [
+        "S175",
+        "S179"
+      ],
+      "quote": "\"Fifteen bodies have been found so far. Two women were among them\" ... A Chinese national and 13 other workers were still missing"
+    },
+    {
+      "id": "inc-003",
+      "node": "y-kachin",
+      "place": "Pangwa area, Chipwi Township, Kachin State, Myanmar",
+      "date": "2024-05/2024-07",
+      "year": 2024,
+      "type": "deaths",
+      "killed": 50,
+      "injured": 12,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "over a dozen injuries and around 50 deaths across the May-July 2024 rainy season (includes the 4 and 19 June landslides)",
+      "summary": "Myanmar Witness attributed around 50 deaths and over a dozen injuries to landslides around the Pangwa mines in the 2024 rainy season. This is an aggregate that contains inc-001 and inc-002; do not add them together.",
+      "cause": "Landslides linked to mine expansion, deforestation and soil degradation",
+      "counts_are": "estimate",
+      "sources": [
+        "S178",
+        "S3"
+      ],
+      "quote": "increased landslides and altered mountain landscapes from May to July 2024 (rainy season), which reportedly caused over a dozen injuries and around 50 deaths",
+      "counted": false,
+      "notCounted": "Estimate for the whole 2024 rainy season; overlaps the dated Pangwa landslides, so not added."
+    },
+    {
+      "id": "inc-004",
+      "node": "y-kachin",
+      "place": "Kachin Special Region 1 (Pangwa/Chipwi), Kachin State, Myanmar",
+      "date": "2024",
+      "year": 2024,
+      "type": "disease",
+      "killed": 2,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "two miners, one a 15-year-old boy, died soon after being discharged from work with severe gastrointestinal illness; families blame chemical exposure (not diagnosed)",
+      "summary": "Global Witness obtained interviews with the families of two miners, one aged 15, who died soon after leaving work. Their families believe chemical exposure caused the deaths, but no diagnosis was made.",
+      "cause": "Suspected exposure to leaching chemicals (ammonium sulphate, oxalic acid); undiagnosed",
+      "counts_are": "exact",
+      "sources": [
+        "S1"
+      ],
+      "quote": "One was a newlywed husband and father. The other was a 15-year-old boy."
+    },
+    {
+      "id": "inc-005",
+      "node": "y-kachin",
+      "place": "Kachin Special Region 1 (Pangwa/Chipwi), Kachin State, Myanmar",
+      "date": "2024",
+      "year": 2024,
+      "type": "child labour",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "teenage boys leaving school for the mines; young women recruited via social media for sexual and domestic services to Chinese workers (no count)",
+      "summary": "Global Witness reported teenage boys leaving school to work in the mines, and young women recruited online to provide sexual and domestic services to Chinese mine staff. It gave no numbers.",
+      "cause": "Mining boom economy under militia control",
+      "counts_are": "estimate",
+      "sources": [
+        "S1"
+      ],
+      "quote": "teenage boys are leaving school to try their luck in the mines, while young women are recruited via ads on social media to provide sexual and domestic services"
+    },
+    {
+      "id": "inc-006",
+      "node": "y-kachin",
+      "place": "Seinlon village, Momauk Township, Kachin State, Myanmar",
+      "date": "2023-04",
+      "year": 2023,
+      "type": "arbitrary detention",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 3,
+      "affected_desc": "three anti-mining protesters held for three days",
+      "summary": "KIA Brigade 3 detained three people who were protesting against rare earth mining, accused them of being military informants, and held them for three days.",
+      "cause": "Kachin Independence Army (KIA) Brigade 3",
+      "counts_are": "exact",
+      "sources": [
+        "S43"
+      ],
+      "quote": "In April 2023, KIA Brigade 3 detained three active protesters against rare earth mining, accusing them of being military informants, and held them for three days"
+    },
+    {
+      "id": "inc-007",
+      "node": "y-kachin",
+      "place": "Hpare village, Chipwi Township, Kachin State, Myanmar",
+      "date": "2023-10",
+      "year": 2023,
+      "type": "arbitrary detention",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "civilians from Hpare village (number not given)",
+      "summary": "The KIO/KIA detained civilians from Hpare village, a settlement of war-displaced Kachin people, after they opposed rare earth mining there.",
+      "cause": "Kachin Independence Organization/Army",
+      "counts_are": "estimate",
+      "sources": [
+        "S43"
+      ],
+      "quote": "In October 2023, KIO/KIA also detained civilians from Hpare village."
+    },
+    {
+      "id": "inc-008",
+      "node": "y-kachin",
+      "place": "Chipwi area, Kachin State, Myanmar",
+      "date": "2023-11",
+      "year": 2023,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 300,
+      "affected_desc": "nearly 300 local residents with skin disease attributed to rare earth mining waste (RFA Burmese, 23 Nov 2023, cited by ISP-Myanmar)",
+      "summary": "RFA Burmese reported that nearly 300 local residents had skin diseases that they attribute to rare earth mining waste.",
+      "cause": "Rare earth mining waste and leaching chemicals",
+      "counts_are": "estimate",
+      "sources": [
+        "S43"
+      ],
+      "quote": "[Nearly 300 Locals in Kachin Suffer from Skin Diseases Due to Rare Earth Mining Wastes] (ISP-Myanmar English translation of RFA Burmese headline)"
+    },
+    {
+      "id": "inc-009",
+      "node": "y-kachin",
+      "place": "Pangwa town, Chipwi Township, Kachin State, Myanmar (KIA-controlled)",
+      "date": "2026-10",
+      "year": 2026,
+      "type": "deaths",
+      "killed": 7,
+      "injured": 11,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "a Chinese owner, four workers and two residents killed; five of the injured critical",
+      "summary": "Explosives stored for rare earth mining blew up at a Chinese-owned depot in Pangwa, killing at least seven people and injuring 11.",
+      "cause": "Explosion at Chinese-owned mining explosives storage facility",
+      "counts_are": "minimum",
+      "sources": [
+        "S180"
+      ],
+      "quote": "At least seven people, including a Chinese owner, four workers and two residents, were killed and 11 were injured during an explosion at an explosives storage facility in Kachin State's Pangwa town"
+    },
+    {
+      "id": "inc-010",
+      "node": "y-kachin",
+      "place": "Kachin State rare earth mining area, Myanmar",
+      "date": "2025",
+      "year": 2025,
+      "type": "deaths",
+      "killed": 1,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": null,
+      "summary": "A worker interviewed by Yale e360 said a worker was buried during excavation in 2025, and his body was found only after rain and landslides washed the soil away.",
+      "cause": "Excavation accident",
+      "counts_are": "exact",
+      "sources": [
+        "S44"
+      ],
+      "quote": "This year, there was an accident during excavation and a worker was buried"
+    },
+    {
+      "id": "inc-011",
+      "node": "y-shan",
+      "place": "Mong Khark area, Mong Bawk (Mong Pawk) Township, Eastern Shan State, Myanmar (UWSA-controlled)",
+      "date": "2025-07-27",
+      "year": 2025,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "more than 40 acres of farmland destroyed by flood sludge (further floods 5 and 10 Aug 2025)",
+      "summary": "Floods carried sludge from rare earth mines over farmland downstream. More than 40 acres of rice, corn, peanut and soybean fields were destroyed, and replanted crops were lost again in August.",
+      "cause": "Runoff from UWSA-area rare earth mines during heavy rain",
+      "counts_are": "minimum",
+      "sources": [
+        "S182"
+      ],
+      "quote": "more than 40 acres of farmland have been destroyed downstream of rare earth mines in the Mong Khark area of Mong Bawk Township"
+    },
+    {
+      "id": "inc-012",
+      "node": "y-shan",
+      "place": "Kok and Sai rivers, northern Thailand (downstream of Shan State mines)",
+      "date": "2025",
+      "year": 2025,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "an estimated 1.3 billion baht ($40 million) in losses to farming, fishing and tourism",
+      "summary": "Toxic runoff from rare earth mines in Shan State polluted rivers flowing into northern Thailand, causing an estimated $40 million in losses to local farming, fishing and tourism.",
+      "cause": "Unregulated rare earth mining upstream in Shan State",
+      "counts_are": "estimate",
+      "sources": [
+        "S183"
+      ],
+      "quote": "causing an estimated 1.3 billion baht ($40 million) in losses across the farming, fishing and tourism industries"
+    },
+    {
+      "id": "inc-013",
+      "node": "nb-rubaya",
+      "place": "Bibatama, Rubaya mining area, Masisi territory, North Kivu, DRC",
+      "date": "2025-06-19",
+      "year": 2025,
+      "type": "deaths",
+      "killed": 21,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "local news site Mines.cd reported over 300 fatalities",
+      "summary": "A major slope failure at the unlicensed Rubaya coltan diggings killed at least 21 people. A local outlet reported more than 300 deaths.",
+      "cause": "Landslide at artisanal coltan pits under M23 control",
+      "counts_are": "minimum",
+      "sources": [
+        "S184"
+      ],
+      "quote": "killed at least 21 people, but in all probability many more people died. Local news site Mines.cd reports over 300 fatalities."
+    },
+    {
+      "id": "inc-014",
+      "node": "nb-rubaya",
+      "place": "Luwowo site, Gasasa, Rubaya mining area, Masisi territory, North Kivu, DRC",
+      "date": "2026-01-28",
+      "year": 2026,
+      "type": "deaths",
+      "killed": 200,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "M23-appointed governor's spokesperson later put the toll at 226; victims included miners, women and children",
+      "summary": "Two successive landslides on 28-29 January collapsed hand-dug tunnels at Rubaya. At least 200 people died; a later rebel-administration count gave 226.",
+      "cause": "Tunnel collapse after heavy rain at unregulated M23-controlled mine",
+      "counts_are": "minimum",
+      "sources": [
+        "S51",
+        "S185"
+      ],
+      "quote": "a network of hand-dug tunnels collapsed, killing at least 200 artisanal miners and trapping an unknown number who remain missing"
+    },
+    {
+      "id": "inc-015",
+      "node": "nb-rubaya",
+      "place": "Kasasa site, Rubaya mining area, Masisi territory, North Kivu, DRC",
+      "date": "2026-03-03",
+      "year": 2026,
+      "type": "deaths",
+      "killed": 200,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "about 70 children among the dead (DRC Ministry of Mines); M23 official claimed only about five died",
+      "summary": "Another landslide at Rubaya killed more than 200 people, about 70 of them children, according to the DRC mines ministry. M23 disputed the figure.",
+      "cause": "Landslide after heavy rain at M23-controlled artisanal mine",
+      "counts_are": "minimum",
+      "sources": [
+        "S186",
+        "S187"
+      ],
+      "quote": "more than 200 people, including children, had died in the disaster, which occurred on March 3 at around 3 p.m."
+    },
+    {
+      "id": "inc-016",
+      "node": "nb-rubaya",
+      "place": "Rubaya (North Kivu) and Lomera (South Kivu, gold), DRC",
+      "date": "2025/2026",
+      "year": 2025,
+      "type": "killings",
+      "killed": 18,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "18 artisanal miners summarily killed at Rubaya and Lomera combined (10 beaten to death, 2 shot, 6 abducted and found dead)",
+      "summary": "Amnesty documented the summary killing of 18 artisanal miners by M23 fighters and allied guards at Rubaya and the Lomera gold site. The report does not give a split between the two sites.",
+      "cause": "M23 fighters and allied security guards",
+      "counts_are": "minimum",
+      "sources": [
+        "S50"
+      ],
+      "quote": "The organization documented the summary killing of 18 artisanal miners at the Rubaya and Lomera mines.",
+      "counted": false,
+      "notCounted": "Combines Rubaya with the Lomera gold site, so not added to Rubaya's total."
+    },
+    {
+      "id": "inc-017",
+      "node": "nb-rubaya",
+      "place": "Coltan mines near Rubaya, North Kivu, DRC",
+      "date": "2025/2026",
+      "year": 2025,
+      "type": "forced labour",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "miners forced to dig, often underground for more than a week at a time; seven miners described detention and ransom under threat of forced recruitment (26 interviewees)",
+      "summary": "Amnesty found that M23 forced miners to dig coltan, often keeping them underground for more than a week. It also used the mines to detain miners for ransom under threat of sending them to military training.",
+      "cause": "M23",
+      "counts_are": "estimate",
+      "sources": [
+        "S50"
+      ],
+      "quote": "M23 fighters forced miners to dig minerals, often making them work underground for more than a week at a time in coltan mines near Rubaya"
+    },
+    {
+      "id": "inc-018",
+      "node": "ni-indonesia",
+      "place": "PT Indonesia Tsingshan Stainless Steel (ITSS) smelter, IMIP, Morowali, Central Sulawesi",
+      "date": "2023-12-24",
+      "year": 2023,
+      "type": "deaths",
+      "killed": 21,
+      "injured": 38,
+      "missing": null,
+      "affected": null,
+      "affected_desc": null,
+      "summary": "A furnace explosion and fire during repair work at a Tsingshan-controlled smelter at IMIP killed 21 workers and injured at least 38.",
+      "cause": "Oxygen tank explosion during furnace repair; PT ITSS (Tsingshan)",
+      "counts_are": "exact",
+      "sources": [
+        "S45",
+        "S190",
+        "S191"
+      ],
+      "quote": "A fire at a Chinese-owned nickel smelter in Sulawesi on 24 December 2023 killed 21 people."
+    },
+    {
+      "id": "inc-019",
+      "node": "ni-indonesia",
+      "place": "PT Gunbuster Nickel Industry (GNI) smelter, North Morowali, Central Sulawesi",
+      "date": "2022-12",
+      "year": 2022,
+      "type": "deaths",
+      "killed": 2,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": null,
+      "summary": "An explosion and fire at the GNI smelter in late December 2022 killed two employees.",
+      "cause": "Smelter explosion/fire; PT GNI (Jiangsu Delong)",
+      "counts_are": "exact",
+      "sources": [
+        "S192"
+      ],
+      "quote": "In late December, an explosion at the GNI as the mineral processing and refining plant in Morowali killed two employees."
+    },
+    {
+      "id": "inc-020",
+      "node": "ni-indonesia",
+      "place": "PT Gunbuster Nickel Industry (GNI) smelter, North Morowali, Central Sulawesi",
+      "date": "2023-01-14",
+      "year": 2023,
+      "type": "violence",
+      "killed": 2,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "one Indonesian and one Chinese worker killed",
+      "summary": "Clashes between Indonesian and Chinese workers broke out after a labour protest over safety at the GNI smelter, and two workers were killed.",
+      "cause": "Clash after labour protest over safety and contracts at PT GNI",
+      "counts_are": "exact",
+      "sources": [
+        "S193",
+        "S192"
+      ],
+      "quote": "An Indonesian and a Chinese worker died after a clash broke out following a protest staged by a labour group"
+    },
+    {
+      "id": "inc-021",
+      "node": "ni-indonesia",
+      "place": "PT Dexin Steel Indonesia, IMIP, Morowali, Central Sulawesi",
+      "date": "2024-10-25",
+      "year": 2024,
+      "type": "deaths",
+      "killed": 1,
+      "injured": 1,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "Public Citizen GTW describes the same late-2024 IMIP blast: crane operator Gunawan died and another worker was injured; a BHRRC headline reports two Dexin workers died after the explosion and later repair work",
+      "summary": "An explosion and fire at the Dexin Steel plant in IMIP killed one worker and badly injured another.",
+      "cause": "Explosion at waste pool / fire; PT Dexin Steel Indonesia",
+      "counts_are": "minimum",
+      "sources": [
+        "S194",
+        "S199"
+      ],
+      "quote": "PT Dexin Steel Indonesia, experienced an explosion leading to a fire on Friday (25/10/2024. The incident resulted in one fatality and one severe injury."
+    },
+    {
+      "id": "inc-022",
+      "node": "ni-indonesia",
+      "place": "Tailings storage facility, IMIP, Morowali, Central Sulawesi",
+      "date": "2025-03-22",
+      "year": 2025,
+      "type": "deaths",
+      "killed": 2,
+      "injured": null,
+      "missing": 1,
+      "affected": null,
+      "affected_desc": "four excavator operators buried: one survived, two dead, one missing",
+      "summary": "A landslide of nickel tailings at IMIP buried four contractor workers; two were found dead and one is missing, feared dead.",
+      "cause": "Tailings facility collapse after heavy rain (activists allege dam failure); contractor PT MIKI for PT QMB New Energy Materials and PT Huayue Nickel Cobalt",
+      "counts_are": "exact",
+      "sources": [
+        "S190"
+      ],
+      "quote": "The landslide buried four excavator operators under toxic mine waste. One worker survived, while two were found dead. The fourth worker remains missing"
+    },
+    {
+      "id": "inc-023",
+      "node": "ni-indonesia",
+      "place": "PT Indonesia Weda Bay Industrial Park (IWIP) mine site, Central Halmahera, North Maluku",
+      "date": "2022-04-02",
+      "year": 2022,
+      "type": "injuries",
+      "killed": null,
+      "injured": 11,
+      "missing": null,
+      "affected": null,
+      "affected_desc": null,
+      "summary": "A dump truck with failed brakes crashed into two other trucks at the IWIP nickel mine, injuring 11 workers. The union said a worker had died at IWIP the previous year.",
+      "cause": "Brake failure; production-target pressure alleged by union",
+      "counts_are": "exact",
+      "sources": [
+        "S195"
+      ],
+      "quote": "Eleven mine workers were injured in a truck crash at the nickel mine site of PT Indonesia Weda Bay Industrial Park (IWIP)"
+    },
+    {
+      "id": "inc-024",
+      "node": "ni-indonesia",
+      "place": "Central Sulawesi province (incl. Morowali district), Indonesia",
+      "date": "2024",
+      "year": 2024,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 305191,
+      "affected_desc": "305,191 respiratory infection diagnoses in Central Sulawesi in 2024 (262,160 in 2023); 57,190 in Morowali district in 2024",
+      "summary": "Komnas HAM cited provincial health data showing 305,191 respiratory infection diagnoses in Central Sulawesi in 2024, up 26% on 2023. These are all respiratory infections in the province, not cases proven to be caused by nickel.",
+      "cause": "Dust and emissions from nickel mining and smelting (association, not attribution)",
+      "counts_are": "exact",
+      "sources": [
+        "S12",
+        "S196"
+      ],
+      "quote": "respiratory infections reached 305,191 diagnoses in 2024, a 26% increase over the 262,160 cases recorded in 2023"
+    },
+    {
+      "id": "inc-025",
+      "node": "ni-indonesia",
+      "place": "IWIP, Weda Bay, Central Halmahera, North Maluku",
+      "date": "2025/2026",
+      "year": 2025,
+      "type": "disease",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 23,
+      "affected_desc": "19 of 23 workers interviewed had heard of a coworker dying suddenly; 2 witnessed it (typical age 26-35)",
+      "summary": "Researchers from Sembada Bersama interviewed 23 IWIP workers. Nineteen had heard of a coworker dying suddenly, which the researchers link to 12-hour shifts of about 60 hours a week.",
+      "cause": "Excessive working hours (about 60 h/week)",
+      "counts_are": "exact",
+      "sources": [
+        "S196"
+      ],
+      "quote": "Among 23 workers interviewed, 19 said they had heard of a coworker dying suddenly, while two said they had witnessed such incidents firsthand"
+    },
+    {
+      "id": "inc-026",
+      "node": "ni-indonesia",
+      "place": "Maba Sangaji village, East Halmahera, North Maluku",
+      "date": "2025-05-18",
+      "year": 2025,
+      "type": "criminalisation",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 27,
+      "affected_desc": "27 Indigenous villagers arrested, 16 released next day, 11 detained, charged and jailed on 16 Oct 2025; one beaten during interrogation (Amnesty)",
+      "summary": "Police arrested 27 Maba Sangaji villagers who held a ritual protest against nickel mining on their customary land. Eleven were charged, then convicted and jailed in October 2025.",
+      "cause": "North Maluku police; mining company PT Position (Harum Energy subsidiary), not an IWIP tenant",
+      "counts_are": "exact",
+      "sources": [
+        "S197",
+        "S198"
+      ],
+      "quote": "police arrested 27 villagers from Maba Sangaji on May 18, accusing them of making threats, but released 16 the next day while detaining 11 others"
+    },
+    {
+      "id": "inc-027",
+      "node": "ni-indonesia",
+      "place": "Halmahera, North Maluku (Weda Bay Nickel concession, Eramet/Tsingshan)",
+      "date": "2024",
+      "year": 2024,
+      "type": "land grab",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 500,
+      "affected_desc": "about 500 uncontacted Hongana Manyawa people whose forest territory overlaps the Weda Bay Nickel concession",
+      "summary": "Survival International said Weda Bay Nickel's mining is destroying the forest of about 500 uncontacted Hongana Manyawa people. Footage shows some coming out of the forest to beg miners for food.",
+      "cause": "Weda Bay Nickel (Eramet / Tsingshan) mine expansion",
+      "counts_are": "estimate",
+      "sources": [
+        "S200"
+      ],
+      "quote": "Eramet ... has known of the severe risks to the 500 uncontacted Indigenous people for more than 10 years"
+    },
+    {
+      "id": "inc-028",
+      "node": "sn-manmaw",
+      "place": "Man Maw tin mining area, Wa State (UWSA), Shan State, Myanmar",
+      "date": "2022-05-04",
+      "year": 2022,
+      "type": "deaths",
+      "killed": 9,
+      "injured": 30,
+      "missing": null,
+      "affected": null,
+      "affected_desc": null,
+      "summary": "An explosion at a Man Maw mining site killed nine workers and injured 30, and the Wa authorities ordered a safety review.",
+      "cause": "Mine explosion (cause not published)",
+      "counts_are": "minimum",
+      "sources": [
+        "S48",
+        "S201"
+      ],
+      "quote": "On 4 May, an explosion at a mining site in Man Maw tragically killed nine workers, injuring a further 30."
+    },
+    {
+      "id": "inc-029",
+      "node": "cu-grasberg",
+      "place": "Grasberg Block Cave, Mimika, Central Papua, Indonesia",
+      "date": "2025-09-08",
+      "year": 2025,
+      "type": "deaths",
+      "killed": 7,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "about 800,000 t of wet material entered the mine; 2 bodies found 20 Sep, 5 found 5 Oct 2025",
+      "summary": "A mud rush of about 800,000 tonnes flooded the Grasberg Block Cave and killed seven workers.",
+      "cause": "Mud rush from former open pit into block cave; PT Freeport Indonesia",
+      "counts_are": "exact",
+      "sources": [
+        "S202",
+        "S106"
+      ],
+      "quote": "We are grieving for our seven coworkers lost in this tragic incident"
+    },
+    {
+      "id": "inc-030",
+      "node": "cu-grasberg",
+      "place": "Big Gossan underground training facility, Grasberg district, Papua, Indonesia",
+      "date": "2013-05-14",
+      "year": 2013,
+      "type": "deaths",
+      "killed": 28,
+      "injured": 10,
+      "missing": null,
+      "affected": null,
+      "affected_desc": null,
+      "summary": "The roof of a non-operational tunnel collapsed during a safety training session, killing 28 miners and injuring ten. A union mission blamed management negligence.",
+      "cause": "Tunnel roof collapse; PT Freeport Indonesia",
+      "counts_are": "exact",
+      "sources": [
+        "S203"
+      ],
+      "quote": "killing 28 miners and injuring ten others"
+    },
+    {
+      "id": "inc-031",
+      "node": "cu-grasberg",
+      "place": "Timika, Papua, Indonesia",
+      "date": "2011-10-10",
+      "year": 2011,
+      "type": "killings",
+      "killed": 2,
+      "injured": 6,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "Amnesty names two protesting Freeport workers killed (Petrus Ayamiseba, Leo Wandagau); NPR reports one killed and six wounded",
+      "summary": "Police fired on striking Freeport workers trying to stop replacement workers. Amnesty records two protesting workers killed.",
+      "cause": "Indonesian police",
+      "counts_are": "minimum",
+      "sources": [
+        "S205",
+        "S204"
+      ],
+      "quote": "the killing of Petrus Ayamiseba and Leo Wandagau, two protesting workers employed at the gold and copper mining company Freeport in Timika on October 10, 2011"
+    },
+    {
+      "id": "inc-032",
+      "node": "cu-grasberg",
+      "place": "PT Freeport Indonesia office, Kuala Kencana, Timika, Papua",
+      "date": "2020-03-30",
+      "year": 2020,
+      "type": "killings",
+      "killed": 1,
+      "injured": 6,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "New Zealand employee Graeme Wall killed",
+      "summary": "Gunmen attacked a Freeport office, killing one staff member and wounding six other people.",
+      "cause": "Armed group (suspected Papuan separatists)",
+      "counts_are": "exact",
+      "sources": [
+        "S206",
+        "S207"
+      ],
+      "quote": "One staff member of PT Freeport Indonesia was killed and six other people were wounded when attackers opened fire"
+    },
+    {
+      "id": "inc-033",
+      "node": "cu-grasberg",
+      "place": "Grasberg open pit, Mimika, Central Papua",
+      "date": "2026-03-11",
+      "year": 2026,
+      "type": "killings",
+      "killed": 1,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "worker Simson Mulia, 48",
+      "summary": "An unknown assailant shot dead a Freeport worker inside the Grasberg open-pit mining area.",
+      "cause": "Unknown assailant",
+      "counts_are": "exact",
+      "sources": [
+        "S207"
+      ],
+      "quote": "A worker at PT Freeport Indonesia was fatally shot by an unknown assailant in the open-pit mining area of Grasberg Mining"
+    },
+    {
+      "id": "inc-034",
+      "node": "w-nuiphao",
+      "place": "Nui Phao mine, Dai Tu district, Thai Nguyen, Vietnam",
+      "date": "2017-07",
+      "year": 2017,
+      "type": "displacement",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "households in high-risk zones still not relocated after 13 years; company plans to resettle 1,925 households over the mine's life",
+      "summary": "A ministry inspection fined Nui Phao Mining for violations, including failing to move households out of areas at high risk of environmental impact.",
+      "cause": "Nui Phao Mining Co (Masan)",
+      "counts_are": "estimate",
+      "sources": [
+        "S218",
+        "S126"
+      ],
+      "quote": "had still not completed ground clearance and the move of households in areas of high risk of environmental impact"
+    },
+    {
+      "id": "inc-035",
+      "node": "w-jiangxi",
+      "place": "Agricultural soils near tungsten mines, southern Jiangxi, China",
+      "date": "2024",
+      "year": 2024,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "arsenic and cadmium hazard quotients above 1 at study sites; hazard index above 10 at site FJ-S",
+      "summary": "A soil study near southern Jiangxi tungsten mines found arsenic and cadmium levels that pose non-cancer and cancer health risks, with chronic-poisoning-level risk at one site.",
+      "cause": "Heavy metals from tungsten mining",
+      "counts_are": "estimate",
+      "sources": [
+        "S129"
+      ],
+      "quote": "The HI value exceeded 10 at site FJ-S, indicating health risks and risk of chronic poisoning."
+    },
+    {
+      "id": "inc-036",
+      "node": "y-jiangxi",
+      "place": "Ganzhou, Jiangxi, China",
+      "date": "2022",
+      "year": 2022,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "more than 100 landslides reported in Ganzhou rare earth areas (no casualty count given)",
+      "summary": "Global Witness reported more than 100 landslides in China's Ganzhou rare earth region. It gave no casualty count.",
+      "cause": "Ion-adsorption rare earth leaching",
+      "counts_are": "minimum",
+      "sources": [
+        "S89"
+      ],
+      "quote": "in China's Ganzhou more than 100 landslides have been reported"
+    },
+    {
+      "id": "inc-037",
+      "node": "y-jiangxi",
+      "place": "Lintang, Longnan, Ganzhou, Jiangxi, China",
+      "date": "2015-04",
+      "year": 2015,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "acid leachate from a burst pond entered soil and downstream water",
+      "summary": "A pond at an illegally run rare earth operation burst, sending acid into the surrounding soil and water downstream.",
+      "cause": "Rare earth operator illegally using abandoned leaching ponds",
+      "counts_are": "estimate",
+      "sources": [
+        "S219"
+      ],
+      "quote": "a rare earth mining operation located in Lintang, Ganzhou, had been illegally using and managing abandoned ponds. A pond burst, which resulted in acid leaching into surrounding soil and water"
+    },
+    {
+      "id": "inc-038",
+      "node": "w-colombia",
+      "place": "Puinawai reserve / Guainía, Colombia",
+      "date": "2012",
+      "year": 2012,
+      "type": "forced labour",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "whole Puinawai families coerced to work illegal coltan/tungsten mines (no count)",
+      "summary": "ICIJ reported that traffickers coerced whole families of the Indigenous Puinawai people to work illegal mines controlled by FARC guerrillas and paramilitaries.",
+      "cause": "FARC, paramilitaries and drug-trafficking gangs",
+      "counts_are": "estimate",
+      "sources": [
+        "S54"
+      ],
+      "quote": "traffickers have coerced whole families from the Puinawai tribe to work the mines"
+    },
+    {
+      "id": "inc-039",
+      "node": "s-chrome-za",
+      "place": "Mecklenburg mine (Chromex Mining / Afarak), near Burgersfort, Limpopo, South Africa",
+      "date": "2015-08-17",
+      "year": 2015,
+      "type": "violence",
+      "killed": null,
+      "injured": 2,
+      "missing": null,
+      "affected": 600,
+      "affected_desc": "600 community members protested; 2 shot with rubber bullets; 3 people arrested (charges later handled by community-funded lawyer)",
+      "summary": "Security guards fired rubber bullets at the backs of protesters as they walked away from a peaceful protest at a chrome mine. Two people were injured, and the protest leader and the two injured were then arrested.",
+      "cause": "Mine security personnel; South African police (arrests)",
+      "counts_are": "exact",
+      "sources": [
+        "S136"
+      ],
+      "quote": "the security personnel fired rubber bullets from close range at the backs of people leaving, injuring, according to activists interviewed for this report, two people"
+    },
+    {
+      "id": "inc-040",
+      "node": "s-chrome-za",
+      "place": "Makgomo Chrome plant, near Burgersfort, Sekhukhune, Limpopo, South Africa",
+      "date": "2023-05-03",
+      "year": 2023,
+      "type": "criminalisation",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 6,
+      "affected_desc": "six villagers arrested; police used water cannon and rubber bullets on the protest camp",
+      "summary": "Police dispersed residents who had camped outside a chrome plant since February to demand a stake in the mine, and six villagers were arrested.",
+      "cause": "South African Police Service, with private security",
+      "counts_are": "exact",
+      "sources": [
+        "S208"
+      ],
+      "quote": "the arrest of six villagers when tensions erupted in chaos on 3 May"
+    },
+    {
+      "id": "inc-041",
+      "node": "ag-bolivia",
+      "place": "Cerro Rico, Potosí, Bolivia",
+      "date": "2025-01/2025-10-03",
+      "year": 2025,
+      "type": "deaths",
+      "killed": 90,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "96 mining deaths in Potosí department in 2025 to 3 Oct, at least 90 of them inside Cerro Rico (unpublished police data)",
+      "summary": "Unpublished police data show at least 90 people died working inside Cerro Rico between January and early October 2025, as collapses become more frequent.",
+      "cause": "Cave-ins and accidents in cooperative mining; mountain instability",
+      "counts_are": "minimum",
+      "sources": [
+        "S209"
+      ],
+      "quote": "As of Oct. 3, 96 people had died while working in mining in Potosí department in 2025, with at least 90 of them having died inside Cerro Rico"
+    },
+    {
+      "id": "inc-042",
+      "node": "ag-bolivia",
+      "place": "Potosí, Oruro and La Paz, Bolivia",
+      "date": "2005",
+      "year": 2005,
+      "type": "child labour",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 7000,
+      "affected_desc": "about 7,000 children working in gold and silver mines (UNICEF/INE/ILO 2005 study)",
+      "summary": "A 2005 UNICEF, national statistics office and ILO study estimated about 7,000 children working in gold and silver mines in Potosí, Oruro and La Paz.",
+      "cause": "Poverty; cooperative mining",
+      "counts_are": "estimate",
+      "sources": [
+        "S210",
+        "S107"
+      ],
+      "quote": "approximately7,000 children working in gold and silver mines in the Bolivian cities of Potosí, Oruro and La Paz"
+    },
+    {
+      "id": "inc-043",
+      "node": "sn-greatlakes",
+      "place": "Cassiterite mine (Piran Resources), Mwulire, Eastern Province, Rwanda",
+      "date": "2019-01",
+      "year": 2019,
+      "type": "deaths",
+      "killed": 14,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "seven of the dead were women",
+      "summary": "Part of a hill collapsed on miners after heavy rain at a tin (cassiterite) mine in eastern Rwanda, killing 14 people.",
+      "cause": "Hill collapse after rain at open mine site",
+      "counts_are": "exact",
+      "sources": [
+        "S211"
+      ],
+      "quote": "Fourteen people have been killed in a tin mine in eastern Rwanda after a hill collapsed on them following heavy rains"
+    },
+    {
+      "id": "inc-044",
+      "node": "nb-rwanda",
+      "place": "Rwanda (all mining sites)",
+      "date": "2018",
+      "year": 2018,
+      "type": "deaths",
+      "killed": 81,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "81 deaths in mining accidents in Rwanda in 2018 (all minerals, quarrying excluded per context)",
+      "summary": "Rwanda's mining inspection director said 81 people died in mining accidents in 2018.",
+      "cause": "Unsupported underground tunnels; slow implementation of safety standards",
+      "counts_are": "exact",
+      "sources": [
+        "S211"
+      ],
+      "quote": "Kanyangira said 81 people died in 2018 in various mining accidents.",
+      "counted": false,
+      "notCounted": "Covers all mining in Rwanda, not only tin and coltan, so not added."
+    },
+    {
+      "id": "inc-045",
+      "node": "be-materion",
+      "place": "Materion (Brush Wellman) primary beryllium plant, Elmore, Ohio, USA",
+      "date": "1993/1999",
+      "year": 1993,
+      "type": "disease",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 6,
+      "affected_desc": "6 of 264 short-term workers diagnosed with chronic beryllium disease and 26 sensitized (cohort hired 1993-1999)",
+      "summary": "Of 264 short-term workers at the Elmore beryllium plant, 26 were sensitized to beryllium and six had chronic beryllium disease, an incurable lung disease.",
+      "cause": "Occupational beryllium exposure",
+      "counts_are": "exact",
+      "sources": [
+        "S213",
+        "S214"
+      ],
+      "quote": "Sensitization prevalence was 9.8% (26/264), with 6 sensitized also diagnosed with CBD (2.3%, 6/264)."
+    },
+    {
+      "id": "inc-046",
+      "node": "be-materion",
+      "place": "Brush Wellman Elmore plant, Ohio, USA",
+      "date": "1980",
+      "year": 1980,
+      "type": "disease",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 1,
+      "affected_desc": "spouse of a plant worker developed CBD (take-home exposure)",
+      "summary": "The wife of an Elmore plant worker developed chronic beryllium disease, possibly from washing contaminated work clothes.",
+      "cause": "Take-home beryllium contamination",
+      "counts_are": "exact",
+      "sources": [
+        "S215"
+      ],
+      "quote": "In 1980, the spouse of a Brush Wellman worker at the Elmore Plant developed chronic beryllium disease"
+    },
+    {
+      "id": "inc-047",
+      "node": "be-materion",
+      "place": "Brush Wellman facilities, Ohio, USA",
+      "date": "1998-06",
+      "year": 1998,
+      "type": "disease",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "multiple workers who contracted CBD sued and settled (number not stated in decision)",
+      "summary": "Workers who contracted chronic beryllium disease at Brush Wellman sued the company and settled in June 1998.",
+      "cause": "Occupational beryllium exposure",
+      "counts_are": "estimate",
+      "sources": [
+        "S143"
+      ],
+      "quote": "They, among others, sued appellee as a result of contracting Chronic Beryllium Disease"
+    },
+    {
+      "id": "inc-048",
+      "node": "be-spor",
+      "place": "Materion beryllium mill, Delta, Utah, USA",
+      "date": "2022-12-09",
+      "year": 2022,
+      "type": "disease",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 1,
+      "affected_desc": "one mill worker (employed from Aug 2020) diagnosed with beryllium sensitivity; federal compensation claim",
+      "summary": "A worker at Materion's Delta, Utah beryllium mill was diagnosed with beryllium sensitivity two years after starting work, according to a federal compensation decision.",
+      "cause": "Occupational beryllium exposure",
+      "counts_are": "exact",
+      "sources": [
+        "S144"
+      ],
+      "quote": "You were diagnosed with beryllium sensitivity on December 9, 2022."
+    },
+    {
+      "id": "inc-049",
+      "node": "li-oakridge",
+      "place": "Y-12 Plant and East Fork Poplar Creek, Oak Ridge, Tennessee, USA",
+      "date": "1950/1963",
+      "year": 1950,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "an estimated 330 metric tons of mercury released to the environment, 110 t of it to East Fork Poplar Creek, from lithium isotope separation",
+      "summary": "Lithium enrichment at Y-12 released an estimated 330 tonnes of mercury into the environment, including 110 tonnes into the creek through the town. ATSDR warns that frequent long-term eating of creek fish could harm the nervous system and kidneys.",
+      "cause": "US DOE / Y-12 COLEX lithium separation",
+      "counts_are": "estimate",
+      "sources": [
+        "S216",
+        "S152"
+      ],
+      "quote": "Oak Ridge officials estimated that 330 metric tons of mercury were released into the environment; of that total, 110 metric tons were lost to the East Fork Poplar Creek"
+    },
+    {
+      "id": "inc-050",
+      "node": "ni-nornickel",
+      "place": "Thermal Power Plant No. 3, Norilsk; Daldykan/Ambarnaya rivers and Pyasina basin, Taimyr, Russia",
+      "date": "2020-05-29",
+      "year": 2020,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": 450,
+      "affected_desc": "Ust-Avam, an Indigenous village of 450 people, among affected communities",
+      "summary": "A fuel tank at a Nornickel power plant failed and spilled about 21,000 tonnes of diesel into Arctic rivers that Indigenous Taimyr communities rely on for fishing.",
+      "cause": "Tank failure at Norilsk-Taimyr Energy (Nornickel)",
+      "counts_are": "exact",
+      "sources": [
+        "S102",
+        "S217"
+      ],
+      "quote": "Ust-Avam is an Indigenous village of 450 people that was impacted by a large fuel spill caused by a subsidiary of Nornickel in May 2020"
+    },
+    {
+      "id": "inc-051",
+      "node": "s-vanadium",
+      "place": "Farmland around 76 vanadium smelters in 7 regions of China",
+      "date": "2020",
+      "year": 2020,
+      "type": "environmental health",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "children's hazard index above 1 (elevated health risk)",
+      "summary": "A national study of farmland around 76 vanadium smelters found metal contamination high enough to raise health risks for children.",
+      "cause": "Vanadium smelter emissions and waste",
+      "counts_are": "estimate",
+      "sources": [
+        "S137"
+      ],
+      "quote": "The Children's hazard index was higher than unity, indicating elevated health risk."
+    },
+    {
+      "id": "inc-052",
+      "node": "li-mines",
+      "place": "Thacker Pass and other lithium projects, Nevada, USA",
+      "date": "2026-05",
+      "year": 2026,
+      "type": "land grab",
+      "killed": null,
+      "injured": null,
+      "missing": null,
+      "affected": null,
+      "affected_desc": "projects advanced without Free, Prior and Informed Consent of affected tribes (Amnesty interviewed 20 Indigenous and Tribal members)",
+      "summary": "Amnesty found that the US government is approving new Nevada lithium mines without the free, prior and informed consent of affected Indigenous Peoples.",
+      "cause": "US federal government; lithium developers",
+      "counts_are": "estimate",
+      "sources": [
+        "S141"
+      ],
+      "quote": "moving ahead with a series of new lithium mines across Nevada without the Free, Prior and Informed Consent (FPIC) of affected Indigenous Peoples"
+    }
+  ],
+  "siteTotals": [
+    {
+      "node": "y-kachin",
+      "period": "2024-2026",
+      "killed_min": 42,
+      "text": "At least 45 people were killed in dated incidents: landslides on 4 June 2024 (20+) and 19 June 2024 (15, with 14 more missing), two miners who died after chemical exposure (2024), a worker buried in 2025, and an explosives-depot blast in October 2026 (7). Myanmar Witness puts the toll for the 2024 rainy season alone at around 50.",
+      "basis": "calculation: inc-001 (20) + inc-002 (15) + inc-009 (7) = 42; EarthRights gives 'at least 35' for the two June 2024 landslides; Myanmar Witness aggregate of around 50 (May-July 2024) is a source estimate and is not added",
+      "aggregate": false,
+      "sources": [
+        "S175",
+        "S180",
+        "S3",
+        "S178",
+        "S181"
+      ]
+    },
+    {
+      "node": "nb-rubaya",
+      "period": "2025-2026",
+      "killed_min": 421,
+      "text": "At least 421 people died in three landslides at Rubaya in nine months, using the lowest reported figure for each: 21 (June 2025), 200 (January 2026) and 200 (March 2026). Reported tolls run to 300+, 226 (up to 400+ in some reports) and 200+ with about 70 children. Amnesty separately documented 18 summary killings of miners at Rubaya and Lomera.",
+      "basis": "calculation: inc-013 (21) + inc-014 (200) + inc-015 (200) = 421; excludes inc-016 (18 killings, includes Lomera gold site)",
+      "aggregate": false,
+      "sources": [
+        "S184",
+        "S51",
+        "S185",
+        "S186",
+        "S187",
+        "S50"
+      ]
+    },
+    {
+      "node": "ni-indonesia",
+      "period": "2015-H1 2024",
+      "killed_min": 101,
+      "text": "Trend Asia counted 101 deaths and 240 injuries in 114 incidents at Indonesian nickel facilities from 2015 to mid-2024, nearly half of the deaths at IMIP (40 at IMIP alone). A separate supply-chain mapping report counts 107 deaths and 155 injuries in nickel smelters from 2019 to 2025.",
+      "basis": "source aggregate (Trend Asia via FT/BHRRC; Mongabay for IMIP 40; Public Citizen GTW for 2019-2025). Dated incidents inc-018 to inc-022 are inside these aggregates; do not add",
+      "aggregate": true,
+      "sources": [
+        "S189",
+        "S190",
+        "S199",
+        "S188"
+      ]
+    },
+    {
+      "node": "cu-grasberg",
+      "period": "2011-2026",
+      "killed_min": 39,
+      "text": "At least 39 people were killed in five dated incidents linked to Grasberg: the 2011 police shooting of strikers (2), the 2013 Big Gossan collapse (28), the 2020 office attack (1), the 2025 mud rush (7) and a 2026 shooting (1).",
+      "basis": "calculation: inc-029 (7) + inc-030 (28) + inc-031 (2) + inc-032 (1) + inc-033 (1) = 39",
+      "aggregate": false,
+      "sources": [
+        "S202",
+        "S203",
+        "S205",
+        "S206",
+        "S207"
+      ]
+    },
+    {
+      "node": "sn-manmaw",
+      "period": "2022",
+      "killed_min": 9,
+      "text": "Nine workers were killed and 30 injured in the 4 May 2022 explosion at Man Maw. No other casualty counts were found.",
+      "basis": "inc-028",
+      "aggregate": false,
+      "sources": [
+        "S48"
+      ]
+    },
+    {
+      "node": "ag-bolivia",
+      "period": "Jan-Oct 2025",
+      "killed_min": 90,
+      "text": "At least 90 people died working inside Cerro Rico between January and 3 October 2025 (96 across Potosí department), according to unpublished police data.",
+      "basis": "source aggregate (police data via Mongabay)",
+      "aggregate": true,
+      "sources": [
+        "S209"
+      ]
+    },
+    {
+      "node": "sn-greatlakes",
+      "period": "2019",
+      "killed_min": 14,
+      "text": "Fourteen people died in a single 2019 tin mine collapse in Rwanda. Rwanda's mining regulator reports at least 429 deaths and 272 injuries in all mine accidents over five years (to 2023), but these figures are not limited to tin.",
+      "basis": "inc-043; the 429 figure is a source aggregate for all Rwandan mining (NEW39)",
+      "aggregate": true,
+      "sources": [
+        "S211",
+        "S212"
+      ]
+    }
+  ],
+  "coords": [
+    {
+      "node": "dev-cfs",
+      "lat": 42.5422083,
+      "lon": -71.6260262,
+      "precision": "site",
+      "place": "CFS Devens campus, 117 Hospital Road, Devens, Massachusetts, USA",
+      "note": "OSM node tagged Commonwealth Fusion Systems at 117 Hospital Road. SPARC is built on this 60-acre campus (cfs.energy/technology/sparc). Corporate founding city was Cambridge, MA.",
+      "sources": [
+        "S246",
+        "S247"
+      ]
+    },
+    {
+      "node": "be-cfs",
+      "lat": 42.5422083,
+      "lon": -71.6260262,
+      "precision": "site",
+      "place": "CFS Devens campus, Devens, Massachusetts, USA",
+      "note": "Same point as dev-cfs (the beryllium buyer is the same company). Offset the marker slightly on the map if both are shown.",
+      "sources": [
+        "S246",
+        "S247"
+      ]
+    },
+    {
+      "node": "mag-cfs",
+      "lat": 42.5422083,
+      "lon": -71.6260262,
+      "precision": "site",
+      "place": "CFS Devens campus (magnet manufacturing), Devens, Massachusetts, USA",
+      "note": "CFS says its Devens campus includes its advanced manufacturing facilities; the exact magnet-factory building is not separately located.",
+      "sources": [
+        "S246",
+        "S247"
+      ]
+    },
+    {
+      "node": "dev-proxima",
+      "lat": 48.1375,
+      "lon": 11.575,
+      "precision": "town",
+      "place": "Munich, Germany (company base)",
+      "note": "Wikipedia: founded in 2023 in Munich. City-centre coordinates, not the office.",
+      "sources": [
+        "S248",
+        "S249"
+      ]
+    },
+    {
+      "node": "mag-proxima",
+      "lat": 48.1375,
+      "lon": 11.575,
+      "precision": "town",
+      "place": "Munich, Germany (company base; coil build site not found)",
+      "note": "Where the Stellarator Model Coil is being built was not found in an opened source; HQ city used. Flag as HQ.",
+      "sources": [
+        "S248",
+        "S249"
+      ]
+    },
+    {
+      "node": "dev-energy-singularity",
+      "lat": 30.9,
+      "lon": 121.93666667,
+      "precision": "district",
+      "place": "Lingang Special Area (Nanhui New City), Pudong, Shanghai, China",
+      "note": "Yicai: HH70 is \"Located in the Lingang Special Area\". Point is the Wikipedia coordinate for Nanhui New City (formerly Lingang New City).",
+      "sources": [
+        "S250",
+        "S251"
+      ]
+    },
+    {
+      "node": "mag-energy-singularity",
+      "lat": 30.9,
+      "lon": 121.93666667,
+      "precision": "district",
+      "place": "Lingang, Pudong, Shanghai, China",
+      "note": "Same point as dev-energy-singularity; HH70 magnets are on the HH70 device. Jingtian magnet site not separately located.",
+      "sources": [
+        "S250",
+        "S251"
+      ]
+    },
+    {
+      "node": "hts-ffj",
+      "lat": 35.4887459,
+      "lon": 139.4293747,
+      "precision": "site",
+      "place": "Zama Factory, 5-12-15 Hibarigaoka, Zama, Kanagawa, Japan",
+      "note": "Point is the centroid of the 5-chome Hibarigaoka block that contains the factory address (Nominatim did not resolve the house number). Head office is in Hachioji, R&D in Sagamihara.",
+      "sources": [
+        "S252",
+        "S253"
+      ]
+    },
+    {
+      "node": "hts-sst",
+      "lat": 31.2325,
+      "lon": 121.46916667,
+      "precision": "town",
+      "place": "Shanghai, China (company address 781 Kangwei Road, Pudong New District)",
+      "note": "Address not geocoded; city coordinates used. Pudong lies east of the city-centre point.",
+      "sources": [
+        "S254",
+        "S255"
+      ]
+    },
+    {
+      "node": "hts-sinnov",
+      "lat": 55.75583333,
+      "lon": 37.61777778,
+      "precision": "town",
+      "place": "Moscow, Russia",
+      "note": "Presentation names \"S-Innovations (Moscow)\". Plant address not found; city centre used.",
+      "sources": [
+        "S256",
+        "S257"
+      ]
+    },
+    {
+      "node": "tgt-can",
+      "lat": 50.0031205,
+      "lon": 14.6563594,
+      "precision": "site",
+      "place": "Technická 2661, Říčany, Czech Republic",
+      "note": "Registered office and HQ address; Nominatim resolved the house number.",
+      "sources": [
+        "S258",
+        "S259"
+      ]
+    },
+    {
+      "node": "tgt-toshima",
+      "lat": 36.04216667,
+      "lon": 139.39991667,
+      "precision": "town",
+      "place": "Higashimatsuyama, Saitama, Japan",
+      "note": "HQ city from a company-profile aggregator (not the company site). Treat as HQ and verify.",
+      "sources": [
+        "S260",
+        "S261"
+      ]
+    },
+    {
+      "node": "tgt-rearth",
+      "lat": 22.54666667,
+      "lon": 114.05444444,
+      "precision": "town",
+      "place": "Shenzhen, China",
+      "note": "City taken from the company name only; no address opened. Mark as unverified HQ city.",
+      "sources": [
+        "S262"
+      ]
+    },
+    {
+      "node": "y-cn-sep",
+      "lat": 25.831,
+      "lon": 114.933,
+      "precision": "town",
+      "place": "Ganzhou, Jiangxi, China (China Rare Earth Group HQ)",
+      "note": "HQ, not a separation plant. China Briefing: the group was \"formally established in East China's Ganzhou, Jiangxi Province\" on 23 Dec 2021. Separation plants are spread across several provinces.",
+      "sources": [
+        "S263",
+        "S264"
+      ]
+    },
+    {
+      "node": "y-border",
+      "lat": 25.40319,
+      "lon": 98.11739,
+      "precision": "town",
+      "place": "Kan Paik Ti border crossing, Kachin State, Myanmar",
+      "note": "Pacific Forum: ores \"were trucked across border crossings at Pangwa and Kan Paik Ti into Yunnan\". Pangwa crossing is at the y-kachin point.",
+      "sources": [
+        "S265",
+        "S266"
+      ]
+    },
+    {
+      "node": "y-kachin",
+      "lat": 25.5982638,
+      "lon": 98.3782978,
+      "precision": "town",
+      "place": "Pangwa, Chipwi Township, Kachin Special Region 1, Myanmar",
+      "note": "Representative point for a mining zone of 300+ sites. Global Witness: sites saturate \"the landscape around the border town of Pangwa\" and spread \"towards Chipwe town\". Calculation: median of 6052 USGS-mapped Kachin leaching/precipitation tanks = 25.6823, 98.3396 (calculation: about 10 km from the Pangwa point). A second cluster lies in Momauk/Bhamo area: median of 708 tanks south of 24.8N = 24.3386, 97.6181.",
+      "sources": [
+        "S267",
+        "S1",
+        "S268",
+        "S269"
+      ]
+    },
+    {
+      "node": "y-shan",
+      "lat": 21.9447,
+      "lon": 99.347,
+      "precision": "district",
+      "place": "Eastern Shan State rare earth leaching cluster, Myanmar",
+      "note": "Calculation: median of the 567 USGS-mapped Shan tanks north of 21.5N (all imaged 2024-2025). A smaller southern cluster (36 tanks, median 20.3569, 99.378) matches Reuters (S90): new mines \"between the towns of Mong Hsat and Mong Yun\", about 30 km from the Thai border, under UWSA protection per Reuters. Which armed group controls the northern cluster was not checked.",
+      "sources": [
+        "S269",
+        "S90"
+      ]
+    },
+    {
+      "node": "y-jiangxi",
+      "lat": 24.9533,
+      "lon": 115.0341,
+      "precision": "district",
+      "place": "Southern Jiangxi ion-adsorption clay district (Ganzhou prefecture), China",
+      "note": "Calculation: median of the 2811 USGS-mapped Jiangxi tanks (imagery 2014-2022). The Wikipedia coordinate for Longnan (25.91N) appears wrong, so it is not used.",
+      "sources": [
+        "S269"
+      ]
+    },
+    {
+      "node": "ni-western-mills",
+      "lat": 40.481748,
+      "lon": -86.143554,
+      "precision": "site",
+      "place": "Haynes International, 1020 W. Park Avenue, Kokomo, Indiana, USA",
+      "note": "Haynes HQ and Kokomo flat-products mill (Wikipedia: \"The Kokomo facility specializes in flat products\"). VDM Metals (the other mill in this node) makes substrate tape in Germany (S34); not placed.",
+      "sources": [
+        "S270",
+        "S271"
+      ]
+    },
+    {
+      "node": "ni-ulbrich",
+      "lat": 41.4476532,
+      "lon": -72.8300906,
+      "precision": "site",
+      "place": "Ulbrich Specialty Strip Mill, 1 Dudley Ave, Wallingford, Connecticut, USA",
+      "note": "Wikipedia lists the Specialty Strip Mill in Wallingford. 1 Dudley Ave appears in Ulbrich's published locations list; matching that address to the mill is an inference. Corporate HQ is in North Haven, CT.",
+      "sources": [
+        "S272",
+        "S273",
+        "S274"
+      ]
+    },
+    {
+      "node": "ni-indonesia",
+      "lat": -2.83,
+      "lon": 122.16,
+      "precision": "site",
+      "place": "Indonesia Morowali Industrial Park (IMIP), Bahodopi, Morowali, Central Sulawesi",
+      "note": "Two hubs. Main point is IMIP; OSM puts the park outline centroid at -2.8368, 122.1640.",
+      "sources": [
+        "S275",
+        "S276"
+      ]
+    },
+    {
+      "node": "ni-nornickel",
+      "lat": 69.33333333,
+      "lon": 88.21666667,
+      "precision": "town",
+      "place": "Norilsk, Krasnoyarsk Krai, Russia",
+      "note": "Town centre; the mines and smelters lie around the city.",
+      "sources": [
+        "S278"
+      ]
+    },
+    {
+      "node": "cu-luvata",
+      "lat": 61.4638613,
+      "lon": 21.8640927,
+      "precision": "site",
+      "place": "Luvata Pori, Kuparitie 5, Pori Copper Industrial Park, Finland",
+      "note": "Point is on Kuparitie street (house number not resolved). Luvata says superconducting wire is made at Pori; another unit in Zhongshan, China makes MRI wire.",
+      "sources": [
+        "S279",
+        "S280"
+      ]
+    },
+    {
+      "node": "cu-kme",
+      "lat": 51.63333333,
+      "lon": 11.5,
+      "precision": "town",
+      "place": "KME Mansfeld plant, Hettstedt, Saxony-Anhalt, Germany",
+      "note": "KME: \"the Hettstedt plant\". Town coordinates.",
+      "sources": [
+        "S281",
+        "S282"
+      ]
+    },
+    {
+      "node": "cu-pt-smelting",
+      "lat": -7.15388889,
+      "lon": 112.65611111,
+      "precision": "district",
+      "place": "PT Smelting copper smelter, Gresik, East Java, Indonesia",
+      "note": "Smelter is \"30 kilometers north of the city of Surabaya\". Regency coordinates. Freeport's new Manyar smelter is also in Gresik.",
+      "sources": [
+        "S283",
+        "S284"
+      ]
+    },
+    {
+      "node": "cu-grasberg",
+      "lat": -4.05277778,
+      "lon": 137.11583333,
+      "precision": "site",
+      "place": "Grasberg mine, Mimika, Central Papua, Indonesia",
+      "note": "",
+      "sources": [
+        "S285"
+      ]
+    },
+    {
+      "node": "ag-bolivia",
+      "lat": -19.61888889,
+      "lon": -65.74972222,
+      "precision": "site",
+      "place": "Cerro Rico, Potosí, Bolivia",
+      "note": "Representative of Bolivian silver; Potosí's Cerro Rico is the best-known site, not the only one.",
+      "sources": [
+        "S286"
+      ]
+    },
+    {
+      "node": "lts-iter",
+      "lat": 43.70831,
+      "lon": 5.77741,
+      "precision": "site",
+      "place": "ITER, Saint-Paul-lès-Durance, France",
+      "note": "",
+      "sources": [
+        "S287"
+      ]
+    },
+    {
+      "node": "lts-bruker",
+      "lat": 50.13277778,
+      "lon": 8.91694444,
+      "precision": "town",
+      "place": "Bruker EAS, Hanau, Germany",
+      "note": "\"Bruker EAS plant in Hanau, Germany\". Bruker OST (Carteret, New Jersey) not placed.",
+      "sources": [
+        "S288",
+        "S289"
+      ]
+    },
+    {
+      "node": "lts-wst",
+      "lat": 34.26111111,
+      "lon": 108.94222222,
+      "precision": "town",
+      "place": "Western Superconducting Technologies, No. 12 Mingguang Road, Xi'an ETDZ, China",
+      "note": "Address not geocoded; city coordinates.",
+      "sources": [
+        "S290",
+        "S291"
+      ]
+    },
+    {
+      "node": "lts-jastec",
+      "lat": 33.94111111,
+      "lon": 130.95972222,
+      "precision": "district",
+      "place": "JASTEC Moji Plant, Moji-ku, Kitakyushu, Japan",
+      "note": "JASTEC: \"superconducting wires at our Moji Plant in Kitakyushu\"; magnets at the Seishin Plant, Kobe. Ward coordinates.",
+      "sources": [
+        "S292",
+        "S293"
+      ]
+    },
+    {
+      "node": "lts-kat",
+      "lat": 36.4222208,
+      "lon": 127.4089281,
+      "precision": "site",
+      "place": "KAT, 223 Techno 2-ro, Yuseong-gu, Daejeon, South Korea",
+      "note": "",
+      "sources": [
+        "S294",
+        "S295"
+      ]
+    },
+    {
+      "node": "lts-chmp",
+      "lat": 58.156,
+      "lon": 52.647,
+      "precision": "site",
+      "place": "Chepetsky Mechanical Plant, Glazov, Udmurtia, Russia",
+      "note": "Wikipedia article coordinate for the plant.",
+      "sources": [
+        "S296"
+      ]
+    },
+    {
+      "node": "sn-yunnan",
+      "lat": 23.36666667,
+      "lon": 103.15,
+      "precision": "town",
+      "place": "Gejiu, Honghe, Yunnan, China",
+      "note": "Wikipedia: Gejiu \"is the site of China's largest tin deposits\"; Yunnan Tin began as the Gejiu bureau. The group HQ is in Kunming. Smelter not located precisely.",
+      "sources": [
+        "S297",
+        "S298"
+      ]
+    },
+    {
+      "node": "sn-msc",
+      "lat": 2.94888889,
+      "lon": 101.33166667,
+      "precision": "town",
+      "place": "MSC Pulau Indah smelter, Pulau Indah Industrial Park, Port Klang, Selangor, Malaysia",
+      "note": "Island coordinates; smelter address is Lot 6, 8 and 9, Jalan Perigi Nanas 6/1. MSC also runs an older smelter in Butterworth.",
+      "sources": [
+        "S299",
+        "S300",
+        "S301"
+      ]
+    },
+    {
+      "node": "sn-manmaw",
+      "lat": 22.966667,
+      "lon": 98.966667,
+      "precision": "district",
+      "place": "Mong Maw (Mongmao) Township, Wa Self-Administered Division, Shan State, Myanmar",
+      "note": "No opened source gives coordinates for the mine. Gardiner et al.: the site \"is thought to lie ca. 90 km from Pang Kham\". Reuters: \"three hours' drive northwest of regional capital Pangsan\". The Mongmao township point is about 90 km north-northwest of Pangkham, which fits (inference). Treat as approximate.",
+      "sources": [
+        "S302",
+        "S303",
+        "S304"
+      ]
+    },
+    {
+      "node": "sn-greatlakes",
+      "lat": -1.03333333,
+      "lon": 27.73333333,
+      "precision": "site",
+      "place": "Bisie tin deposit, Walikale, North Kivu, DRC (representative)",
+      "note": "Node covers DRC, Rwanda and Tanzania tin ore with no mine-level origin. Bisie is the largest DRC tin mine and only a stand-in. Consider drawing a regional marker instead.",
+      "sources": [
+        "S305"
+      ]
+    },
+    {
+      "node": "nb-ati",
+      "lat": 44.6564261,
+      "lon": -123.0620671,
+      "precision": "site",
+      "place": "ATI Specialty Alloys & Components (former Wah Chang), 1600 Old Salem Road NE, Albany, Oregon, USA",
+      "note": "The Fabricator: ATI Wah Chang makes niobium among other reactive metals at Albany. Wikipedia places the plant in Millersburg, next to Albany.",
+      "sources": [
+        "S306",
+        "S307"
+      ]
+    },
+    {
+      "node": "nb-otic",
+      "lat": 38.9846,
+      "lon": 106.3828,
+      "precision": "town",
+      "place": "Ningxia Orient Tantalum, 119 Yejin Rd, Dawukou District, Shizuishan, Ningxia, China",
+      "note": "Address not geocoded; prefecture-city coordinates. Dawukou is the urban district.",
+      "sources": [
+        "S308",
+        "S309"
+      ]
+    },
+    {
+      "node": "be-ningxia",
+      "lat": 38.9846,
+      "lon": 106.3828,
+      "precision": "town",
+      "place": "Ningxia Orient Tantalum, Dawukou District, Shizuishan, Ningxia, China",
+      "note": "Same company and point as nb-otic.",
+      "sources": [
+        "S308",
+        "S309"
+      ]
+    },
+    {
+      "node": "nb-ulba-taniobis",
+      "lat": 49.98333333,
+      "lon": 82.61666667,
+      "precision": "town",
+      "place": "Ulba Metallurgical Plant, Ust-Kamenogorsk (Öskemen), Kazakhstan",
+      "note": "Ulba point. Taniobis (Goslar, Germany) is not placed.",
+      "sources": [
+        "S146",
+        "S310"
+      ]
+    },
+    {
+      "node": "be-ulba",
+      "lat": 49.98333333,
+      "lon": 82.61666667,
+      "precision": "town",
+      "place": "Ulba Metallurgical Plant, Ust-Kamenogorsk (Öskemen), Kazakhstan",
+      "note": "Same point as nb-ulba-taniobis.",
+      "sources": [
+        "S146",
+        "S310"
+      ]
+    },
+    {
+      "node": "nb-solikamsk",
+      "lat": 59.64333333,
+      "lon": 56.75,
+      "precision": "town",
+      "place": "Solikamsk, Perm Krai, Russia",
+      "note": "Town coordinates.",
+      "sources": [
+        "S121",
+        "S311"
+      ]
+    },
+    {
+      "node": "nb-cbmm",
+      "lat": -19.59277778,
+      "lon": -46.94083333,
+      "precision": "town",
+      "place": "Araxá, Minas Gerais, Brazil (CBMM Barreiro mine about 6 km south)",
+      "note": "CBMM paper: the deposit is \"located about 6 km south of the city of Araxa\". Town point used; the mine is a few km south.",
+      "sources": [
+        "S312",
+        "S313"
+      ]
+    },
+    {
+      "node": "nb-rwanda",
+      "lat": -1.9525,
+      "lon": 30.115,
+      "precision": "town",
+      "place": "Kigali, Rwanda (representative)",
+      "note": "A node for exporters, not a site. Capital-city point used as a stand-in; no exporter addresses opened.",
+      "sources": [
+        "S314"
+      ]
+    },
+    {
+      "node": "nb-rubaya",
+      "lat": -1.54625,
+      "lon": 28.87352778,
+      "precision": "town",
+      "place": "Rubaya, Masisi Territory, North Kivu, DRC",
+      "note": "Wikipedia: mining town 70 km west of Goma. The coltan pits are on the hills around the town.",
+      "sources": [
+        "S315"
+      ]
+    },
+    {
+      "node": "cu-elektrokoppar",
+      "lat": 56.05,
+      "lon": 12.71666667,
+      "precision": "town",
+      "place": "Helsingborg, Sweden",
+      "note": "Elcowire group companies are in Helsingborg (Sweden) and Hettstedt (Germany); Elektrokoppar was HQ'd in Helsingborg.",
+      "sources": [
+        "S316",
+        "S317",
+        "S318"
+      ]
+    },
+    {
+      "node": "w-west-east",
+      "lat": 43.703626,
+      "lon": 5.764968,
+      "precision": "site",
+      "place": "WEST tokamak, CEA Cadarache, France",
+      "note": "Two devices.",
+      "sources": [
+        "S319"
+      ]
+    },
+    {
+      "node": "w-almt",
+      "lat": 36.7522388,
+      "lon": 137.2306196,
+      "precision": "district",
+      "place": "A.L.M.T. Toyama Works, 2 Iwase-Koshi-Machi, Toyama, Japan",
+      "note": "Point is the Higashi-Iwase locality near the works (\"Iwasehama Station ... 5 minutes walk\"), not the plant itself. A new plant is planned about 1 km away (Seisanzai Japan, June 2026).",
+      "sources": [
+        "S321",
+        "S322"
+      ]
+    },
+    {
+      "node": "w-atm",
+      "lat": 39.90666667,
+      "lon": 116.3975,
+      "precision": "town",
+      "place": "AT&M, No. 76 Xueyuan Nanlu, Haidian District, Beijing, China",
+      "note": "Address (shared with CISRI) not geocoded; city coordinates.",
+      "sources": [
+        "S323",
+        "S324"
+      ]
+    },
+    {
+      "node": "w-nuiphao",
+      "lat": 21.64861,
+      "lon": 105.66861,
+      "precision": "site",
+      "place": "Nui Phao mine, Dai Tu District, Thai Nguyen, Vietnam",
+      "note": "Wikipedia coordinate (21°38′55″N 105°40′7″E). The Wikipedia API returned no coordinate for this page, so the value was read from the page infobox.",
+      "sources": [
+        "S325",
+        "S326"
+      ]
+    },
+    {
+      "node": "w-masan",
+      "lat": 21.64861,
+      "lon": 105.66861,
+      "precision": "site",
+      "place": "Masan tungsten processing complex at Nui Phao, Thai Nguyen, Vietnam",
+      "note": "Masan lists processing as a project component at the Nui Phao site, so the mine point is used. The APT plant's own footprint is not separately located.",
+      "sources": [
+        "S325",
+        "S326",
+        "S126"
+      ]
+    },
+    {
+      "node": "w-gtp",
+      "lat": 41.77027778,
+      "lon": -76.44666667,
+      "precision": "town",
+      "place": "Global Tungsten & Powders, Towanda, Pennsylvania, USA",
+      "note": "\"GTP processing facility in Towanda, Pennsylvania\". Borough coordinates.",
+      "sources": [
+        "S327",
+        "S328"
+      ]
+    },
+    {
+      "node": "w-traxys",
+      "lat": 49.6192,
+      "lon": 6.0719,
+      "precision": "town",
+      "place": "Traxys Europe S.A., Route d'Arlon 19-21, Strassen, Luxembourg (HQ office)",
+      "note": "Trader HQ only; there is no physical processing site.",
+      "sources": [
+        "S329",
+        "S330"
+      ]
+    },
+    {
+      "node": "w-jiangxi",
+      "lat": 25.402,
+      "lon": 114.362,
+      "precision": "district",
+      "place": "Dayu County, Ganzhou, Jiangxi, China",
+      "note": "Wikipedia: Dayu \"is known for The Capital of Tungsten\". It stands in for the southern Jiangxi tungsten belt.",
+      "sources": [
+        "S331"
+      ]
+    },
+    {
+      "node": "w-rwanda",
+      "lat": -1.87583,
+      "lon": 30.04333,
+      "precision": "site",
+      "place": "Nyakabingo tungsten mine, Rulindo, Rwanda",
+      "note": "Sample site coordinates given in the paper: 1°52′33″S, 30°02′36″E, converted to decimal. The paper says the deposit is about 10 km north-northwest of Kigali.",
+      "sources": [
+        "S332",
+        "S131"
+      ]
+    },
+    {
+      "node": "w-colombia",
+      "lat": 3.86527778,
+      "lon": -67.92388889,
+      "precision": "district",
+      "place": "Inírida, Guainía, Colombia (representative)",
+      "note": "ICIJ: tungsten ore was seized on the Guaviare River in Guainía, and an illegal tungsten mine sits in Puinawai National Park. Inírida is \"the local port town\". The point is Inírida, not a mine.",
+      "sources": [
+        "S54",
+        "S333"
+      ]
+    },
+    {
+      "node": "s-industeel",
+      "lat": 46.8014,
+      "lon": 4.4411,
+      "precision": "town",
+      "place": "Industeel Le Creusot plant (ArcelorMittal), Le Creusot, France",
+      "note": "Town coordinates.",
+      "sources": [
+        "S133",
+        "S334"
+      ]
+    },
+    {
+      "node": "s-saarschmiede",
+      "lat": 49.25,
+      "lon": 6.83333333,
+      "precision": "town",
+      "place": "Saarschmiede GmbH Freiformschmiede, Völklingen, Saarland, Germany",
+      "note": "Town coordinates. Böhler (Austria) is not placed.",
+      "sources": [
+        "S335",
+        "S336"
+      ]
+    },
+    {
+      "node": "s-chrome-za",
+      "lat": -24.73,
+      "lon": 30.2,
+      "precision": "town",
+      "place": "Steelpoort, Sekhukhune, Limpopo, South Africa (representative)",
+      "note": "Wikipedia lists chrome mines around Steelpoort. The node covers many mines; this is a stand-in.",
+      "sources": [
+        "S337"
+      ]
+    },
+    {
+      "node": "s-chrome-kz",
+      "lat": 50.25027778,
+      "lon": 58.43472222,
+      "precision": "town",
+      "place": "Khromtau, Aktobe Region, Kazakhstan",
+      "note": "Wikipedia: Khromtau \"has important Chromium deposits ... exploited in underground mines by Kazchrome\".",
+      "sources": [
+        "S338"
+      ]
+    },
+    {
+      "node": "s-vanadium",
+      "lat": 26.5824,
+      "lon": 101.7184,
+      "precision": "town",
+      "place": "Panzhihua, Sichuan, China (representative)",
+      "note": "S137 cites Panzhihua as the vanadium mining and smelting area with the highest soil vanadium. The node also covers Russia; this is a stand-in.",
+      "sources": [
+        "S339",
+        "S137"
+      ]
+    },
+    {
+      "node": "li-mss",
+      "lat": 35.6348773,
+      "lon": -106.044639,
+      "precision": "site",
+      "place": "Molten Salt Solutions, 3900 Paseo del Sol (Santa Fe Business Incubator), Santa Fe, New Mexico, USA",
+      "note": "HQ address from CB Insights; could be an office rather than the enrichment facility.",
+      "sources": [
+        "S340",
+        "S341"
+      ]
+    },
+    {
+      "node": "li-nccp",
+      "lat": 55.05,
+      "lon": 82.95,
+      "precision": "town",
+      "place": "Novosibirsk Chemical Concentrates Plant, Novosibirsk, Russia",
+      "note": "City coordinates.",
+      "sources": [
+        "S342",
+        "S343"
+      ]
+    },
+    {
+      "node": "li-oakridge",
+      "lat": 35.98833333,
+      "lon": -84.25472222,
+      "precision": "site",
+      "place": "Y-12 National Security Complex, Oak Ridge, Tennessee, USA",
+      "note": "",
+      "sources": [
+        "S344"
+      ]
+    },
+    {
+      "node": "li-mines",
+      "lat": -33.865976,
+      "lon": 116.064756,
+      "precision": "site",
+      "place": "Greenbushes lithium mine, Western Australia (representative)",
+      "note": "Node covers mines in five countries. Greenbushes stands in for Australia only. Better shown as several markers or a legend note.",
+      "sources": [
+        "S345"
+      ]
+    },
+    {
+      "node": "be-kit",
+      "lat": 49.00944444,
+      "lon": 8.41166667,
+      "precision": "town",
+      "place": "Karlsruhe Institute of Technology, Karlsruhe, Germany",
+      "note": "Wikipedia coordinate (university campus). Which campus hosts the blanket-materials lab was not checked.",
+      "sources": [
+        "S346"
+      ]
+    },
+    {
+      "node": "be-materion",
+      "lat": 41.47055556,
+      "lon": -83.29111111,
+      "precision": "town",
+      "place": "Materion, Elmore, Ohio, USA (beryllium metal and alloy plant)",
+      "note": "USGS: beryllium hydroxide made \"near Delta\" is shipped \"to Elmore, OH\", where it is converted. Village coordinates.",
+      "sources": [
+        "S347",
+        "S348",
+        "S349"
+      ]
+    },
+    {
+      "node": "be-spor",
+      "lat": 39.7482779,
+      "lon": -113.1821962,
+      "precision": "site",
+      "place": "Spor Mountain, Juab County, Utah, USA",
+      "note": "OSM point is the Spor Mountain summit. USGS: open-pit mines \"in the Topaz-Spor Mountain region of Juab County\". The pits are near the peak, not on it. The Delta mill is under be-materion alt.",
+      "sources": [
+        "S350",
+        "S347"
+      ]
+    },
+    {
+      "node": "dev-tokamak-energy",
+      "lat": 51.6254122,
+      "lon": -1.2806183,
+      "precision": "site",
+      "place": "Tokamak Energy, 173 Brook Drive, Milton Park, Abingdon, Oxfordshire, UK",
+      "note": "Point on Brook Drive (house number not resolved). FuseNet: the ST40 tokamak runs at Milton Park.",
+      "sources": [
+        "S351",
+        "S352"
+      ]
+    },
+    {
+      "node": "mag-tokamak-energy",
+      "lat": 51.6254122,
+      "lon": -1.2806183,
+      "precision": "site",
+      "place": "Tokamak Energy, Milton Park, Oxfordshire, UK",
+      "note": "Same point as dev-tokamak-energy. Demo4 build location not separately confirmed.",
+      "sources": [
+        "S351",
+        "S352"
+      ]
+    },
+    {
+      "node": "dev-type-one",
+      "lat": 35.9550265,
+      "lon": -84.1559318,
+      "precision": "site",
+      "place": "Type One Energy HQ, 2410 Cherahala Blvd, Knoxville, Tennessee, USA",
+      "note": "HQ office.",
+      "sources": [
+        "S353",
+        "S354"
+      ]
+    },
+    {
+      "node": "li-developers",
+      "lat": 35.9550265,
+      "lon": -84.1559318,
+      "precision": "site",
+      "place": "Type One Energy HQ, Knoxville, Tennessee, USA (first of two developers)",
+      "note": "Node covers Type One Energy and Gauss Fusion. Only Type One is placed; the Gauss Fusion site was not looked up.",
+      "sources": [
+        "S353",
+        "S354"
+      ]
+    },
+    {
+      "node": "dev-realta",
+      "lat": 43.0827516,
+      "lon": -89.5247609,
+      "precision": "site",
+      "place": "Realta Fusion HQ, 1200 John Q Hammons Drive, Madison, Wisconsin, USA",
+      "note": "HQ office.",
+      "sources": [
+        "S355",
+        "S356"
+      ]
+    },
+    {
+      "node": "mag-asg",
+      "lat": 44.1,
+      "lon": 9.81666667,
+      "precision": "town",
+      "place": "ASG Superconductors ITER coil plant, La Spezia, Italy",
+      "note": "After winning the ITER coil contract ASG \"built a new production facility in La Spezia\"; HQ is in Genoa. City coordinates.",
+      "sources": [
+        "S357",
+        "S358",
+        "S359"
+      ]
+    },
+    {
+      "node": "mag-simic",
+      "lat": 45.45,
+      "lon": 12.21666667,
+      "precision": "town",
+      "place": "SIMIC facility, Porto Marghera (Venice), Italy",
+      "note": "F4E caption: \"Overview of the SIMIC facility in Italy, Porto Marghera\". Locality coordinates.",
+      "sources": [
+        "S360",
+        "S361"
+      ]
+    },
+    {
+      "node": "mag-icas",
+      "lat": 43.6637874,
+      "lon": 12.0493297,
+      "precision": "site",
+      "place": "Tratos Cavi factory, Pieve Santo Stefano (AR), Italy (ICAS cabling)",
+      "note": "ICAS \"performs all cabling activities\" at the Tratos factory; ICAS HQ is in ENEA Frascati.",
+      "sources": [
+        "S362",
+        "S363"
+      ]
+    },
+    {
+      "node": "mag-qst-japan",
+      "lat": 34.69,
+      "lon": 135.19555556,
+      "precision": "town",
+      "place": "MHI Kobe Shipyard & Machinery Works (Futami Plant), Kobe area, Japan",
+      "note": "MHI: TF coils are assembled at its Futami Plant and shipped from Kobe. Kobe city point used; the Futami plant was not geolocated. The node also covers Mitsubishi Electric, Toshiba ESS and Hyundai Heavy.",
+      "sources": [
+        "S364",
+        "S365"
+      ]
+    },
+    {
+      "node": "mag-ga",
+      "lat": 32.97,
+      "lon": -117.03861111,
+      "precision": "town",
+      "place": "General Atomics Magnet Technologies Center, Poway, California, USA",
+      "note": "City coordinates.",
+      "sources": [
+        "S366",
+        "S367"
+      ]
+    },
+    {
+      "node": "hts-tape-superpower",
+      "lat": 42.797203,
+      "lon": -73.9288523,
+      "precision": "site",
+      "place": "SuperPower Inc., 450 Duane Avenue, Schenectady, New York, USA",
+      "note": "",
+      "sources": [
+        "S368",
+        "S369"
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "mm-ree-mine-usgs",
+      "node": "y-kachin",
+      "title": "Myanmar (Burma) rare earth mine production, USGS estimate",
+      "unit": "tonnes REO equivalent",
+      "points": [
+        {
+          "x": 2018,
+          "y": 19000,
+          "note": "MCS2020 (Burma (Myanmar) 19,000)"
+        },
+        {
+          "x": 2019,
+          "y": 25000,
+          "note": "MCS2021"
+        },
+        {
+          "x": 2020,
+          "y": 31000,
+          "note": "MCS2022"
+        },
+        {
+          "x": 2021,
+          "y": 35000,
+          "note": "MCS2023, 'e35,000' (estimated)"
+        },
+        {
+          "x": 2022,
+          "y": 12000,
+          "note": "MCS2024; looks anomalously low against customs data (ISP: Myanmar 81.2% of China's RE import volume in 2022)"
+        },
+        {
+          "x": 2023,
+          "y": 43000,
+          "note": "MCS2025"
+        },
+        {
+          "x": 2024,
+          "y": 27000,
+          "note": "MCS2026; revised down from 31,000 in MCS2025 ('Significant revisions were made to the 2024 production for ... Burma')"
+        },
+        {
+          "x": 2025,
+          "y": 22000,
+          "note": "MCS2026 estimate"
+        }
+      ],
+      "sources": [
+        "S221",
+        "S222",
+        "S223",
+        "S224",
+        "S225",
+        "S226",
+        "S227"
+      ],
+      "caveat": "Each year taken from the latest MCS edition that reports it (each edition gives two years). All Myanmar figures are USGS estimates for undocumented mining in militia/KIO-held territory, largely inferred from Chinese import data; reserves are 'NA'. Kachin is the bulk but Shan (y-shan) is included from 2024-25."
+    },
+    {
+      "id": "mm-share-china-ree-imports",
+      "node": "y-kachin",
+      "title": "Myanmar's share of China's rare earth imports by volume",
+      "unit": "% of China's rare earth import volume",
+      "points": [
+        {
+          "x": 2017,
+          "y": 62.8,
+          "note": ""
+        },
+        {
+          "x": 2018,
+          "y": 70,
+          "note": ""
+        },
+        {
+          "x": 2019,
+          "y": 71.6,
+          "note": ""
+        },
+        {
+          "x": 2020,
+          "y": 81.1,
+          "note": ""
+        },
+        {
+          "x": 2021,
+          "y": 87.2,
+          "note": ""
+        },
+        {
+          "x": 2022,
+          "y": 81.2,
+          "note": ""
+        },
+        {
+          "x": 2023,
+          "y": 82.1,
+          "note": ""
+        },
+        {
+          "x": 2024,
+          "y": 70.6,
+          "note": ""
+        }
+      ],
+      "sources": [
+        "S43"
+      ],
+      "caveat": "ISP-Myanmar 'Unearthing the Cost' (June 2025), Figure on import percentage, based on China GACC customs data (data from March 2017). Share, not tonnes; ISP says 290,000+ t came from Myanmar 2017-2024 of 390,000+ t total, and 'over 70,000 metric tons' in the peak year 2023."
+    },
+    {
+      "id": "mm-ree-exports-china-value",
+      "node": "y-border",
+      "title": "Myanmar rare earth exports to China, value (Chinese customs)",
+      "unit": "US$ million",
+      "points": [
+        {
+          "x": 2014,
+          "y": 1.5,
+          "note": "Crisis Group: 'roughly $1.5 million in 2014'"
+        },
+        {
+          "x": 2021,
+          "y": 780,
+          "note": "Crisis Group: 'around $780 million in 2021'"
+        },
+        {
+          "x": 2023,
+          "y": 1400,
+          "note": "Global Witness: trade 'worth $1.4 billion in 2023'; ISP: 'peak year was 2023, when exports reached USD 1.4 billion'"
+        },
+        {
+          "x": 2024,
+          "y": 724,
+          "note": "PARTIAL YEAR Jan-Sep 2024 only (ISP PET-03)"
+        },
+        {
+          "x": 2025,
+          "y": 624,
+          "note": "PARTIAL YEAR Jan-Sep 2025 only (ISP PET-03: 'USD 624 million (over 28,000 tonnes)')"
+        }
+      ],
+      "sources": [
+        "S220",
+        "S2",
+        "S43",
+        "S88"
+      ],
+      "caveat": "Mixed sources and two partial years; do not draw 2024/2025 on the same line as full years without marking them. ISP totals: USD 4.2bn Jan 2017-Dec 2024, of which USD 3.6bn after the Feb 2021 coup and USD 665m in the four pre-coup years. A full-year 2025 figure (Statista: US$988.5m) was seen only in a search snippet behind a paywall and is not used."
+    },
+    {
+      "id": "mm-hreo-exports-china-tonnes",
+      "node": "y-border",
+      "title": "China's imports of heavy rare earth oxides / rare earths from Myanmar, volume",
+      "unit": "tonnes",
+      "points": [
+        {
+          "x": 2021,
+          "y": 19500,
+          "note": "Global Witness: heavy rare earth oxides, 'previous high' of 19,500 tons in 2021"
+        },
+        {
+          "x": 2023,
+          "y": 41700,
+          "note": "Global Witness: 41,700 tonnes heavy rare earth oxides in 2023 ('more than double China's own quota'). ISP counts all rare earth categories: 'over 70,000 metric tons' in 2023"
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2",
+        "S88",
+        "S245"
+      ],
+      "caveat": "Product scope differs between sources (Global Witness = heavy rare earth oxides; ISP/Reuters = broader rare earth categories), so the 2023 GW (41,700 t) and ISP (>70,000 t) figures are not contradictory but must not be mixed on one line. Global Witness 2022 report charts 2017-2021 imports against China's HREE quota but the page gives no numbers for 2017-2020. 2025 (Jan–Sep only, 'over 28,000 tonnes') is left off the chart because it is a part year."
+    },
+    {
+      "id": "kachin-ree-area-crisisgroup",
+      "node": "y-kachin",
+      "title": "Rare earth mining (leaching pool) area, Kachin State",
+      "unit": "hectares",
+      "points": [
+        {
+          "x": 2018,
+          "y": 1622,
+          "note": "stated in text"
+        },
+        {
+          "x": 2019,
+          "y": 1350,
+          "note": "approx., read off bar chart (+/-100 ha)"
+        },
+        {
+          "x": 2020,
+          "y": 1600,
+          "note": "approx., read off bar chart"
+        },
+        {
+          "x": 2021,
+          "y": 1950,
+          "note": "approx., read off bar chart"
+        },
+        {
+          "x": 2022,
+          "y": 2800,
+          "note": "approx., read off bar chart"
+        },
+        {
+          "x": 2023,
+          "y": 3400,
+          "note": "approx., read off bar chart"
+        },
+        {
+          "x": 2024,
+          "y": 3500,
+          "note": "approx., read off bar chart"
+        },
+        {
+          "x": 2025,
+          "y": 3565,
+          "note": "stated in text"
+        }
+      ],
+      "sources": [
+        "S220"
+      ],
+      "caveat": "Crisis Group CNN classification of Sentinel-2 imagery. Only 2018 and 2025 are stated numbers; 2019-2024 were read by eye from the published bar chart image (rare_earth_mining_areas_kachin.png) and should be labelled approximate or dropped. Measures active leaching-pool area, a much narrower footprint than Myanmar Witness's 'mining area' (26,000 ha 2018 -> 46,700 ha 2024)."
+    },
+    {
+      "id": "kachin-ree-area-myanmarwitness",
+      "node": "y-kachin",
+      "title": "Rare earth 'mining area' around Pangwa/Chipwi, Myanmar Witness (via Mongabay)",
+      "unit": "hectares",
+      "points": [
+        {
+          "x": 2018,
+          "y": 26000,
+          "note": "April 2018, 'approximately 26,000 hectares'"
+        },
+        {
+          "x": 2024,
+          "y": 46700,
+          "note": "April 2024"
+        }
+      ],
+      "sources": [
+        "S71"
+      ],
+      "caveat": "Two points only, reported second-hand by Mongabay (Sept 2025); the Myanmar Witness report itself was not opened. Same article: Global Forest Watch shows Chipwi, Momauk and Bhamo lost about 32,720 ha of tree cover 2018-2024 (Momauk 12,100 ha) - a cumulative total, no annual breakdown given."
+    },
+    {
+      "id": "shan-ree-area-crisisgroup",
+      "node": "y-shan",
+      "title": "Rare earth mining (leaching pool) area, Shan State",
+      "unit": "hectares",
+      "points": [
+        {
+          "x": 2018,
+          "y": 0,
+          "note": "~0, read off chart"
+        },
+        {
+          "x": 2023,
+          "y": 1,
+          "note": "~0-1, read off chart"
+        },
+        {
+          "x": 2024,
+          "y": 29,
+          "note": "approx., read off bar chart"
+        },
+        {
+          "x": 2025,
+          "y": 89,
+          "note": "approx., read off bar chart; text: area 'tripling from 2024 to 2025'"
+        }
+      ],
+      "sources": [
+        "S220"
+      ],
+      "caveat": "No numbers in text; all values read by eye from Crisis Group chart (rare_earth_mining_areas_shan.png). Use only as an illustrative 'new frontier' sparkline, or state just 'tripled 2024->2025'. ISP PET-03: at least 20 new sites observed early 2025 in UWSA-held Mong Yun and Mong Pawk and NDAA-held Mongyawng."
+    },
+    {
+      "id": "kachin-ree-sites",
+      "node": "y-kachin",
+      "title": "Number of rare earth mining sites in Kachin (several counts)",
+      "unit": "mining sites",
+      "points": [
+        {
+          "x": 2020,
+          "y": 126,
+          "note": "ISP: Kachin sites before the coup (built 2016-2020), with 1,239 pits"
+        },
+        {
+          "x": 2022,
+          "y": 300,
+          "note": "Global Witness, March 2022 Planet image: 'over 2,700 mining collection pools at almost 300 separate locations' (KSR1)"
+        },
+        {
+          "x": 2023,
+          "y": 300,
+          "note": "Global Witness 2024: KSR1 sites 'leapt to over 300, an increase of more than 40% between 2021 and 2023'"
+        },
+        {
+          "x": 2024,
+          "y": 371,
+          "note": "ISP: 'rose from 126 to over 371' by end-2024 (+245 sites, +1,556 pits since 2021). Myanmar Witness (via Mongabay): 'nearly 400' sites across Kachin by end-2024"
+        }
+      ],
+      "sources": [
+        "S43",
+        "S89",
+        "S1",
+        "S71"
+      ],
+      "caveat": "Different analysts, areas and definitions: ISP counts all Kachin; Global Witness counts Kachin Special Region 1 only. 2022 and 2023 GW values are lower bounds ('almost'/'over' 300). Momauk Township (KIO area): 9 sites in 2021 -> 'more than 40' by end-2023 (Global Witness 2024) - could be a separate two-point line."
+    },
+    {
+      "id": "mm-tin-mine-usgs",
+      "node": "sn-manmaw",
+      "title": "Myanmar (Burma) tin mine production (mostly Man Maw, Wa State)",
+      "unit": "tonnes tin content",
+      "points": [
+        {
+          "x": 2018,
+          "y": 54600,
+          "note": "MCS2020"
+        },
+        {
+          "x": 2019,
+          "y": 54000,
+          "note": "MCS2020 estimate"
+        },
+        {
+          "x": 2020,
+          "y": 29000,
+          "note": "MCS2022 estimate"
+        },
+        {
+          "x": 2021,
+          "y": 28000,
+          "note": "MCS2022 estimate"
+        },
+        {
+          "x": 2022,
+          "y": 47000,
+          "note": "MCS2024 estimate"
+        },
+        {
+          "x": 2023,
+          "y": 34000,
+          "note": "MCS2025 estimate (MCS2024 first gave 54,000); Wa halted all mining from Aug 2023"
+        },
+        {
+          "x": 2024,
+          "y": 20000,
+          "note": "MCS2026 estimate, revised from 34,000"
+        },
+        {
+          "x": 2025,
+          "y": 12000,
+          "note": "MCS2026 estimate; Man Maw restarting"
+        }
+      ],
+      "sources": [
+        "S228",
+        "S229",
+        "S230",
+        "S231",
+        "S172"
+      ],
+      "caveat": "USGS estimates for Burma as a whole; Crisis Group says 'nearly all of the tin production comes from Man Maw mine'. MCS2024: 'Most of Burma's tin was mined within areas administered by the Wa State' and all mining ceased in August 2023. Reuters/ITA (2023): Wa State ~10% of world tin concentrate supply; 47,700 t of China's 2022 tin consumption came from Myanmar. A customs series (tin ore exports to China by year) was not found on an opened page."
+    },
+    {
+      "id": "rw-drc-tantalum-mine-usgs",
+      "node": "nb-rwanda",
+      "title": "Tantalum mine production: Rwanda vs DR Congo (USGS)",
+      "unit": "tonnes tantalum content",
+      "points": [
+        {
+          "x": 2018,
+          "y": 421,
+          "note": "Rwanda; DRC 740"
+        },
+        {
+          "x": 2019,
+          "y": 370,
+          "note": "Rwanda est.; DRC 740 est."
+        },
+        {
+          "x": 2020,
+          "y": 254,
+          "note": "Rwanda; DRC 780"
+        },
+        {
+          "x": 2021,
+          "y": 270,
+          "note": "Rwanda est.; DRC 700 est."
+        },
+        {
+          "x": 2022,
+          "y": 347,
+          "note": "Rwanda est.; DRC 890 est."
+        },
+        {
+          "x": 2023,
+          "y": 520,
+          "note": "Rwanda est.; DRC 980 est. (MCS2024 first estimates; MCS2025 not checked)"
+        },
+        {
+          "x": 2024,
+          "y": 374,
+          "note": "Rwanda; DRC 1,270 (DRC 'revised significantly based on a Government report')"
+        },
+        {
+          "x": 2025,
+          "y": 400,
+          "note": "Rwanda est.; DRC 1,300 est."
+        }
+      ],
+      "sources": [
+        "S232",
+        "S233",
+        "S234",
+        "S235"
+      ],
+      "caveat": "y = Rwanda. DRC values in notes so a second line can be drawn (DRC: 740,740,780,700,890,980,1270,1300). USGS 'production' for Rwanda is largely reported exports and cannot separate smuggled DRC (Rubaya) coltan relabelled as Rwandan - that is exactly the harm. Compare with the export series below.",
+      "label1": "Rwanda",
+      "label2": "DR Congo",
+      "points2": [
+        {
+          "x": 2018,
+          "y": 740
+        },
+        {
+          "x": 2019,
+          "y": 740
+        },
+        {
+          "x": 2020,
+          "y": 780
+        },
+        {
+          "x": 2021,
+          "y": 700
+        },
+        {
+          "x": 2022,
+          "y": 890
+        },
+        {
+          "x": 2023,
+          "y": 980
+        },
+        {
+          "x": 2024,
+          "y": 1270
+        },
+        {
+          "x": 2025,
+          "y": 1300
+        }
+      ]
+    },
+    {
+      "id": "rw-coltan-exports",
+      "node": "nb-rwanda",
+      "title": "Rwanda coltan/tantalum concentrate exports: ITSCI-recorded vs partner-reported imports",
+      "unit": "tonnes concentrate (gross)",
+      "points": [
+        {
+          "x": 2023,
+          "y": 2058,
+          "note": "ITSCI-recorded exports. CALCULATION: 2,354 t (2024) - 296 t stated increase = 2,058 t. World imports from Rwanda ~1,900 t (CALCULATION: '>2,900 t' / 1.52)"
+        },
+        {
+          "x": 2024,
+          "y": 2354,
+          "note": "ITSCI-recorded exports; world imports from Rwanda (UN Comtrade/WITS) 'exceeds 2,900 tonnes', ~52% up on 2023. China alone imported 2,286 t (1,571 t in 2023) per Global Witness"
+        }
+      ],
+      "sources": [
+        "S239",
+        "S15"
+      ],
+      "caveat": "Plot two lines: ITSCI-recorded (2,058; 2,354; 1,078 H1) and partner imports (~1,900 calc; >2,900; 3,839 H1). The gap from 2024 on is the smuggling signal. Gross concentrate tonnes, not tantalum content, so not comparable with the USGS series. Context: UN Group of Experts estimate >120 t/month of coltan smuggled from Rubaya to Rwanda since April/May 2024 (via S15); Global Witness: at least 1,400 t smuggled within a year of M23's takeover; Rwandan official coltan exports up 'more than 2.5 times between 2021 and 2025'. 2025 is a part year (Jan–Jun: 1,078 t recorded vs 3,839 t reported by partners), so it is left off the chart.",
+      "points2": [
+        {
+          "x": 2023,
+          "y": 1900,
+          "note": "calculation from '>2,900 t' / 1.52"
+        },
+        {
+          "x": 2024,
+          "y": 2900,
+          "note": "'exceeds 2,900 tonnes'"
+        }
+      ],
+      "label1": "Exports recorded by ITSCI",
+      "label2": "Imports from Rwanda reported by trade partners"
+    },
+    {
+      "id": "rw-tin-mine-usgs",
+      "node": "sn-greatlakes",
+      "title": "Rwanda tin mine production (USGS)",
+      "unit": "tonnes tin content",
+      "points": [
+        {
+          "x": 2018,
+          "y": 2400,
+          "note": ""
+        },
+        {
+          "x": 2019,
+          "y": 3000,
+          "note": "est."
+        },
+        {
+          "x": 2020,
+          "y": 1800,
+          "note": "est."
+        },
+        {
+          "x": 2021,
+          "y": 2200,
+          "note": "est."
+        },
+        {
+          "x": 2022,
+          "y": 3300,
+          "note": "est."
+        },
+        {
+          "x": 2023,
+          "y": 3600,
+          "note": "MCS2025 est."
+        },
+        {
+          "x": 2024,
+          "y": 4100,
+          "note": "MCS2026 est."
+        },
+        {
+          "x": 2025,
+          "y": 4600,
+          "note": "MCS2026 est."
+        }
+      ],
+      "sources": [
+        "S228",
+        "S229",
+        "S230",
+        "S231",
+        "S172"
+      ],
+      "caveat": "USGS estimates. DRC (Congo Kinshasa) tin for comparison: 7,400 (2018), 10,000 (2019), 17,300 (2020), 16,000 (2021), 18,600 (2022), 20,000 (2023), 26,000 (2024), 27,000 (2025e). A UN GoE figure (Rwanda cassiterite exports 4,859 t 2024 -> 7,700 t 2025, S/2026/466) was seen only on social media and not verified."
+    },
+    {
+      "id": "id-nickel-mine-usgs",
+      "node": "ni-indonesia",
+      "title": "Indonesia nickel mine production (USGS)",
+      "unit": "tonnes nickel content",
+      "points": [
+        {
+          "x": 2018,
+          "y": 606000,
+          "note": ""
+        },
+        {
+          "x": 2019,
+          "y": 800000,
+          "note": "est."
+        },
+        {
+          "x": 2020,
+          "y": 771000,
+          "note": "ore export ban from Jan 2020"
+        },
+        {
+          "x": 2021,
+          "y": 1000000,
+          "note": "est.; first HPAL plant (Obi Island) started May 2021"
+        },
+        {
+          "x": 2022,
+          "y": 1580000,
+          "note": ""
+        },
+        {
+          "x": 2023,
+          "y": 1800000,
+          "note": "est."
+        },
+        {
+          "x": 2024,
+          "y": 2310000,
+          "note": ""
+        },
+        {
+          "x": 2025,
+          "y": 2600000,
+          "note": "est.; +13%"
+        }
+      ],
+      "sources": [
+        "S236",
+        "S237",
+        "S238",
+        "S100"
+      ],
+      "caveat": "Each year from latest MCS edition read (2019/2021/2023 are first estimates; later revisions not checked). World totals for context: 2.4 Mt (2018) -> 3.9 Mt (2025e)."
+    },
+    {
+      "id": "imip-workforce",
+      "node": "ni-indonesia",
+      "title": "Workforce at Indonesia Morowali Industrial Park (IMIP), as reported",
+      "unit": "workers",
+      "points": [
+        {
+          "x": 2020,
+          "y": 43000,
+          "note": "Jan 2020, IMIP spokesman to AFP: ~5,000 Chinese + 38,000 Indonesian"
+        },
+        {
+          "x": 2024,
+          "y": 80000,
+          "note": "'more than 80,000 workers, not including 19,000 infrastructure project workers' (ERC, Nov 2024)"
+        },
+        {
+          "x": 2025,
+          "y": 100000,
+          "note": "'employs more than 100,000' (Mining Technology/GlobalData, 2025; date inferred from reference to the June 2025 Raja Ampat permit revocations)"
+        }
+      ],
+      "sources": [
+        "S240",
+        "S241",
+        "S242"
+      ],
+      "caveat": "Different reporters, not a consistent company series; values are lower bounds. Park area also reported inconsistently: '4,000-hectare' (ERC 2024) vs 'spans 2,000 hectares' (Mining Technology 2025). IWIP (Weda Bay) series not found."
+    },
+    {
+      "id": "grasberg-copper",
+      "node": "cu-grasberg",
+      "title": "PT Freeport Indonesia (Grasberg district) copper production",
+      "unit": "million lb recoverable copper",
+      "points": [
+        {
+          "x": 2023,
+          "y": 1660,
+          "note": ""
+        },
+        {
+          "x": 2024,
+          "y": 1800,
+          "note": ""
+        },
+        {
+          "x": 2025,
+          "y": 1015,
+          "note": "after the Sept 2025 Grasberg Block Cave mud rush (7 workers killed); Q4 2025 only 49"
+        }
+      ],
+      "sources": [
+        "S243",
+        "S244"
+      ],
+      "caveat": "Output, not a harm footprint; useful to show the mud-rush shock. Earlier years exist in older FCX releases (not opened). 1,000 million lb = ~453,600 t."
+    }
+  ],
+  "tanks": {
+    "title": "Rare earth leaching/precipitation tanks in Myanmar, counted per 0.05° grid cell (USGS satellite mapping 2019-2025)",
+    "method": "calculation: the 6,655 Myanmar points in the USGS shapefile REELeachTanks_20250912 (WGS84) binned into 0.05-degree cells (about 5.5 km); per-cell counts of tanks and of High-confidence tanks, with earliest and latest image year.",
+    "caveat": "USGS says the points \"are not comprehensive\" (only tanks seen in available imagery). ObsYear is the date of the image, not when a tank was built, so first/last year is not a construction date. These are not boundaries of Kachin Special Region 1. The same file also has 3,089 points in Jiangxi and Guangdong (China), not gridded here.",
+    "sources": [
+      "S269"
+    ],
+    "cells": [
+      {
+        "node": "y-kachin",
+        "tanks": 633,
+        "first": 2021,
+        "last": 2023,
+        "lon": 98.4,
+        "lat": 25.7
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 629,
+        "first": 2021,
+        "last": 2023,
+        "lon": 98.35,
+        "lat": 25.65
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 613,
+        "first": 2021,
+        "last": 2025,
+        "lon": 98.25,
+        "lat": 25.6
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 517,
+        "first": 2021,
+        "last": 2023,
+        "lon": 98.35,
+        "lat": 25.7
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 437,
+        "first": 2021,
+        "last": 2025,
+        "lon": 98.3,
+        "lat": 25.65
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 367,
+        "first": 2023,
+        "last": 2023,
+        "lon": 97.6,
+        "lat": 24.3
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 332,
+        "first": 2021,
+        "last": 2025,
+        "lon": 98.25,
+        "lat": 25.65
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 327,
+        "first": 2021,
+        "last": 2025,
+        "lon": 98.3,
+        "lat": 25.7
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 256,
+        "first": 2021,
+        "last": 2025,
+        "lon": 98.3,
+        "lat": 25.6
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 150,
+        "first": 2021,
+        "last": 2023,
+        "lon": 98.35,
+        "lat": 25.6
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 145,
+        "first": 2025,
+        "last": 2025,
+        "lon": 98.2,
+        "lat": 25.7
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 138,
+        "first": 2020,
+        "last": 2025,
+        "lon": 98.25,
+        "lat": 25.7
+      },
+      {
+        "node": "y-shan",
+        "tanks": 136,
+        "first": 2025,
+        "last": 2025,
+        "lon": 99.35,
+        "lat": 21.95
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 128,
+        "first": 2021,
+        "last": 2025,
+        "lon": 98.2,
+        "lat": 25.65
+      },
+      {
+        "node": "y-shan",
+        "tanks": 119,
+        "first": 2025,
+        "last": 2025,
+        "lon": 99.35,
+        "lat": 21.9
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 117,
+        "first": 2023,
+        "last": 2023,
+        "lon": 97.55,
+        "lat": 24.3
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 117,
+        "first": 2022,
+        "last": 2023,
+        "lon": 98.3,
+        "lat": 25.55
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 115,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.35,
+        "lat": 25.55
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 108,
+        "first": 2023,
+        "last": 2023,
+        "lon": 97.55,
+        "lat": 24.35
+      },
+      {
+        "node": "y-shan",
+        "tanks": 76,
+        "first": 2024,
+        "last": 2025,
+        "lon": 99.25,
+        "lat": 21.9
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 73,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.4,
+        "lat": 25.65
+      },
+      {
+        "node": "y-shan",
+        "tanks": 73,
+        "first": 2024,
+        "last": 2025,
+        "lon": 99.3,
+        "lat": 21.95
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 68,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.45,
+        "lat": 25.8
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 66,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.25,
+        "lat": 25.85
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 66,
+        "first": 2023,
+        "last": 2024,
+        "lon": 98.4,
+        "lat": 25.95
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 56,
+        "first": 2023,
+        "last": 2023,
+        "lon": 97.6,
+        "lat": 24.25
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 53,
+        "first": 2020,
+        "last": 2020,
+        "lon": 98.0,
+        "lat": 25.35
+      },
+      {
+        "node": "y-shan",
+        "tanks": 44,
+        "first": 2025,
+        "last": 2025,
+        "lon": 99.3,
+        "lat": 21.9
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 43,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.25,
+        "lat": 25.8
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 41,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.35,
+        "lat": 25.9
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 40,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.3,
+        "lat": 25.75
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 38,
+        "first": 2021,
+        "last": 2025,
+        "lon": 98.2,
+        "lat": 25.6
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 33,
+        "first": 2019,
+        "last": 2023,
+        "lon": 97.6,
+        "lat": 24.35
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 33,
+        "first": 2021,
+        "last": 2021,
+        "lon": 98.6,
+        "lat": 25.85
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 32,
+        "first": 2023,
+        "last": 2024,
+        "lon": 98.4,
+        "lat": 25.9
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 31,
+        "first": 2021,
+        "last": 2024,
+        "lon": 98.55,
+        "lat": 25.95
+      },
+      {
+        "node": "y-shan",
+        "tanks": 31,
+        "first": 2025,
+        "last": 2025,
+        "lon": 99.35,
+        "lat": 20.35
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 30,
+        "first": 2021,
+        "last": 2021,
+        "lon": 98.55,
+        "lat": 25.85
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 28,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.3,
+        "lat": 25.8
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 28,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.35,
+        "lat": 25.75
+      },
+      {
+        "node": "y-shan",
+        "tanks": 26,
+        "first": 2024,
+        "last": 2024,
+        "lon": 99.25,
+        "lat": 21.95
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 25,
+        "first": 2023,
+        "last": 2023,
+        "lon": 97.65,
+        "lat": 24.35
+      },
+      {
+        "node": "y-shan",
+        "tanks": 25,
+        "first": 2024,
+        "last": 2024,
+        "lon": 99.2,
+        "lat": 21.9
+      },
+      {
+        "node": "y-shan",
+        "tanks": 24,
+        "first": 2025,
+        "last": 2025,
+        "lon": 99.25,
+        "lat": 21.85
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 20,
+        "first": 2020,
+        "last": 2020,
+        "lon": 98.05,
+        "lat": 25.35
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 20,
+        "first": 2024,
+        "last": 2024,
+        "lon": 98.3,
+        "lat": 25.9
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 19,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.4,
+        "lat": 25.75
+      },
+      {
+        "node": "y-shan",
+        "tanks": 17,
+        "first": 2025,
+        "last": 2025,
+        "lon": 99.3,
+        "lat": 21.85
+      },
+      {
+        "node": "y-shan",
+        "tanks": 15,
+        "first": 2025,
+        "last": 2025,
+        "lon": 99.4,
+        "lat": 21.95
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 14,
+        "first": 2024,
+        "last": 2024,
+        "lon": 98.55,
+        "lat": 26.0
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 13,
+        "first": 2020,
+        "last": 2020,
+        "lon": 98.0,
+        "lat": 25.4
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 13,
+        "first": 2024,
+        "last": 2024,
+        "lon": 98.55,
+        "lat": 26.05
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 13,
+        "first": 2021,
+        "last": 2021,
+        "lon": 98.6,
+        "lat": 25.9
+      },
+      {
+        "node": "y-shan",
+        "tanks": 12,
+        "first": 2025,
+        "last": 2025,
+        "lon": 99.25,
+        "lat": 21.8
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 10,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.45,
+        "lat": 25.85
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 8,
+        "first": 2023,
+        "last": 2023,
+        "lon": 98.45,
+        "lat": 25.7
+      },
+      {
+        "node": "y-shan",
+        "tanks": 5,
+        "first": 2024,
+        "last": 2024,
+        "lon": 99.3,
+        "lat": 20.3
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 4,
+        "first": 2024,
+        "last": 2024,
+        "lon": 98.45,
+        "lat": 25.95
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 3,
+        "first": 2024,
+        "last": 2024,
+        "lon": 98.5,
+        "lat": 26.05
+      },
+      {
+        "node": "y-kachin",
+        "tanks": 2,
+        "first": 2023,
+        "last": 2023,
+        "lon": 97.65,
+        "lat": 24.3
+      }
+    ]
+  },
+  "exposure": {
+    "intro": "Fusion uses very little of any of these metals. Even 1,500 power plants would use well under 1% of most markets, so fusion does not drive more mining. Its exposure is about where its slice comes from. Choose what is being built to see how much of each material it needs, and how much of that could come from places where harm is documented if fusion bought at the world average.",
+    "method": "Market share is a proxy, not a trace. If Indonesia mines 67% of the world's nickel, a randomly sourced kilogram of nickel has about a two-in-three chance of having started there. That is a fair first estimate for fusion because fusion buys a tiny slice of each market (calculations above: <1% even in the high case), so it takes whatever the market mix is. Limits: (1) metals are blended at smelters and refineries, so a given tape's nickel or copper has no single origin; the OECD/IEA traceability report says traders blend 'minerals from diverse origins' and 'blending of materials and reliance on upstream documentation can obscure the true origin' (S67, p.48), and copper 'is often blended during both the smelting and refining stages' (S67). (2) Buyer-specific supply can be far from average: Faraday's tape (Russia/Japan heritage) and Fujikura's GdBCO tape have different rare earths; a Hastelloy mill may buy Class 1 nickel from Canada or Norway, not Indonesian NPI. (3) Mine share is not processing share: China separates most rare earths incl. Myanmar ore, smelts about half of tin and refines 48% of copper, so a 'non-Myanmar' label from a Chinese separator still carries Myanmar risk. (4) Shares for smuggled supply (DRC ore exported as Rwandan; Myanmar estimates from Chinese import data) are themselves estimates. So show it as 'a range of how much could come from these places', not 'how much does'.",
+    "devices": [
+      {
+        "id": "sparc",
+        "label": "SPARC-class device (about 10,000 km of tape)",
+        "note": "SPARC holds about 10,000 km of REBCO tape. Our calculation from published tape layer thicknesses, assuming 4 mm-wide tape (inferred from SPARC's 1.5 GA-m over 10,000 km). Magnet copper and steel outside the tape are not included.",
+        "materials": {
+          "yttrium": {
+            "kg": 82,
+            "lo": 0,
+            "hi": 119,
+            "calc": "10,000 km × 8.2 g/km (5.1–11.9) if all tape were yttrium-based; close to 0 if gadolinium/europium-based tape (e.g. Fujikura) is used.",
+            "sources": [
+              "S370",
+              "S373",
+              "S41"
+            ]
+          },
+          "nickel": {
+            "kg": 10100,
+            "lo": 8100,
+            "hi": 20300,
+            "calc": "10,000 km × 1.01 kg/km (0.81–2.03): 40–100 µm Hastelloy C-276 substrate, 57% nickel.",
+            "sources": [
+              "S370",
+              "S41",
+              "S373",
+              "S375",
+              "S376"
+            ]
+          },
+          "silver": {
+            "kg": 1260,
+            "lo": 840,
+            "hi": 1680,
+            "calc": "10,000 km × 84–168 g/km: 2–3 µm silver cap layers.",
+            "sources": [
+              "S370",
+              "S373",
+              "S41"
+            ]
+          },
+          "copper-hts": {
+            "kg": 7200,
+            "lo": 200,
+            "hi": 14300,
+            "calc": "10,000 km × 0.02–1.43 kg/km: 20 µm copper plating on one or both faces, or none (tape only).",
+            "sources": [
+              "S370",
+              "S41",
+              "S374"
+            ]
+          }
+        }
+      },
+      {
+        "id": "arc",
+        "label": "ARC-class power plant (10,000–20,000 km of tape)",
+        "note": "CFS ordered more than 10,000 km of tape from Fujikura for ARC; reporting puts ARC at about twice SPARC's amp-metres, i.e. up to 20,000 km. Our calculation from published tape layer thicknesses, assuming 4 mm-wide tape (inferred from SPARC's 1.5 GA-m over 10,000 km). Fujikura's tape is gadolinium/europium-based, so ARC's yttrium may be close to zero.",
+        "materials": {
+          "yttrium": {
+            "kg": 123,
+            "lo": 0,
+            "hi": 238,
+            "calc": "15,000 km (10,000–20,000) × 8.2 g/km (5.1–11.9) for yttrium-based tape; near 0 for the Fujikura order.",
+            "sources": [
+              "S37",
+              "S371",
+              "S373",
+              "S41"
+            ]
+          },
+          "nickel": {
+            "kg": 15150,
+            "lo": 8100,
+            "hi": 40600,
+            "calc": "10,000–20,000 km × 0.81–2.03 kg/km.",
+            "sources": [
+              "S37",
+              "S371",
+              "S375"
+            ]
+          },
+          "silver": {
+            "kg": 1890,
+            "lo": 840,
+            "hi": 3360,
+            "calc": "10,000–20,000 km × 84–168 g/km.",
+            "sources": [
+              "S37",
+              "S371",
+              "S373",
+              "S41"
+            ]
+          },
+          "copper-hts": {
+            "kg": 10800,
+            "lo": 200,
+            "hi": 28600,
+            "calc": "10,000–20,000 km × 0.02–1.43 kg/km (tape only).",
+            "sources": [
+              "S37",
+              "S371",
+              "S41"
+            ]
+          }
+        }
+      },
+      {
+        "id": "iter",
+        "label": "ITER (wire magnets, divertor and first wall)",
+        "note": "ITER used about 500 t of Nb₃Sn strand (half copper by cross-section). The niobium and tin splits inside the non-copper half are assumptions, not published figures. Divertor tungsten counts only the outer vertical targets. Beryllium is the original first-wall design.",
+        "materials": {
+          "niobium": {
+            "kg": 92500,
+            "lo": 60000,
+            "hi": 125000,
+            "calc": "ASSUMPTION: niobium is 25–50% by weight of the non-copper half of 500 t of strand → 60–125 t.",
+            "sources": [
+              "S25",
+              "S59"
+            ]
+          },
+          "tin": {
+            "kg": 40000,
+            "lo": 25000,
+            "hi": 55000,
+            "calc": "ASSUMPTION: tin is 10–22% by weight of the non-copper half → 25–55 t over 2008–2015.",
+            "sources": [
+              "S25",
+              "S59"
+            ]
+          },
+          "tungsten": {
+            "kg": 25000,
+            "lo": 20000,
+            "hi": 34700,
+            "calc": "About 200,000 outer-target monoblocks of about 30×30×10 mm at 19.25 g/cm³, less the cooling-tube bore.",
+            "sources": [
+              "S384",
+              "S383"
+            ]
+          },
+          "beryllium": {
+            "kg": 10000,
+            "lo": 8900,
+            "hi": 11100,
+            "calc": "About 600 m² of first-wall panels clad in 8–10 mm beryllium tiles (upper bound).",
+            "sources": [
+              "S385",
+              "S386"
+            ]
+          }
+        }
+      }
+    ],
+    "shares": [
+      {
+        "material": "yttrium",
+        "place": "Myanmar (Kachin and Shan)",
+        "node": "y-kachin",
+        "basis": "PROXY: USGS says only that Burma produced 'a significant percentage' of world yttrium in 2025; no measured share exists.",
+        "sources": [
+          "S39",
+          "S245"
+        ],
+        "lo": 20,
+        "hi": 50
+      },
+      {
+        "material": "nickel",
+        "place": "Indonesia",
+        "node": "ni-indonesia",
+        "basis": "Mine output 2025 (USGS): 2.6 of 3.9 million t.",
+        "sources": [
+          "S100"
+        ],
+        "pct": 66.7
+      },
+      {
+        "material": "nickel",
+        "place": "Russia (Norilsk)",
+        "node": "ni-nornickel",
+        "basis": "Mine output 2025 (USGS).",
+        "sources": [
+          "S100"
+        ],
+        "pct": 5.1
+      },
+      {
+        "material": "silver",
+        "place": "Bolivia",
+        "node": "ag-bolivia",
+        "basis": "Mine output 2025 (USGS).",
+        "sources": [
+          "S104"
+        ],
+        "pct": 5.8
+      },
+      {
+        "material": "copper-hts",
+        "place": "Indonesia (Grasberg)",
+        "node": "cu-grasberg",
+        "basis": "Mine output 2025 (USGS): 3.1%, down from 4.4% in 2024 after the mine disaster.",
+        "sources": [
+          "S103",
+          "S106"
+        ],
+        "lo": 3.1,
+        "hi": 4.4
+      },
+      {
+        "material": "tin",
+        "place": "Myanmar (Wa State)",
+        "node": "sn-manmaw",
+        "basis": "Mine output 2025 (USGS) 4.1%; higher before the 2023 Wa mining halt.",
+        "sources": [
+          "S172",
+          "S114"
+        ],
+        "lo": 4.1,
+        "hi": 10
+      },
+      {
+        "material": "tin",
+        "place": "DRC and Rwanda",
+        "node": "sn-greatlakes",
+        "basis": "Mine output 2025 (USGS).",
+        "sources": [
+          "S172"
+        ],
+        "pct": 10.9
+      },
+      {
+        "material": "niobium",
+        "place": "DRC and Rwanda",
+        "node": "nb-rubaya",
+        "basis": "Mine output 2025 (USGS): 1,170 of 112,000 t.",
+        "sources": [
+          "S21"
+        ],
+        "lo": 1.0,
+        "hi": 1.1
+      },
+      {
+        "material": "niobium",
+        "place": "Brazil (CBMM)",
+        "node": "nb-cbmm",
+        "basis": "Mine output 2025 (USGS). Harm documented here is legacy pollution, not abuses against people.",
+        "sources": [
+          "S21"
+        ],
+        "pct": 92.9
+      },
+      {
+        "material": "tungsten",
+        "place": "China (southern Jiangxi and elsewhere)",
+        "node": "w-jiangxi",
+        "basis": "Mine output 2025 (USGS). Harm documented is soil and rice contamination near mines.",
+        "sources": [
+          "S22"
+        ],
+        "pct": 78.8
+      },
+      {
+        "material": "tungsten",
+        "place": "Vietnam (Nui Phao)",
+        "node": "w-nuiphao",
+        "basis": "Mine output 2025 (USGS).",
+        "sources": [
+          "S22"
+        ],
+        "pct": 3.5
+      },
+      {
+        "material": "beryllium",
+        "place": "United States (Utah)",
+        "node": "be-spor",
+        "basis": "Mine output 2025 (USGS). Harm documented is workers' chronic beryllium disease.",
+        "sources": [
+          "S156"
+        ],
+        "pct": 53.5
+      }
+    ],
+    "world": {
+      "yttrium": {
+        "t": 9850,
+        "basis": "7,900–11,800 t of yttrium (10,000–15,000 t Y₂O₃) mined in 2025; midpoint shown",
+        "sources": [
+          "S39"
+        ]
+      },
+      "nickel": {
+        "t": 3900000,
+        "sources": [
+          "S100"
+        ]
+      },
+      "silver": {
+        "t": 26000,
+        "sources": [
+          "S104"
+        ]
+      },
+      "copper-hts": {
+        "t": 23000000,
+        "basis": "mine output",
+        "sources": [
+          "S103"
+        ]
+      },
+      "tin": {
+        "t": 290000,
+        "sources": [
+          "S172"
+        ]
+      },
+      "niobium": {
+        "t": 112000,
+        "sources": [
+          "S21"
+        ]
+      },
+      "tungsten": {
+        "t": 85000,
+        "sources": [
+          "S22"
+        ]
+      },
+      "beryllium": {
+        "t": 430,
+        "sources": [
+          "S156"
+        ]
+      }
+    },
+    "scenarios": [
+      {
+        "id": "low",
+        "label": "Announced flagship machines only: 3 ARC-class plants by 2040",
+        "device": "arc",
+        "plants": 3,
+        "note": "Counted, not modelled: CFS's ARC (early 2030s), the UK's STEP (around 2040), China's next machine after BEST.",
+        "sources": [
+          "S378",
+          "S37",
+          "S389",
+          "S390"
+        ]
+      },
+      {
+        "id": "claims",
+        "label": "Every company hits its stated date: about 35 pilot plants by 2035",
+        "device": "arc",
+        "plants": 35,
+        "note": "35 of 45 companies told the IAEA's 2025 survey they expect a pilot plant in 2030–2035. Treating all as ARC-class overstates it, since not all use HTS magnets.",
+        "sources": [
+          "S379",
+          "S378",
+          "S380"
+        ]
+      },
+      {
+        "id": "high",
+        "label": "Aspirational: 1,500 one-gigawatt plants by 2050 (20% of world power)",
+        "device": "arc",
+        "plants": 1500,
+        "note": "Upper bound from a commentary estimate; larger plants may need more tape than ARC.",
+        "sources": [
+          "S381"
+        ]
+      }
+    ]
+  }
+}

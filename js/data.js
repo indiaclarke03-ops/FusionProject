@@ -11,6 +11,7 @@ const FILES = {
   cases: 'data/cases.json',
   solution: 'data/solution.json',
   background: 'data/background.json',
+  human: 'data/human.json',
 };
 
 async function loadOne(key, url) {

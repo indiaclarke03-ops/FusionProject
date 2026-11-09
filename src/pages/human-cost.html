@@ -1,0 +1,116 @@
+<!--
+title: The human cost · The Magnet Problem
+description: A dated log of people killed, injured, forced to work and displaced at the mines and plants in fusion's magnet supply chains, mapped, and an honest estimate of how much of a fusion magnet could come from those places.
+-->
+    <section class="section section--first wrap" aria-labelledby="hc-title">
+      <div class="col-main">
+        <p class="eyebrow">03 · The human cost</p>
+        <h1 id="hc-title" class="page-title">The human cost</h1>
+        <p class="lead" id="hc-lead"></p>
+        <p class="hc-caveat" id="hc-caveat"></p>
+      </div>
+      <dl class="stats hc-stats" id="hc-stats"></dl>
+    </section>
+
+    <section id="where" class="section wrap" aria-labelledby="where-title">
+      <div class="col-main">
+        <p class="eyebrow">Where it happens</p>
+        <h2 id="where-title">The harm is concentrated in a few places, far from the fusion labs that will buy the metal.</h2>
+        <p>Each circle is a mine or plant in a fusion supply chain, sized by the number of people documented killed there. Squares are processors, makers and fusion developers. Switch on the routes to see how material is recorded or reported to move towards fusion.</p>
+      </div>
+      <div class="geo-controls">
+        <div class="chip-group" role="group" aria-label="Zoom to region" id="geo-regions"></div>
+        <label class="switch"><input type="checkbox" id="geo-routes"> <span>Show routes towards fusion</span></label>
+        <label class="switch"><input type="checkbox" id="geo-buyers" checked> <span>Show processors and buyers</span></label>
+      </div>
+      <div class="geo-layout">
+        <figure class="geo-figure">
+          <svg id="geo-svg" role="group" aria-labelledby="where-title"></svg>
+          <div class="tooltip" id="geo-tip" role="tooltip" hidden></div>
+          <figcaption class="geo-legend" id="geo-legend"></figcaption>
+        </figure>
+        <aside class="map-detail" id="geo-detail" aria-live="polite">
+          <p class="map-detail__empty">Select a circle to see what happened there, when, and the evidence.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="by-site" class="section wrap" aria-labelledby="site-title">
+      <div class="col-main">
+        <p class="eyebrow">Site by site</p>
+        <h2 id="site-title"></h2>
+        <p>Minimum number of people documented killed at each site, from the incidents in the log below. Many deaths are never recorded, so every number is a floor, not a total.</p>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card__bar"><p class="chart-card__title">People killed, by site (minimum)</p><button type="button" class="btn-link" data-table="sites">Show as table</button></div>
+        <div id="site-chart" class="hbar"></div>
+        <div id="site-table" class="chart-table" hidden></div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section wrap" aria-labelledby="tl-title">
+      <div class="col-main">
+        <p class="eyebrow">Over time</p>
+        <h2 id="tl-title">The incidents cluster in the years fusion's suppliers were scaling up.</h2>
+        <p>Every documented incident since 1990, by year and site. Larger dots mean more people killed; hollow dots are incidents with no death count (such as forced labour, child labour or displacement) or counts not added to the totals. Recent years are also better documented, so this partly reflects more reporting.</p>
+      </div>
+      <div class="chart-card">
+        <div id="tl-chart"></div>
+        <div class="tooltip" id="tl-tip" role="tooltip" hidden></div>
+      </div>
+    </section>
+
+    <section id="log" class="section wrap" aria-labelledby="log-title">
+      <div class="col-main">
+        <p class="eyebrow">The incident log</p>
+        <h2 id="log-title">Every incident, with its source</h2>
+        <p>One row per event, however many outlets reported it. Counts are marked as exact, minimum or estimate, exactly as the source gives them.</p>
+      </div>
+      <div class="log-filters">
+        <label>Site <select id="log-site"><option value="">All sites</option></select></label>
+        <label>Type of harm <select id="log-type"><option value="">All types</option></select></label>
+        <p class="log-count" id="log-count" aria-live="polite"></p>
+      </div>
+      <ol class="incidents" id="log-list"></ol>
+    </section>
+
+    <section id="growth" class="section wrap" aria-labelledby="growth-title">
+      <div class="col-main">
+        <p class="eyebrow">The footprint is growing</p>
+        <h2 id="growth-title">The harmful mining areas are expanding, not shrinking.</h2>
+        <p>Each chart tracks one hotspot over time, from satellite surveys, customs data and official production figures.</p>
+      </div>
+      <div class="multiples" id="growth-charts"></div>
+    </section>
+
+    <section id="exposure" class="section wrap" aria-labelledby="exp-title">
+      <div class="col-main">
+        <p class="eyebrow">Exposure estimate</p>
+        <h2 id="exp-title">How much of a fusion magnet could come from these places?</h2>
+        <p id="exp-intro"></p>
+      </div>
+      <div class="estimator">
+        <form class="estimator__controls" id="exp-form">
+          <label>What is being built
+            <select id="exp-device"></select>
+          </label>
+          <label>How many
+            <input type="range" id="exp-count" min="1" max="100" value="1">
+            <output id="exp-count-out">1</output>
+          </label>
+          <label>Or a published scenario
+            <select id="exp-scenario"><option value="">None</option></select>
+          </label>
+        </form>
+        <div class="estimator__out" id="exp-out" aria-live="polite"></div>
+      </div>
+      <div class="col-main">
+        <details class="case__detail">
+          <summary>Show every assumption and its source</summary>
+          <div id="exp-assumptions"></div>
+        </details>
+        <p class="hc-caveat" id="exp-method"></p>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
