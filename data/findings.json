@@ -4,55 +4,125 @@
     {
       "lead": "No record shows where any fusion tape maker's yttrium comes from.",
       "body": "Sayari identifies the tape makers and Chinese separators shipping yttrium oxide to Japanese trading houses, but no shipment links the two. Japan publishes no shipment-level import data, and Sayari holds no Myanmar-to-China rare earth trade. The step where Kachin ore would enter a fusion magnet is invisible to trade data.",
-      "evidence": [{ "level": "not-researched", "scope": "yttrium into tape makers" }],
-      "sayari": [
-        { "name": "Faraday Factory Japan", "url": "https://graph.sayari.com/resource/entity/C13ZLDlfTD93f5CM_BpokA" },
-        { "name": "Ganzhou Chenguang Rare Earths", "url": "https://graph.sayari.com/resource/entity/pwT07K1hiAqggNIqqsSC3g" }
+      "evidence": [
+        {
+          "level": "likely",
+          "scope": "Kachin yttrium into fusion magnets"
+        }
       ],
-      "sources": ["SY"],
+      "sayari": [
+        {
+          "name": "Faraday Factory Japan",
+          "url": "https://graph.sayari.com/resource/entity/C13ZLDlfTD93f5CM_BpokA"
+        },
+        {
+          "name": "Ganzhou Chenguang Rare Earths",
+          "url": "https://graph.sayari.com/resource/entity/pwT07K1hiAqggNIqqsSC3g"
+        }
+      ],
+      "sources": [
+        "SY"
+      ],
       "material": "yttrium"
     },
     {
       "lead": "Part of fusion's tape supply ran through Moscow until 2025.",
       "body": "Russian customs records show a Moscow company in the SuperOx group exporting coated Hastelloy tape to Commonwealth Fusion Systems in early 2022, CFS exporting uncoated Hastelloy tape to it until December 2024 (declared for research use), and the same company sending 369 shipments of coated tape to Faraday Factory Japan, a supplier to fusion developers, until January 2025. None of the companies is sanctioned.",
-      "evidence": [{ "level": "documented", "scope": "customs records" }],
-      "sayari": [
-        { "name": "S-Innovations LLC", "url": "https://graph.sayari.com/resource/entity/ZhPhawms5E3chJhzhiai8Q" },
-        { "name": "Commonwealth Fusion Systems", "url": "https://graph.sayari.com/resource/entity/pvo3Wv7gZb9K0hiji7-Nag" }
+      "evidence": [
+        {
+          "level": "documented",
+          "scope": "customs records"
+        }
       ],
-      "sources": ["SY", "S36"],
+      "sayari": [
+        {
+          "name": "S-Innovations LLC",
+          "url": "https://graph.sayari.com/resource/entity/ZhPhawms5E3chJhzhiai8Q"
+        },
+        {
+          "name": "Commonwealth Fusion Systems",
+          "url": "https://graph.sayari.com/resource/entity/pvo3Wv7gZb9K0hiji7-Nag"
+        }
+      ],
+      "sources": [
+        "SY",
+        "S36"
+      ],
       "material": "nickel"
     },
     {
       "lead": "The same traders handle conflict-linked coltan and smelter-bound tin.",
       "body": "Four metals traders buy coltan from Rwandan exporters that Global Witness ties to M23-occupied Rubaya, and also ship tin concentrate to Malaysia Smelting Corporation. The records do not show conflict ore in that tin, but they show how few hands both minerals pass through before origin is lost.",
-      "evidence": [{ "level": "documented", "scope": "shipments" }, { "level": "hypothesis", "scope": "conflict ore in fusion tin" }],
-      "sayari": [
-        { "name": "Traxys Europe", "url": "https://graph.sayari.com/resource/entity/49gLiIsaRq1p3s8vhLc4cw" },
-        { "name": "Malaysia Smelting Corporation", "url": "https://graph.sayari.com/resource/entity/pwMtR-67xAIYzs7_EWhcVQ" }
+      "evidence": [
+        {
+          "level": "documented",
+          "scope": "shipments"
+        },
+        {
+          "level": "hypothesis",
+          "scope": "conflict ore in fusion tin"
+        }
       ],
-      "sources": ["SY", "S15"],
+      "sayari": [
+        {
+          "name": "Traxys Europe",
+          "url": "https://graph.sayari.com/resource/entity/49gLiIsaRq1p3s8vhLc4cw"
+        },
+        {
+          "name": "Malaysia Smelting Corporation",
+          "url": "https://graph.sayari.com/resource/entity/pwMtR-67xAIYzs7_EWhcVQ"
+        }
+      ],
+      "sources": [
+        "SY",
+        "S15"
+      ],
       "material": "tin"
     },
     {
       "lead": "Sanctioned parties sit one step from known fusion suppliers.",
       "body": "One of ITER's Nb₃Sn strand makers, Russia's Chepetsky Mechanical Plant, is on Ukraine's sanctions list. A Hong Kong trader on the US OFAC list is recorded as a supplier to both Malaysia Smelting Corporation and Kazakhstan's state-owned beryllium processor Ulba. The goods behind those two links were not retrieved.",
-      "evidence": [{ "level": "documented", "scope": "watchlist screening" }],
-      "sayari": [
-        { "name": "Chepetsky Mechanical Plant", "url": "https://graph.sayari.com/resource/entity/ScWgX1NKgn8TjlBOHc7JmA" },
-        { "name": "Star Dragon Corporation", "url": "https://graph.sayari.com/resource/entity/EOhsW8l7khZBEzP0r4qzVQ" }
+      "evidence": [
+        {
+          "level": "documented",
+          "scope": "watchlist screening"
+        }
       ],
-      "sources": ["SY"],
+      "sayari": [
+        {
+          "name": "Chepetsky Mechanical Plant",
+          "url": "https://graph.sayari.com/resource/entity/ScWgX1NKgn8TjlBOHc7JmA"
+        },
+        {
+          "name": "Star Dragon Corporation",
+          "url": "https://graph.sayari.com/resource/entity/EOhsW8l7khZBEzP0r4qzVQ"
+        }
+      ],
+      "sources": [
+        "SY"
+      ],
       "material": "tin"
     },
     {
       "lead": "The Indonesian nickel hypothesis was tested and not confirmed.",
       "body": "Sayari shows no confirmed or inferred path from the Hastelloy strip under REBCO tape to Morowali or Weda Bay. Harm in Indonesia's nickel hubs is documented; a link to fusion stays a hypothesis, and absence in trade data is not proof of no link.",
-      "evidence": [{ "level": "hypothesis", "scope": "link to fusion" }],
-      "sayari": [
-        { "name": "Haynes International", "url": "https://graph.sayari.com/resource/entity/uo0xLgiopyhcNTj8j5WklQ" }
+      "evidence": [
+        {
+          "level": "hypothesis",
+          "scope": "link to fusion"
+        }
       ],
-      "sources": ["SY", "S12", "S13"],
+      "sayari": [
+        {
+          "name": "Haynes International",
+          "url": "https://graph.sayari.com/resource/entity/uo0xLgiopyhcNTj8j5WklQ"
+        }
+      ],
+      "sources": [
+        "SY",
+        "S12",
+        "S13"
+      ],
       "material": "nickel"
     }
   ]

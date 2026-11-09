@@ -49,8 +49,6 @@ y["stages"] = [
       S("Lynas Malaysia Sdn Bhd","MYS","VfV46hV0zGnfCbA1Io_EOw","confirmed","Non-Chinese separator","12 shipments HS 284690 to Korean buyers, 2025-06 to 2026-01; none a known tape maker.","Not sanctioned. Its forced-labour and SOE flags are modelled sub-tier indicators, not findings about its operations."),
     ]),
 ]
-for st in y["stages"]:
-    pass
 y["routes"] = old_routes
 y["bottomLine"] = ("The magnets at the heart of compact fusion depend on yttrium separated overwhelmingly in China, where ore from militia-controlled Kachin State is mixed in and its origin lost. "
                    "Sayari confirms who makes the tape and that part of it ran through Moscow until 2025, but no record shows where any tape maker's yttrium comes from. Harm at Kachin is documented; the link into fusion magnets is likely, not proven.")
