@@ -1,43 +1,224 @@
 {
-  "_note": "Exposure Pathway scores (author's framework). Score each dimension 1 (low) to 3 (high); null renders as 'Score pending'. Every score needs a one-line note and source ids. The 'evidence' block is copied from the brief's evidence levels so visitors can see documented vs hypothesised routes before scores are filled.",
+  "_note": "Exposure Pathway scores, 1 (low) to 3 (high). Iteration 3 scores are Claude's judgement from the verified evidence, for the author to review. Each score has a one-line note; 'sources' lists the evidence behind the row.",
   "dimensions": [
-    { "id": "harm", "label": "Harm severity", "question": "How serious are documented abuses at the source?" },
-    { "id": "evidence", "label": "Evidence strength", "question": "Is the link to fusion proven (3), likely (2), or hypothetical (1)?" },
-    { "id": "traceability", "label": "Traceability break", "question": "Is there a blending point where origin is lost?" },
-    { "id": "leverage", "label": "Fusion leverage", "question": "Inverted: 3 = least leverage. Can fusion buyers alone change anything, or only by pooling with other sectors?" }
+    {
+      "id": "harm",
+      "label": "Harm severity",
+      "question": "How serious are documented abuses at the source?"
+    },
+    {
+      "id": "evidence",
+      "label": "Evidence strength",
+      "question": "Is the link to fusion proven (3), likely (2), or hypothetical (1)?"
+    },
+    {
+      "id": "traceability",
+      "label": "Traceability break",
+      "question": "Is there a blending point where origin is lost?"
+    },
+    {
+      "id": "leverage",
+      "label": "Fusion leverage",
+      "question": "Inverted: 3 = least leverage. Can fusion buyers alone change anything, or only by pooling with other sectors?"
+    }
   ],
   "routes": [
-    { "id": "yttrium-kachin", "label": "Yttrium", "route": "Kachin State, Myanmar", "material": "yttrium",
-      "evidence": { "harm": "documented", "link": "likely" },
-      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
-      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
-    { "id": "yttrium-south-china", "label": "Yttrium", "route": "Southern China ionic clays", "material": "yttrium",
-      "evidence": { "harm": "documented", "link": "not-researched" },
-      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
-      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
-    { "id": "tin-wa", "label": "Tin", "route": "Man Maw, Wa State, Myanmar", "material": "tin",
-      "evidence": { "harm": "documented", "link": "likely" },
-      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
-      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
-    { "id": "niobium-rubaya", "label": "Niobium", "route": "Rubaya, eastern DRC", "material": "niobium",
-      "evidence": { "harm": "documented", "link": "hypothesis" },
-      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
-      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
-    { "id": "nickel-indonesia", "label": "Nickel", "route": "Indonesia (Morowali, Weda Bay)", "material": "nickel",
-      "evidence": { "harm": "documented", "link": "hypothesis" },
-      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
-      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
-    { "id": "tungsten", "label": "Tungsten", "route": "Sector-wide", "material": "tungsten",
-      "evidence": { "harm": "documented", "link": "not-researched" },
-      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
-      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
-    { "id": "lithium6-historical", "label": "Lithium-6", "route": "Oak Ridge (historical)", "material": "lithium6",
-      "evidence": { "harm": "documented", "link": "documented" },
-      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
-      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] },
-    { "id": "beryllium", "label": "Beryllium", "route": "Materion · Ulba · China", "material": "beryllium",
-      "evidence": { "harm": "documented", "link": "documented" },
-      "scores": { "harm": null, "evidence": null, "traceability": null, "leverage": null },
-      "notes": { "harm": "", "evidence": "", "traceability": "", "leverage": "" }, "sources": [] }
-  ]
+    {
+      "id": "yttrium-kachin",
+      "label": "Yttrium",
+      "route": "Kachin State, Myanmar",
+      "material": "yttrium",
+      "evidence": {
+        "harm": "documented",
+        "link": "likely"
+      },
+      "scores": {
+        "harm": 3,
+        "evidence": 2,
+        "traceability": 3,
+        "leverage": 2
+      },
+      "notes": {
+        "harm": "Child miners' deaths, violence and sexual exploitation of workers, deadly landslides, armed-group control.",
+        "evidence": "Myanmar supplies a significant share of world yttrium, but no record traces it into tape.",
+        "traceability": "Ore is mixed into Chinese separation plants and leaves as Chinese product.",
+        "leverage": "Fusion is now a main customer of HTS tape makers, but has no leverage over separators or mines alone."
+      },
+      "sources": [
+        "S1",
+        "S3",
+        "S39",
+        "S43",
+        "SY"
+      ]
+    },
+    {
+      "id": "yttrium-south-china",
+      "label": "Yttrium",
+      "route": "Southern China ionic clays",
+      "material": "yttrium",
+      "evidence": {
+        "harm": "documented",
+        "link": "likely"
+      },
+      "scores": {
+        "harm": 2,
+        "evidence": 2,
+        "traceability": 2,
+        "leverage": 2
+      },
+      "notes": {
+        "harm": "Severe environmental damage (US$5.6bn cleanup, 50–100 years to recover); no documented abuses against people.",
+        "evidence": "China produces most of the world's yttrium, so fusion yttrium likely includes it; no record shows it.",
+        "traceability": "Country of origin survives, but specific mines are lost at separation.",
+        "leverage": "Same as Kachin: leverage over tape makers, not over Chinese separators."
+      },
+      "sources": [
+        "S3",
+        "S39"
+      ]
+    },
+    {
+      "id": "tin-wa",
+      "label": "Tin",
+      "route": "Man Maw, Wa State, Myanmar",
+      "material": "tin",
+      "evidence": {
+        "harm": "documented",
+        "link": "likely"
+      },
+      "scores": {
+        "harm": 3,
+        "evidence": 2,
+        "traceability": 3,
+        "leverage": 3
+      },
+      "notes": {
+        "harm": "Controlled by a US-sanctioned armed group listed by the UN for child recruitment; 2022 explosion killed nine.",
+        "evidence": "Man Maw is a major share of world tin supply; the link is market-level, not traced.",
+        "traceability": "No smelters in Wa; ore is smelted in Yunnan and no trade records show the flow.",
+        "leverage": "Fusion's tin demand is tiny next to electronics solder; only a cross-sector pool could move it."
+      },
+      "sources": [
+        "S8",
+        "S47",
+        "S48",
+        "S46"
+      ]
+    },
+    {
+      "id": "tin-malaysia",
+      "label": "Tin",
+      "route": "Great Lakes traders → Malaysia Smelting Corp",
+      "material": "tin",
+      "evidence": {
+        "harm": "documented",
+        "link": "hypothesis"
+      },
+      "scores": {
+        "harm": 2,
+        "evidence": 1,
+        "traceability": 3,
+        "leverage": 3
+      },
+      "notes": {
+        "harm": "Smelter bought ore from an OFAC-sanctioned trader tied to Rubaya; harm is at the source, the link is indirect.",
+        "evidence": "Nothing shows this smelter's tin reaching a fusion strand maker.",
+        "traceability": "Records name countries, not mines; Rwandan exports mix in smuggled Congolese ore.",
+        "leverage": "Same as Wa State: fusion is a negligible tin buyer."
+      },
+      "sources": [
+        "S49",
+        "S16",
+        "SY"
+      ]
+    },
+    {
+      "id": "niobium-rubaya",
+      "label": "Niobium",
+      "route": "Rubaya, eastern DRC",
+      "material": "niobium",
+      "evidence": {
+        "harm": "documented",
+        "link": "hypothesis"
+      },
+      "scores": {
+        "harm": 3,
+        "evidence": 1,
+        "traceability": 3,
+        "leverage": 3
+      },
+      "notes": {
+        "harm": "Forced labour, torture and killings of miners by M23; mass deaths in tunnel collapses.",
+        "evidence": "Brazil supplies about 93% of niobium; no record links Rubaya coltan to a strand maker.",
+        "traceability": "Laundered as 'Rwandan' exports and processed by smelters that passed audits.",
+        "leverage": "Superconductor niobium is a sliver of a market dominated by steelmaking."
+      },
+      "sources": [
+        "S50",
+        "S49",
+        "S51",
+        "S15",
+        "S16",
+        "S21"
+      ]
+    },
+    {
+      "id": "nickel-indonesia",
+      "label": "Nickel",
+      "route": "Indonesia (Morowali, Weda Bay)",
+      "material": "nickel",
+      "evidence": {
+        "harm": "documented",
+        "link": "hypothesis"
+      },
+      "scores": {
+        "harm": 3,
+        "evidence": 1,
+        "traceability": 3,
+        "leverage": 3
+      },
+      "notes": {
+        "harm": "21 workers killed in a 2023 smelter blast; coercive land-taking with police and military; rising respiratory illness.",
+        "evidence": "Sayari shows no path from Hastelloy substrate to Indonesian nickel.",
+        "traceability": "Nickel from many origins is melted together in alloy mills; Chinese mills have no upstream data.",
+        "leverage": "Hastelloy mills serve the chemical industry; tape substrate is a tiny share."
+      },
+      "sources": [
+        "S12",
+        "S13",
+        "S45",
+        "SY"
+      ]
+    },
+    {
+      "id": "tungsten",
+      "label": "Tungsten",
+      "route": "Rwanda, Colombia → powder makers",
+      "material": "tungsten",
+      "evidence": {
+        "harm": "documented",
+        "link": "hypothesis"
+      },
+      "scores": {
+        "harm": 2,
+        "evidence": 1,
+        "traceability": 3,
+        "leverage": 2
+      },
+      "notes": {
+        "harm": "Armed-group control and extortion at some Colombian mines (2 sources); no documented forced labour or killings at these mines.",
+        "evidence": "A Western powder maker buys through a trader that also handles Rwandan ore; no shipment shows conflict ore reaching it.",
+        "traceability": "Concentrate from many origins is converted to APT and powder.",
+        "leverage": "Fusion buys from a handful of qualified makers (e.g. A.L.M.T.), which could pass sourcing conditions upstream."
+      },
+      "sources": [
+        "S14",
+        "S54",
+        "S22",
+        "SY"
+      ]
+    }
+  ],
+  "status": "Scores are a first judgement from the evidence on this site, pending the author's review."
 }

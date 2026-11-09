@@ -50,8 +50,9 @@
         <h2 id="m2">How the trace works</h2>
         <ul class="method-list">
           <li><strong>Stages.</strong> Each material is laid out from the reactor back to the mine: reactor or developer, component maker, metal, oxide or alloy, separation or refining, and mine or source region. Where a chain has more than one source, it splits into routes.</li>
-          <li><strong>Lens toggle.</strong> The security lens shows concentration, control, export restrictions and single points of failure, coloured by supply risk. The people lens shows human rights findings on the same stages, coloured by harm severity. The colour ratings are the author's judgement from the cited evidence and are stored in the data files with every stage.</li>
+          <li><strong>Lens toggle.</strong> The security lens shows concentration, control, export restrictions and single points of failure, coloured by supply risk. The people lens shows human rights findings on the same stages, coloured by harm severity. Supply-risk colours are the author's judgement from the cited evidence; harm colours follow the rule below.</li>
           <li><strong>Evidence levels.</strong> Every stage carries a badge, described below. A stage can carry two: one for harm at the source, one for the link into fusion's supply chain.</li>
+          <li><strong>Harm rating (people lens colour).</strong> A stage is rated <em>severe</em> when three or more sources document harm there, or when the documented harm is extreme (forced labour, child labour, or any crime against people, such as killings, violence against civilians or armed-group abuses), even if only one source shows it. One or two sources means <em>moderate</em>. A stage with no documented harm is shown as such, not as safe. Sayari risk flags never count as documented harm: they are modelled indicators. Each rated stage says why it got its rating.</li>
           <li><strong>Blending points.</strong> Marked where ore from different sources is mixed (at separation plants, smelters or export hubs) and origin can no longer be traced.</li>
         </ul>
         <div class="evidence-table" id="evidence-table"></div>
@@ -106,6 +107,10 @@
       <div class="col-main">
         <h2 id="m7">Iteration log</h2>
         <ol class="log">
+          <li>
+            <time datetime="2026-11-08">8 Nov 2026</time>
+            <div><p><strong>Iteration 3.</strong> Every claim re-checked against its cited source (Tavily) and every Sayari figure re-run. Weak sources replaced (an industry aggregator page swapped for USGS and CSIS), outdated facts corrected (Kachin mines now under the Kachin Independence Army; the Man Maw restart), new evidence added (Amnesty International and US Treasury on forced labour and killings at Rubaya; the 2023 Morowali smelter explosion). Harm colours now follow a fixed rule. Exposure Pathway scores filled in as a first judgement for the author's review. Lithium-6 and beryllium removed until their data is complete. Full-width layout on large screens.</p></div>
+          </li>
           <li>
             <time datetime="2026-11-08">8 Nov 2026</time>
             <div><p><strong>Iteration 2.</strong> Sayari research merged into every material chain: named companies at each stage, shipment and registry evidence marked confirmed or inferred, watchlist screening, and USGS production shares. New "What the trade records show" section. Main results: the Indonesian nickel hypothesis was not confirmed; a Moscow coating step in the HTS tape chain was documented; tin and coltan routes share the same traders; no record traces yttrium into a tape maker.</p></div>

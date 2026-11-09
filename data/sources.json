@@ -2,6 +2,13 @@
   "_note": "Every source cited on the site. Dates are only filled where the project brief states them; null means 'not yet checked'. Add Sayari entity/record IDs under 'sayari' when Sayari-derived findings are added.",
   "sources": [
     {
+      "id": "SY",
+      "title": "Sayari Graph: corporate, ownership and trade records (each finding links to its Sayari entity)",
+      "publisher": "Sayari",
+      "date": "2026-11",
+      "url": "https://graph.sayari.com/"
+    },
+    {
       "id": "S1",
       "title": "Fuelling the future, poisoning the present: Myanmar's rare earth boom",
       "publisher": "Global Witness",
@@ -30,17 +37,10 @@
       "url": "https://globalwitness.org/en/press-releases/deadly-landslide-at-rare-earth-mine-in-myanmar-global-witness-reaction"
     },
     {
-      "id": "S6",
-      "title": "Top 10 Yttrium Producers in 2026",
-      "publisher": "Rare Earth Mining",
-      "date": null,
-      "url": "https://rare-earth-mining.com/yttrium-producers"
-    },
-    {
       "id": "S7",
       "title": "Rare Earth Export Restrictions One Year Later",
       "publisher": "CSIS",
-      "date": null,
+      "date": "2026",
       "url": "https://www.csis.org/analysis/rare-earth-export-restrictions-one-year-later"
     },
     {
@@ -89,7 +89,7 @@
       "id": "S14",
       "title": "Tech supply chains at risk of links to human rights abuses outside conflict hotspots (3TG)",
       "publisher": "Verisk Maplecroft via ReliefWeb",
-      "date": null,
+      "date": "2017",
       "url": "https://reliefweb.int/report/democratic-republic-congo/tech-supply-chains-risk-links-human-rights-abuses-outside-conflict"
     },
     {
@@ -107,42 +107,6 @@
       "url": "https://apnews.com/article/rwanda-congo-coltan-rubaya-smuggling-m23-trump-minerals-12d3bc8c8c8144c38c7e497c9928b0bc"
     },
     {
-      "id": "S17",
-      "title": "Mercury in East Fork Poplar Creek",
-      "publisher": "Oak Ridge National Laboratory",
-      "date": null,
-      "url": "https://southriverwatershed.org/wp-content/uploads/2018/08/south-river-science-team-final.pdf",
-      "checkNote": "The URL is hosted on southriverwatershed.org, not ORNL. Author to confirm the document and publisher."
-    },
-    {
-      "id": "S18",
-      "title": "Advocate, Issue 75",
-      "publisher": "DOE Oak Ridge Site Specific Advisory Board",
-      "date": "2019",
-      "url": "https://www.energy.gov/orem/articles/advocate-issue-75-july-2019"
-    },
-    {
-      "id": "S19",
-      "title": "Beryllium profile",
-      "publisher": "True Source Metals",
-      "date": null,
-      "url": "https://hub.truesourcemetals.com/metals/beryllium"
-    },
-    {
-      "id": "S20",
-      "title": "Materion signs supply agreement with Commonwealth Fusion Systems (beryllium fluoride)",
-      "publisher": "Yahoo Finance",
-      "date": null,
-      "url": "https://finance.yahoo.com/news/materion-signs-supply-agreement-commonwealth-104700784.html"
-    },
-    {
-      "id": "SY",
-      "title": "Sayari Graph: corporate, ownership and trade records (each finding links to its Sayari entity)",
-      "publisher": "Sayari",
-      "date": "2026-11",
-      "url": "https://graph.sayari.com/"
-    },
-    {
       "id": "S21",
       "title": "Mineral Commodity Summaries 2026: Niobium (Columbium)",
       "publisher": "U.S. Geological Survey",
@@ -155,20 +119,6 @@
       "publisher": "U.S. Geological Survey",
       "date": "2026",
       "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-tungsten.pdf"
-    },
-    {
-      "id": "S23",
-      "title": "Mineral Commodity Summaries 2026: Beryllium",
-      "publisher": "U.S. Geological Survey",
-      "date": "2026",
-      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-beryllium.pdf"
-    },
-    {
-      "id": "S24",
-      "title": "Beryllium: Health Effects",
-      "publisher": "U.S. Occupational Safety and Health Administration",
-      "date": null,
-      "url": "https://www.osha.gov/beryllium/health-effects"
     },
     {
       "id": "S25",
@@ -206,31 +156,10 @@
       "url": "https://ceratizit.com/int/en/news-and-media/news-and-press-releases/2026/scarce-raw-materials.html"
     },
     {
-      "id": "S30",
-      "title": "Enriched lithium and advanced nuclear",
-      "publisher": "Nuclear Engineering International",
-      "date": null,
-      "url": "https://www.neimagazine.com/analysis/enriched-lithium-and-advanced-nuclear"
-    },
-    {
-      "id": "S31",
-      "title": "Molten Salt Solutions signs enriched lithium supply agreements with Type One Energy and Gauss Fusion",
-      "publisher": "Fusion Energy Base",
-      "date": "2026",
-      "url": "https://www.fusionenergybase.com/articles/molten-salt-solutions-signs-enriched-lithium-supply-agreements-with-type-one-energy-and-gauss-fusion"
-    },
-    {
-      "id": "S32",
-      "title": "Fuels for Fusion: resource availability and supply",
-      "publisher": "Kyoto Fusioneering, via DOE Office of Science",
-      "date": "2022",
-      "url": "https://science.osti.gov/-/media/fes/pdf/fes-presentations/2022/Pearson_resource-availability-and-supply_presentation.pdf"
-    },
-    {
       "id": "S33",
       "title": "European steel for Test Blanket Modules arrives in Korea",
       "publisher": "Fusion for Energy (F4E)",
-      "date": null,
+      "date": "2024",
       "url": "https://fusionforenergy.europa.eu/news/test-blanket-modules-steel"
     },
     {
@@ -251,7 +180,7 @@
       "id": "S36",
       "title": "Faraday Factory announces it has delivered over 5,000 km of high-temperature superconductor tape to fusion industry",
       "publisher": "PR Newswire (Faraday Factory Japan)",
-      "date": null,
+      "date": "2024",
       "url": "https://www.prnewswire.com/news-releases/faraday-factory-announces-it-has-delivered-over-5-000-km-of-high-temperature-superconductor-tape-to-fusion-industry-302250067.html"
     },
     {
@@ -267,6 +196,139 @@
       "publisher": "PR Newswire via Yahoo Finance",
       "date": "2025",
       "url": "https://finance.yahoo.com/news/faraday-factory-japan-signed-agreement-071500430.html"
+    },
+    {
+      "id": "S39",
+      "title": "Mineral Commodity Summaries 2026: Yttrium",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-yttrium.pdf"
+    },
+    {
+      "id": "S40",
+      "title": "The Consequences of China's New Rare Earths Export Restrictions",
+      "publisher": "CSIS",
+      "date": "2025",
+      "url": "https://www.csis.org/analysis/consequences-chinas-new-rare-earths-export-restrictions"
+    },
+    {
+      "id": "S41",
+      "title": "Fujikura high-temperature superconducting wire (product data)",
+      "publisher": "Fujikura",
+      "date": null,
+      "url": "https://www.fujikura.co.jp/products/superconductors/documents/files/Fujikura_superconductor_EN.pdf"
+    },
+    {
+      "id": "S42",
+      "title": "S-Innovations / SuperOx: HTS tape for fusion (IAEA technical meeting presentation)",
+      "publisher": "IAEA conference archive",
+      "date": "2021",
+      "url": "https://conferences.iaea.org/event/214/contributions/17053/attachments/10304/14918/2021-05_IAEA_S-Innovations_SuperOx_presentation.pdf"
+    },
+    {
+      "id": "S43",
+      "title": "Rare Earth Mining in Myanmar's War-Torn Regions",
+      "publisher": "ISP-Myanmar",
+      "date": "2025",
+      "url": "https://ispmyanmar.com/wp-content/uploads/2025/06/Rare-Earth-Mining-in-Myanmars-War-Torn-Regions.pdf"
+    },
+    {
+      "id": "S44",
+      "title": "Myanmar's rare earth mining boom",
+      "publisher": "Yale Environment 360",
+      "date": null,
+      "url": "https://e360.yale.edu/features/myanmar-rare-earth-mining"
+    },
+    {
+      "id": "S45",
+      "title": "Indonesia: Furnace fire at Chinese-owned nickel smelter in Morowali kills 20 workers",
+      "publisher": "Business & Human Rights Resource Centre",
+      "date": "2023",
+      "url": "https://www.business-humanrights.org/en/latest-news/indonesia-furnace-fire-at-chinese-owned-nickel-smelter-in-morowali-kills-20-workers-and-injures-over-40-workers-protest-for-safer-working-conditions"
+    },
+    {
+      "id": "S46",
+      "title": "Myanmar tin mega-mine restarts operations",
+      "publisher": "AFP via Bangkok Post",
+      "date": "2026",
+      "url": "https://www.bangkokpost.com/world/3317203/myanmar-tin-megamine-restarts-operations"
+    },
+    {
+      "id": "S47",
+      "title": "Myanmar fact sheet: parties listed for recruitment and use of children",
+      "publisher": "UN Office of the SRSG for Children and Armed Conflict",
+      "date": "2016",
+      "url": "https://childrenandarmedconflict.un.org/wp-content/uploads/2016/02/Myanmar-Fact-Sheet-September-2016.pdf"
+    },
+    {
+      "id": "S48",
+      "title": "Myanmar explosion prompts mine safety review",
+      "publisher": "International Tin Association",
+      "date": "2022",
+      "url": "https://www.internationaltin.org/myanmar-explosion-prompts-mine-safety-review/"
+    },
+    {
+      "id": "S49",
+      "title": "Treasury sanctions entities linked to violence and illegal mining in the Democratic Republic of the Congo",
+      "publisher": "U.S. Department of the Treasury (OFAC)",
+      "date": "2025",
+      "url": "https://home.treasury.gov/news/press-releases/sb0221"
+    },
+    {
+      "id": "S50",
+      "title": "DRC: M23 fighters abused miners and trafficked gold and coltan to Rwanda",
+      "publisher": "Amnesty International",
+      "date": "2026",
+      "url": "https://www.amnesty.org/en/latest/news/2026/09/drc-m23-fighters-abused-miners-and-trafficked-gold-and-coltan-to-rwanda"
+    },
+    {
+      "id": "S51",
+      "title": "Congo mine disaster: tunnels collapse in rebel-held Rubaya",
+      "publisher": "Associated Press",
+      "date": "2026",
+      "url": "https://apnews.com/article/congo-rubaya-mine-collapse-coltan-deaths-m23-b9fec43392b2b5b7de2857b4d33b8c8e"
+    },
+    {
+      "id": "S52",
+      "title": "The first Inner Vertical Target is ready for ITER",
+      "publisher": "Fusion for Energy (F4E)",
+      "date": "2026",
+      "url": "https://fusionforenergy.europa.eu/news/the-first-inner-vertical-target-is-ready-for-iter"
+    },
+    {
+      "id": "S53",
+      "title": "Promising results for first-ever critical heat flux testing of full tungsten divertor components",
+      "publisher": "Fusion for Energy (F4E)",
+      "date": "2010",
+      "url": "https://fusionforenergy.europa.eu/news/promising-results-for-first-ever-critical-heat-flux-testing-of-full-tungsten-divertor-components"
+    },
+    {
+      "id": "S54",
+      "title": "Colombia's black-market coltan tied to drug traffickers, paramilitaries",
+      "publisher": "International Consortium of Investigative Journalists (ICIJ)",
+      "date": "2012",
+      "url": "https://www.icij.org/investigations/coltan/colombias-black-market-coltan-tied-drug-traffickers-paramilitaries"
+    },
+    {
+      "id": "S55",
+      "title": "Development of EUROFER97 database and material property handbook",
+      "publisher": "UKAEA",
+      "date": null,
+      "url": "https://scientific-publications.ukaea.uk/wp-content/uploads/UKAEA-CCFE-PR1863.PDF"
+    },
+    {
+      "id": "S56",
+      "title": "CBMM, St. George clash over mining rights and dam safety in Brazil",
+      "publisher": "Valor International",
+      "date": "2026",
+      "url": "https://valorinternational.globo.com/business/news/2026/08/11/cbmm-st-george-clash-over-mining-rights-and-dam-safety-in-brazil.ghtml"
+    },
+    {
+      "id": "S57",
+      "title": "Joint-Stock Company \"Chepetsky Mechanical Plant\" (Ukraine NSDC sanctions listing)",
+      "publisher": "OpenSanctions",
+      "date": null,
+      "url": "https://www.opensanctions.org/entities/NK-5SY2TV7a4zDFgPsiBdesfs"
     }
   ]
 }

@@ -91,10 +91,10 @@ export const SCALE = {
     unknown: { colour: '#3A3731', label: 'Not yet assessed' },
   },
   people: {
-    high: { colour: '#E55F53', label: 'Severe documented harm' },
+    high: { colour: '#E55F53', label: 'Severe harm' },
     moderate: { colour: '#B78024', label: 'Moderate harm' },
     low: { colour: '#4A9B5E', label: 'No major harm found' },
-    unknown: { colour: '#3A3731', label: 'Not yet assessed' },
+    unknown: { colour: '#3A3731', label: 'No documented harm' },
   },
 };
 

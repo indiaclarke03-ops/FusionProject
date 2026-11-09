@@ -740,3 +740,37 @@ code { font-family: var(--font-mono); font-size: 0.9em; }
 .btn-link:hover { color: var(--text); }
 @media (max-width: 600px) { .finding { padding: var(--s-48) var(--s-16) var(--s-16); } .finding::before { left: var(--s-16); top: var(--s-16); } }
 .sayari__clean { color: var(--text-muted); }
+
+/* ---------- Full-width layout (iteration 3) ----------
+   The page now uses the whole screen on large monitors instead of a centred
+   1080px column. Reading text keeps a comfortable measure; diagrams, cards and
+   tables spread out. Overrides the 1080px max in DESIGN.md at the author's request. */
+:root { --max: 1760px; --measure: 760px; }
+.wrap {
+  max-width: var(--max);
+  padding-left: clamp(16px, 4vw, 72px);
+  padding-right: clamp(16px, 4vw, 72px);
+}
+.section { padding-left: clamp(16px, 4vw, 72px); padding-right: clamp(16px, 4vw, 72px); }
+.col-main { grid-column: 2 / span 8; }
+.lens-compare { grid-column: 2 / span 9; }
+.case-stages.col-main { grid-column: 2 / span 9; max-width: 1100px; }
+.findings.col-main { grid-column: 2 / -2; max-width: none; }
+@media (min-width: 1200px) {
+  .findings.col-main { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.pull-quote { grid-column: 3 / span 8; }
+.mockup { grid-column: 3 / span 8; }
+.reactor-layout { grid-template-columns: minmax(0, 9fr) minmax(280px, 3fr); }
+#reactor-svg { max-height: 74vh; margin: 0 auto; }
+.trace-panel { width: clamp(360px, 38vw, 720px); }
+.node__harm { font-size: var(--fs-13); color: var(--text-muted); margin: var(--s-8) 0 0; }
+@media (max-width: 900px) {
+  .col-main, .lens-compare, .case-stages.col-main, .findings.col-main, .pull-quote, .mockup { grid-column: 1 / -1; }
+  .reactor-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .trace-panel { width: 100%; }
+}
+.findings { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 600px) { .badge { white-space: normal; } }

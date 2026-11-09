@@ -1,0 +1,272 @@
+{
+  "_note": "Materials removed from the site in iteration 3 because their supply-chain data is incomplete. Kept here for a later iteration. Not loaded by the site.",
+  "materials": {
+    "lithium6": {
+      "name": "Lithium-6",
+      "part": "blanket",
+      "role": "Enriched lithium for breeding tritium fuel",
+      "stages": [
+        {
+          "tier": "Metal / oxide / alloy",
+          "name": "Lithium-6 enrichment today",
+          "security": {
+            "text": "There is effectively no commercial supply. Only Russia and China are known to produce enriched lithium, and it is export-controlled because of its weapons use. In March 2026 US start-up Molten Salt Solutions signed supply agreements with Type One Energy and Gauss Fusion.",
+            "sources": [
+              "S30",
+              "S32",
+              "S31"
+            ]
+          },
+          "people": {
+            "text": "The legacy enrichment process uses mercury. That is the process behind the Oak Ridge contamination below.",
+            "sources": [
+              "S30"
+            ]
+          },
+          "evidence": [
+            {
+              "level": "documented",
+              "scope": "supply situation"
+            },
+            {
+              "level": "not-researched",
+              "scope": "conditions in Russia and China"
+            }
+          ],
+          "rating": {
+            "supply": "high",
+            "harm": "unknown"
+          }
+        },
+        {
+          "tier": "Lessons from history",
+          "name": "Oak Ridge, Tennessee, 1950s–60s",
+          "security": null,
+          "people": {
+            "text": "US lithium enrichment at Oak Ridge used mercury. About 1.1 million kg was lost on site, around 10% of it into East Fork Poplar Creek. About 15 miles of the creek still exceed mercury water-quality criteria.",
+            "sources": [
+              "S17",
+              "S18"
+            ]
+          },
+          "evidence": [
+            {
+              "level": "documented",
+              "scope": "historical"
+            }
+          ],
+          "rating": {
+            "supply": "unknown",
+            "harm": "high"
+          },
+          "history": true
+        },
+        {
+          "tier": "Mine / source region",
+          "name": "Lithium source",
+          "security": null,
+          "people": null,
+          "evidence": [
+            {
+              "level": "not-researched"
+            }
+          ],
+          "rating": {
+            "supply": "unknown",
+            "harm": "unknown"
+          }
+        }
+      ],
+      "bottomLine": "Fusion's fuel chain has caused harm before: lithium-6 enrichment at Oak Ridge left mercury in a creek that still exceeds water-quality criteria. Today there is no commercial supply outside Russia and China, and new enrichers are only now signing deals with fusion developers."
+    },
+    "beryllium": {
+      "name": "Beryllium",
+      "part": "blanket",
+      "role": "Neutron multiplier",
+      "stages": [
+        {
+          "tier": "Reactor / developer",
+          "name": "Commonwealth Fusion Systems",
+          "security": {
+            "text": "Has a supply agreement with Materion for beryllium fluoride. Sayari does not show it, which is expected for a domestic US sale.",
+            "sources": [
+              "S20",
+              "SY"
+            ]
+          },
+          "people": null,
+          "evidence": [
+            {
+              "level": "documented",
+              "scope": "supply agreement"
+            }
+          ],
+          "rating": {
+            "supply": "moderate",
+            "harm": "unknown"
+          },
+          "sayari": [
+            {
+              "name": "Commonwealth Fusion Systems LLC",
+              "country": "USA",
+              "entity_url": "https://graph.sayari.com/resource/entity/pvo3Wv7gZb9K0hiji7-Nag",
+              "entity_id": "pvo3Wv7gZb9K0hiji7-Nag",
+              "link_status": "confirmed",
+              "role": "Fusion developer",
+              "basis": "SEC CIK 0001744079. No beryllium suppliers among its recorded imports."
+            }
+          ]
+        },
+        {
+          "tier": "Metal / oxide / alloy",
+          "name": "Materion (US) · Ulba Metallurgical Plant (Kazakhstan)",
+          "security": {
+            "text": "Supply is concentrated among a few producers. Ulba is owned by the Kazakh state through Kazatomprom and Samruk-Kazyna (Sayari registry data); Sayari flags it for regulatory action and for imports from a US-sanctioned trader. Kazakhstan supplied 31% of US beryllium imports in 2021–24.",
+            "sources": [
+              "S19",
+              "S23",
+              "SY"
+            ]
+          },
+          "people": {
+            "text": "The main people risk is worker health. Chronic beryllium disease is a lung disease caused by breathing beryllium dust or fumes, and OSHA calls it the primary health risk for beryllium workers.",
+            "sources": [
+              "S24"
+            ]
+          },
+          "evidence": [
+            {
+              "level": "documented",
+              "scope": "ownership and occupational harm"
+            }
+          ],
+          "rating": {
+            "supply": "high",
+            "harm": "moderate"
+          },
+          "blending": true,
+          "sayari": [
+            {
+              "name": "Materion Corp",
+              "country": "USA",
+              "entity_url": "https://graph.sayari.com/resource/entity/EwrvHuTaV4IXqRX9roWh9Q",
+              "entity_id": "EwrvHuTaV4IXqRX9roWh9Q",
+              "link_status": "confirmed",
+              "role": "Leading US beryllium producer; CFS supplier",
+              "basis": "SEC CIK 0001104657. No ore suppliers recorded (consistent with its own US mine).",
+              "watchlist": "Watchlist (1 hop): no hits."
+            },
+            {
+              "name": "Ulba Metallurgical Plant JSC",
+              "country": "KAZ",
+              "entity_url": "https://graph.sayari.com/resource/entity/yd4WCfTHQsYYVO6SEoutWA",
+              "entity_id": "yd4WCfTHQsYYVO6SEoutWA",
+              "link_status": "confirmed",
+              "role": "Beryllium, tantalum and niobium processor, Oskemen",
+              "basis": "Owned via Kazatomprom → Samruk-Kazyna → Republic of Kazakhstan.",
+              "watchlist": "State-owned; regulatory_action; one-hop trade link to Star Dragon Corporation (OFAC SDN 55049), goods not retrieved."
+            }
+          ]
+        },
+        {
+          "tier": "Mine / source region",
+          "name": "Beryllium ore: US (Utah), Brazil, China, Nigeria",
+          "security": {
+            "text": "The US mined 230 of the world's roughly 430 t of beryllium in 2025; about 60% of identified resources are at Spor Mountain, Utah.",
+            "sources": [
+              "S23"
+            ]
+          },
+          "people": null,
+          "evidence": [
+            {
+              "level": "documented",
+              "scope": "production"
+            },
+            {
+              "level": "not-researched",
+              "scope": "conditions at mines"
+            }
+          ],
+          "rating": {
+            "supply": "high",
+            "harm": "unknown"
+          }
+        }
+      ],
+      "bottomLine": "Beryllium supply is concentrated in the US and in a Kazakh state-owned processor that Sayari flags for regulatory action. The main people risk is to workers' lungs, not conflict."
+    }
+  },
+  "sources": [
+    {
+      "id": "S17",
+      "title": "Mercury contamination in East Fork Poplar Creek, Oak Ridge, Tennessee (G.R. Southworth, ORNL Environmental Sciences Division; presentation hosted by the South River Science Team)",
+      "publisher": "Oak Ridge National Laboratory",
+      "date": null,
+      "url": "https://southriverwatershed.org/wp-content/uploads/2018/08/south-river-science-team-final.pdf"
+    },
+    {
+      "id": "S18",
+      "title": "Advocate, Issue 75",
+      "publisher": "DOE Oak Ridge Site Specific Advisory Board",
+      "date": "2019",
+      "url": "https://www.energy.gov/orem/articles/advocate-issue-75-july-2019"
+    },
+    {
+      "id": "S19",
+      "title": "Beryllium profile",
+      "publisher": "True Source Metals",
+      "date": null,
+      "url": "https://hub.truesourcemetals.com/metals/beryllium"
+    },
+    {
+      "id": "S20",
+      "title": "Materion signs supply agreement with Commonwealth Fusion Systems (beryllium fluoride)",
+      "publisher": "Yahoo Finance",
+      "date": null,
+      "url": "https://finance.yahoo.com/news/materion-signs-supply-agreement-commonwealth-104700784.html"
+    },
+    {
+      "id": "S23",
+      "title": "Mineral Commodity Summaries 2026: Beryllium",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-beryllium.pdf"
+    },
+    {
+      "id": "S24",
+      "title": "Beryllium: Health Effects",
+      "publisher": "U.S. Occupational Safety and Health Administration",
+      "date": null,
+      "url": "https://www.osha.gov/beryllium/health-effects"
+    },
+    {
+      "id": "S30",
+      "title": "Enriched lithium and advanced nuclear",
+      "publisher": "Nuclear Engineering International",
+      "date": null,
+      "url": "https://www.neimagazine.com/analysis/enriched-lithium-and-advanced-nuclear"
+    },
+    {
+      "id": "S31",
+      "title": "Molten Salt Solutions signs enriched lithium supply agreements with Type One Energy and Gauss Fusion",
+      "publisher": "Fusion Energy Base",
+      "date": "2026",
+      "url": "https://www.fusionenergybase.com/articles/molten-salt-solutions-signs-enriched-lithium-supply-agreements-with-type-one-energy-and-gauss-fusion"
+    },
+    {
+      "id": "S32",
+      "title": "Fuels for Fusion: resource availability and supply",
+      "publisher": "Kyoto Fusioneering, via DOE Office of Science",
+      "date": "2022",
+      "url": "https://science.osti.gov/-/media/fes/pdf/fes-presentations/2022/Pearson_resource-availability-and-supply_presentation.pdf"
+    },
+    {
+      "id": "S17b",
+      "title": "History of mercury use and environmental contamination at the Oak Ridge Y-12 Plant (Brooks & Southworth)",
+      "publisher": "Environmental Pollution 159(1), via OSTI",
+      "date": "2011",
+      "url": "https://www.osti.gov/biblio/1037053"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+# HISTORICAL (iteration 2). Do not re-run: data has since been edited by later steps (see tools/README.md).
 """Iteration 2: merge Sayari yttrium/REBCO findings and correct the CFS<->Moscow wording."""
 import json, sys
 sys.path.insert(0, "tools")

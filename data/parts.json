@@ -27,9 +27,12 @@
     {
       "id": "divertor",
       "label": "Divertor & first wall",
-      "short": "Faces the plasma, takes the heat",
-      "description": "The divertor and first wall face the plasma directly and take the heat. They are made with tungsten.",
-      "descriptionSources": [],
+      "short": "Faces the plasma, takes the most heat",
+      "description": "The divertor faces the plasma directly and takes the most heat. Its plasma-facing surface is made of tungsten, which is also the leading choice for future reactor walls.",
+      "descriptionSources": [
+        "S27",
+        "S52"
+      ],
       "materials": [
         "tungsten"
       ]
@@ -38,19 +41,19 @@
       "id": "blanket",
       "label": "Breeding blanket",
       "short": "Breeds tritium fuel, absorbs neutrons",
-      "description": "The breeding blanket breeds tritium fuel and absorbs neutrons. Tritium breeding needs enriched lithium-6; beryllium serves as a neutron multiplier.",
+      "description": "The breeding blanket breeds tritium fuel and absorbs neutrons. Its key materials, enriched lithium-6 and beryllium, are not traced in this iteration: the public and Sayari data on them is not yet complete enough to show a full chain.",
       "descriptionSources": [],
-      "materials": [
-        "lithium6",
-        "beryllium"
-      ]
+      "materials": [],
+      "notTraced": true
     },
     {
       "id": "vacuum-vessel",
       "label": "Vacuum vessel & structure",
       "short": "Holds everything",
-      "description": "The vacuum vessel and structure hold everything together. Shown here for contrast: specialty steels matter for supply, but this research has not found a major human rights hotspot at this stage.",
-      "descriptionSources": [],
+      "description": "The vacuum vessel, blanket and support structure hold everything together. They are built from specialty steels, including the low-activation steel EUROFER97 used for blanket structures. These matter for supply, but this research found no major human rights hotspot at this stage.",
+      "descriptionSources": [
+        "S33"
+      ],
       "materials": [
         "steel"
       ],

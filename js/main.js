@@ -37,7 +37,7 @@ function colourParts() {
     const sw = document.querySelector(`[data-swatch="${part.id}"]`);
     if (sw) sw.style.background = colour;
     const rl = document.querySelector(`[data-rating-label="${part.id}"]`);
-    if (rl) rl.textContent = SCALE[state.lens][r].label;
+    if (rl) rl.textContent = part.materials.length ? SCALE[state.lens][r].label : 'Not traced in this iteration';
   });
 }
 
@@ -45,10 +45,12 @@ function renderColourKey() {
   const key = document.getElementById('colour-key');
   const scale = SCALE[state.lens];
   const title = state.lens === 'security' ? 'Colour shows supply risk' : 'Colour shows harm severity';
-  const order = ['high', 'moderate', 'low', 'unknown'];
+  const order = state.lens === 'people' ? ['high', 'moderate', 'unknown'] : ['high', 'moderate', 'low', 'unknown'];
   key.innerHTML = `<p class="colour-key__title">${title}</p><ul>` +
     order.map((k) => `<li><span class="swatch" style="background:${scale[k].colour}"></span>${esc(scale[k].label)}</li>`).join('') +
-    '</ul><p class="colour-key__note">A part takes the highest rating of any stage in its materials’ chains.</p>';
+    '</ul>' + (state.lens === 'people'
+      ? '<p class="colour-key__note">Severe: harm documented by three or more sources, or any forced labour, child labour or crime against people. Moderate: one or two sources.</p>'
+      : '') + '<p class="colour-key__note">A part takes the highest rating of any stage in its materials’ chains.</p>';
 }
 
 function renderPartList() {
@@ -179,6 +181,8 @@ function nodeHtml(stage, { lenses = [state.lens], ratingLens = state.lens } = {}
     ? '<p class="node__empty">Not yet researched. This stage is a visible gap for iteration 2.</p>'
     : lenses.map((l) => lensBlock(stage, l)).join('');
   const sayari = sayariBlock(stage.sayari);
+  const harmWhy = (ratingLens === 'people' && stage.harm && stage.harm.reason)
+    ? `<p class="node__harm">${esc(stage.harm.reason)}</p>` : '';
   const note = stage.evidenceNote ? `<p class="node__note">${esc(stage.evidenceNote)}</p>` : '';
   const todo = stage.todo ? `<p class="node__todo">To research: ${esc(stage.todo)}</p>` : '';
   const ratingText = nyr ? '' : `<span class="node__rating"><span class="swatch" style="background:${colour}"></span>${esc(SCALE[ratingLens][r].label)}</span>`;
@@ -191,6 +195,7 @@ function nodeHtml(stage, { lenses = [state.lens], ratingLens = state.lens } = {}
     <p class="node__name">${esc(stage.name)}</p>
     ${hist}${blend}
     <div class="node__lenses">${body}</div>
+    ${harmWhy}
     <div class="badges">${stage.evidence.map((e) => evidenceBadge(e, D.chains.evidenceLevels)).join('')}</div>
     ${sayari}${note}${todo}
   </li>`;
@@ -212,6 +217,16 @@ function renderTraceBody() {
   const part = D.parts.parts.find((p) => p.id === state.partId);
   const body = document.getElementById('trace-body');
   const material = D.chains.materials[state.materialKey];
+  if (!material) {
+    body.innerHTML = `
+      <p class="trace-panel__desc">${esc(part.description)}</p>
+      <ol class="trace"><li class="node node--nyr" style="--node-colour:${SCALE[state.lens].unknown.colour}">
+        <div class="node__head"><p class="node__tier">Not traced in this iteration</p></div>
+        <p class="node__empty">This part's supply chain will be added once the evidence is complete enough to show the full chain.</p>
+        <div class="badges">${evidenceBadge({ level: 'not-researched' }, D.chains.evidenceLevels)}</div>
+      </li></ol>`;
+    return;
+  }
 
   const tabs = part.materials.length > 1
     ? `<div class="tabs" role="tablist" aria-label="Materials">${part.materials.map((k) => {
@@ -324,7 +339,8 @@ function openTrace(partId, trigger) {
   panel.scrollTop = 0;
   document.getElementById('trace-body').scrollTop = 0;
   document.getElementById('trace-title').focus();
-  announce(`Trace open: ${part.label}. Showing ${D.chains.materials[state.materialKey].name}.`);
+  const m0 = D.chains.materials[state.materialKey];
+  announce(`Trace open: ${part.label}.${m0 ? ` Showing ${m0.name}.` : ' Not traced in this iteration.'}`);
 }
 
 function closeTrace({ returnFocus = true } = {}) {
@@ -430,8 +446,10 @@ function renderScores() {
   const harmDoc = routes.filter((r) => r.evidence.harm === 'documented').length;
   const linkDoc = routes.filter((r) => r.evidence.link === 'documented').length;
   const linkWeak = routes.filter((r) => ['hypothesis', 'not-researched'].includes(r.evidence.link)).length;
+  const harmPart = harmDoc === n ? `on all ${n} routes` : `on ${harmDoc} of ${n} routes`;
+  const linkPart = linkDoc === 0 ? 'on none of them' : `on only ${linkDoc}`;
   document.getElementById('scores-title').textContent =
-    `Harm is documented on ${harmDoc} of ${n} routes. The link to fusion is proven on only ${linkDoc}.`;
+    `Harm is documented ${harmPart}. The link into fusion is proven ${linkPart}.`;
 
   const scoreCell = (r, d) => {
     const v = r.scores[d.id];
@@ -465,7 +483,7 @@ function renderScores() {
   const pending = routes.every((r) => Object.values(r.scores).every((v) => v == null));
   document.getElementById('score-dims').innerHTML =
     dimensions.map((d) => `<div><dt>${esc(d.label)}</dt><dd>${esc(d.question)}</dd></div>`).join('') +
-    (pending ? `<div class="score-dims__status"><dt>Status</dt><dd>Scores are pending the author's review in iteration 1. On ${linkWeak} of ${n} routes the link to fusion is still a hypothesis or not yet researched.</dd></div>` : '');
+    `<div class="score-dims__status"><dt>Status</dt><dd>${pending ? "Scores are pending the author's review." : esc(D.scores.status || '')} On ${linkWeak} of ${n} routes the link to fusion is still a hypothesis or not yet researched.</dd></div>`;
 
   document.getElementById('mockup-scores').innerHTML = dimensions.map((d) =>
     `<li><span>${esc(d.label)}</span><span class="mockup__bar" aria-hidden="true"><span></span><span></span><span></span></span></li>`).join('');

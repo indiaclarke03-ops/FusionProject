@@ -24,10 +24,11 @@
       "part": "hts-magnets",
       "role": "The rare earth in REBCO superconducting tape",
       "whyItMatters": {
-        "text": "Compact tokamaks use high-temperature superconducting magnets made from REBCO tape (\"rare-earth barium copper oxide\"). The rare earth is usually yttrium and cannot easily be substituted. Some makers use gadolinium instead, with yttrium oxide in the buffer layers beneath it.",
+        "text": "Compact tokamaks use high-temperature superconducting magnets made from REBCO tape (\"rare-earth barium copper oxide\"). Faraday Factory's tape uses yttrium as the rare earth; Fujikura's uses gadolinium or europium. Both put a yttrium-oxide buffer layer under the superconductor, so yttrium is in the tape either way.",
         "sources": [
           "S10",
-          "SY"
+          "S41",
+          "S42"
         ]
       },
       "stages": [
@@ -45,7 +46,7 @@
             ]
           },
           "people": {
-            "text": "Buyers sit several tiers removed from the mine. No public human rights traceability for magnet materials was found.",
+            "text": "Buyers sit several tiers removed from the mine. We found no public human rights traceability for magnet materials from fusion developers or tape makers; industry supply-chain reports (DOE, FIA) do not address it.",
             "sources": [
               "S10",
               "S11"
@@ -82,7 +83,7 @@
           "tier": "Component maker",
           "name": "REBCO tape makers",
           "security": {
-            "text": "A small number of makers supply fusion: Fujikura and Faraday Factory Japan (CFS), and Faraday Factory (Proxima Fusion). Sayari shows Faraday Factory Japan importing coated Hastelloy tape from Moscow until January 2025, some described with yttrium-containing oxide layers.",
+            "text": "A small number of makers supply fusion: Fujikura and Faraday Factory Japan (CFS), and Faraday Factory (Proxima Fusion). Sayari shows Faraday Factory Japan importing coated Hastelloy tape from Moscow until January 2025. Some is described with a yttrium-oxide buffer and some with barium-copper-yttrium oxide and silver layers, which is the superconducting layer itself.",
             "sources": [
               "S36",
               "S37",
@@ -91,7 +92,7 @@
             ]
           },
           "people": {
-            "text": "Sayari shows no yttrium oxide or yttrium targets reaching any tape maker. Japan publishes no shipment-level import data, so the step into Japanese tape makers cannot be seen.",
+            "text": "Sayari shows no yttrium oxide or yttrium targets reaching any tape maker. Its Japanese import records (from 2023) show Faraday Factory Japan receiving tape from Moscow, but no rare earth shipments to Fujikura or Faraday Factory. Coverage is partial, so the absence is not proof.",
             "sources": [
               "SY"
             ]
@@ -128,7 +129,7 @@
               "entity_id": "C13ZLDlfTD93f5CM_BpokA",
               "link_status": "confirmed",
               "role": "Tape maker; supplies CFS and Proxima Fusion",
-              "basis": "369 shipments received from Russia, Feb 2023 – Jan 2025, e.g. 'Hastelloy C276 alloy tape with Mg, Cu, Ba, Y oxide layers'.",
+              "basis": "369 shipments received from Russia, Feb 2023 – Jan 2025 (Russian export and Japanese import records): 261 from S-Innovations, 106 from a same-address duplicate record. Descriptions include 'Hastelloy C276 alloy tape with Mg, Cu, Ba, Y oxide layers and a silver surface layer'.",
               "watchlist": "Not sanctioned; no watchlist hits."
             },
             {
@@ -137,9 +138,9 @@
               "entity_url": "https://graph.sayari.com/resource/entity/ZhPhawms5E3chJhzhiai8Q",
               "entity_id": "ZhPhawms5E3chJhzhiai8Q",
               "link_status": "confirmed",
-              "role": "Moscow tape maker in the SuperOx group (per public reporting)",
+              "role": "Moscow tape maker in the SuperOx group",
               "basis": "Exported coated tape to CFS (2022) and to Faraday Factory Japan (2023–25). INN 5032242530.",
-              "watchlist": "Not sanctioned. Flags: imports_bis_high_priority_items, sanctioned_adjacent (trade adjacency only)."
+              "watchlist": "Not sanctioned. Flags: imports_bis_high_priority_items, meu_list_contractors, sanctioned_adjacent (modelled adjacency)."
             }
           ]
         },
@@ -147,10 +148,11 @@
           "tier": "Metal / oxide / alloy",
           "name": "Yttrium oxide",
           "security": {
-            "text": "China added yttrium to export licensing in April 2025; US-bound yttrium exports collapsed afterwards.",
+            "text": "China added yttrium to export licensing on 4 April 2025. Chinese customs data show yttrium exports to the US fell to 17 tonnes in April–December 2025, from 333 tonnes in the eight months before.",
             "sources": [
-              "S6",
-              "S7"
+              "S7",
+              "S39",
+              "S40"
             ]
           },
           "people": null,
@@ -169,18 +171,18 @@
           "tier": "Separation / refining",
           "name": "Heavy rare earth separation, China (and Lynas, Malaysia)",
           "security": {
-            "text": "Separation of heavy rare earths, including yttrium, is overwhelmingly in China. Sayari records Jiangxi and Fujian separators shipping yttrium oxide to Japanese trading houses in 2022, and Lynas (Malaysia), a non-Chinese separator, shipping rare earth compounds to Korea in 2025–26. None is recorded selling to a tape maker.",
+            "text": "Separation of heavy rare earths, including yttrium, is overwhelmingly in China: about 99% until 2023. Sayari records Fujian separators shipping consignments described as yttrium oxide to Japanese importers in 2022–23. Lynas (Malaysia), the main non-Chinese separator, ships mostly light rare earths, largely to Japan. None is recorded selling to a tape maker.",
             "sources": [
-              "S6",
-              "S3",
+              "S40",
+              "S39",
               "SY"
             ]
           },
           "people": {
             "text": "Ore from Myanmar enters Chinese separation plants and leaves as Chinese product. Origin is lost here.",
             "sources": [
-              "S6",
-              "S3"
+              "S3",
+              "S1"
             ]
           },
           "evidence": [
@@ -200,33 +202,24 @@
           "blending": true,
           "sayari": [
             {
-              "name": "Ganzhou Chenguang Rare Earths New Material",
-              "country": "CHN",
-              "entity_url": "https://graph.sayari.com/resource/entity/pwT07K1hiAqggNIqqsSC3g",
-              "entity_id": "pwT07K1hiAqggNIqqsSC3g",
-              "link_status": "confirmed",
-              "role": "Jiangxi separator",
-              "basis": "1 shipment HS 284690 'yttrium oxide' to Shinwa Bussan (Japan), 2022-04.",
-              "watchlist": "Flag psa_owned_by_chinese_soe (inferred). No watchlist hits."
-            },
-            {
-              "name": "Quannan Advanced Resource Rare Earths",
-              "country": "CHN",
-              "entity_url": "https://graph.sayari.com/resource/entity/7SZfLoSaTKfksyadM6GLhw",
-              "entity_id": "7SZfLoSaTKfksyadM6GLhw",
-              "link_status": "confirmed",
-              "role": "Jiangxi separator",
-              "basis": "1 shipment HS 284690 'yttrium oxide' to Shinwa Bussan (Japan), 2022-04."
-            },
-            {
               "name": "Fujian Changting Golden Dragon Rare Earth",
               "country": "CHN",
               "entity_url": "https://graph.sayari.com/resource/entity/1GJdbc2dwpmkOWMaK4bahQ",
               "entity_id": "1GJdbc2dwpmkOWMaK4bahQ",
               "link_status": "confirmed",
               "role": "Fujian separator",
-              "basis": "1 shipment HS 284690 'yttrium oxide' to Mitsubishi International, 2022-10.",
+              "basis": "Shipments described as 'yttrium oxide' to Japanese importers (Tokuyo International Logistics, Daiichi Kigenso Kagaku Kogyo), 2022–23.",
               "watchlist": "No watchlist hits."
+            },
+            {
+              "name": "Ganzhou Chenguang Rare Earths New Material",
+              "country": "CHN",
+              "entity_url": "https://graph.sayari.com/resource/entity/pwT07K1hiAqggNIqqsSC3g",
+              "entity_id": "pwT07K1hiAqggNIqqsSC3g",
+              "link_status": "confirmed",
+              "role": "Jiangxi separator",
+              "basis": "Rare earth compounds (HS 284690) to Shinwa Bussan, Japan, 2022-04; product not specified beyond the HS heading.",
+              "watchlist": "Flag psa_owned_by_chinese_soe (inferred)."
             },
             {
               "name": "Lynas Malaysia Sdn Bhd",
@@ -234,8 +227,8 @@
               "entity_url": "https://graph.sayari.com/resource/entity/VfV46hV0zGnfCbA1Io_EOw",
               "entity_id": "VfV46hV0zGnfCbA1Io_EOw",
               "link_status": "confirmed",
-              "role": "Non-Chinese separator",
-              "basis": "12 shipments HS 284690 to Korean buyers, 2025-06 to 2026-01; none a known tape maker.",
+              "role": "Main non-Chinese separator",
+              "basis": "934 HS 284690 shipments 2019–2026, 445 to Japan (mostly Sojitz); products recorded are light rare earths (cerium, NdPr).",
               "watchlist": "Not sanctioned. Its forced-labour and SOE flags are modelled sub-tier indicators, not findings about its operations."
             }
           ]
@@ -249,18 +242,22 @@
               "tier": "Mine / source region",
               "name": "Kachin State, Myanmar",
               "security": {
-                "text": "Myanmar is a significant yttrium source via ionic clays.",
+                "text": "Myanmar produced a significant share of world yttrium supply in 2025, according to USGS, from ionic-clay heavy rare earth mines in Kachin State.",
                 "sources": [
-                  "S6"
+                  "S39",
+                  "S1",
+                  "S3"
                 ]
               },
               "people": {
-                "text": "300+ mining sites in militia-controlled Kachin Special Region 1 (40%+ growth 2021–23); acidic, arsenic-contaminated streams; health harms to workers and residents, including deaths; deadly landslides; the trade risks financing conflict.",
+                "text": "300+ mining sites in Kachin Special Region 1 (40%+ growth 2021–23), run until late 2024 by a junta-aligned militia and since then under the Kachin Independence Army. Streams are acidic and arsenic-contaminated. Workers, including children, have died after chemical exposure, and landslides killed at least 35 miners in June 2024. Workers report physical violence and sexual exploitation, and opponents of mining face arrests and threats. The trade risks financing conflict.",
                 "sources": [
                   "S1",
                   "S2",
                   "S3",
-                  "S4"
+                  "S4",
+                  "S43",
+                  "S44"
                 ]
               },
               "evidence": [
@@ -277,6 +274,31 @@
               "rating": {
                 "supply": "moderate",
                 "harm": "high"
+              },
+              "harm": {
+                "documented": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S43"
+                ],
+                "types": [
+                  "deaths",
+                  "child labour",
+                  "violence against workers",
+                  "sexual exploitation",
+                  "armed-group control",
+                  "environmental contamination"
+                ],
+                "extreme": true,
+                "extremeTypes": [
+                  "child labour",
+                  "violence against workers",
+                  "sexual exploitation"
+                ],
+                "extremeBasis": "S1: a 15-year-old boy among miners who died; S3: deaths of mine workers including children; workers report physical violence and sexual exploitation.",
+                "reason": "Rated severe: child labour, violence against workers and sexual exploitation documented (5 sources)."
               }
             }
           ]
@@ -288,13 +310,13 @@
               "tier": "Mine / source region",
               "name": "Southern China ionic clays (Jiangxi)",
               "security": {
-                "text": "The main source.",
+                "text": "China produced most of the world's yttrium in 2025 (USGS), largely from ionic clays in southern provinces such as Jiangxi and Fujian.",
                 "sources": [
-                  "S3"
+                  "S39"
                 ]
               },
               "people": {
-                "text": "Severe environmental damage from heavy rare earth mining in Jiangxi: a multi-billion-dollar cleanup, decades to recover.",
+                "text": "Severe environmental damage from heavy rare earth mining in Jiangxi: Chinese authorities put the cleanup at about US$5.6 billion, with 50–100 years to recover.",
                 "sources": [
                   "S3"
                 ]
@@ -307,13 +329,23 @@
               ],
               "rating": {
                 "supply": "high",
-                "harm": "high"
+                "harm": "moderate"
+              },
+              "harm": {
+                "documented": [
+                  "S3"
+                ],
+                "types": [
+                  "environmental contamination"
+                ],
+                "extreme": false,
+                "reason": "Rated moderate: harm documented by 1 source."
               }
             }
           ]
         }
       ],
-      "bottomLine": "The magnets at the heart of compact fusion depend on yttrium separated overwhelmingly in China, where ore from militia-controlled Kachin State is mixed in and its origin lost. Sayari confirms who makes the tape and that part of it ran through Moscow until 2025, but no record shows where any tape maker's yttrium comes from. Harm at Kachin is documented; the link into fusion magnets is likely, not proven."
+      "bottomLine": "The magnets at the heart of compact fusion depend on yttrium separated overwhelmingly in China, where ore from armed-group-controlled Kachin State is mixed in and its origin lost. Sayari confirms who makes the tape and that part of it ran through Moscow until 2025, but no record shows where any tape maker's yttrium comes from. Harm at Kachin is documented; the link into fusion magnets is likely, not proven."
     },
     "nickel": {
       "name": "Nickel",
@@ -331,7 +363,7 @@
           "tier": "Reactor / developer",
           "name": "Commonwealth Fusion Systems",
           "security": {
-            "text": "CFS buys tape from Faraday Factory Japan and Fujikura. Russian customs records in Sayari show two flows with Moscow's S-Innovations group: coated Hastelloy tape exported to CFS in January–April 2022 (9 records), and uncoated Hastelloy C-276 tape exported by CFS to Moscow from May 2022 to December 2024 (15 records), declared 'for own use for research purposes'.",
+            "text": "CFS buys tape from Faraday Factory Japan and Fujikura. Russian customs records in Sayari show two flows between CFS and Moscow's S-Innovations group. Coated Hastelloy tape went to CFS in January–April 2022 (9 records). Uncoated Hastelloy C-276 tape went from CFS to Moscow from May 2022 to December 2024 (15 records, about 29 tonnes; about US$5 million where values are declared). Early shipments were declared 'for own use for research purposes'; later ones carry no such statement.",
             "sources": [
               "S36",
               "S37",
@@ -357,7 +389,7 @@
               "entity_id": "pvo3Wv7gZb9K0hiji7-Nag",
               "link_status": "confirmed",
               "role": "Recorded shipper of Hastelloy C276 tape to Moscow",
-              "basis": "Russian customs: 11 HS 750620 imports from CFS by S-Innovations (2022-05 to 2024-12) and 4 by SuperOx-Innovations (2023-04 to 2023-10); 9 exports of coated tape from S-Innovations to CFS (2022-01 to 2022-04).",
+              "basis": "Russian customs: 15 HS 750620 imports from CFS, 2022-05-04 to 2024-12-17 (11 by S-Innovations, 4 by SuperOx-Innovations; the two December 2024 rows may be one shipment recorded twice); 9 exports of coated tape from S-Innovations to CFS, 2022-01 to 2022-04.",
               "watchlist": "Not sanctioned; no watchlist hits."
             }
           ]
@@ -366,7 +398,7 @@
           "tier": "Component maker",
           "name": "Faraday Factory Japan (formerly SuperOx Japan)",
           "security": {
-            "text": "A major REBCO tape supplier to fusion developers. Japanese import records show it received 369 shipments from Moscow in 2023–25, 327 of them Hastelloy C-276 tape already carrying oxide buffer, silver and copper layers.",
+            "text": "A major REBCO tape supplier to fusion developers. Russian export and Japanese import records show it received 369 shipments from Moscow between February 2023 and January 2025. 327 were Hastelloy C-276 tape, ranging from bare polished strip to strip already carrying the oxide buffer, the yttrium-barium-copper oxide superconductor and a silver layer.",
             "sources": [
               "S36",
               "SY"
@@ -391,17 +423,18 @@
               "entity_id": "C13ZLDlfTD93f5CM_BpokA",
               "link_status": "confirmed",
               "role": "REBCO tape maker",
-              "basis": "369 shipments received, all from Russia (2023-02 to 2025-01).",
+              "basis": "369 shipments received from Russia, Feb 2023 – Jan 2025 (201 Russian export and 168 Japanese import records, so some may be counted twice).",
               "watchlist": "Not sanctioned; no watchlist hits."
             }
           ]
         },
         {
           "tier": "Component maker",
-          "name": "Buffer-coating step, Moscow (S-Innovations)",
+          "name": "Tape-making step, Moscow (S-Innovations)",
           "security": {
-            "text": "A Moscow company coats Hastelloy tape for Faraday Factory Japan. It buys the bare alloy tape from CFS and from at least six Chinese mills and traders. Sayari flags it for importing items on the US BIS high-priority list; it is not itself sanctioned.",
+            "text": "A Moscow company in the SuperOx group, which published fusion-tape research with CFS, makes buffered and superconducting-coated Hastelloy tape and ships it to Faraday Factory Japan. It buys the bare alloy tape from CFS and from Chinese mills and traders. Sayari flags it for importing items on the US BIS high-priority list; it is not itself sanctioned.",
             "sources": [
+              "S42",
               "SY"
             ]
           },
@@ -425,7 +458,7 @@
               "link_status": "confirmed",
               "role": "Coats Hastelloy tape; ships it to Faraday Factory Japan",
               "basis": "INN 5032242530; same tax ID as SuperOx-Innovations.",
-              "watchlist": "Not sanctioned. Flags: imports_bis_high_priority_items, sanctioned_adjacent."
+              "watchlist": "Not sanctioned. Flags: imports_bis_high_priority_items, meu_list_contractors, sanctioned_adjacent (modelled adjacency)."
             },
             {
               "name": "OOO SuperOx-Innovatsii",
@@ -506,10 +539,11 @@
           "name": "Indonesian nickel hubs (Morowali, Weda Bay)",
           "security": null,
           "people": {
-            "text": "Indonesia's human rights commission (Komnas HAM, 2026) found the state failed to protect rights around Morowali, with rising respiratory illness. Fatal smelter accidents. Land grabs affecting Indigenous communities at Weda Bay.",
+            "text": "Indonesia's human rights commission (Komnas HAM, 2026) found the state failed to protect rights around Morowali, where respiratory infections are rising. A furnace explosion at a Morowali smelter killed 21 workers in December 2023. At Weda Bay, companies working with police and military have taken land from Indigenous communities through coercion and intimidation, and rivers are polluted with hexavalent chromium.",
             "sources": [
               "S12",
-              "S13"
+              "S13",
+              "S45"
             ]
           },
           "evidence": [
@@ -536,7 +570,22 @@
               "role": "Morowali park operator",
               "basis": "Resolved only; no link to the substrate chain found."
             }
-          ]
+          ],
+          "harm": {
+            "documented": [
+              "S12",
+              "S13",
+              "S45"
+            ],
+            "types": [
+              "deaths",
+              "occupational disease",
+              "land grabs with coercion",
+              "environmental contamination"
+            ],
+            "extreme": false,
+            "reason": "Rated severe: harm documented by 3 sources."
+          }
         }
       ],
       "bottomLine": "Sayari did not confirm the Indonesia hypothesis: no path links tape substrate to Morowali or Weda Bay. It found a different route instead. Hastelloy tape from the US and China is coated in Moscow and shipped to a Japanese maker that supplies fusion developers."
@@ -550,7 +599,7 @@
           "tier": "Reactor / developer",
           "name": "ITER (and ITER-style tokamaks)",
           "security": {
-            "text": "ITER's toroidal-field coils used about 500 t of Nb₃Sn strand, made in 2008–2015 by eight suppliers across six ITER members.",
+            "text": "ITER's toroidal-field coils used more than 500 t of Nb₃Sn strand, made in 2008–2015 by eight suppliers working for six ITER members.",
             "sources": [
               "S25"
             ]
@@ -571,11 +620,12 @@
           "tier": "Component maker",
           "name": "Nb₃Sn strand makers",
           "security": {
-            "text": "ITER's strand came from Bruker EAS (Germany), Bruker OST (US), JASTEC and SH Copper (Japan), Kiswire Advanced Technology (South Korea), Luvata, Western Superconducting Technologies (China) and Chepetsky Mechanical Plant (Russia). Sayari lists Chepetsky on Ukraine's NSDC sanctions list and records Western Superconducting as owned by a Chinese state-owned enterprise.",
+            "text": "ITER's strand came from Bruker EAS (Germany), Bruker OST (US), JASTEC and SH Copper (Japan), Kiswire Advanced Technology (South Korea), Luvata, Western Superconducting Technologies (China) and Chepetsky Mechanical Plant (Russia). Chepetsky has been on Ukraine's NSDC sanctions list since October 2022 (not the US, EU or UK lists) and records Western Superconducting as owned by a Chinese state-owned enterprise.",
             "sources": [
               "S25",
               "S26",
-              "SY"
+              "SY",
+              "S57"
             ]
           },
           "people": {
@@ -707,17 +757,19 @@
               "tier": "Mine / source region",
               "name": "Man Maw, Wa State, Myanmar",
               "security": {
-                "text": "Myanmar was the world's 3rd-largest tin producer, nearly all of it from Man Maw. The mine restarted in 2025–26 after a suspension.",
+                "text": "At its peak Myanmar was the world's 3rd-largest tin producer, nearly all of it from Man Maw. The mine was suspended in 2023 and began a slow restart in 2025–26, with output still well below earlier levels.",
                 "sources": [
                   "S8",
-                  "S9"
+                  "S9",
+                  "S46"
                 ]
               },
               "people": {
-                "text": "Controlled by the United Wa State Army, a non-state armed group under US sanctions since 2003 (narcotics trafficking). Access is tightly restricted.",
+                "text": "Controlled by the United Wa State Army, an armed group under US sanctions since 2003 for narcotics trafficking and listed by the UN Secretary-General for recruiting and using children. A 2022 explosion at the mine killed nine workers.",
                 "sources": [
                   "S8",
-                  "S9"
+                  "S47",
+                  "S48"
                 ]
               },
               "evidence": [
@@ -745,7 +797,22 @@
                   "basis": "Its Sayari network holds sanctioned individuals and Hong Pang companies; no tin traders or smelters.",
                   "watchlist": "On the US OFAC sanctions list (SDN 7825)."
                 }
-              ]
+              ],
+              "harm": {
+                "documented": [
+                  "S8",
+                  "S47",
+                  "S48"
+                ],
+                "types": [
+                  "armed-group control",
+                  "child recruitment by the controlling armed group",
+                  "deaths (2022 explosion)"
+                ],
+                "extreme": false,
+                "note": "The UN child-recruitment listing concerns the armed group, not the mine itself, so it is not used as the extreme-harm trigger; the stage is severe on source count.",
+                "reason": "Rated severe: harm documented by 3 sources."
+              }
             }
           ]
         },
@@ -756,14 +823,16 @@
               "tier": "Separation / refining",
               "name": "Malaysia Smelting Corporation (Penang)",
               "security": {
-                "text": "A second tin smelting hub. It receives tin concentrate shipped from Tanzania by international metals traders, and one recorded lot from Myeik, southern Myanmar (November 2025). Sayari links it at one hop to Star Dragon Corporation, a Hong Kong trader on the US OFAC sanctions list; the goods behind that link were not retrieved.",
+                "text": "A second tin smelting hub. It buys tin concentrate shipped from Tanzania, Rwanda, the DRC and Burundi by international traders, plus one lot from Myeik, southern Myanmar (November 2025). Its suppliers include Star Dragon Corporation, a Hong Kong trader the US sanctioned in August 2025 for buying minerals from a Rubaya mining company linked to an armed group. Star Dragon shipped 10 lots of tin ore to the smelter between September 2024 and August 2025, mostly from the DRC.",
                 "sources": [
+                  "S49",
                   "SY"
                 ]
               },
               "people": {
-                "text": "Origin is lost at smelting. The Tanzania-shipped concentrate's mine of origin is not stated in the records.",
+                "text": "Origin is lost at smelting. Shipping records name countries, not mines. Some lots are declared as Congolese-origin tin, and others leave from Rwanda, where the UN says smuggled Congolese minerals are mixed into exports.",
                 "sources": [
+                  "S16",
                   "SY"
                 ]
               },
@@ -790,8 +859,8 @@
                   "entity_id": "pwMtR-67xAIYzs7_EWhcVQ",
                   "link_status": "confirmed",
                   "role": "Tin smelter, Butterworth, Penang",
-                  "basis": "39 rows of HS 2609 tin concentrate from Tanzania (2025–26); 1 shipment from Myeik, Myanmar (2025-11-27).",
-                  "watchlist": "Not sanctioned. Sayari flags imports_conflict_minerals and a one-hop trade link to an OFAC-listed entity."
+                  "basis": "38 rows of HS 2609 tin concentrate from Tanzania (2025–26), 28 from Rwanda, 12 from the DRC, 1 from Myeik, Myanmar (2025-11-27).",
+                  "watchlist": "Not sanctioned. Directly supplied by an OFAC-listed trader (Star Dragon)."
                 },
                 {
                   "name": "Star Dragon Corporation Limited",
@@ -799,11 +868,21 @@
                   "entity_url": "https://graph.sayari.com/resource/entity/EOhsW8l7khZBEzP0r4qzVQ",
                   "entity_id": "EOhsW8l7khZBEzP0r4qzVQ",
                   "link_status": "confirmed",
-                  "role": "Hong Kong trader recorded as a supplier to the smelter",
-                  "basis": "Trade link only; goods and dates not retrieved.",
-                  "watchlist": "On the US OFAC sanctions list (SDN 55049)."
+                  "role": "Hong Kong trader; direct supplier of tin ore to the smelter",
+                  "basis": "10 HS 2609 tin ore and concentrate shipments to Malaysia Smelting Corp, Sep 2024 – 14 Aug 2025, mostly departing the DRC.",
+                  "watchlist": "On the US OFAC sanctions list (SDN 55049) since 12 Aug 2025, for supporting a company selling Rubaya minerals from armed-group-controlled areas."
                 }
-              ]
+              ],
+              "harm": {
+                "documented": [
+                  "S49"
+                ],
+                "types": [
+                  "conflict financing via a sanctioned supplier"
+                ],
+                "extreme": false,
+                "reason": "Rated moderate: harm documented by 1 source."
+              }
             },
             {
               "tier": "Export hub",
@@ -869,7 +948,17 @@
                   "role": "Trader",
                   "basis": "Buys from African Panther (Rwanda); tin concentrate to the smelter (2025-11)."
                 }
-              ]
+              ],
+              "harm": {
+                "documented": [
+                  "S15"
+                ],
+                "types": [
+                  "conflict financing (trade link)"
+                ],
+                "extreme": false,
+                "reason": "Rated moderate: harm documented by 1 source."
+              }
             }
           ]
         }
@@ -877,14 +966,14 @@
       "context": [
         {
           "label": "Sector-wide",
-          "text": "Tin is rated the highest-risk of the conflict minerals for labour abuses. Child labour is rated \"extreme risk\" in Myanmar, Indonesia and Bolivia.",
+          "text": "Verisk Maplecroft (2017) rated tin the highest-risk of the 3TG minerals for labour rights violations, and rated child labour an \"extreme risk\" in Bolivia, Myanmar and Indonesia.",
           "sources": [
             "S14"
           ],
           "evidence": [
             {
               "level": "documented",
-              "scope": "sector"
+              "scope": "sector risk rating, 2017"
             }
           ]
         }
@@ -900,7 +989,7 @@
           "tier": "Reactor / developer",
           "name": "ITER (and ITER-style tokamaks)",
           "security": {
-            "text": "ITER's toroidal-field coils used about 500 t of Nb₃Sn strand, made in 2008–2015 by eight suppliers across six ITER members.",
+            "text": "ITER's toroidal-field coils used more than 500 t of Nb₃Sn strand, made in 2008–2015 by eight suppliers working for six ITER members.",
             "sources": [
               "S25"
             ]
@@ -921,11 +1010,12 @@
           "tier": "Component maker",
           "name": "Nb₃Sn strand makers",
           "security": {
-            "text": "ITER's strand came from Bruker EAS (Germany), Bruker OST (US), JASTEC and SH Copper (Japan), Kiswire Advanced Technology (South Korea), Luvata, Western Superconducting Technologies (China) and Chepetsky Mechanical Plant (Russia). Sayari lists Chepetsky on Ukraine's NSDC sanctions list and records Western Superconducting as owned by a Chinese state-owned enterprise.",
+            "text": "ITER's strand came from Bruker EAS (Germany), Bruker OST (US), JASTEC and SH Copper (Japan), Kiswire Advanced Technology (South Korea), Luvata, Western Superconducting Technologies (China) and Chepetsky Mechanical Plant (Russia). Chepetsky has been on Ukraine's NSDC sanctions list since October 2022 (not the US, EU or UK lists) and records Western Superconducting as owned by a Chinese state-owned enterprise.",
             "sources": [
               "S25",
               "S26",
-              "SY"
+              "SY",
+              "S57"
             ]
           },
           "people": {
@@ -1022,9 +1112,10 @@
                 ]
               },
               "people": {
-                "text": "Lower human rights risk at the main source.",
-                "sources": [],
-                "sourceNeeded": true
+                "text": "Mined at one large industrial site (CBMM, Araxá). No reports of conflict, forced or child labour at the mine were found. CBMM must monitor and clean up past barium contamination under an agreement with state prosecutors.",
+                "sources": [
+                  "S56"
+                ]
               },
               "evidence": [
                 {
@@ -1038,7 +1129,7 @@
               ],
               "rating": {
                 "supply": "high",
-                "harm": "unknown"
+                "harm": "moderate"
               },
               "sayari": [
                 {
@@ -1050,7 +1141,17 @@
                   "role": "Dominant niobium producer",
                   "basis": "No link to any strand maker recorded."
                 }
-              ]
+              ],
+              "harm": {
+                "documented": [
+                  "S56"
+                ],
+                "types": [
+                  "environmental contamination (legacy)"
+                ],
+                "extreme": false,
+                "reason": "Rated moderate: harm documented by 1 source."
+              }
             }
           ]
         },
@@ -1093,7 +1194,17 @@
                   "basis": "Registry: USCC 916400007106545275. No supply link to any strand maker; its only path to Western Superconducting runs through a nominee shareholder.",
                   "watchlist": "Owned by a Chinese state-owned enterprise."
                 }
-              ]
+              ],
+              "harm": {
+                "documented": [
+                  "S15"
+                ],
+                "types": [
+                  "processing conflict-linked ore"
+                ],
+                "extreme": false,
+                "reason": "Rated moderate: harm documented by 1 source."
+              }
             },
             {
               "tier": "Export hub",
@@ -1124,7 +1235,7 @@
               ],
               "rating": {
                 "supply": "unknown",
-                "harm": "high"
+                "harm": "moderate"
               },
               "blending": true,
               "sayari": [
@@ -1165,17 +1276,31 @@
                   "role": "Largest buyer of Rwandan coltan in Sayari",
                   "basis": "29 HS 2615 shipments from Rwanda, latest 2026-07."
                 }
-              ]
+              ],
+              "harm": {
+                "documented": [
+                  "S15",
+                  "S16"
+                ],
+                "types": [
+                  "laundering of conflict ore"
+                ],
+                "extreme": false,
+                "reason": "Rated moderate: harm documented by 2 sources."
+              }
             },
             {
               "tier": "Mine / source region",
               "name": "Rubaya, eastern DRC",
               "security": null,
               "people": {
-                "text": "Coltan (which yields tantalum and niobium) from M23-occupied Rubaya is smuggled to Rwanda and mixed with Rwandan production (UN Group of Experts, 2025). Due-diligence audit schemes failed to catch it.",
+                "text": "Coltan (which yields tantalum and niobium) from M23-occupied Rubaya is smuggled to Rwanda and mixed with Rwandan production (UN Group of Experts, 2025). Smelters that processed it still passed industry audits. Amnesty International documented M23 forcing miners to work, torturing them, and killing at least 18 miners at Rubaya and a nearby gold mine. The armed group that held Rubaya before M23 also used forced labour and executed civilians, according to the US Treasury. Tunnel collapses in 2026 killed hundreds of miners.",
                 "sources": [
                   "S15",
-                  "S16"
+                  "S16",
+                  "S50",
+                  "S49",
+                  "S51"
                 ]
               },
               "evidence": [
@@ -1191,6 +1316,30 @@
               "rating": {
                 "supply": "unknown",
                 "harm": "high"
+              },
+              "harm": {
+                "documented": [
+                  "S15",
+                  "S16",
+                  "S50",
+                  "S49",
+                  "S51"
+                ],
+                "types": [
+                  "forced labour",
+                  "killings",
+                  "torture",
+                  "armed-group control",
+                  "mine deaths"
+                ],
+                "extreme": true,
+                "extremeTypes": [
+                  "forced labour",
+                  "killings",
+                  "torture"
+                ],
+                "extremeBasis": "Amnesty International (2026): M23 forced miners to dig, tortured them and killed at least 18 miners; US Treasury: PARECO-FF used forced labour and executed civilians.",
+                "reason": "Rated severe: forced labour, killings and torture documented (5 sources)."
               }
             }
           ]
@@ -1207,10 +1356,12 @@
           "tier": "Component maker",
           "name": "Fusion-grade tungsten makers",
           "security": {
-            "text": "Very few firms make fusion-grade tungsten. A.L.M.T. (Sumitomo, Japan) holds an ITER divertor monoblock contract; state-owned AT&M (China) made divertor parts for France's WEST and China's EAST. Plansee (Austria) is also cited as a supplier, but no primary source was found.",
+            "text": "Only a few firms make fusion-grade tungsten parts. A.L.M.T. (Sumitomo, Japan) holds an ITER contract for tungsten monoblocks and also supplies Europe's ITER divertor targets. State-owned AT&M (China) says it made divertor parts for France's WEST and China's EAST. Plansee (Austria) made test divertor pieces for Europe's ITER agency, but no production contract was found.",
             "sources": [
               "S27",
+              "S52",
               "S28",
+              "S53",
               "SY"
             ]
           },
@@ -1279,7 +1430,7 @@
           ],
           "rating": {
             "supply": "unknown",
-            "harm": "moderate"
+            "harm": "unknown"
           },
           "blending": true,
           "sayari": [
@@ -1315,9 +1466,10 @@
             ]
           },
           "people": {
-            "text": "Tungsten is one of the 3TG \"conflict minerals\". Armed groups control some tungsten mining in Colombia. Sayari records Rwandan and Colombian ore exports to traders and powder makers, but not conditions at those mines.",
+            "text": "Tungsten is one of the 3TG \"conflict minerals\". Armed groups such as the ELN have controlled some tungsten mining in Colombia (Verisk Maplecroft, 2017; ICIJ). Sayari records Rwandan and Colombian ore exports to traders and powder makers, but not conditions at those mines.",
             "sources": [
               "S14",
+              "S54",
               "SY"
             ]
           },
@@ -1333,7 +1485,7 @@
           ],
           "rating": {
             "supply": "high",
-            "harm": "high"
+            "harm": "moderate"
           },
           "sayari": [
             {
@@ -1354,205 +1506,21 @@
               "role": "Colombian tungsten ore exporter",
               "basis": "8 HS 2611 shipments to Global Tungsten & Powders (2012–13). No Sayari evidence of armed-group links."
             }
-          ]
+          ],
+          "harm": {
+            "documented": [
+              "S14",
+              "S54"
+            ],
+            "types": [
+              "armed-group control and extortion"
+            ],
+            "extreme": false,
+            "reason": "Rated moderate: harm documented by 2 sources."
+          }
         }
       ],
       "bottomLine": "Only a handful of firms make fusion-grade tungsten, and China mines about four-fifths of the world's supply. Sayari shows a Western powder maker buying ore through a trader that also handles Rwandan tungsten, but nothing ties conflict-linked ore to a fusion part."
-    },
-    "lithium6": {
-      "name": "Lithium-6",
-      "part": "blanket",
-      "role": "Enriched lithium for breeding tritium fuel",
-      "stages": [
-        {
-          "tier": "Metal / oxide / alloy",
-          "name": "Lithium-6 enrichment today",
-          "security": {
-            "text": "There is effectively no commercial supply. Only Russia and China are known to produce enriched lithium, and it is export-controlled because of its weapons use. In March 2026 US start-up Molten Salt Solutions signed supply agreements with Type One Energy and Gauss Fusion.",
-            "sources": [
-              "S30",
-              "S32",
-              "S31"
-            ]
-          },
-          "people": {
-            "text": "The legacy enrichment process uses mercury. That is the process behind the Oak Ridge contamination below.",
-            "sources": [
-              "S30"
-            ]
-          },
-          "evidence": [
-            {
-              "level": "documented",
-              "scope": "supply situation"
-            },
-            {
-              "level": "not-researched",
-              "scope": "conditions in Russia and China"
-            }
-          ],
-          "rating": {
-            "supply": "high",
-            "harm": "unknown"
-          }
-        },
-        {
-          "tier": "Lessons from history",
-          "name": "Oak Ridge, Tennessee, 1950s–60s",
-          "security": null,
-          "people": {
-            "text": "US lithium enrichment at Oak Ridge used mercury. About 1.1 million kg was lost on site, around 10% of it into East Fork Poplar Creek. About 15 miles of the creek still exceed mercury water-quality criteria.",
-            "sources": [
-              "S17",
-              "S18"
-            ]
-          },
-          "evidence": [
-            {
-              "level": "documented",
-              "scope": "historical"
-            }
-          ],
-          "rating": {
-            "supply": "unknown",
-            "harm": "high"
-          },
-          "history": true
-        },
-        {
-          "tier": "Mine / source region",
-          "name": "Lithium source",
-          "security": null,
-          "people": null,
-          "evidence": [
-            {
-              "level": "not-researched"
-            }
-          ],
-          "rating": {
-            "supply": "unknown",
-            "harm": "unknown"
-          }
-        }
-      ],
-      "bottomLine": "Fusion's fuel chain has caused harm before: lithium-6 enrichment at Oak Ridge left mercury in a creek that still exceeds water-quality criteria. Today there is no commercial supply outside Russia and China, and new enrichers are only now signing deals with fusion developers."
-    },
-    "beryllium": {
-      "name": "Beryllium",
-      "part": "blanket",
-      "role": "Neutron multiplier",
-      "stages": [
-        {
-          "tier": "Reactor / developer",
-          "name": "Commonwealth Fusion Systems",
-          "security": {
-            "text": "Has a supply agreement with Materion for beryllium fluoride. Sayari does not show it, which is expected for a domestic US sale.",
-            "sources": [
-              "S20",
-              "SY"
-            ]
-          },
-          "people": null,
-          "evidence": [
-            {
-              "level": "documented",
-              "scope": "supply agreement"
-            }
-          ],
-          "rating": {
-            "supply": "moderate",
-            "harm": "unknown"
-          },
-          "sayari": [
-            {
-              "name": "Commonwealth Fusion Systems LLC",
-              "country": "USA",
-              "entity_url": "https://graph.sayari.com/resource/entity/pvo3Wv7gZb9K0hiji7-Nag",
-              "entity_id": "pvo3Wv7gZb9K0hiji7-Nag",
-              "link_status": "confirmed",
-              "role": "Fusion developer",
-              "basis": "SEC CIK 0001744079. No beryllium suppliers among its recorded imports."
-            }
-          ]
-        },
-        {
-          "tier": "Metal / oxide / alloy",
-          "name": "Materion (US) · Ulba Metallurgical Plant (Kazakhstan)",
-          "security": {
-            "text": "Supply is concentrated among a few producers. Ulba is owned by the Kazakh state through Kazatomprom and Samruk-Kazyna (Sayari registry data); Sayari flags it for regulatory action and for imports from a US-sanctioned trader. Kazakhstan supplied 31% of US beryllium imports in 2021–24.",
-            "sources": [
-              "S19",
-              "S23",
-              "SY"
-            ]
-          },
-          "people": {
-            "text": "The main people risk is worker health. Chronic beryllium disease is a lung disease caused by breathing beryllium dust or fumes, and OSHA calls it the primary health risk for beryllium workers.",
-            "sources": [
-              "S24"
-            ]
-          },
-          "evidence": [
-            {
-              "level": "documented",
-              "scope": "ownership and occupational harm"
-            }
-          ],
-          "rating": {
-            "supply": "high",
-            "harm": "moderate"
-          },
-          "blending": true,
-          "sayari": [
-            {
-              "name": "Materion Corp",
-              "country": "USA",
-              "entity_url": "https://graph.sayari.com/resource/entity/EwrvHuTaV4IXqRX9roWh9Q",
-              "entity_id": "EwrvHuTaV4IXqRX9roWh9Q",
-              "link_status": "confirmed",
-              "role": "Leading US beryllium producer; CFS supplier",
-              "basis": "SEC CIK 0001104657. No ore suppliers recorded (consistent with its own US mine).",
-              "watchlist": "Watchlist (1 hop): no hits."
-            },
-            {
-              "name": "Ulba Metallurgical Plant JSC",
-              "country": "KAZ",
-              "entity_url": "https://graph.sayari.com/resource/entity/yd4WCfTHQsYYVO6SEoutWA",
-              "entity_id": "yd4WCfTHQsYYVO6SEoutWA",
-              "link_status": "confirmed",
-              "role": "Beryllium, tantalum and niobium processor, Oskemen",
-              "basis": "Owned via Kazatomprom → Samruk-Kazyna → Republic of Kazakhstan.",
-              "watchlist": "State-owned; regulatory_action; one-hop trade link to Star Dragon Corporation (OFAC SDN 55049), goods not retrieved."
-            }
-          ]
-        },
-        {
-          "tier": "Mine / source region",
-          "name": "Beryllium ore: US (Utah), Brazil, China, Nigeria",
-          "security": {
-            "text": "The US mined 230 of the world's roughly 430 t of beryllium in 2025; about 60% of identified resources are at Spor Mountain, Utah.",
-            "sources": [
-              "S23"
-            ]
-          },
-          "people": null,
-          "evidence": [
-            {
-              "level": "documented",
-              "scope": "production"
-            },
-            {
-              "level": "not-researched",
-              "scope": "conditions at mines"
-            }
-          ],
-          "rating": {
-            "supply": "high",
-            "harm": "unknown"
-          }
-        }
-      ],
-      "bottomLine": "Beryllium supply is concentrated in the US and in a Kazakh state-owned processor that Sayari flags for regulatory action. The main people risk is to workers' lungs, not conflict."
     },
     "steel": {
       "name": "Specialty steels",
@@ -1562,17 +1530,18 @@
       "stages": [
         {
           "tier": "Metal / oxide / alloy",
-          "name": "EUROFER97 low-activation steel: Saarschmiede (Germany), Böhler (Austria)",
+          "name": "EUROFER97 low-activation steel (blanket structures): Saarschmiede, Böhler",
           "security": {
-            "text": "The EU's reference fusion steel is made by very few qualified producers; F4E's 2015 order was forged by Saarschmiede with Böhler as subcontractor.",
+            "text": "Europe's reference fusion steel, EUROFER97, has so far been made industrially by two firms. F4E's 2015 order of 27 t was forged by Saarschmiede (Germany) with Böhler (Austria) as subcontractor.",
             "sources": [
-              "S33"
+              "S33",
+              "S55"
             ]
           },
           "people": {
             "text": "No human rights hotspot identified at this stage. Alloying inputs, including about 1% tungsten, were not traced.",
             "sources": [
-              "S33"
+              "S55"
             ]
           },
           "evidence": [
@@ -1587,7 +1556,7 @@
           ],
           "rating": {
             "supply": "moderate",
-            "harm": "low"
+            "harm": "unknown"
           },
           "sayari": [
             {

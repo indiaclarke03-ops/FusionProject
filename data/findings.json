@@ -3,7 +3,7 @@
   "findings": [
     {
       "lead": "No record shows where any fusion tape maker's yttrium comes from.",
-      "body": "Sayari identifies the tape makers and Chinese separators shipping yttrium oxide to Japanese trading houses, but no shipment links the two. Japan publishes no shipment-level import data, and Sayari holds no Myanmar-to-China rare earth trade. The step where Kachin ore would enter a fusion magnet is invisible to trade data.",
+      "body": "Sayari identifies the tape makers and Chinese separators shipping yttrium oxide to Japanese importers, but no shipment links the two. Japanese import records from 2023 show no yttrium compounds reaching Fujikura or Faraday Factory Japan; Faraday Factory's yttrium arrived already deposited on tape from Moscow, where its source is unrecorded. Sayari holds no Myanmar-to-China rare earth trade. The step where Kachin ore would enter a fusion magnet is invisible to trade data.",
       "evidence": [
         {
           "level": "likely",
@@ -27,7 +27,7 @@
     },
     {
       "lead": "Part of fusion's tape supply ran through Moscow until 2025.",
-      "body": "Russian customs records show a Moscow company in the SuperOx group exporting coated Hastelloy tape to Commonwealth Fusion Systems in early 2022, CFS exporting uncoated Hastelloy tape to it until December 2024 (declared for research use), and the same company sending 369 shipments of coated tape to Faraday Factory Japan, a supplier to fusion developers, until January 2025. None of the companies is sanctioned.",
+      "body": "Russian customs and Japanese import records show S-Innovations, a Moscow tape maker in the SuperOx group that published fusion-tape research with CFS, exporting coated Hastelloy tape to Commonwealth Fusion Systems in early 2022. CFS then exported about 29 tonnes of uncoated Hastelloy tape to S-Innovations between May 2022 and December 2024; early shipments were declared for research use. Moscow sent 369 shipments to Faraday Factory Japan, a supplier to fusion developers, until January 2025. Most were Hastelloy tape carrying yttrium-bearing buffer or superconducting layers. None of the companies is sanctioned.",
       "evidence": [
         {
           "level": "documented",
@@ -46,13 +46,14 @@
       ],
       "sources": [
         "SY",
+        "S42",
         "S36"
       ],
       "material": "nickel"
     },
     {
       "lead": "The same traders handle conflict-linked coltan and smelter-bound tin.",
-      "body": "Four metals traders buy coltan from Rwandan exporters that Global Witness ties to M23-occupied Rubaya, and also ship tin concentrate to Malaysia Smelting Corporation. The records do not show conflict ore in that tin, but they show how few hands both minerals pass through before origin is lost.",
+      "body": "Four metals traders buy coltan from Rwandan exporters that Global Witness ties to M23-occupied Rubaya, and also ship tin concentrate to Malaysia Smelting Corporation, which buys ore from Tanzania, Rwanda and the DRC. Shipping records name countries, not mines, so whether conflict ore is in that tin cannot be seen.",
       "evidence": [
         {
           "level": "documented",
@@ -80,8 +81,8 @@
       "material": "tin"
     },
     {
-      "lead": "Sanctioned parties sit one step from known fusion suppliers.",
-      "body": "One of ITER's Nb₃Sn strand makers, Russia's Chepetsky Mechanical Plant, is on Ukraine's sanctions list. A Hong Kong trader on the US OFAC list is recorded as a supplier to both Malaysia Smelting Corporation and Kazakhstan's state-owned beryllium processor Ulba. The goods behind those two links were not retrieved.",
+      "lead": "Sanctioned parties sit close to fusion's supply chains.",
+      "body": "One of ITER's Nb₃Sn strand makers, Russia's Chepetsky Mechanical Plant, is on Ukraine's sanctions list. Separately, Malaysia Smelting Corporation, a major tin smelter, bought tin ore from Star Dragon, a Hong Kong trader the US sanctioned in August 2025 for buying minerals linked to an armed group at Rubaya. Star Dragon shipped 10 lots between September 2024 and August 2025, mostly from the DRC; the last arrived two days after the sanctions. Nothing shows this tin reached a fusion part.",
       "evidence": [
         {
           "level": "documented",
@@ -99,7 +100,9 @@
         }
       ],
       "sources": [
-        "SY"
+        "SY",
+        "S49",
+        "S57"
       ],
       "material": "tin"
     },

@@ -1,3 +1,4 @@
+# HISTORICAL (iteration 2). Do not re-run: data has since been edited by later steps (see tools/README.md).
 """Iteration 2: merge Sayari research into data/chains.json and data/sources.json.
 Run from the repo root. Rewrites the non-yttrium materials; yttrium is merged separately."""
 import json
