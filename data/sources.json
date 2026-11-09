@@ -51,13 +51,6 @@
       "url": "https://www.crisisgroup.org/visual-explainers/critical-minerals-myanmar/tin"
     },
     {
-      "id": "S9",
-      "title": "Tin bulls in retreat as Myanmar flags return of key mine",
-      "publisher": "Reuters via Mining.com",
-      "date": "2025",
-      "url": "https://www.mining.com/web/column-tin-bulls-in-retreat-as-myanmar-flags-return-of-key-mine"
-    },
-    {
       "id": "S10",
       "title": "Fusion Supply Chain overview",
       "publisher": "US Department of Energy",
@@ -329,6 +322,818 @@
       "publisher": "OpenSanctions",
       "date": null,
       "url": "https://www.opensanctions.org/entities/NK-5SY2TV7a4zDFgPsiBdesfs"
+    },
+    {
+      "id": "S58",
+      "title": "What is a tokamak?",
+      "publisher": "ITER Organization",
+      "date": null,
+      "url": "https://www.iter.org/machine/what-tokamak"
+    },
+    {
+      "id": "S59",
+      "title": "ITER Superconducting Magnets",
+      "publisher": "ITER Organization",
+      "date": null,
+      "url": "https://www.iter.org/machine/magnets"
+    },
+    {
+      "id": "S60",
+      "title": "Commonwealth Fusion Systems creates viable path to commercial fusion power with world's strongest magnet",
+      "publisher": "Commonwealth Fusion Systems",
+      "date": "2021",
+      "url": "https://cfs.energy/news-and-media/cfs-commercial-fusion-power-with-hts-magnet"
+    },
+    {
+      "id": "S61",
+      "title": "Regulation (EU) 2023/1542 concerning batteries and waste batteries, Article 77 (battery passport)",
+      "publisher": "EUR-Lex",
+      "date": "2023",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj/eng"
+    },
+    {
+      "id": "S62",
+      "title": "EU Battery Passport requirements and 2027 deadline",
+      "publisher": "OpenDPP",
+      "date": "2026",
+      "url": "https://opendpp-node.eu/battery-passport"
+    },
+    {
+      "id": "S63",
+      "title": "GBA launches world's first battery passport proof of concept",
+      "publisher": "Global Mining Review",
+      "date": "2023",
+      "url": "https://www.globalminingreview.com/environment-sustainability/19012023/gba-launches-worlds-first-battery-passport-proof-of-concept/"
+    },
+    {
+      "id": "S64",
+      "title": "Volvo invests in Circulor for blockchain technology",
+      "publisher": "electrive",
+      "date": "2020",
+      "url": "https://electrive.com/2020/07/09/volvo-invests-in-circulor-for-blockchain-technology"
+    },
+    {
+      "id": "S65",
+      "title": "Minsur and Minespider expand collaboration",
+      "publisher": "Global Mining Review",
+      "date": "2023",
+      "url": "https://www.globalminingreview.com/environment-sustainability/13092023/minsur-and-minespider-expand-collaboration"
+    },
+    {
+      "id": "S66",
+      "title": "Everledger bankruptcy (ESG blockchain traceability firm runs out of funds)",
+      "publisher": "Ledger Insights",
+      "date": "2023",
+      "url": "https://www.ledgerinsights.com/everledger-bankruptcy-esg-blockchain-traceability/"
+    },
+    {
+      "id": "S67",
+      "title": "The Role of Traceability in Critical Mineral Supply Chains",
+      "publisher": "IEA and OECD",
+      "date": "2025",
+      "url": "https://iea.blob.core.windows.net/assets/aa827202-9d85-4805-b3ac-d489d3b900e3/TheRoleofTraceabilityinCriticalMineralSupplyChains.pdf"
+    },
+    {
+      "id": "S68",
+      "title": "The Cost of Producing a Battery Passport",
+      "publisher": "Battery Design",
+      "date": "2026",
+      "url": "https://www.batterydesign.net/the-cost-of-producing-a-battery-passport/"
+    },
+    {
+      "id": "S69",
+      "title": "Geochemical fingerprinting of permanent magnet along the value chain using high precision Nd isotopic analysis (Goldschmidt 2025 abstract, MaDiTraCe project)",
+      "publisher": "Goldschmidt Conference / Ghent University, BRGM, CEA",
+      "date": "2025",
+      "url": "https://goldschmidtabstracts.info/2025/31005.pdf"
+    },
+    {
+      "id": "S70",
+      "title": "LA-ICP-MS facility: rates",
+      "publisher": "University of Manitoba, Dept. of Earth Sciences",
+      "date": "2026",
+      "url": "https://www.umanitoba.ca/environment-earth-resources/department-earth-sciences-la-icp-ms"
+    },
+    {
+      "id": "S71",
+      "title": "Satellite data show burst of deforestation in Myanmar rare earth mining hotspots",
+      "publisher": "Mongabay",
+      "date": "2025",
+      "url": "https://news.mongabay.com/2025/09/satellite-data-show-burst-of-deforestation-in-myanmar-rare-earth-mining-hotspots/"
+    },
+    {
+      "id": "S72",
+      "title": "Point locations for rare earth element leachate collection and precipitation tanks from ion-adsorption clay deposits in Burma (Myanmar) and China identified from satellite imagery between 2010 and 2025",
+      "publisher": "U.S. Geological Survey (Padilla & Lederer)",
+      "date": "2025",
+      "url": "https://www.usgs.gov/data/point-locations-rare-earth-element-leachate-collection-and-precipitation-tanks-ion-adsorption"
+    },
+    {
+      "id": "S73",
+      "title": "Analysis of the interactive map of artisanal mining areas in eastern DRC: 2023 update",
+      "publisher": "IPIS",
+      "date": "2023",
+      "url": "https://ipisresearch.be/publication/analysis-of-the-interactive-map-of-artisanal-mining-areas-in-eastern-democratic-republic-of-congo-2023-update/"
+    },
+    {
+      "id": "S74",
+      "title": "Agile EO webinar: fast, flexible tasking (SkySat flexible tasking $12/km2, assured $40/km2)",
+      "publisher": "Planet Labs",
+      "date": "2025",
+      "url": "https://www.planet.com/pulse/agile-eo-webinar-fast-flexible-tasking/"
+    },
+    {
+      "id": "S75",
+      "title": "First supply chain due diligence scheme recognised under Conflict Minerals Regulation",
+      "publisher": "European Commission, DG Trade",
+      "date": "2025",
+      "url": "https://policy.trade.ec.europa.eu/news/first-supply-chain-due-diligence-scheme-recognised-under-conflict-minerals-regulation-facilitate-2025-10-17_en"
+    },
+    {
+      "id": "S76",
+      "title": "IRMA: An Overview",
+      "publisher": "Initiative for Responsible Mining Assurance",
+      "date": "2025",
+      "url": "https://responsiblemining.net/wp-content/uploads/2025/10/IRMA-Overview-2-pager.pdf"
+    },
+    {
+      "id": "S77",
+      "title": "The ITSCI laundromat: how an industry due diligence scheme appears to be laundering conflict minerals in DRC",
+      "publisher": "Global Witness",
+      "date": "2022",
+      "url": "https://globalwitness.org/en/campaigns/transition-minerals/the-itsci-laundromat"
+    },
+    {
+      "id": "S78",
+      "title": "Congo files criminal complaints against Apple in Europe over conflict minerals (Reuters)",
+      "publisher": "Reuters via Yahoo Finance",
+      "date": "2024",
+      "url": "https://ca.finance.yahoo.com/news/exclusive-congo-files-criminal-complaints-050552031.html"
+    },
+    {
+      "id": "S79",
+      "title": "UN experts warn Congo's conflict minerals slipping into global market",
+      "publisher": "SWI swissinfo.ch",
+      "date": "2025",
+      "url": "https://www.swissinfo.ch/eng/international-geneva/un-experts-warn-congos-conflict-minerals-slipping-into-global-market/89978793"
+    },
+    {
+      "id": "S80",
+      "title": "Ulula worker voice and supply chain transparency",
+      "publisher": "EcoVadis",
+      "date": "2026",
+      "url": "https://ecovadis.com/solutions/ulula-worker-voice-supply-chain-transparency/"
+    },
+    {
+      "id": "S81",
+      "title": "DOE announces $46 million for commercial fusion energy development (Milestone-Based Fusion Development Program)",
+      "publisher": "U.S. Department of Energy via EurekAlert!",
+      "date": "2023",
+      "url": "https://www.eurekalert.org/news-releases/991072"
+    },
+    {
+      "id": "S82",
+      "title": "UKAEA Modern Slavery Statement 2024 to 2025",
+      "publisher": "UK Atomic Energy Authority (GOV.UK)",
+      "date": "2025",
+      "url": "https://www.gov.uk/government/publications/ukaea-modern-slavery-statement-20242025"
+    },
+    {
+      "id": "S83",
+      "title": "Procurement Act 2023, Schedule 7 (discretionary exclusion grounds: labour market misconduct and modern slavery)",
+      "publisher": "legislation.gov.uk",
+      "date": "in f",
+      "url": "https://www.legislation.gov.uk/ukpga/2023/54/schedule/7"
+    },
+    {
+      "id": "S84",
+      "title": "CSDDD Omnibus (tracker of Omnibus I amendments)",
+      "publisher": "Business & Human Rights Resource Centre",
+      "date": "2026",
+      "url": "https://www.business-humanrights.org/en/latest-news/csddd-omnibus/"
+    },
+    {
+      "id": "S85",
+      "title": "Regulation (EU) 2024/1252 (Critical Raw Materials Act), recitals 17 and 59",
+      "publisher": "EUR-Lex",
+      "date": "2024",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng"
+    },
+    {
+      "id": "S86",
+      "title": "Uyghur Forced Labor Prevention Act goes into effect",
+      "publisher": "WilmerHale",
+      "date": "2022",
+      "url": "http://www.wilmerhale.com/insights/client-alerts/20220707-uyghur-forced-labor-prevention-act-goes-into-effect"
+    },
+    {
+      "id": "S87",
+      "title": "LuNa Smelter Risk Management Policy (OECD Annex II model policy wording)",
+      "publisher": "LuNa Smelter Ltd (Rwanda)",
+      "date": "2019",
+      "url": "https://lunasmelter.com/wp-content/uploads/2021/12/2019.08.01-RISK-MANAGEMENT-Policy.pdf"
+    },
+    {
+      "id": "S88",
+      "title": "Myanmar Exported USD 620M Worth of Rare Earths to China in 2025 (Political & Conflict Economy Tracker PET-03)",
+      "publisher": "ISP-Myanmar",
+      "date": "2025",
+      "url": "https://ispmyanmar.com/pet-03"
+    },
+    {
+      "id": "S89",
+      "title": "Myanmar's poisoned mountains",
+      "publisher": "Global Witness",
+      "date": "2022",
+      "url": "https://globalwitness.org/en/campaigns/transition-minerals/myanmars-poisoned-mountains"
+    },
+    {
+      "id": "S90",
+      "title": "Exclusive: China-backed militia secures control of new rare earth mines in Myanmar",
+      "publisher": "Reuters via Yahoo Finance",
+      "date": "2025",
+      "url": "https://finance.yahoo.com/news/exclusive-china-backed-militia-secures-041622494.html"
+    },
+    {
+      "id": "S91",
+      "title": "A new rare earth crisis is brewing as yttrium shortages spread",
+      "publisher": "Reuters via Yahoo Finance",
+      "date": "2025",
+      "url": "https://finance.yahoo.com/news/exclusive-rare-earth-crisis-brewing-145246419.html"
+    },
+    {
+      "id": "S92",
+      "title": "Become a supplier",
+      "publisher": "Commonwealth Fusion Systems",
+      "date": null,
+      "url": "https://cfs.energy/suppliers"
+    },
+    {
+      "id": "S93",
+      "title": "Faraday Factory Japan: High-quality HTS tapes for a greener future",
+      "publisher": "Innovation News Network",
+      "date": "2025",
+      "url": "https://www.innovationnewsnetwork.com/faraday-factory-japan-high-quality-hts-tapes-for-a-greener-future/57815"
+    },
+    {
+      "id": "S94",
+      "title": "Procurement Activities: Responsible Minerals Sourcing",
+      "publisher": "Fujikura Ltd.",
+      "date": null,
+      "url": "https://www.fujikura.co.jp/en/sustainability/activity"
+    },
+    {
+      "id": "S95",
+      "title": "Controlled Nuclear Fusion (applications page)",
+      "publisher": "Shanghai Superconductor Technology",
+      "date": null,
+      "url": "https://www.shsctec.com/en/applications/nuclear"
+    },
+    {
+      "id": "S96",
+      "title": "Haynes International annual report (Form 10-K), fiscal year 2023",
+      "publisher": "U.S. Securities and Exchange Commission (EDGAR)",
+      "date": "2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/858655/000155837023019161/hayn-20230930x10k.htm"
+    },
+    {
+      "id": "S97",
+      "title": "North American Stainless acquires Haynes International",
+      "publisher": "Recycling Today",
+      "date": "2024",
+      "url": "https://www.recyclingtoday.com/news/acerinox-haynes-north-american-stainless-acquisition-alloys-recycling"
+    },
+    {
+      "id": "S98",
+      "title": "Responsible Procurement",
+      "publisher": "VDM Metals",
+      "date": null,
+      "url": "https://www.vdm-metals.com/en/company/procurement/responsible-procurement"
+    },
+    {
+      "id": "S99",
+      "title": "Consolidated Management Report 2025",
+      "publisher": "Acerinox Group",
+      "date": "2026",
+      "url": "https://www.acerinox.com/export/sites/acerinox/es/accionistas-e-inversores/informacion-economica-financiera/informe-anual-integrado/.galleries/Informacion-Anual/2025-Acerinox-Group-Consolidated-Management-Report.pdf"
+    },
+    {
+      "id": "S100",
+      "title": "Mineral Commodity Summaries 2026: Nickel",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-nickel.pdf"
+    },
+    {
+      "id": "S101",
+      "title": "China imports from Indonesia of nickel (UN COMTRADE data)",
+      "publisher": "Trading Economics",
+      "date": "2026",
+      "url": "https://tradingeconomics.com/china/imports/indonesia/nickel"
+    },
+    {
+      "id": "S102",
+      "title": "Isolated and Impacted by Nickel Mining: Indigenous Communities in Russia Search for Avenues of Justice",
+      "publisher": "Cultural Survival",
+      "date": null,
+      "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/isolated-and-impacted-nickel-mining-indigenous-communities"
+    },
+    {
+      "id": "S103",
+      "title": "Mineral Commodity Summaries 2026: Copper",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf"
+    },
+    {
+      "id": "S104",
+      "title": "Mineral Commodity Summaries 2026: Silver",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-silver.pdf"
+    },
+    {
+      "id": "S105",
+      "title": "Troubled Waters: Otomina and Ajkwa Rivers, West Papua, Indonesia",
+      "publisher": "Earthworks",
+      "date": null,
+      "url": "https://earthworks.org/assets/uploads/archive/files/publications/Troubled-Waters_Otomina_Ajkwa_Rivers_WestPNG.pdf"
+    },
+    {
+      "id": "S106",
+      "title": "Freeport confirms all seven missing workers dead after Indonesia mine disaster",
+      "publisher": "Reuters via U.S. News",
+      "date": "2025",
+      "url": "https://www.usnews.com/news/world/articles/2025-10-05/freeport-says-five-workers-found-dead-after-indonesian-mine-mud-flow-disaster"
+    },
+    {
+      "id": "S107",
+      "title": "2024 List of Goods Produced by Child Labor or Forced Labor",
+      "publisher": "U.S. Department of Labor (ILAB)",
+      "date": "2024",
+      "url": "https://www.dol.gov/sites/dolgov/files/ilab/child_labor_reports/tda2023/2024-tvpra-list-of-goods.pdf"
+    },
+    {
+      "id": "S108",
+      "title": "Bruker Corporation Conflict Minerals Report (Form SD, Exhibit 1.01), reporting period 2025",
+      "publisher": "Bruker Corporation via U.S. SEC EDGAR",
+      "date": "2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1109354/000119312526248377/brkr-ex1_01.htm"
+    },
+    {
+      "id": "S109",
+      "title": "Bruker Corporation Annual Report (Form 10-K) for fiscal year 2025",
+      "publisher": "Bruker Corporation via U.S. SEC EDGAR",
+      "date": "2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1109354/000119312526082523/brkr-20251231.htm"
+    },
+    {
+      "id": "S110",
+      "title": "Western Superconducting Technologies IPO prospectus (STAR Market), related-party purchases of niobium ingots",
+      "publisher": "Western Superconducting Technologies via Eastmoney (dfcfw)",
+      "date": "2019",
+      "url": "https://pdf.dfcfw.com/pdf/H2_AN201907161339003183_1.pdf"
+    },
+    {
+      "id": "S111",
+      "title": "CITIC Metal Co., Ltd. IPO prospectus (registration draft): related-party sales of niobium products to Western Superconducting; exclusive China distributor of CBMM",
+      "publisher": "CITIC Metal via Shanghai Stock Exchange",
+      "date": "2023",
+      "url": "http://static.sse.com.cn/stock/disclosure/announcement/c/202302/001453_20230220_5VY7.pdf"
+    },
+    {
+      "id": "S112",
+      "title": "From Burmese mines to Chinese smelters: how Myanmar rejoined China's critical minerals supply chain",
+      "publisher": "Fastmarkets",
+      "date": "2026",
+      "url": "https://www.fastmarkets.com/insights/from-burmese-mines-to-chinese-smelters-how-myanmar-rejoined-chinas-critical-minerals-supply-chain"
+    },
+    {
+      "id": "S113",
+      "title": "Rebel Myanmar tin mine sells to world's largest consumer companies (Reuters)",
+      "publisher": "Reuters via Business Insider",
+      "date": "2016",
+      "url": "https://www.businessinsider.com/r-how-a-rebel-myanmar-tin-mine-may-up-end-a-global-supply-chain-2016-11"
+    },
+    {
+      "id": "S114",
+      "title": "Surplus and stocks to mitigate Myanmar's Wa State tin mining ban (Reuters)",
+      "publisher": "Reuters via Yahoo Finance",
+      "date": "2023",
+      "url": "https://finance.yahoo.com/news/graphic-surplus-stocks-mitigate-myanmars-110816557.html"
+    },
+    {
+      "id": "S115",
+      "title": "ITER Code of Conduct (v3.0)",
+      "publisher": "ITER Organization",
+      "date": "2024",
+      "url": "https://www.iter.org/sites/default/files/media/2024-03/iter_code_of_conduct_4fdyty_v3_0.pdf"
+    },
+    {
+      "id": "S116",
+      "title": "F4E-QAP-ITER: EU Domestic Agency QA Programme for the ITER Project (v2.2)",
+      "publisher": "Fusion for Energy (F4E)",
+      "date": null,
+      "url": "https://fusionforenergy.europa.eu/downloads/procurements/qa/4_4/F4E-QAP-ITER_-_EUDA_QA_Programme_for_ITER_Project_22MCBA_v2_2.pdf"
+    },
+    {
+      "id": "S117",
+      "title": "Kiswire Group Conflict Minerals Policy",
+      "publisher": "Kiswire",
+      "date": null,
+      "url": "https://www2.kiswire.com/english/company/down/Conflict_Minerals_Policy.pdf"
+    },
+    {
+      "id": "S118",
+      "title": "Procurement Policy / Responsible Minerals Sourcing Policy",
+      "publisher": "Furukawa Electric",
+      "date": null,
+      "url": "https://www.furukawaelectric.com/en/company/procure/standard.html"
+    },
+    {
+      "id": "S119",
+      "title": "KAT company history: supplied 137 tons of Nb3Sn for ITER (2009-2016)",
+      "publisher": "Kiswire Advanced Technology (KAT)",
+      "date": null,
+      "url": "https://www.kiswire-kat.com"
+    },
+    {
+      "id": "S120",
+      "title": "Shafted: US imports of smuggled Congolese coltan",
+      "publisher": "The Oakland Institute",
+      "date": "2025",
+      "url": "https://www.oaklandinstitute.org/report/shafted/us-imports-smuggled-congolese-coltan"
+    },
+    {
+      "id": "S121",
+      "title": "Russia transfers seized stake in strategic metals firm (Solikamsk) to state nuclear energy company",
+      "publisher": "Radio Free Europe/Radio Liberty",
+      "date": "2023",
+      "url": "https://www.rferl.org/a/russia-solikamsk-magnesium-nationalized/32723635.html"
+    },
+    {
+      "id": "S122",
+      "title": "Ningxia Orient Tantalum (000962.SZ): niobium and superconducting niobium business (broker research summary)",
+      "publisher": "Cailian Press (cls.cn)",
+      "date": "2024",
+      "url": "https://www.cls.cn/detail/xk/65daea6585296104ea7f3d84"
+    },
+    {
+      "id": "S123",
+      "title": "2025 comparison of China's listed controlled-fusion companies",
+      "publisher": "Qianzhan Industry Research via Investing.com (China)",
+      "date": "2025",
+      "url": "https://cn.investing.com/news/economy-news/article-2811738"
+    },
+    {
+      "id": "S124",
+      "title": "West frets over China's interest in Vietnam tungsten mine, sources say",
+      "publisher": "Reuters (via Yahoo Finance)",
+      "date": "2025",
+      "url": "https://finance.yahoo.com/news/exclusive-west-frets-over-chinas-063403752.html"
+    },
+    {
+      "id": "S125",
+      "title": "Regarding equity investment in Masan High-Tech Materials Corporation",
+      "publisher": "Mitsubishi Materials Corporation",
+      "date": "2020",
+      "url": "https://www.mmc.co.jp/corporate/en/news/2020/news20201026.html"
+    },
+    {
+      "id": "S126",
+      "title": "Masan Resources Nui Phao Mine: The World's Largest Tungsten Mine",
+      "publisher": "Mining Digital",
+      "date": null,
+      "url": "https://miningdigital.com/smart-mining/masan-resources-nui-phao-mine-worlds-largest-tungsten-mine"
+    },
+    {
+      "id": "S127",
+      "title": "Environmental inspections intensified",
+      "publisher": "Viet Nam News",
+      "date": "2016",
+      "url": "https://vietnamnews.vn/environment/300109/environmental-inspections-intensified.html"
+    },
+    {
+      "id": "S128",
+      "title": "Inspectors to probe Nui Phao Mining over alleged pollution",
+      "publisher": "VietNamNet",
+      "date": "2016",
+      "url": "https://vietnamnet.vn/en/inspectors-to-probe-nui-phao-mining-over-alleged-pollution-E161208.html"
+    },
+    {
+      "id": "S129",
+      "title": "Health and ecological risk of heavy metals in agricultural soils related to tungsten mining in Southern Jiangxi Province, China (Lai et al.)",
+      "publisher": "PeerJ, via PubMed Central",
+      "date": "2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10993887"
+    },
+    {
+      "id": "S130",
+      "title": "AT&M: About us",
+      "publisher": "Advanced Technology & Materials Co., Ltd.",
+      "date": null,
+      "url": "https://www.antai-emarketing.com/about-us"
+    },
+    {
+      "id": "S131",
+      "title": "Trinity Nyakabingo Mine",
+      "publisher": "Trinity Metals",
+      "date": null,
+      "url": "https://trinity-metals.com/en/projects/nyakabingo-mine"
+    },
+    {
+      "id": "S132",
+      "title": "All forgings and plates for European vacuum vessel sectors have been delivered",
+      "publisher": "Fusion for Energy (F4E)",
+      "date": null,
+      "url": "https://fusionforenergy.europa.eu/news/all-forgings-and-plates-for-european-vacuum-vessel-sectors-have-been-delivered"
+    },
+    {
+      "id": "S133",
+      "title": "In the forges of ITER",
+      "publisher": "ITER Organization (ITER Mag)",
+      "date": null,
+      "url": "https://www.iter.org/mag/6/forges-iter"
+    },
+    {
+      "id": "S134",
+      "title": "Mineral Commodity Summaries 2026: Chromium",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-chromium.pdf"
+    },
+    {
+      "id": "S135",
+      "title": "Mineral Commodity Summaries 2026: Vanadium",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-vanadium.pdf"
+    },
+    {
+      "id": "S136",
+      "title": "\"We Know Our Lives are in Danger\": Environment of Fear in South Africa's Mining-Affected Communities",
+      "publisher": "Human Rights Watch, groundWork, Centre for Environmental Rights, Earthjustice",
+      "date": "2019",
+      "url": "https://www.hrw.org/report/2019/04/16/we-know-our-lives-are-danger/environment-fear-south-africas-mining-affected"
+    },
+    {
+      "id": "S137",
+      "title": "Vanadium contamination and associated health risk of farmland soil near smelters throughout China (Li et al.)",
+      "publisher": "Environmental Pollution, via University of Edinburgh Research Explorer",
+      "date": "2020",
+      "url": "https://www.pure.ed.ac.uk/ws/files/142703606/Vanadium.pdf"
+    },
+    {
+      "id": "S138",
+      "title": "Lithium (information library)",
+      "publisher": "World Nuclear Association",
+      "date": null,
+      "url": "https://world-nuclear.org/information-library/current-and-future-generation/lithium"
+    },
+    {
+      "id": "S139",
+      "title": "Tailings dump at Russia's Novosibirsk Chemical Concentrate Plant to be decommissioned",
+      "publisher": "Nuclear Engineering International",
+      "date": "2024",
+      "url": "https://www.neimagazine.com/news/tailings-dump-at-russias-novosibirsk-chemical-concentrate-plant-to-be-decommissioned"
+    },
+    {
+      "id": "S140",
+      "title": "Mineral Commodity Summaries 2026: Lithium",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-lithium.pdf"
+    },
+    {
+      "id": "S141",
+      "title": "USA: Boom in lithium mining across Nevada is violating the rights of Indigenous Peoples",
+      "publisher": "Amnesty International",
+      "date": "2026",
+      "url": "https://www.amnesty.org/en/latest/news/2026/05/usa-boom-in-lithium-mining-across-nevada-is-violating-the-rights-of-indigenous-peoples"
+    },
+    {
+      "id": "S142",
+      "title": "Materion Corporation Form 10-K for fiscal year 2025",
+      "publisher": "U.S. Securities and Exchange Commission (EDGAR)",
+      "date": "2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1104657/000110465726000011/mtrn-20251231.htm"
+    },
+    {
+      "id": "S143",
+      "title": "Fillmore v. Brush Wellman, Inc., 2004-Ohio-3448",
+      "publisher": "Ohio Court of Appeals (via Supreme Court of Ohio reporter)",
+      "date": "2004",
+      "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/6/2004/2004-Ohio-3448.pdf"
+    },
+    {
+      "id": "S144",
+      "title": "EEOICPA Final Adjudication Branch decision, Docket 20230525-50036884-1 (beryllium sensitivity, Beryllium Mill, Delta, Utah)",
+      "publisher": "U.S. Department of Labor, Office of Workers' Compensation Programs",
+      "date": "2023",
+      "url": "https://www.dol.gov/sites/dolgov/files/OWCP/energy/regs/compliance/Decisions/GenericDecisions/DecisionsRef/20230525-50036884-1.pdf"
+    },
+    {
+      "id": "S145",
+      "title": "Beryllides as advanced materials for neutron multiplication (Gaisin, Rolli, Chakin, Vladimirov)",
+      "publisher": "Karlsruhe Institute of Technology (KITopen), Proceedings of BeWS-15",
+      "date": "2023",
+      "url": "https://publikationen.bibliothek.kit.edu/1000160103"
+    },
+    {
+      "id": "S146",
+      "title": "The beryllium production at Ulba Metallurgical Plant (Ust-Kamenogorsk, Kazakhstan)",
+      "publisher": "IAEA International Nuclear Information System",
+      "date": "1998",
+      "url": "https://inis.iaea.org/records/wcv6p-kjs75"
+    },
+    {
+      "id": "S147",
+      "title": "Masan High-Tech to sell stake to Elmet, sign tungsten supply deal",
+      "publisher": "Reuters (via MINING.COM)",
+      "date": "2026",
+      "url": "https://mining.com/web/masan-high-tech-to-sell-stake-to-elmet-sign-tungsten-supply-deal"
+    },
+    {
+      "id": "S148",
+      "title": "Enriched lithium and advanced nuclear",
+      "publisher": "Nuclear Engineering International",
+      "date": null,
+      "url": "https://www.neimagazine.com/analysis/enriched-lithium-and-advanced-nuclear"
+    },
+    {
+      "id": "S149",
+      "title": "Molten Salt Solutions signs enriched lithium supply agreements with Type One Energy and Gauss Fusion",
+      "publisher": "Fusion Energy Base",
+      "date": "2026",
+      "url": "https://www.fusionenergybase.com/articles/molten-salt-solutions-signs-enriched-lithium-supply-agreements-with-type-one-energy-and-gauss-fusion"
+    },
+    {
+      "id": "S150",
+      "title": "Fuels for Fusion: resource availability and supply",
+      "publisher": "Kyoto Fusioneering, via DOE Office of Science",
+      "date": "2022",
+      "url": "https://science.osti.gov/-/media/fes/pdf/fes-presentations/2022/Pearson_resource-availability-and-supply_presentation.pdf"
+    },
+    {
+      "id": "S151",
+      "title": "History of mercury use and environmental contamination at the Oak Ridge Y-12 Plant (Brooks & Southworth)",
+      "publisher": "Environmental Pollution 159(1), via OSTI",
+      "date": "2011",
+      "url": "https://www.osti.gov/biblio/1037053"
+    },
+    {
+      "id": "S152",
+      "title": "Mercury contamination in East Fork Poplar Creek, Oak Ridge, Tennessee (G.R. Southworth, ORNL Environmental Sciences Division; presentation hosted by the South River Science Team)",
+      "publisher": "Oak Ridge National Laboratory",
+      "date": null,
+      "url": "https://southriverwatershed.org/wp-content/uploads/2018/08/south-river-science-team-final.pdf"
+    },
+    {
+      "id": "S153",
+      "title": "Advocate, Issue 75",
+      "publisher": "DOE Oak Ridge Site Specific Advisory Board",
+      "date": "2019",
+      "url": "https://www.energy.gov/orem/articles/advocate-issue-75-july-2019"
+    },
+    {
+      "id": "S154",
+      "title": "Materion signs supply agreement with Commonwealth Fusion Systems (beryllium fluoride)",
+      "publisher": "Yahoo Finance",
+      "date": null,
+      "url": "https://finance.yahoo.com/news/materion-signs-supply-agreement-commonwealth-104700784.html"
+    },
+    {
+      "id": "S155",
+      "title": "Beryllium: Health Effects",
+      "publisher": "U.S. Occupational Safety and Health Administration",
+      "date": null,
+      "url": "https://www.osha.gov/beryllium/health-effects"
+    },
+    {
+      "id": "S156",
+      "title": "Mineral Commodity Summaries 2026: Beryllium",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-beryllium.pdf"
+    },
+    {
+      "id": "S157",
+      "title": "Realta Fusion secures HTS magnet supply",
+      "publisher": "American Nuclear Society (Nuclear Newswire)",
+      "date": "2026",
+      "url": "https://www.ans.org/news/2026-04-06/article-7910/realta-fusion-secures-hts-magnet-supply/"
+    },
+    {
+      "id": "S158",
+      "title": "Commonwealth Fusion Systems leans on magnets for near-term revenue",
+      "publisher": "TechCrunch",
+      "date": "2026",
+      "url": "https://techcrunch.com/2026/04/02/commonwealth-fusion-systems-leans-on-magnets-for-near-term-revenue"
+    },
+    {
+      "id": "S159",
+      "title": "UK fusion firm Tokamak signs superconducting tape agreement with Furukawa",
+      "publisher": "World Nuclear News",
+      "date": "2023",
+      "url": "https://www.world-nuclear-news.org/Articles/UK-fusion-firm-Tokamak-signs-superconducting-tape"
+    },
+    {
+      "id": "S160",
+      "title": "Tokamak completes set of HTS magnets",
+      "publisher": "World Nuclear News",
+      "date": "2023",
+      "url": "https://world-nuclear-news.org/articles/tokamak-completes-set-of-hts-magnets"
+    },
+    {
+      "id": "S161",
+      "title": "First ITER magnet arrives this year",
+      "publisher": "ITER Organization (Newsline)",
+      "date": "2019",
+      "url": "https://www.iter.org/node/20687/first-iter-magnet-arrives-year"
+    },
+    {
+      "id": "S162",
+      "title": "Europe celebrates its leadership in magnets technology",
+      "publisher": "Fusion for Energy (F4E)",
+      "date": null,
+      "url": "https://fusionforenergy.europa.eu/news/europe-celebrates-its-leadership-in-magnets-technology/amp"
+    },
+    {
+      "id": "S163",
+      "title": "GA marks completion of the world's largest and most powerful pulsed superconducting magnet for fusion energy",
+      "publisher": "General Atomics",
+      "date": "2025",
+      "url": "https://ga.com/ga-marks-completion-of-the-world-s-largest-and-most-powerful-pulsed-superconducting-magnet-for-fusion-energy"
+    },
+    {
+      "id": "S164",
+      "title": "Supplemental Burma Business Advisory (risks of doing business in Burma, incl. rare earths)",
+      "publisher": "US Departments of State, Treasury (OFAC), Commerce et al.",
+      "date": "2024",
+      "url": "https://ofac.treasury.gov/media/932786/download?inline="
+    },
+    {
+      "id": "S165",
+      "title": "Conflict Minerals Regulation: the regulation explained",
+      "publisher": "European Commission (DG Trade)",
+      "date": null,
+      "url": "https://policy.trade.ec.europa.eu/development-and-sustainability/conflict-minerals-regulation/regulation-explained_en"
+    },
+    {
+      "id": "S166",
+      "title": "SEC adopts rule for disclosing use of conflict minerals (press release 2012-163 and related materials)",
+      "publisher": "US Securities and Exchange Commission",
+      "date": "2012",
+      "url": "https://www.sec.gov/opa/Article/2012-2012-163htm---related-materials.html"
+    },
+    {
+      "id": "S167",
+      "title": "Critical Raw Materials Act",
+      "publisher": "European Commission (DG GROW)",
+      "date": null,
+      "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/critical-raw-materials-act_en"
+    },
+    {
+      "id": "S168",
+      "title": "Corporate Sustainability Due Diligence Directive: amendments under Omnibus I finalised",
+      "publisher": "DLA Piper",
+      "date": "2026",
+      "url": "https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopments/2026/corporate-sustainability-due-diligence-directive-amendments-under-omnibus-i-finalised"
+    },
+    {
+      "id": "S169",
+      "title": "US awards USD46 million funding, aiming for fusion pilot plant",
+      "publisher": "World Nuclear News",
+      "date": "2023",
+      "url": "https://www.world-nuclear-news.org/Articles/US-awards-USD46-million-fusion-pilot-plant-funding"
+    },
+    {
+      "id": "S170",
+      "title": "3 key insights: the challenges and opportunities of high temperature superconductors in fusion",
+      "publisher": "Fusion Energy Insights",
+      "date": "2025",
+      "url": "https://blogprep.fusionenergyinsights.com/post/3-key-insights-the-challenges-and-opportunities-of-high-temperature-superconductors-in-fusion-2396"
+    },
+    {
+      "id": "S171",
+      "title": "Compact fusion boom propels PLD REBCO tape production (summary of 'Commercial compact fusion triggered REBCO tape industry', Superconductivity, doi 10.1016/j.supcon.2025.100188)",
+      "publisher": "Energy Daily",
+      "date": "2025",
+      "url": "https://energy-daily.com/compact-fusion-boom-propels-pld-rebco-tape-production-while-spotlighting-cost-and-stability-hurdles-999/"
+    },
+    {
+      "id": "S172",
+      "title": "Mineral Commodity Summaries 2026: Tin",
+      "publisher": "U.S. Geological Survey",
+      "date": "2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-tin.pdf"
+    },
+    {
+      "id": "S173",
+      "title": "Proxima Fusion and partners publish Stellaris fusion power plant concept",
+      "publisher": "Proxima Fusion",
+      "date": "2025",
+      "url": "https://proximafusion.com/press-news/proxima-fusion-and-partners-publish-stellaris-fusion-power-plant-concept-to-bring-limitless-safe-clean-energy-to-the-grid"
     }
   ]
 }

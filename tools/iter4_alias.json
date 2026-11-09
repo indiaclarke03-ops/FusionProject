@@ -1,0 +1,18 @@
+{
+  "lts-strand-wst": "lts-wst",
+  "lts-strand-bruker": "lts-bruker",
+  "lts-strand-jastec": "lts-jastec",
+  "lts-strand-kat": "lts-kat",
+  "lts-strand-chmp": "lts-chmp",
+  "dev-iter": "lts-iter",
+  "t-manmaw": "sn-manmaw",
+  "t-smelters": "sn-yunnan",
+  "iter": "lts-iter",
+  "w-china": "w-jiangxi",
+  "y-china-sep": "y-cn-sep",
+  "hts-tape-fujikura": "hts-fujikura",
+  "hts-tape-faraday": "hts-ffj",
+  "hts-tape-sinnov": "hts-sinnov",
+  "hts-tape-shsc": "hts-sst",
+  "policy-cn-yttrium": "pol-china-ree-apr2025"
+}

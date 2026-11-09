@@ -1,0 +1,287 @@
+{
+  "_note": "Iteration 4 solution design (research: Tavily + Sayari test runs). Cost figures are indicative; see limitations.",
+  "name": "MagnetTrace",
+  "headline": "screen, declare, test, watch",
+  "tagline": "Trace the magnet before it powers the reactor: screen, declare, test, watch.",
+  "problem": "Fusion magnets depend on yttrium (REBCO tape), Hastelloy nickel strip, tin and niobium (Nb3Sn) and tungsten whose sources include Kachin rare earth mines (armed-group control, child deaths, toxic leaching), UWSA-run Man Maw tin, M23-held Rubaya coltan laundered through Rwanda, and Indonesian nickel hubs. Origin is lost at Chinese separators and Asian smelters, industry audits have passed smelters that processed laundered ore, and no fusion developer or tape maker publishes material-level human rights traceability. Corporate and trade data can show who ships to whom, but not which mine a batch came from.",
+  "components": [
+    {
+      "name": "Corporate-graph and trade screening layer (Sayari or equivalent)",
+      "what": "Resolves each named supplier to a legal entity, screens it and its owners against sanctions, export-control and forced-labour lists, and maps who ships to whom from customs records (bills of lading, HS codes). It shows ownership (e.g. state-owned processors), sanctions proximity (e.g. Star Dragon supplying Malaysia Smelting Corporation) and shipment corridors (e.g. 369 Moscow-to-Japan tape shipments).",
+      "evidence": "Mature, commercially deployed for sanctions, export-control and UFLPA compliance; Sayari reports 250+ jurisdictions, 350+ watchlists, UFLPA Entity List and 1.6M+ Xinjiang-geolocated entities. Global Witness's 2026 Rwanda coltan investigation used the same kind of customs data (C4ADS, SOMO) to tie Rubaya-linked exporters to eight smelters. This project's own iteration-2 research found the Star Dragon to MSC sanctioned-supplier link and the Moscow tape route this way.",
+      "limits": "Trade data records companies and countries, not mines; origin is lost at smelters and separators. No coverage of domestic trade inside China, informal cross-border flows (Myanmar to Yunnan ore is absent) or conditions at mine sites. Absence of records is not evidence of absence. Multi-hop watchlist hits are noisy: our test returned 50 sanctioned entities within 2 to 4 hops of Fujikura, Faraday Factory Japan and Western Superconducting, almost all irrelevant (shared stock-clearing shareholders, unrelated Russian buyers). Modelled flags (psa_*, exports_ilab_*) are country/product statistics, not findings. Pricing is quote-based and not public.",
+      "sources": [
+        "SY",
+        "SY",
+        "S15",
+        "S49"
+      ]
+    },
+    {
+      "name": "Magnet passport: batch-level chain-of-custody record per tape spool or strand billet",
+      "what": "A digital record attached to each REBCO tape batch or Nb3Sn strand billet that carries the bill of materials (yttrium/rare-earth oxide, Hastelloy strip, tin, niobium), the named separator/smelter for each input, declared mine or country of origin, the supplier's due diligence report, and any lab test results. Modelled on the EU Battery Passport data structure and the Global Battery Alliance rulebooks.",
+      "evidence": "The EU Battery Passport becomes mandatory from 18 Feb 2027 for EV, LMT and >2 kWh industrial batteries (Reg. 2023/1542 Art. 77); it is the first legally mandated product passport, but its public layer centres on composition, carbon footprint and recycled content, and the battery due diligence obligations were postponed to 18 Aug 2027 by Omnibus IV. GBA's 2023 proof of concept (Audi, Tesla, Glencore, CATL, UNICEF, IndustriALL) produced only partial child-labour and human-rights reporting for select materials. Circulor has traced cobalt for Volvo's CATL and LG Chem supply chains since 2019-20. Minespider tracks 29,000+ t/yr of Minsur tin (Peru, Brazil) on blockchain. Rare earths were not covered in any GBA pilot found.",
+      "limits": "A passport only records what suppliers declare; it does not verify origin (garbage in, garbage out, as the ITSCI experience shows for tags). Mass-balance accounting lets certified and uncertified material mix. IEA/OECD (2025) list blockchain drawbacks: cost, energy use, interoperability; blockchain is a repository, not a tracking mechanism. Vendor risk: Everledger, a Tencent-backed provenance platform, collapsed in 2023 when a funding tranche failed, so the data standard should be open and vendor-neutral. Published cost figures are vendor estimates (e.g. >EUR 250,000 initial set-up per battery model plus EUR 20-50k/yr) and not independently verified.",
+      "sources": [
+        "S61",
+        "S62",
+        "S63",
+        "S64",
+        "S65",
+        "S66",
+        "S67",
+        "S68"
+      ]
+    },
+    {
+      "name": "Origin verification science: isotopic and geochemical fingerprinting",
+      "what": "Lab tests on physical samples (ore concentrate, oxide, or finished magnet material) that check whether the declared origin is plausible by comparing trace-element and isotope signatures with a reference database. Used as a spot-check on passport claims, not as a standalone certificate.",
+      "evidence": "Coltan/cassiterite/wolframite: Germany's BGR developed the 'analytical fingerprint' (AFP) for Great Lakes 3T ores; per Global Witness (2026), Rwanda has repeatedly refused to apply it and the tool, which cost millions to develop, has never been used for its intended purpose. Rare earths: research stage. The EU MaDiTraCe project (Ghent/BRGM/CEA, Goldschmidt 2025) found no significant Nd isotopic fractionation from ore through magnet manufacturing, suggesting Nd isotopes could track magnet sources. No published method was found that distinguishes Kachin from Jiangxi ionic-clay yttrium; this is an open research question. Indicative lab cost: commercial LA-ICP-MS at about US$240-300 per sample plus US$150 preparation (University of Manitoba rates).",
+      "limits": "IEA/OECD (2025): smelting and concentration alter material characteristics, limiting fingerprinting across the full chain. AFP compares a sample to the declared mine's reference samples, so it needs a reference database and cooperation from exporting states. Blending at separators (yttrium) or smelters (tin) dilutes signatures; a mixed lot can only be shown to be inconsistent with a claim, not traced to every source. Yttrium is not neodymium; its isotope systematics for provenance are unproven.",
+      "sources": [
+        "S15",
+        "S69",
+        "S67",
+        "S70"
+      ]
+    },
+    {
+      "name": "Remote sensing of source regions",
+      "what": "Satellite monitoring of known high-risk mining areas (Kachin and Shan ionic-clay leach sites, Man Maw, Rubaya) to detect expansion, new leach pads and deforestation, and to corroborate or contradict supplier declarations about which areas are active.",
+      "evidence": "Global Witness (2024) used satellite imagery to show Kachin Special Region 1 mining sites grew 40%+ to over 300 (2021-23) and Momauk from 9 to 40+. Myanmar Witness measured mining area growth from ~26,000 ha (2018) to 46,700 ha (2024) and nearly 400 sites by end-2024; Global Forest Watch shows ~32,720 ha tree cover loss in three townships (Mongabay 2025). USGS (Sept 2025) released labelled point locations of leachate tanks in Myanmar and China as training data for automated detection (tanks are 10-20 m across). IPIS has mapped 2,800+ artisanal sites in eastern DRC since 2009 and found non-state armed interference at 29% of sites visited in 2021-23. Planet SkySat tasking is US$12/km2 (flexible) to US$40/km2 (assured).",
+      "limits": "Shows that mining happens and where, not who works there, under what conditions, or where the ore goes. Cannot link a specific pit to a specific tape batch. Underground and artisanal pits under canopy are hard to see; field data (as IPIS uses) remains essential. Needs human-rights-aware analysts to avoid exposing local sources.",
+      "sources": [
+        "S1",
+        "S71",
+        "S72",
+        "S73",
+        "S74"
+      ]
+    },
+    {
+      "name": "Audit and assurance schemes (RMI RMAP, ITSCI, IRMA) as the baseline that tech must complement",
+      "what": "Third-party audits of smelters/refiners (RMAP), bag-and-tag chain of custody at artisanal mines (ITSCI), and site-level mine audits with stakeholder input (IRMA).",
+      "evidence": "RMAP was recognised by the European Commission under the Conflict Minerals Regulation on 16-17 Oct 2025. IRMA (Sept 2025): 127 sites engaged, 27 in third-party audits, 14 public audit reports, equal six-house governance. Failure cases: Global Witness (2022) found ITSCI-tagged minerals came from unvalidated mines, militia-taxed sites and sites using child labour; RMI removed ITSCI from its approved list in 2022 and extended the suspension to at least 2026 (Reuters). All eight smelters processing Rwandan coltan passed RMAP in 2024-25 while M23 occupied Rubaya (Global Witness 2026). UN experts report Rwanda exported ~715 t tantalum in 2024 against 350 t produced (swissinfo, July 2025).",
+      "limits": "Document-based schemes can be laundered at the tagging point; smelter audits check paperwork, not the mine. Industry-funded schemes have conflicts of interest. RMAP covers 3TG only (tin, tungsten, tantalum, gold), so it does not cover yttrium or rare earths, and niobium only indirectly via tantalum smelters. IRMA covers industrial mines, not the artisanal sites where most harm in this chain occurs. Technology must therefore test the claims these schemes make, not replace them.",
+      "sources": [
+        "S75",
+        "S76",
+        "S77",
+        "S78",
+        "S15",
+        "S79"
+      ]
+    },
+    {
+      "name": "Worker and community grievance channel",
+      "what": "Anonymous, multi-language mobile channel (SMS/app/web) for workers and communities near supplying sites to report abuses, with case management so reports reach the buyer consortium and are tracked to remediation.",
+      "evidence": "Ulula (now part of EcoVadis) reports 4.5M people reached, 4,600 workplaces, 69 countries, 114 languages, anonymous reporting and collaborative case management.",
+      "limits": "No published case was found of such a channel operating in Kachin, Wa State or M23-held Rubaya; reporting there carries serious safety risk and depends on phone access. Works best at industrial sites and processors (separators, smelters, strip mills), not in active conflict zones. Vendor statistics are self-reported.",
+      "sources": [
+        "S80"
+      ]
+    },
+    {
+      "name": "Policy hooks that make the tech bite",
+      "what": "Conditions in public fusion funding and procurement that require passports, screening and disclosure, backed by existing legal tools.",
+      "evidence": "DOE's Milestone-Based Fusion Development Program ($46M first phase, 8 awardees incl. CFS, May 2023) pays on negotiated milestones but its announcement contains no supply-chain requirements, so a 'traceability milestone' is a ready hook. UKAEA's 2024-25 Modern Slavery Statement covers general procurement controls but does not mention raw materials. UK Procurement Act 2023 Sch. 7 allows exclusion where there is sufficient evidence of modern-slavery conduct in or outside the UK (in force 24 Feb 2025). EU CSDDD as amended by Omnibus I (in force 18 Mar 2026; transposition by 26 Jul 2028) keeps risk-based due diligence across the chain for firms with >5,000 employees and >EUR 1.5bn turnover. CRMA strategic projects may rely on recognised certification schemes that provide independent third-party verification (recitals 17, 59). UFLPA shows a rebuttable presumption works: importers must map supply chains to raw materials and give clear and convincing evidence; CBP held solar shipments until quartzite sources were documented.",
+      "limits": "Most fusion developers and tape makers fall below CSDDD thresholds; voluntary or funding-linked conditions are needed. A UFLPA-style presumption for Myanmar rare earths or eastern DRC 3T does not exist and would need legislation. Conditions without verification budgets become paperwork.",
+      "sources": [
+        "S81",
+        "S82",
+        "S83",
+        "S84",
+        "S85",
+        "S86"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "step": "Bill of materials and supplier map",
+      "who": "Fusion developer procurement team (e.g. CFS, Tokamak Energy, Proxima) with tape/strand maker",
+      "what": "List each magnet input (yttrium or other rare earth, Hastelloy strip, Nb, Sn, W) and require tier-1 suppliers to name their separators, smelters and strip mills.",
+      "tech": "Passport data template (open schema, based on Battery Passport/GBA fields)"
+    },
+    {
+      "step": "Automated screening",
+      "who": "Buyer compliance or shared consortium analyst",
+      "what": "Run every named entity through sanctions, ownership, export-control and trade screening; map shipment corridors; record evidence levels. Screen direct paths first; treat multi-hop hits and modelled flags as leads, not findings.",
+      "tech": "Sayari Graph API/MCP or equivalent; the site's Supplier Check rules"
+    },
+    {
+      "step": "Risk triage",
+      "who": "Analyst",
+      "what": "Apply the action rules: stop/escalate on direct sanctions hits, high-risk actions for blending points, conflict regions and documented forced or child labour; request disclosure where data is missing.",
+      "tech": "Rule engine (prototype_rules)"
+    },
+    {
+      "step": "Supplier disclosure and OECD due diligence",
+      "who": "Tape/strand maker and its processors",
+      "what": "Provide smelter/separator lists, origin declarations, OECD five-step due diligence reports, RMAP/IRMA status; sign Annex II-style policy commitments.",
+      "tech": "Passport entries signed by supplier"
+    },
+    {
+      "step": "Physical verification",
+      "who": "Independent lab commissioned by consortium",
+      "what": "Sample a share of batches (risk-weighted) and test declared origin: AFP-style tests for tin/niobium ore concentrates; Nd/trace-element tests for rare earth inputs where reference data exist.",
+      "tech": "LA-ICP-MS / MC-ICP-MS; results appended to passport"
+    },
+    {
+      "step": "Source-region monitoring",
+      "who": "Consortium remote-sensing partner (NGO or research group)",
+      "what": "Quarterly checks of Kachin, Shan, Man Maw, Rubaya and declared source mines for expansion, leach pads and deforestation; compare with declarations.",
+      "tech": "Planet/Sentinel imagery; USGS leach-tank training data; IPIS field data"
+    },
+    {
+      "step": "Grievance and field signal",
+      "who": "Workers and communities at accessible sites; local civil society",
+      "what": "Anonymous reports routed to the consortium; cases tracked to remediation.",
+      "tech": "Ulula-type mobile grievance channel"
+    },
+    {
+      "step": "Decision and disclosure",
+      "who": "Buyer and public funder",
+      "what": "Accept, accept with corrective plan, suspend, or exit (Annex II logic). Publish an annual magnet supply-chain report with evidence levels. Public funders release traceability milestone payments on completion.",
+      "tech": "Passport dashboard; public report"
+    }
+  ],
+  "costs": "Costs scale with the number of batches and suppliers, not tonnage, which is what makes fusion cheap to cover now. Screening: Sayari and peers sell quote-based annual licences; no public price list was found, so a shared consortium licence is the efficient model. Lab verification: commercial LA-ICP-MS runs about US$240-300 per sample plus about US$150 preparation (University of Manitoba rates); MC-ICP-MS isotope work and reference-database building cost more. Illustrative only: testing 200 batches a year at US$500-1,000 each is US$100,000-200,000 a year. Remote sensing: Planet SkySat tasking is US$12/km2 (flexible). Myanmar Witness put the Kachin mining area at 46,700 ha (467 km2) in 2024, so one high-resolution tasked snapshot of the whole area is roughly US$5,600, or about US$22,000 a year quarterly, before analyst time (illustrative calculation). Free Sentinel-2 and Global Forest Watch data cover coarse change. Passport software: vendor estimates for battery passports are over EUR 250,000 set-up per model plus EUR 20,000-50,000 a year; unverified. A fusion consortium with a handful of tape and strand makers needs far fewer product models than an automaker. Scale: there are only a few fusion tape makers (Fujikura, Faraday Factory Japan) and about six Nb3Sn strand makers in the site's data, so one consortium can cover the whole sector. Rare earths, tin and tungsten are shared with magnets, electronics and EVs, so verification data (fingerprint reference libraries, satellite monitoring) should be pooled cross-sector to cut cost per buyer.",
+  "whoPays": "Tier-1 tape and strand makers bear passport and disclosure costs and pass them into price; at fusion volumes this is a small share of magnet cost (no published figure; assumption). Public funders (DOE Milestone program, UKAEA/UK Fusion Energy, Fusion for Energy for ITER) fund the shared layer (screening licence, lab spot-checks, satellite monitoring, grievance channel) as a condition of awards, via a traceability milestone. A cross-sector consortium (fusion developers plus magnet, EV and electronics buyers facing the same separators and smelters) co-funds reference databases and monitoring. Civil society partners (e.g. IPIS-type field researchers) should be paid, independent and able to publish.",
+  "caseForNow": "Fusion is pre-commercial and its magnet supply base is tiny: two REBCO tape makers supply the leading compact tokamaks and a handful of firms make Nb3Sn strand. Demand is about to jump (CFS's 10,000+ km tape order from Fujikura for 2026), so rules written now shape contracts before volumes lock in. Most developers depend on public money (DOE milestone payments, UKAEA/UK Fusion Energy, F4E for ITER) whose award documents currently contain no supply-chain conditions, so a single 'traceability milestone' would reach most of the sector. The regulatory direction is set: the EU Battery Passport is mandatory from Feb 2027, CSDDD is in force, RMAP is recognised under EU law, and UFLPA shows regulators will demand raw-material maps. Batteries had to retrofit traceability into a mature industry; fusion can build it in at the cost of a few hundred lab tests and a shared screening licence a year. And the site's own research shows why: part of fusion's tape ran through Moscow until 2025, a major tin smelter bought from an OFAC-sanctioned Rubaya-linked trader, and no record shows where any tape maker's yttrium comes from.",
+  "limitations": [
+    "No technology can currently trace yttrium from a specific Kachin pit to a tape batch: separation in China blends sources, and no validated isotope method distinguishes Kachin from Jiangxi ionic-clay rare earths.",
+    "Trade data cannot see Myanmar-to-China ore flows, Chinese domestic trade or conditions at mines; absence of records is not proof of absence.",
+    "Multi-hop sanctions screening generates many false leads (50 hits within 2-4 hops for each tested supplier); analysts must check relationship type and direction.",
+    "Passports record declarations; without independent physical checks they can launder risk, as tagging did in ITSCI.",
+    "Fingerprinting needs reference samples and state cooperation; Rwanda has refused to apply BGR's AFP, and smelting erases most signatures.",
+    "Satellites show land change, not labour conditions or ore destination.",
+    "Grievance channels are unsafe or unavailable in active conflict zones (Kachin, Wa State, M23-held Rubaya).",
+    "Fusion buyers are small customers; leverage over Chinese separators and Yunnan smelters is limited without pooling with larger sectors.",
+    "Industry assurance schemes (RMAP, ITSCI) have passed smelters during documented laundering; recognition by the EU does not settle the problem.",
+    "Cost figures for passports and screening licences are vendor estimates or unpublished; the costs here are indicative.",
+    "Exiting high-risk sources can harm artisanal miners who depend on that income; OECD-style responsible disengagement and mitigation plans should come before exit except for the most serious abuses."
+  ],
+  "rules": [
+    {
+      "trigger": "sanctioned",
+      "label": "A sanctioned party is in, or trades directly with, the chain",
+      "severity": "stop",
+      "action": "Stop new orders that touch the path and escalate to legal/compliance. Confirm the match (identifiers, relationship type, date). If the sanctioned party is the supplier or a direct counterparty (e.g. Chepetsky on Ukraine's NSDC list; Star Dragon (OFAC SDN) shipping to Malaysia Smelting Corp), require written confirmation that no sanctioned-origin material is in the batch, and suspend until resolved. If the hit is only 3+ hops away through unrelated ties, downgrade to 'modelled risk flag only'.",
+      "why": "Sanctions breaches are legal violations and, for Star Dragon, the designation is itself for buying minerals from armed-group-controlled areas. OECD Annex II-style policies require immediate suspension where suppliers are linked to non-state armed groups.",
+      "sources": [
+        "S49",
+        "S87",
+        "SY"
+      ]
+    },
+    {
+      "trigger": "blending",
+      "label": "A blending point upstream: origin is lost at a separator or smelter",
+      "severity": "high",
+      "action": "Require the full smelter/separator list and an origin declaration (mine or country) for each input; check named smelters against RMAP status and Global Witness/UN findings; record the blending point in the passport; risk-weight the batch for lab sampling.",
+      "why": "Origin is lost at separators (yttrium) and smelters (tin, tantalum/niobium). This is where Kachin and Rubaya material enters unseen; RMAP-audited smelters still processed laundered coltan.",
+      "sources": [
+        "S15",
+        "S1",
+        "S67"
+      ]
+    },
+    {
+      "trigger": "conflict",
+      "label": "A conflict-affected source region upstream",
+      "severity": "high",
+      "action": "Require OECD five-step due diligence with an Annex II supply chain policy, a named-mine origin declaration, and an independent origin test (AFP-type for tin/coltan; isotopic test for rare earths where reference data exist). Add the source region to satellite monitoring. If supply from the region is confirmed, suspend pending a mitigation plan; exit if armed-group support is confirmed.",
+      "why": "Kachin (KIA/militia control), Man Maw (UWSA, OFAC-sanctioned) and Rubaya (M23, PARECO-FF) are armed-group areas; UN experts report Rubaya coltan is mixed into Rwandan exports.",
+      "sources": [
+        "S87",
+        "S79",
+        "S1",
+        "S73"
+      ]
+    },
+    {
+      "trigger": "extreme",
+      "label": "Forced labour, child labour or crimes against people documented upstream",
+      "severity": "high",
+      "action": "Treat as a serious abuse under Annex II: if the supplier is linked to the abusing party, suspend immediately. Otherwise require evidence of origin outside the affected sites (UFLPA-style: supply chain map to raw material plus batch tracing), worker-voice data where safe, and a remediation plan. Escalate to stop if a direct link is confirmed.",
+      "why": "Child miners' deaths in Kachin, UWSA listed for child recruitment, and forced labour imposed by PARECO-FF at Rubaya are documented. Annex II requires immediate suspension where suppliers are linked to parties committing serious abuses; UFLPA shows the evidential standard regulators use.",
+      "sources": [
+        "S87",
+        "S49",
+        "S86",
+        "S3"
+      ]
+    },
+    {
+      "trigger": "soe",
+      "label": "A state-owned processor in a high-risk jurisdiction",
+      "severity": "medium",
+      "action": "Request ownership disclosure and the processor's sourcing policy and origin declaration; check for regulatory actions; ask whether it imports Myanmar or DRC/Rwanda feedstock; flag for audit access requests. Do not treat state ownership itself as a human rights finding.",
+      "why": "State-owned separators and smelters (e.g. Ganzhou Chenguang, Yunnan Tin, Ningxia Orient Tantalum, Western Superconducting) are opaque to audits and are named in reporting as buyers of Myanmar and Rwandan material; state ownership limits buyer leverage and audit access.",
+      "sources": [
+        "S1",
+        "S15",
+        "SY"
+      ]
+    },
+    {
+      "trigger": "opaque",
+      "label": "Opaque: no records, or links that rest only on inference",
+      "severity": "medium",
+      "action": "Request disclosure: named suppliers for each input, shipment documents, origin declarations. Record 'no data' as an evidence gap, not a clean result. If the supplier refuses, escalate to high and prefer alternative suppliers at next order.",
+      "why": "Trade coverage varies by jurisdiction and misses domestic and informal trade; our test found no rare earth imports recorded for Fujikura or Faraday Factory Japan and zero trade records for Western Superconducting.",
+      "sources": [
+        "SY",
+        "SY"
+      ]
+    },
+    {
+      "trigger": "modelled",
+      "label": "Only modelled risk flags (Sayari indicators), no documented finding",
+      "severity": "low",
+      "action": "Log and show the flag with its definition; ask one targeted question to the supplier at the next review; no change to orders. Upgrade if corroborated by a document, shipment or field report.",
+      "why": "Flags such as psa_*, exports_ilab_child_labor or sanctioned_adjacent are statistical or proximity indicators (e.g. Vietnamese electronics suppliers to Fujikura subsidiaries), not findings about the supplier's operations.",
+      "sources": [
+        "SY"
+      ]
+    }
+  ],
+  "sayariTest": "Runs on 9 Nov 2026 via Sayari MCP. (1) Faraday Factory Japan (C13ZLDlfTD93f5CM_BpokA): get_upstream_supply_chain returned 15 paths, all through the Moscow SuperOx entities (S-Innovations, flags imports_bis_high_priority_items and meu_list_contractors; and a duplicate 'S Inhovatsiya') and their Chinese suppliers (Danyang Kaixin Alloy, Supermag Shanghai, Zibo Hitech Material with modelled ILAB child/forced-labour export flags, Zigui Sunman) plus a Shanghai fusion firm (Energy Singularity). No yttrium, separator or mine appears. check_watchlist at default depth returned 50 sanctioned entities at 3-4 hops, 46 of them reached through S-Innovations' Russian trade network (e.g. via a cryogenics firm); none is a direct counterparty of Faraday Factory Japan. (2) Fujikura (U7SEXp0vAeOhQOSFYm0SMw): check_watchlist at depth 1 returned 0 hits; at default depth, 50 sanctioned entities at 2-3 hops (Chinese defence SOEs, Huawei, Russian manufacturers), which reflect group size, not HTS tape. Upstream returned 15 paths, all Vietnamese electronics suppliers to Fujikura subsidiaries (e.g. Misumi Vietnam) carrying modelled ILAB/EUDR flags. Upstream filtered to HS 2846 (rare earth compounds) and 2805 returned 0. (3) Western Superconducting Technologies (sHd3C6y1EF_j7cxUmp8p4w): entity summary shows owned_by_chinese_soe and trade_count 0 sent / 0 received; upstream returned 0. Watchlist hits at 2 hops (China Mobile, Shaanxi Zhongtian Rocket, China Unicom) all run through Hong Kong Securities Clearing as a shared shareholder, i.e. stock-connect nominee noise. Conclusion: a corporate-graph layer reliably shows ownership, sanctions proximity and the Moscow tape corridor, but returns nothing about where yttrium, tin or niobium was mined, and its multi-hop watchlist results need filtering by relationship type to be usable.",
+  "sources": [
+    "SY",
+    "SY",
+    "S15",
+    "S77",
+    "S1",
+    "S71",
+    "S72",
+    "S73",
+    "S74",
+    "S69",
+    "S67",
+    "S70",
+    "S61",
+    "S62",
+    "S63",
+    "S64",
+    "S65",
+    "S66",
+    "S68",
+    "S78",
+    "S79",
+    "S75",
+    "S76",
+    "S87",
+    "S49",
+    "S80",
+    "S81",
+    "S82",
+    "S83",
+    "S84",
+    "S85",
+    "S86",
+    "S3"
+  ],
+  "defaultSupplier": "hts-tape-faraday"
+}

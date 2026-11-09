@@ -7,6 +7,10 @@ const FILES = {
   scores: 'data/scores.json',
   site: 'data/site.json',
   findings: 'data/findings.json',
+  map: 'data/map.json',
+  cases: 'data/cases.json',
+  solution: 'data/solution.json',
+  background: 'data/background.json',
 };
 
 async function loadOne(key, url) {

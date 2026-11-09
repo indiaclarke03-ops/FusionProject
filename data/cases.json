@@ -1,0 +1,953 @@
+{
+  "_note": "Plain-language case files (iteration 4).",
+  "aliases": {
+    "beryllium": "lithium6"
+  },
+  "cases": [
+    {
+      "material": "yttrium",
+      "title": "Targets, not oxide: how yttrium reaches the tape",
+      "standfirst": "Russian customs records show the yttrium in some fusion tape arrived in Moscow already pressed into targets from Korea, Japan and the Czech Republic. Behind those targets the trail goes dark, and the most likely source is China's separators, which take Myanmar ore.",
+      "plainIntro": "High-temperature superconducting magnets are wound from REBCO tape: a ribbon of nickel alloy with very thin ceramic layers on top. Yttrium appears twice. It is in a buffer layer of yttrium oxide that lets the superconductor grow neatly, and in many tapes it is the 'rare earth' in the superconductor itself. Factories do not pour powder onto the tape. They blast it off solid discs called targets, using ion beams or lasers. So the yttrium supply chain runs through target makers.",
+      "steps": [
+        {
+          "heading": "Bought for magnets in Massachusetts, Munich and Shanghai",
+          "stageName": "Compact fusion developers using REBCO tape (CFS, Proxima Fusion, Energy Singularity)",
+          "body": "Commonwealth Fusion Systems buys tape from Fujikura and Faraday Factory Japan. Proxima Fusion buys from Faraday Factory Japan, and China's Energy Singularity got all its tape from Shanghai Superconductor. CFS's public supplier checks cover finance, quality and compliance, but not human rights or where materials come from. We found no sourcing policy from any of the three developers.",
+          "trail": [
+            {
+              "from": "Fujikura",
+              "to": "Commonwealth Fusion Systems",
+              "what": "Order for more than 10,000 km of tape (2026)",
+              "status": "reported",
+              "source": "S37",
+              "url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-places-largest-single-purchase-order-of-hts-tape-with-fujikura-to-accelerate-development-of-arc-power-plants-302893652.html"
+            },
+            {
+              "from": "Shanghai Superconductor",
+              "to": "Energy Singularity",
+              "what": "All tape for HH70 and Jingtian magnet",
+              "status": "reported",
+              "source": "S95",
+              "url": "https://www.shsctec.com/en/applications/nuclear"
+            }
+          ]
+        },
+        {
+          "heading": "Finished in Japan from Moscow-coated tape",
+          "stageName": "REBCO tape makers (Faraday Factory Japan, Fujikura, Shanghai Superconductor)",
+          "body": "Faraday Factory Japan's only recorded imports are tape from Moscow. Japanese customs entries spell out the layers: aluminium, yttrium, magnesium and lanthanum-manganese oxides, then yttrium-barium-copper oxide and silver. One December 2023 entry was 140 kg of finished tape worth ¥113.7 million. Fujikura has a responsible-minerals policy; Faraday Factory Japan and Shanghai Superconductor publish none we could find.",
+          "trail": [
+            {
+              "from": "S-Innovations (Moscow)",
+              "to": "Faraday Factory Japan",
+              "what": "369 shipments of coated tape, Feb 2023–Jan 2025",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/C13ZLDlfTD93f5CM_BpokA"
+            }
+          ]
+        },
+        {
+          "heading": "Coated in Moscow from imported targets",
+          "stageName": "Moscow coating step (S-Innovations / SuperOx-Innovations)",
+          "body": "S-Innovations makes the buffer and superconductor layers. Its import records show the yttrium coming in as targets: an 'yttrium target' from Korea's Maru L&C, yttrium-barium-copper oxide laser targets from CAN Superconductors in the Czech Republic, and a lanthanum-manganite target from Japan's Toshima Manufacturing. It recorded no yttrium oxide imports at all. Russian procurement records also list four state customers, including Rosatom institutes, all on Ukraine's sanctions list.",
+          "trail": [
+            {
+              "from": "Maru L&C (Korea)",
+              "to": "S-Innovations",
+              "what": "Yttrium sputtering target, 6.1 kg, Jan 2022",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/iE6gw6srw2KFyPqvT9YjkA"
+            },
+            {
+              "from": "CAN Superconductors (Czech Republic)",
+              "to": "S-Innovations",
+              "what": "4 YBCO laser targets 2020 (~36 kg) and a 15 kg target in Feb 2023",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/wFhBCfyCEsio5vYfxkwyEw"
+            },
+            {
+              "from": "Toshima Manufacturing (Japan)",
+              "to": "S-Innovations",
+              "what": "LaMnO3 target 13.2 kg and IBAD target 5.2 kg, Jan 2022",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/j9aD4jNYn_jrCV0wiDvmgg"
+            }
+          ]
+        },
+        {
+          "heading": "Made into targets somewhere in Asia or Europe",
+          "stageName": "Yttrium oxide and sputtering/laser targets (Korea, Japan, Czech Republic, China)",
+          "body": "Target makers buy high-purity yttrium oxide or metal and press it into discs. Sayari holds no record of where Maru L&C or CAN Superconductors get theirs. Since April 2025 China has licensed yttrium exports; by November European oxide prices were up 4,400%. We found no reports of abuse at the target makers.",
+          "trail": [
+            {
+              "from": "Chinese separators",
+              "to": "Target makers",
+              "what": "No shipment found; untested",
+              "status": "hypothesis",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/iE6gw6srw2KFyPqvT9YjkA"
+            }
+          ]
+        },
+        {
+          "heading": "Separated by China's state rare earth group",
+          "stageName": "Chinese heavy rare earth separators (China Rare Earth Group and subsidiaries, Ganzhou/Jiangxi; Fujian)",
+          "body": "Almost all heavy rare earth separation, including yttrium, happens in China under two state-owned groups. Global Witness found that China Rare Earth Group's southern arm boasted of leading imports of Myanmar ore, and that plans for its plants rely on Myanmar supply. Once ore is dissolved and separated, nothing in the oxide shows where it was mined.",
+          "trail": [
+            {
+              "from": "Myanmar",
+              "to": "China Rare Earth Group subsidiaries",
+              "what": "Imports of Myanmar ore described by the company and in official plans",
+              "status": "reported",
+              "source": "S89",
+              "url": "https://globalwitness.org/en/campaigns/transition-minerals/myanmars-poisoned-mountains"
+            }
+          ]
+        },
+        {
+          "heading": "Carried across a border held by armed groups",
+          "stageName": "Myanmar–China border crossings (Kachin and Shan to Yunnan)",
+          "body": "Chinese customs data show Myanmar supplied over half of China's rare earth imports in January–September 2025: more than 28,000 tonnes worth US$624 million. The trade pays the Kachin Independence Army, the United Wa State Army and others. Both the KIA and UWSA have been listed by the UN for recruiting children.",
+          "trail": [
+            {
+              "from": "Myanmar",
+              "to": "China",
+              "what": ">28,000 t rare earths, US$624m, Jan–Sep 2025",
+              "status": "reported",
+              "source": "S88",
+              "url": "https://ispmyanmar.com/pet-03"
+            }
+          ]
+        },
+        {
+          "heading": "Dug from poisoned hillsides in Kachin and Shan",
+          "stageName": "Kachin State, Myanmar (Pangwa / Chipwi)",
+          "body": "Hundreds of mines pump acid into hillsides to leach out rare earths. Streams are poisoned, miners including a 15-year-old have died, landslides killed at least 35 in 2024, and workers report violence and sexual exploitation. New mines in Shan State operate under UWSA protection. No record ties a specific mine to fusion tape, but the market structure makes the link likely.",
+          "trail": [
+            {
+              "from": "Kachin mines",
+              "to": "Myanmar–China border",
+              "what": "Heavy rare earth exports to China rose to 41,700 t in 2023",
+              "status": "reported",
+              "source": "S1",
+              "url": "https://globalwitness.org/en/campaigns/transition-minerals/fuelling-the-future-poisoning-the-present-myanmars-rare-earth-boom"
+            }
+          ]
+        }
+      ],
+      "coldTrail": "The trail breaks at the target makers. Russian customs show who sold yttrium targets to Moscow, but none of those firms has any recorded supplier, and China's separators record no buyers in the tape chain. Sayari also holds no Myanmar-to-China rare earth trade. So the last two links, Myanmar to China and China to target maker, rest on customs statistics and NGO investigations, not shipment records.",
+      "glossary": [
+        {
+          "term": "REBCO",
+          "def": "Rare-earth barium copper oxide: the superconducting ceramic layer on HTS tape."
+        },
+        {
+          "term": "Target",
+          "def": "A solid disc of material that a machine blasts with ions or a laser to coat a surface with a thin film."
+        },
+        {
+          "term": "IBAD",
+          "def": "Ion-beam assisted deposition: a way of laying down a perfectly aligned buffer layer on the tape."
+        },
+        {
+          "term": "Separator",
+          "def": "A plant that splits mixed rare earth ore into individual elements such as yttrium."
+        },
+        {
+          "term": "KIA / UWSA",
+          "def": "Kachin Independence Army and United Wa State Army: armed groups that control rare earth mining areas in Myanmar."
+        }
+      ]
+    },
+    {
+      "material": "nickel",
+      "title": "The strip under the superconductor",
+      "standfirst": "Fusion tape is built on nickel-alloy strip, and customs records show some of it was American and some Chinese before it was coated in Moscow. Where the mills get their nickel is not disclosed, but two-thirds of the world's nickel now comes from Indonesia.",
+      "plainIntro": "Every metre of REBCO tape sits on a thin ribbon of Hastelloy C-276, an alloy that is more than half nickel, plus chromium and molybdenum. It is strong, does not rust, and survives the heat of coating. A few specialist mills make it. Their nickel comes from melting new metal and scrap together, so by the time the strip exists, its nickel has lost any link to a particular mine.",
+      "steps": [
+        {
+          "heading": "Shipped from Massachusetts to Moscow",
+          "stageName": "Commonwealth Fusion Systems (shipper of bare Hastelloy to Moscow)",
+          "body": "Russian customs record CFS sending about 29 tonnes of bare Hastelloy tape to S-Innovations between May 2022 and December 2024. Early shipments were declared for research. Where CFS bought that strip is not in any trade record we found, and CFS's supplier criteria do not mention material origin.",
+          "trail": [
+            {
+              "from": "Commonwealth Fusion Systems",
+              "to": "S-Innovations",
+              "what": "15 shipments of C-276 tape, 2022–2024",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/pvo3Wv7gZb9K0hiji7-Nag"
+            }
+          ]
+        },
+        {
+          "heading": "Bought from the US, China and Japan for the Moscow line",
+          "stageName": "Moscow coating step: where its Hastelloy strip came from",
+          "body": "Across 34 strip shipments into Moscow, 15 came from CFS, about a dozen from Chinese firms, five via Japan-based traders and one from US mill Ulbrich. Energy Singularity, a Chinese fusion start-up, sent a sample for testing in January 2024. None of the Chinese suppliers has any recorded source of nickel.",
+          "trail": [
+            {
+              "from": "Chinese strip suppliers (e.g. Supermag, Shenyang Bona Titanium, Jiangsu Rylision)",
+              "to": "S-Innovations",
+              "what": "~12 shipments, 2022–2024",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/9iSMey5wL692dxj1FWT0Gw"
+            },
+            {
+              "from": "Energy Singularity",
+              "to": "S-Innovations",
+              "what": "14 kg sample, Jan 2024",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/S4_YEqahxq-SWxMyyTdcFQ"
+            }
+          ]
+        },
+        {
+          "heading": "Rolled by a few specialist mills",
+          "stageName": "Hastelloy C-276 strip mills (Haynes, VDM/Acerinox, Chinese mills)",
+          "body": "Haynes and VDM, the best-known makers, both belong to Spain's Acerinox. Haynes buys its nickel through one exclusive supplier it does not name and also melts scrap. VDM belongs to responsible-sourcing initiatives aimed mainly at conflict minerals. Neither discloses which countries its nickel comes from.",
+          "trail": [
+            {
+              "from": "Unnamed nickel supplier",
+              "to": "Haynes International",
+              "what": "Exclusive supply arrangement (10-K, 2023)",
+              "status": "reported",
+              "source": "S96",
+              "url": "https://www.sec.gov/Archives/edgar/data/858655/000155837023019161/hayn-20230930x10k.htm"
+            }
+          ]
+        },
+        {
+          "heading": "Refined in China from Indonesian matte",
+          "stageName": "Chinese nickel refining (fed by Indonesian matte)",
+          "body": "China imported US$8.85 billion of nickel from Indonesia in 2025, mostly as matte, a half-processed form. Chinese strip makers therefore very likely use Indonesian nickel, though no record names a specific smelter.",
+          "trail": [
+            {
+              "from": "Indonesia",
+              "to": "China",
+              "what": "US$8.15bn nickel matte, 2025",
+              "status": "reported",
+              "source": "S101",
+              "url": "https://tradingeconomics.com/china/imports/indonesia/nickel"
+            }
+          ]
+        },
+        {
+          "heading": "Mined in Indonesia's nickel boom",
+          "stageName": "Indonesian nickel hubs (Morowali, Weda Bay)",
+          "body": "Indonesia now mines about two-thirds of the world's nickel. Its human rights commission found the state failed to protect people around Morowali, where 21 workers died in a 2023 furnace explosion. At Weda Bay, companies working with police and military took Indigenous land through intimidation. We also tested Russia's Nornickel, given the Moscow step, and found no link.",
+          "trail": [
+            {
+              "from": "Morowali / Weda Bay",
+              "to": "Chinese refiners",
+              "what": "Matte exports (aggregate)",
+              "status": "reported",
+              "source": "S101",
+              "url": "https://tradingeconomics.com/china/imports/indonesia/nickel"
+            }
+          ]
+        }
+      ],
+      "coldTrail": "The trail breaks at the strip mills. Customs records name who sold strip to Moscow, but the Chinese suppliers have no recorded inputs and the Western mills do not name their nickel sources. The Indonesia link is likely for Chinese strip by market structure, and untested for Western strip.",
+      "glossary": [
+        {
+          "term": "Hastelloy C-276",
+          "def": "A nickel-chromium-molybdenum alloy used as the base strip of REBCO tape."
+        },
+        {
+          "term": "Nickel matte",
+          "def": "A half-refined nickel product made at smelters and finished elsewhere, mostly in China."
+        },
+        {
+          "term": "Substrate",
+          "def": "The base layer that all the thin coatings are built on."
+        }
+      ]
+    },
+    {
+      "material": "copper-hts",
+      "title": "Copper from Papua in a fusion coil",
+      "standfirst": "CFS's coil conductor came from a Finnish mill that buys copper cathode from Indonesia's Grasberg operator. Harm at Grasberg is documented; whether that copper went into CFS's order is not.",
+      "plainIntro": "Copper does two jobs in HTS magnets. A thin copper layer is plated onto the tape to carry current safely if the superconductor fails. And thick copper conductors, some hollow so coolant can flow through them, are used in coils and their supports.",
+      "steps": [
+        {
+          "heading": "Hollow conductor shipped from Finland",
+          "stageName": "Copper stabiliser and conductor (tape plating; Luvata and KME conductor for CFS)",
+          "body": "US import records show five shipments of copper hollow conductor from Luvata Pori in Finland to CFS in 2022–23, and a 7.7-tonne shipment from Germany in 2026.",
+          "trail": [
+            {
+              "from": "Luvata Pori",
+              "to": "Commonwealth Fusion Systems",
+              "what": "5 shipments of copper hollow conductor, 2022–23",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/3_jALsRJTNkYcLMnwA1jtQ"
+            }
+          ]
+        },
+        {
+          "heading": "Cathode from Indonesia",
+          "stageName": "Copper cathode from Indonesia (PT Freeport Indonesia, PT Smelting)",
+          "body": "Indonesian export records show Luvata Pori buying copper cathode from PT Freeport Indonesia and PT Smelting in 2025. Luvata also buys from other countries, and these shipments postdate the CFS orders, so they show a supply route, not the copper in CFS's coils.",
+          "trail": [
+            {
+              "from": "PT Freeport Indonesia",
+              "to": "Luvata Pori",
+              "what": "Copper cathode, Nov 2025",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/5YEvTOVahFZSO-h1Eh3GEQ"
+            }
+          ]
+        },
+        {
+          "heading": "Mined at Grasberg",
+          "stageName": "Grasberg mine, Central Papua, Indonesia",
+          "body": "Grasberg dumps over 200,000 tonnes of tailings a day into rivers used by Amungme and Kamoro people. Earthworks reports killings linked to the militarisation of the mine area. Seven workers died in a mud rush in September 2025.",
+          "trail": []
+        }
+      ],
+      "coldTrail": "The cathode shipments are dated 2025, after the conductor CFS received in 2022–23, and Luvata has other suppliers. The route is real but the specific copper is untraceable.",
+      "glossary": [
+        {
+          "term": "Copper cathode",
+          "def": "Refined copper plates, 99.99% pure, sold to mills that make wire and conductor."
+        },
+        {
+          "term": "Hollow conductor",
+          "def": "A copper bar with a channel inside for coolant."
+        }
+      ]
+    },
+    {
+      "material": "silver",
+      "title": "A silver layer with no paper trail",
+      "standfirst": "Every REBCO tape has a silver cap, but no tape maker in the records imports silver, and none says where it buys it.",
+      "plainIntro": "A layer of silver a few micrometres thick is sputtered over the superconductor. It lets oxygen reach the ceramic and makes good electrical contact with the copper on top.",
+      "steps": [
+        {
+          "heading": "Sputtered on at the tape plant",
+          "stageName": "Silver cap layer (sputtered at the tape maker)",
+          "body": "Moscow tape descriptions mention 'a silver surface layer', but Russian customs show no silver imports by S-Innovations, so it was probably bought in Russia. No tape maker we checked discloses its silver source.",
+          "trail": [
+            {
+              "from": "Unknown silver supplier",
+              "to": "S-Innovations",
+              "what": "No silver imports recorded",
+              "status": "hypothesis",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/ZhPhawms5E3chJhzhiai8Q"
+            }
+          ]
+        },
+        {
+          "heading": "Mined somewhere among two dozen countries",
+          "stageName": "Silver mines: origin not traced (Russia likely for Moscow tape; Bolivia as a documented-harm example)",
+          "body": "Most silver is a by-product of other mines. Child labour is documented in Bolivia's Potosí silver cooperatives, but nothing links that silver to fusion tape.",
+          "trail": []
+        }
+      ],
+      "coldTrail": "There is no record at all of who sells silver to fusion tape makers.",
+      "glossary": [
+        {
+          "term": "Sputtering",
+          "def": "Coating a surface by knocking atoms off a target with charged particles."
+        }
+      ]
+    },
+    {
+      "material": "tin",
+      "title": "From Man Maw to the magnet",
+      "standfirst": "Bruker, which made ITER strand, lists Yunnan Tin among its tin smelters, and Yunnan Tin has said part of its tin came from a mine taxed by a US-sanctioned armed group. That is as close as the records get.",
+      "plainIntro": "Tin is one half of niobium-tin (Nb3Sn), the superconductor in ITER's biggest magnets. Strand makers pack tin and niobium rods inside copper, draw them into thin wire, then bake the wire so the two metals react. Each tonne of strand needs high-purity tin. Most of the world's tin is smelted in China, Indonesia and Malaysia, and smelters mix ore from many mines. Once ore is smelted, its origin is lost.",
+      "steps": [
+        {
+          "heading": "ITER sets no sourcing rule",
+          "stageName": "ITER (and ITER-style tokamaks)",
+          "body": "ITER bought more than 500 tonnes of niobium-tin strand from eight makers. Its rules cover quality and safety. Neither ITER's Code of Conduct nor the quality programme that Fusion for Energy gives European suppliers mentions conflict minerals, human rights or where metal is mined. Each country's agency bought from its own firms.",
+          "trail": [
+            {
+              "from": "KAT",
+              "to": "ITER",
+              "what": "137 t of Nb3Sn strand, 2009-16",
+              "status": "reported",
+              "source": "S119",
+              "url": "https://www.kiswire-kat.com"
+            }
+          ]
+        },
+        {
+          "heading": "Strand makers say little about their tin",
+          "stageName": "Nb3Sn strand makers",
+          "body": "Only Bruker files a US conflict minerals report. It covers the whole group, including the strand business, and lists about 77 tin smelters, among them Yunnan Tin, Malaysia Smelting Corporation and smelters in Rwanda and the DRC. Bruker cannot say which smelter fed which product. Furukawa Electric bans tin from conflict and high-risk areas. Kiswire's policy only covers the DRC and its neighbours. No policy was found for JASTEC, Western Superconducting or Chepetsky.",
+          "trail": [
+            {
+              "from": "Yunnan Tin smelting branch",
+              "to": "Bruker group",
+              "what": "Listed in Bruker's 2025 smelter list",
+              "status": "reported",
+              "source": "S108",
+              "url": "https://www.sec.gov/Archives/edgar/data/1109354/000119312526248377/brkr-ex1_01.htm"
+            }
+          ]
+        },
+        {
+          "heading": "Japanese traders take Malaysia's tin",
+          "stageName": "Refined-tin traders in Japan and Korea",
+          "body": "Malaysia Smelting Corporation ships most refined tin to Japan and Korea. Sayari shows Midas Metals took 232 shipments, and Nippon Steel Trading, JX Advanced Metals and others took more. One Korean buyer, Halcyon, also buys coltan linked to conflict in Congo. None of these buyers is a strand maker, and onward sales inside Japan are not recorded.",
+          "trail": [
+            {
+              "from": "Malaysia Smelting Corp",
+              "to": "Midas Metals",
+              "what": "232 refined-tin shipments, to Feb 2026",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/8-jQnosOi2_GviegkWT5qw"
+            },
+            {
+              "from": "Malaysia Smelting Corp",
+              "to": "Halcyon",
+              "what": "3 refined-tin shipments to Korea, to June 2024",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/8eW5KQNdwT7LoG9R3s75kA"
+            }
+          ]
+        },
+        {
+          "heading": "Traders on both routes",
+          "stageName": "Metals traders buying Great Lakes ore",
+          "body": "The same few traders ship tin ore from Tanzania, Rwanda and the DRC into the Malaysian smelter and buy coltan from Rwandan exporters that Global Witness links to conflict in Rubaya. One of them, Star Dragon, was sanctioned by the US in 2025 after shipping ten lots of tin ore to the smelter.",
+          "trail": [
+            {
+              "from": "Star Dragon",
+              "to": "Malaysia Smelting Corp",
+              "what": "10 tin-ore lots, Sep 2024-Aug 2025",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/EOhsW8l7khZBEzP0r4qzVQ"
+            }
+          ]
+        },
+        {
+          "heading": "Myanmar ore melts into Chinese tin",
+          "stageName": "Yunnan Tin and other Yunnan smelters",
+          "body": "China imported up to 187,000 tonnes of Myanmar tin ore a year before 2024. Yunnan Tin's board told Reuters in 2016 that part of its tin came from the Wa mine, perhaps a third. It mixes this ore with Chinese ore. Its smelter has passed the industry audit, which did not treat Myanmar as a conflict area.",
+          "trail": [
+            {
+              "from": "Man Maw",
+              "to": "Yunnan Tin",
+              "what": "Board members confirmed purchases (2016)",
+              "status": "reported",
+              "source": "S113",
+              "url": "https://www.businessinsider.com/r-how-a-rebel-myanmar-tin-mine-may-up-end-a-global-supply-chain-2016-11"
+            }
+          ]
+        },
+        {
+          "heading": "Dug under an armed group's tax",
+          "stageName": "Man Maw, Wa State, Myanmar",
+          "body": "Man Maw is run under the United Wa State Army, under US sanctions and listed by the UN for using child soldiers. Mine owners pay the Wa authorities 30% of their ore, plus a 5% levy from 2026. After a two-year halt, shipments to China rose to 44,069 tonnes in the first half of 2026.",
+          "trail": [
+            {
+              "from": "Man Maw",
+              "to": "China",
+              "what": "44,069 t tin ore, H1 2026 (Chinese customs)",
+              "status": "reported",
+              "source": "S112",
+              "url": "https://www.fastmarkets.com/insights/from-burmese-mines-to-chinese-smelters-how-myanmar-rejoined-chinas-critical-minerals-supply-chain"
+            }
+          ]
+        }
+      ],
+      "coldTrail": "The trail breaks twice. Smelters mix ore, so no ingot can be traced to Man Maw or to the DRC. Then refined tin is resold inside Japan, Korea and China, where trade records stop. Bruker's smelter list is the closest link, but it covers the whole company, not the strand.",
+      "glossary": [
+        {
+          "term": "Nb3Sn",
+          "def": "Niobium-tin, a superconductor made by baking niobium and tin together inside copper wire."
+        },
+        {
+          "term": "Strand",
+          "def": "The thin superconducting wire that is cabled into magnet coils."
+        },
+        {
+          "term": "Form SD",
+          "def": "A yearly US filing in which listed companies report on tin, tantalum, tungsten and gold in their products."
+        },
+        {
+          "term": "RMAP",
+          "def": "An industry audit of smelters run by the Responsible Minerals Initiative."
+        },
+        {
+          "term": "Smelter",
+          "def": "A plant that turns ore into metal; ore from many mines is mixed here."
+        }
+      ]
+    },
+    {
+      "material": "niobium",
+      "title": "Brazilian niobium, Chinese state channel",
+      "standfirst": "Company filings show ITER's Chinese strand was made with niobium from Brazil's CBMM, now sold through a Chinese state trader. No document links conflict coltan from Rubaya to fusion strand.",
+      "plainIntro": "Niobium is the other half of niobium-tin, and the main part of niobium-titanium, the superconductor used in ITER's other coils. Strand makers need very pure niobium ingots. Almost all niobium is mined in Brazil, mostly by one company, CBMM. A small amount comes from coltan, an ore that also holds tantalum, mined in Congo, Rwanda and elsewhere.",
+      "steps": [
+        {
+          "heading": "Bought to ITER's specification",
+          "stageName": "ITER (and ITER-style tokamaks)",
+          "body": "Western Superconducting, China's ITER strand maker, says it bought niobium from CBMM because of ITER Organization procurement requirements. ITER's own rules contain nothing on human rights or mine origin.",
+          "trail": [
+            {
+              "from": "CBMM",
+              "to": "Western Superconducting",
+              "what": "Niobium ingots for ITER strand",
+              "status": "confirmed",
+              "source": "S110",
+              "url": "https://pdf.dfcfw.com/pdf/H2_AN201907161339003183_1.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Strand makers' niobium is mostly undisclosed",
+          "stageName": "Nb3Sn strand makers",
+          "body": "Western Superconducting bought 140 tonnes of niobium ingots from CBMM in 2016 and 84 tonnes in 2017. Bruker works with ATI on niobium superconductors. Russia's Chepetsky belongs to Rosatom, which also controls Solikamsk, Russia's only niobium producer. US conflict mineral rules do not cover niobium, so no strand maker reports its niobium smelters.",
+          "trail": [
+            {
+              "from": "ATI",
+              "to": "Bruker",
+              "what": "Joint development agreement on niobium superconductors",
+              "status": "reported",
+              "source": "S109",
+              "url": "https://www.sec.gov/Archives/edgar/data/1109354/000119312526082523/brkr-20251231.htm"
+            }
+          ]
+        },
+        {
+          "heading": "A Chinese state trader in the middle",
+          "stageName": "CITIC Metal (CBMM's distributor in China)",
+          "body": "Since 2018 CBMM has sold in China only through CITIC Metal, a state-owned trader that part-owns CBMM and was Western Superconducting's second-largest shareholder. CITIC Metal sold Western Superconducting niobium worth about RMB 74-125 million a year in 2019-21.",
+          "trail": [
+            {
+              "from": "CITIC Metal",
+              "to": "Western Superconducting",
+              "what": "RMB 125m of niobium products in 2021",
+              "status": "confirmed",
+              "source": "S111",
+              "url": "http://static.sse.com.cn/stock/disclosure/announcement/c/202302/001453_20230220_5VY7.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "A second source, with conflict ore",
+          "stageName": "Tantalum-niobium smelters (Ningxia Orient Tantalum, Ulba, Taniobis, Solikamsk)",
+          "body": "Ningxia Orient Tantalum in China makes superconducting-grade niobium and sells it for fusion. Global Witness found it likely processed conflict coltan from Rubaya, though it passed industry audits. No record shows its niobium reaching a fusion strand maker.",
+          "trail": [
+            {
+              "from": "Rwandan exporters",
+              "to": "Ningxia Orient Tantalum",
+              "what": "Conflict coltan via Sunrise Metal",
+              "status": "reported",
+              "source": "S15",
+              "url": "https://globalwitness.org/en/campaigns/transition-minerals/who-buys-rwandas-smuggled-coltan-the-global-journey-of-conflict-coltan-from-drc-to-the-worlds-electronics"
+            }
+          ]
+        },
+        {
+          "heading": "One mine in Brazil",
+          "stageName": "Brazil (CBMM, Araxa)",
+          "body": "Brazil mined about 93% of the world's niobium in 2025. CBMM's Araxa mine is industrial. No reports of forced or child labour were found; the company is cleaning up past barium contamination under an agreement with prosecutors.",
+          "trail": [
+            {
+              "from": "CBMM",
+              "to": "CITIC Metal",
+              "what": "All of CITIC Metal's niobium",
+              "status": "confirmed",
+              "source": "S111",
+              "url": "http://static.sse.com.cn/stock/disclosure/announcement/c/202302/001453_20230220_5VY7.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Smuggled through Rwanda",
+          "stageName": "Rwanda coltan exports",
+          "body": "The UN says M23 smuggled at least 150 tonnes of coltan to Rwanda in 2024 and up to 120 tonnes a month in 2025, where it is sold as Rwandan. Sayari shows the exporters named by Global Witness selling to traders in the UAE, Luxembourg, Japan and Singapore.",
+          "trail": [
+            {
+              "from": "Rubaya",
+              "to": "Rwanda",
+              "what": "Up to 120 t of coltan a month, 2025",
+              "status": "reported",
+              "source": "S120",
+              "url": "https://www.oaklandinstitute.org/report/shafted/us-imports-smuggled-congolese-coltan"
+            }
+          ]
+        },
+        {
+          "heading": "Forced labour at Rubaya",
+          "stageName": "Rubaya, eastern DRC",
+          "body": "Rubaya supplies about 15% of the world's tantalum, and its coltan also holds niobium. M23 seized it in 2024 and, by a UN estimate, takes about US$800,000 a month in taxes. Amnesty International documented forced labour, torture and killings of miners. Tunnel collapses in 2026 killed hundreds of miners.",
+          "trail": [
+            {
+              "from": "Rubaya",
+              "to": "M23",
+              "what": "About US$800,000 a month in taxes (UN estimate)",
+              "status": "reported",
+              "source": "S15",
+              "url": "https://globalwitness.org/en/campaigns/transition-minerals/who-buys-rwandas-smuggled-coltan-the-global-journey-of-conflict-coltan-from-drc-to-the-worlds-electronics"
+            }
+          ]
+        }
+      ],
+      "coldTrail": "For Western Superconducting the trail is unusually clear: Brazilian niobium bought from CBMM and then from CITIC Metal. For the other strand makers it stops, because niobium is not covered by conflict mineral rules and none of them publish suppliers. The Rubaya route reaches smelters that make superconducting niobium, but no record carries it into fusion strand.",
+      "glossary": [
+        {
+          "term": "Coltan",
+          "def": "An ore containing tantalum and niobium, mined by hand in eastern Congo."
+        },
+        {
+          "term": "Niobium ingot",
+          "def": "A large bar of very pure niobium that strand makers draw into rods."
+        },
+        {
+          "term": "NbTi",
+          "def": "Niobium-titanium, a superconductor used in ITER's poloidal field coils."
+        },
+        {
+          "term": "M23",
+          "def": "An armed group in eastern Congo, backed by Rwanda according to the UN."
+        }
+      ]
+    },
+    {
+      "material": "copper-lts",
+      "title": "Tracing copper (wire magnets)",
+      "standfirst": "The copper in fusion wire comes from European refiners with no documented harm, but their mine sources were not traced..",
+      "plainIntro": "Copper (wire magnets): the copper matrix around the superconducting filaments.",
+      "steps": [
+        {
+          "heading": "High-purity copper suppliers",
+          "stageName": "High-purity copper suppliers",
+          "body": "No reports of human rights abuses linked to AB Elektrokoppar were found; Sayari shows no risk flags beyond country indices. Where its copper was mined is not recorded. Sayari shows one copper-wire shipment from AB Elektrokoppar in Sweden to Bruker OST (June 2020) and copper sent from Bruker EAS in Germany to Bruker OST (January 2020). Other strand makers' copper sources are not in trade data.",
+          "sources": [
+            "SY"
+          ]
+        },
+        {
+          "heading": "Nb3Sn and NbTi strand makers (copper matrix)",
+          "stageName": "Nb3Sn and NbTi strand makers (copper matrix)",
+          "body": "Copper is outside US conflict minerals rules, so no strand maker reports its copper smelters. No reports of abuses tied to strand makers' copper were found. Copper surrounds the superconducting filaments and carries current if they fail. Bruker says copper and niobium-tin are the main components of its low-temperature superconductors and hedges copper prices with forward contracts. Western Superconducting lists oxygen-free copper among its main raw materials.",
+          "sources": [
+            "S108",
+            "S109",
+            "S110"
+          ]
+        }
+      ],
+      "coldTrail": "See the full trace for where each link rests on records, reports or inference."
+    },
+    {
+      "material": "tungsten",
+      "title": "From Thai Nguyen to the divertor",
+      "standfirst": "Shipping records show ITER's main tungsten armour maker buying its raw material from a single Vietnamese mine, where residents complained of serious pollution.",
+      "plainIntro": "The divertor is the part of a fusion reactor that faces the hottest plasma, like the exhaust of a jet engine. Its surface is made of tungsten, the metal with the highest melting point. Tungsten is mined as ore, turned into a chemical called ammonium paratungstate (APT), then into powder and pressed into blocks called monoblocks. China mines about four-fifths of the world's tungsten, so Western projects look for other sources, such as Vietnam and Rwanda.",
+      "steps": [
+        {
+          "heading": "Armour for the hottest part of the machine",
+          "stageName": "Tokamaks with tungsten divertors (ITER; WEST in France; EAST in China)",
+          "body": "ITER in France will line its divertor with thousands of tungsten blocks. Most come from A.L.M.T., a Sumitomo Electric company in Japan, which also makes Europe's ITER divertor targets. Chinese state-linked AT&M says it made divertor parts for the WEST and EAST tokamaks. None of the public announcements say where the tungsten was mined, and we found no published human rights checks on it.",
+          "trail": [
+            {
+              "from": "A.L.M.T.",
+              "to": "ITER",
+              "what": "Contract for divertor monoblocks (2021)",
+              "status": "reported",
+              "source": "S27",
+              "url": "https://sumitomoelectric.com/publications/pr-news-articles/2021/09/almt-corp-wins-contract-supply-component-iter"
+            }
+          ]
+        },
+        {
+          "heading": "A Japanese maker with one recorded supplier",
+          "stageName": "A.L.M.T. (Sumitomo Electric, Japan) · AT&M (China)",
+          "body": "Vietnamese export records in Sayari show A.L.M.T. receiving APT from Masan Tungsten 12 times since 2023, including four shipments in August 2026. No other APT supplier to A.L.M.T. appears. A.L.M.T. may also use recycled scrap, so not every block need contain Vietnamese tungsten. For AT&M, no supplier is recorded at all.",
+          "trail": [
+            {
+              "from": "Masan Tungsten (Vietnam)",
+              "to": "A.L.M.T. (Japan)",
+              "what": "12 APT shipments, 2023 to Aug 2026",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/qWODTfaATas3QR0SzgcDcQ"
+            }
+          ]
+        },
+        {
+          "heading": "A contested asset outside China",
+          "stageName": "Masan Tungsten APT plant, Nui Phao (Thai Nguyen, Vietnam)",
+          "body": "The Nui Phao complex turns ore into APT on site. It produces almost all of Vietnam's tungsten, and Vietnam is the world's second-largest producer. Its owner Masan has explored selling, Reuters reported Chinese interest through proxies, and Western officials have visited to 'show support'. Mitsubishi Materials owns 10% and US firm Elmet agreed to buy 4.99%. Sayari's forced-labour flags on the plant are computer-modelled, and we found no reports of forced labour.",
+          "trail": [
+            {
+              "from": "Masan Tungsten",
+              "to": "Japan New Metals, Sojitz, JFE Shoji, UPMT",
+              "what": "APT shipments, 2026",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/TLeoRl_4l0IyQHCxbsNNQg"
+            },
+            {
+              "from": "Mitsubishi Materials",
+              "to": "Masan High-Tech Materials",
+              "what": "10% stake (2020)",
+              "status": "reported",
+              "source": "S125",
+              "url": "https://www.mmc.co.jp/corporate/en/news/2020/news20201026.html"
+            }
+          ]
+        },
+        {
+          "heading": "Complaints of pollution in Dai Tu",
+          "stageName": "Nui Phao mine, Dai Tu district, Vietnam",
+          "body": "In 2016 Vietnam's environment ministry ordered an inspection after residents said the mine was causing serious pollution. It told the company to assess the impact on two hamlets whose residents might need to be evacuated. Villagers had hung protest banners in 2015. The project's own plan resettles 1,925 households. We found no newer English-language reports, so current conditions are unknown.",
+          "trail": [
+            {
+              "from": "Dai Tu residents",
+              "to": "Ministry of Natural Resources and Environment",
+              "what": "Complaints leading to a 2016 inspection",
+              "status": "reported",
+              "source": "S128",
+              "url": "https://vietnamnet.vn/en/inspectors-to-probe-nui-phao-mining-over-alleged-pollution-E161208.html"
+            }
+          ]
+        },
+        {
+          "heading": "Other routes: China, Rwanda, Colombia",
+          "stageName": "Southern Jiangxi, China",
+          "body": "China's tungsten belt in southern Jiangxi has polluted nearby farmland: a 2024 study found cadmium and arsenic in rice fields at levels posing health risks. A US powder plant owned by Plansee buys ore through the trader Traxys, which also buys from Rwanda's Nyakabingo mine, Nui Phao and Congolese exporters. We found no abuses reported at Nyakabingo. None of these routes is yet tied to a fusion part.",
+          "trail": [
+            {
+              "from": "Trinity Nyakabingo (Rwanda)",
+              "to": "Traxys Europe",
+              "what": "4 tungsten ore shipments, July 2026",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/49gLiIsaRq1p3s8vhLc4cw"
+            },
+            {
+              "from": "Traxys Europe",
+              "to": "Global Tungsten & Powders",
+              "what": "Tungsten concentrate, Oct 2026",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/j9FJxh3diwrl4U_GxmQ8lA"
+            }
+          ]
+        }
+      ],
+      "coldTrail": "The trail is unusually warm for A.L.M.T.: trade records name its APT supplier. It breaks at two points. First, records show APT reaching the company, not which batches became ITER blocks, and recycled scrap may also be used. Second, the harm evidence at Nui Phao dates from 2015-16; we found nothing newer. For AT&M, the trail is cold from the start: no supplier appears in Sayari or in public sources.",
+      "glossary": [
+        {
+          "term": "Divertor",
+          "def": "The reactor part that removes heat and waste from the plasma; it takes the highest heat load."
+        },
+        {
+          "term": "Monoblock",
+          "def": "A small tungsten block with a cooling pipe through it; thousands line the ITER divertor."
+        },
+        {
+          "term": "APT (ammonium paratungstate)",
+          "def": "The traded tungsten chemical made from ore; it is turned into tungsten powder."
+        },
+        {
+          "term": "3TG",
+          "def": "Tin, tantalum, tungsten and gold, the minerals covered by conflict-minerals rules."
+        }
+      ]
+    },
+    {
+      "material": "steel",
+      "title": "Tracing specialty steels",
+      "standfirst": "Fusion's structural steels come from a few European mills with no human rights hotspot found.",
+      "plainIntro": "Specialty steels: structural steels for the vessel and blanket.",
+      "steps": [
+        {
+          "heading": "Vanadium: China, Russia, South Africa",
+          "stageName": "Vanadium: China, Russia, South Africa",
+          "body": "A peer-reviewed survey found vanadium contamination and health risk in farmland near vanadium smelters across China, with the highest soil levels at the Panzhihua smelting area. We found no reports on worker or community harm at Russian or South African vanadium operations. No record links a mine to EUROFER97. China produced about 75% of the world's vanadium in 2025 (82,000 of 110,000 t), Russia about 19% and South Africa about 5%. Most vanadium is used to strengthen steel.",
+          "sources": [
+            "S135",
+            "S137"
+          ]
+        },
+        {
+          "heading": "EUROFER97 low-activation steel (blanket structures): Saarschmiede, Böhler",
+          "stageName": "EUROFER97 low-activation steel (blanket structures): Saarschmiede, Böhler",
+          "body": "No rights issue found at the forges. The alloying metals link this steel to other chains: tungsten (see tungsten), tantalum (mined alongside coltan in Central Africa, where conflict links are documented), chromium and vanadium (below). Sayari records no suppliers for Saarschmiede, because EU-internal purchases are not in customs data. Europe's reference fusion steel has so far been made industrially by two firms: F4E's 27 t order was forged by Saarschmiede (Germany) with Böhler (Austria). It is about 9% chromium and 1.1% tungsten, with small amounts of vanadium (about 0.2%) and tantalum (about 0.12%).",
+          "sources": [
+            "S15",
+            "S33",
+            "S55",
+            "SY"
+          ]
+        },
+        {
+          "heading": "Chromium: South Africa (Limpopo) and Kazakhstan",
+          "stageName": "Chromium: South Africa (Limpopo) and Kazakhstan",
+          "body": "Human Rights Watch and partners documented threats and violence against community activists in Limpopo's chrome-mining area. In July 2017 police and company security 'responded violently' to a protest near the Sefateng chrome mine, and a protester was hit by a rubber bullet; in 2015 protesters against the Chromex mine were injured by rubber bullets and arrested. For Kazakhstan's chrome mines we found no reports of abuses. No record shows which chrome went into fusion steel. South Africa mined about 45% of the world's chromite ore in 2025 (23 of 51 million t) and Kazakhstan about 14%; 95% of resources are in Kazakhstan and southern Africa. China makes most ferrochrome.",
+          "sources": [
+            "S134",
+            "S136"
+          ]
+        },
+        {
+          "heading": "ITER-grade stainless 316L(N)-IG: Industeel (France), ThyssenKrupp and Rolf Kind (Germany), Valbruna and Forgiatura Vienna (Italy)",
+          "stageName": "ITER-grade stainless 316L(N)-IG: Industeel (France), ThyssenKrupp and Rolf Kind (Germany), Valbruna and Forgiatura Vienna (Italy)",
+          "body": "We found no reports of rights abuses at these European mills. The steel is made by mixing chromium and nickel with steel; none of the sources say where those alloying metals came from, and Sayari shows no alloy purchases by Industeel. For Europe's five vessel sectors, about 1,100 forgings (about 1,900 t) and 150 plates (1,120 t) came from these five firms. Industeel's Le Creusot works also shipped about 5,000 t of plate to India, 3,500 t each to Japan and Korea and 300 t to Russia for ITER parts.",
+          "sources": [
+            "S132",
+            "S133",
+            "SY"
+          ]
+        },
+        {
+          "heading": "ITER vacuum vessel and EU breeding-blanket structures",
+          "stageName": "ITER vacuum vessel and EU breeding-blanket structures",
+          "body": "We found no human rights issue reported at the vessel builders. Public procurement news describes the steel's chemistry (chromium, nickel) but not where those metals were mined. ITER's vacuum vessel is nine steel sectors; Europe supplies five, built by the AMW consortium (Ansaldo Nucleare, Mangiarotti, Walter Tosto) in Italy, and Korea the rest. Europe's test blanket modules use EUROFER97 steel.",
+          "sources": [
+            "S132",
+            "S33"
+          ]
+        }
+      ],
+      "coldTrail": "See the full trace for where each link rests on records, reports or inference."
+    },
+    {
+      "material": "lithium6",
+      "title": "Breeding the fuel",
+      "standfirst": "Fusion's blanket needs two scarce materials: enriched lithium, now made only in Russia and China with mercury, and beryllium, whose dust has given workers lung disease.",
+      "plainIntro": "A fusion reactor burning deuterium and tritium has to make its own tritium. It does this in a 'breeding blanket' around the plasma, where neutrons hit lithium. Lithium-6, a rarer form of lithium, works best, so the lithium is enriched. Beryllium is added to multiply neutrons. Lithium enrichment was developed for nuclear weapons. Beryllium is light and strong, but its dust can cause a serious lung disease.",
+      "steps": [
+        {
+          "heading": "Developers with no supply yet",
+          "stageName": "Fusion developers that need enriched lithium (e.g. Type One Energy, Gauss Fusion)",
+          "body": "Pilot fusion plants will need tens of tonnes of enriched lithium, and commercial plants hundreds. No commercial supply exists. In March 2026, Type One Energy and Gauss Fusion signed deals with Molten Salt Solutions, a US start-up promising kilogram deliveries from 2027 using a process without mercury.",
+          "trail": [
+            {
+              "from": "Molten Salt Solutions",
+              "to": "Type One Energy, Gauss Fusion",
+              "what": "Supply agreements, March 2026",
+              "status": "reported",
+              "source": "S149",
+              "url": "https://www.fusionenergybase.com/articles/molten-salt-solutions-signs-enriched-lithium-supply-agreements-with-type-one-energy-and-gauss-fusion"
+            }
+          ]
+        },
+        {
+          "heading": "Mercury and a sanctioned Russian plant",
+          "stageName": "Novosibirsk Chemical Concentrates Plant (Rosatom/TVEL, Russia) and China",
+          "body": "Only Russia and China enrich lithium today. Russia's Novosibirsk plant, part of Rosatom, supplies up to 80% of the world's lithium-7 using mercury, a by-product of making lithium-6 for weapons. It is on Ukraine's sanctions list. We found no reports of mercury contamination there, but little independent information leaves Russia's nuclear complex. Sayari shows no enriched-lithium exports from Russia.",
+          "trail": [
+            {
+              "from": "NCCP (Russia)",
+              "to": "Isoflex USA, SAFT, CNEIC and others",
+              "what": "Export records (goods not lithium-6 specific)",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/uGeE9Bs2EvxWqf4mTsQFRQ"
+            }
+          ]
+        },
+        {
+          "heading": "What happened last time",
+          "stageName": "Oak Ridge, Tennessee, 1950s-60s (history)",
+          "body": "The US enriched lithium the same way at Oak Ridge. About 1.1 million kilograms of mercury were lost on site, around a tenth into East Fork Poplar Creek. About 15 miles of the creek still exceed mercury water-quality limits. The US later banned the process.",
+          "trail": [
+            {
+              "from": "Y-12 plant",
+              "to": "East Fork Poplar Creek",
+              "what": "Mercury losses, 1950s-60s",
+              "status": "reported",
+              "source": "S151",
+              "url": "https://www.osti.gov/biblio/1037053"
+            }
+          ]
+        },
+        {
+          "heading": "Beryllium: workers' lungs",
+          "stageName": "Materion (US)",
+          "body": "Commonwealth Fusion Systems buys beryllium fluoride from Materion, which mines ore at Spor Mountain, Utah and mills it near Delta. Materion's own filing says beryllium dust can cause chronic beryllium disease, sometimes fatal. In 1998 it settled lawsuits from workers who had the disease, and in 2023 the US Labor Department accepted a claim from a Delta mill worker diagnosed with beryllium sensitisation.",
+          "trail": [
+            {
+              "from": "Materion",
+              "to": "Commonwealth Fusion Systems",
+              "what": "Beryllium fluoride supply agreement",
+              "status": "reported",
+              "source": "S154",
+              "url": "https://finance.yahoo.com/news/materion-signs-supply-agreement-commonwealth-104700784.html"
+            }
+          ]
+        },
+        {
+          "heading": "Europe's blanket runs through Kazakhstan",
+          "stageName": "Karlsruhe Institute of Technology (EU DEMO beryllide blocks)",
+          "body": "Europe's DEMO blanket design uses beryllium compounds. Germany's Karlsruhe Institute of Technology had full-size blocks made with the Ulba plant in Kazakhstan, which is state-owned and flagged in Sayari for regulatory action. Kazakh export records show Ulba shipping beryllium to KIT as recently as February 2026. We found no reports of harm at Ulba, but also little independent monitoring.",
+          "trail": [
+            {
+              "from": "Ulba Metallurgical Plant",
+              "to": "KIT IAM-AWP",
+              "what": "Beryllium shipments 2019, 2020, Feb 2026",
+              "status": "confirmed",
+              "source": "SY",
+              "url": "https://graph.sayari.com/resource/entity/cZqbpSR16wsUn11pe35OyA"
+            }
+          ]
+        },
+        {
+          "heading": "Where the lithium comes from",
+          "stageName": "Natural lithium: Australia, Chile, China, Argentina, Zimbabwe (and US projects)",
+          "body": "Ordinary lithium is mined mainly in Australia, Chile, China, Argentina and Zimbabwe. No enricher says where its lithium comes from. If US enrichers buy American lithium, the record is troubling: Amnesty reported in 2026 that Nevada projects, including Thacker Pass, went ahead without the consent of affected Indigenous Peoples.",
+          "trail": [
+            {
+              "from": "Nevada lithium projects",
+              "to": "(future US enrichers?)",
+              "what": "Untested link",
+              "status": "hypothesis",
+              "source": "S141",
+              "url": "https://www.amnesty.org/en/latest/news/2026/05/usa-boom-in-lithium-mining-across-nevada-is-violating-the-rights-of-indigenous-peoples"
+            }
+          ]
+        }
+      ],
+      "coldTrail": "For lithium-6 the trail is cold because the chain barely exists: Russia's output is not sold to fusion, and new Western enrichers have not started production or named their lithium sources. Trade data cannot help: Sayari shows no enriched-lithium exports from Russia, and the customs code for lithium-6 is mostly misused for ordinary ore. For beryllium, the US sale to CFS is domestic and invisible in customs data, and Materion's imported beryl ore leaves no trace in Sayari.",
+      "glossary": [
+        {
+          "term": "Breeding blanket",
+          "def": "The layer around the plasma that captures neutrons and makes tritium fuel from lithium."
+        },
+        {
+          "term": "Lithium-6",
+          "def": "A rare, lighter form of lithium that breeds tritium best."
+        },
+        {
+          "term": "COLEX",
+          "def": "The mercury-based method used to enrich lithium since the 1950s."
+        },
+        {
+          "term": "FLiBe",
+          "def": "A molten salt of lithium fluoride and beryllium fluoride used as a liquid blanket."
+        },
+        {
+          "term": "Chronic beryllium disease",
+          "def": "A lung disease caused by an immune reaction to inhaled beryllium dust."
+        },
+        {
+          "term": "Beryllide",
+          "def": "A compound of beryllium with another metal, such as titanium, used as a neutron multiplier."
+        }
+      ]
+    }
+  ]
+}

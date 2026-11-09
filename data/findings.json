@@ -3,7 +3,7 @@
   "findings": [
     {
       "lead": "No record shows where any fusion tape maker's yttrium comes from.",
-      "body": "Sayari identifies the tape makers and Chinese separators shipping yttrium oxide to Japanese importers, but no shipment links the two. Japanese import records from 2023 show no yttrium compounds reaching Fujikura or Faraday Factory Japan; Faraday Factory's yttrium arrived already deposited on tape from Moscow, where its source is unrecorded. Sayari holds no Myanmar-to-China rare earth trade. The step where Kachin ore would enter a fusion magnet is invisible to trade data.",
+      "body": "Sayari identifies the tape makers, and Chinese customs data show more than 28,000 tonnes of rare earths entering China from Myanmar in January–September 2025. But the Moscow tape plant bought its yttrium as finished targets from Korea, the Czech Republic, Japan and China, and none of those target makers has any recorded supplier. Japanese import records show no yttrium compounds reaching Fujikura or Faraday Factory Japan. The step where Kachin ore would enter a fusion magnet is invisible to trade data.",
       "evidence": [
         {
           "level": "likely",
@@ -12,16 +12,17 @@
       ],
       "sayari": [
         {
-          "name": "Faraday Factory Japan",
-          "url": "https://graph.sayari.com/resource/entity/C13ZLDlfTD93f5CM_BpokA"
+          "name": "S-Innovations LLC",
+          "url": "https://graph.sayari.com/resource/entity/ZhPhawms5E3chJhzhiai8Q"
         },
         {
-          "name": "Ganzhou Chenguang Rare Earths",
-          "url": "https://graph.sayari.com/resource/entity/pwT07K1hiAqggNIqqsSC3g"
+          "name": "Faraday Factory Japan",
+          "url": "https://graph.sayari.com/resource/entity/C13ZLDlfTD93f5CM_BpokA"
         }
       ],
       "sources": [
-        "SY"
+        "SY",
+        "S88"
       ],
       "material": "yttrium"
     },
@@ -127,6 +128,55 @@
         "S13"
       ],
       "material": "nickel"
+    },
+    {
+      "lead": "Western Superconducting bought Brazilian niobium for ITER through a state channel.",
+      "body": "China's ITER strand maker, Western Superconducting, records in its stock-market prospectus that it bought niobium ingots from Brazil's CBMM to meet ITER's requirements, through CITIC Metal, CBMM's sole China distributor and a Western Superconducting shareholder. It is one of the few places where a fusion material can be followed from a named mine to a fusion project. The mine has no documented abuses beyond legacy pollution.",
+      "evidence": [
+        {
+          "level": "documented",
+          "scope": "company disclosures"
+        }
+      ],
+      "sayari": [
+        {
+          "name": "Western Superconducting Technologies",
+          "url": "https://graph.sayari.com/resource/entity/sHd3C6y1EF_j7cxUmp8p4w"
+        }
+      ],
+      "sources": [
+        "S110",
+        "S111",
+        "S21"
+      ],
+      "material": "niobium"
+    },
+    {
+      "lead": "ITER's divertor tungsten traces back to a single Vietnamese mine.",
+      "body": "Customs records in Sayari show A.L.M.T., the Sumitomo company making tungsten monoblocks for ITER's divertor, importing its tungsten (as ammonium paratungstate) only from Masan's plant at the Nui Phao mine in Vietnam, in 12 shipments from 2023 to 2026. In 2016, residents' pollution complaints there led to a government inspection that considered relocating two hamlets.",
+      "evidence": [
+        {
+          "level": "documented",
+          "scope": "customs records"
+        },
+        {
+          "level": "likely",
+          "scope": "link to ITER parts"
+        }
+      ],
+      "sayari": [
+        {
+          "name": "A.L.M.T. Corp.",
+          "url": "https://graph.sayari.com/resource/entity/zU77O-fwc2mLS7abnqZAWQ"
+        }
+      ],
+      "sources": [
+        "SY",
+        "S27",
+        "S127",
+        "S128"
+      ],
+      "material": "tungsten"
     }
   ]
 }

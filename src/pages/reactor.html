@@ -1,0 +1,110 @@
+<!--
+title: The reactor · The Magnet Problem
+description: Click any part of a fusion reactor and trace its materials back to the mine, under a security lens or a people lens.
+-->
+    <section class="section section--first wrap" aria-labelledby="reactor-title">
+      <div class="col-main">
+        <p class="eyebrow">01 · The reactor</p>
+        <h1 id="reactor-title" class="page-title">The same reactor reads as a supply risk under one lens and a human rights risk under the other.</h1>
+        <p class="lead">Click any part to trace its materials back to the mine. Switch lenses to re-colour the reactor by supply risk or by harm.</p>
+      </div>
+      <div class="lens-pair lens-pair--compact">
+        <div class="lens-card lens-card--security">
+          <p class="lens-card__name"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>Security lens</p>
+          <p class="lens-card__q">Can we get it?</p>
+          <ul><li>Where is supply concentrated?</li><li>Who controls it?</li><li>What can be cut off?</li></ul>
+          <p class="lens-card__scale"><span class="swatch" style="background:#6EA4FF"></span>High <span class="swatch" style="background:#2F5FC4"></span>Moderate <span class="swatch" style="background:#1C2B48"></span>Low supply risk</p>
+        </div>
+        <div class="lens-card lens-card--people">
+          <p class="lens-card__name"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>People lens</p>
+          <p class="lens-card__q">Who paid for it?</p>
+          <ul><li>Who mines it?</li><li>Under what conditions?</li><li>Who is harmed?</li></ul>
+          <p class="lens-card__scale"><span class="swatch" style="background:#E55F53"></span>Severe <span class="swatch" style="background:#B78024"></span>Moderate harm <span class="swatch" style="background:#3A3731"></span>None documented</p>
+        </div>
+      </div>
+      <div class="reactor-layout">
+        <div class="reactor-stage">
+          <div class="reactor-toolbar">
+            <div class="lens-toggle" role="group" aria-label="Choose a lens" data-lens-toggle>
+              <button type="button" data-lens="security" aria-pressed="false">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                Security lens
+              </button>
+              <button type="button" data-lens="people" aria-pressed="true">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                People lens
+              </button>
+            </div>
+          </div>
+
+          <figure class="reactor-figure">
+            <svg id="reactor-svg" viewBox="0 0 760 560" role="group" aria-labelledby="reactor-svg-title">
+              <title id="reactor-svg-title">Cutaway cross-section of a generic compact tokamak with five clickable parts</title>
+              <defs>
+                <!-- D-shaped cross-sections, right half. Each ring = outer D + inner D (even-odd). Left half is a mirror. -->
+                <path id="d-tf"      d="M414 58 C800 58 800 502 414 502 Z M436 80 C792 80 792 480 436 480 Z" fill-rule="evenodd"/>
+                <path id="d-vessel"  d="M452 98 C731 98 731 462 452 462 Z M466 112 C708 112 708 448 466 448 Z" fill-rule="evenodd"/>
+                <path id="d-blanket" d="M466 112 C708 112 708 448 466 448 Z M492 138 C665 138 665 422 492 422 Z" fill-rule="evenodd"/>
+                <path id="d-plasma"  d="M506 172 C647 172 647 372 506 372 Z"/>
+                <path id="d-divertor" d="M494 404 L518 388 L536 398 L556 384 L576 392 L578 402 L559 418 L539 428 L494 434 Z"/>
+              </defs>
+
+              <!-- Cryostat (not interactive) -->
+              <rect class="r-cryostat" x="36" y="22" width="688" height="516" />
+              <text class="r-note" x="52" y="46">Cryostat</text>
+              <line class="r-axis" x1="380" y1="30" x2="380" y2="530"/>
+
+              <!-- Plasma (not interactive) -->
+              <g class="r-plasma" aria-hidden="true">
+                <use href="#d-plasma"/>
+                <use href="#d-plasma" transform="translate(760 0) scale(-1 1)"/>
+              </g>
+
+              <g id="vacuum-vessel" class="hotspot" data-part="vacuum-vessel">
+                <use href="#d-vessel"/>
+                <use href="#d-vessel" transform="translate(760 0) scale(-1 1)"/>
+                <g class="marker"><circle cx="476" cy="104" r="12"/><text x="476" y="108">5</text></g>
+              </g>
+
+              <g id="blanket" class="hotspot" data-part="blanket">
+                <use href="#d-blanket"/>
+                <use href="#d-blanket" transform="translate(760 0) scale(-1 1)"/>
+                <g class="marker"><circle cx="636" cy="280" r="12"/><text x="636" y="284">4</text></g>
+              </g>
+
+              <g id="divertor" class="hotspot" data-part="divertor">
+                <use href="#d-divertor"/>
+                <use href="#d-divertor" transform="translate(760 0) scale(-1 1)"/>
+                <g class="marker"><circle cx="536" cy="414" r="12"/><text x="536" y="418">3</text></g>
+              </g>
+
+              <g id="hts-magnets" class="hotspot" data-part="hts-magnets">
+                <use href="#d-tf"/>
+                <use href="#d-tf" transform="translate(760 0) scale(-1 1)"/>
+                <g class="marker"><circle cx="694" cy="280" r="12"/><text x="694" y="284">1</text></g>
+              </g>
+
+              <g id="lts-magnets" class="hotspot" data-part="lts-magnets">
+                <rect x="354" y="96"  width="52" height="56" />
+                <rect x="354" y="158" width="52" height="56" />
+                <rect x="354" y="220" width="52" height="56" />
+                <rect x="354" y="282" width="52" height="56" />
+                <rect x="354" y="344" width="52" height="56" />
+                <rect x="354" y="406" width="52" height="56" />
+                <g class="marker"><circle cx="380" cy="279" r="12"/><text x="380" y="283">2</text></g>
+              </g>
+
+              <text class="r-note" x="560" y="276">Plasma</text>
+            </svg>
+            <div id="reactor-tooltip" class="tooltip" role="tooltip" hidden></div>
+            <figcaption class="r-caption">Original schematic, not to scale. Magnet type varies by design: compact tokamaks use high-temperature superconducting (HTS) magnets, ITER-style reactors use low-temperature (LTS) coils. Both are shown here so each can be traced.</figcaption>
+          </figure>
+        </div>
+
+        <aside class="reactor-side" aria-label="Reactor parts">
+          <p class="legend-hint">Click any part to trace its materials.</p>
+          <ol id="part-list" class="part-list"></ol>
+          <div class="colour-key" id="colour-key" aria-live="polite"></div>
+        </aside>
+      </div>
+    </section>

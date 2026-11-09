@@ -1,0 +1,4261 @@
+{
+  "_note": "Systems map of the fusion magnet supply chain (iteration 4). Built by tools/iter4_build.py from Sayari and public-source research. Stage 0 = mine ... 6 = fusion developer; policy nodes act on the chain.",
+  "stages": [
+    "Mines",
+    "Traders & export",
+    "Separation & smelting",
+    "Metals, alloys & targets",
+    "Tape, wire & parts",
+    "Magnets & coils",
+    "Fusion developers"
+  ],
+  "lanes": [
+    {
+      "id": "hts",
+      "label": "Tape magnets (HTS: yttrium, nickel, copper, silver)",
+      "short": "Tape magnets"
+    },
+    {
+      "id": "lts",
+      "label": "Wire magnets (LTS: tin, niobium, copper)",
+      "short": "Wire magnets"
+    },
+    {
+      "id": "plasma",
+      "label": "Divertor (tungsten)",
+      "short": "Divertor"
+    },
+    {
+      "id": "blanket",
+      "label": "Breeding blanket (lithium-6, beryllium)",
+      "short": "Blanket"
+    },
+    {
+      "id": "structure",
+      "label": "Structure (steels)",
+      "short": "Structure"
+    },
+    {
+      "id": "shared",
+      "label": "Shared"
+    }
+  ],
+  "insights": [
+    "The chains narrow to a few chokepoints: Chinese rare earth separators, Yunnan and Malaysian tin smelters, and a handful of tape and strand makers. Origin is lost at every one of them.",
+    "Harm sits at the left edge of the map, in mines run or taxed by armed groups (Kachin, Wa State, Rubaya), while fusion buyers sit at the right edge with no record linking the two ends.",
+    "The strongest evidence runs between companies (customs records, prospectuses, contracts). The weakest runs between mines and processors, which is exactly where the harm is.",
+    "Rules act unevenly: conflict-minerals laws cover tin and tungsten but not niobium or rare earths, sanctions hit named traders but not the plants that blend their ore, and public fusion funding carries no sourcing conditions at all.",
+    "Fusion has real leverage at one point: it buys most of the world's HTS tape, so tape makers can be asked to name their separators and target suppliers. Further upstream, fusion is too small to act alone."
+  ],
+  "demand": {
+    "hts_tape": {
+      "text": "Fusion is the main buyer of HTS tape. Faraday Factory's CEO told a 2025 industry Q&A that fusion consumes over 70% of current HTS production. About 15 makers exist worldwide; the top producers together exceed 3,000 km a year (12 mm width) and make more than half of global output. CFS's single 2026 order with Fujikura is over 10,000 km, about three times the leading producers' reported yearly output. So fusion buyers have real leverage over tape makers.",
+      "sources": [
+        "S170",
+        "S171",
+        "S37"
+      ]
+    },
+    "yttrium": {
+      "text": "World mine output was 10,000-15,000 t of yttrium oxide in 2025, mostly China with a significant share from Burma (USGS). Fusion's share is tiny. Our own estimate (not from a source; please check): a 2-micron YBCO layer on 4 mm tape holds about 7 g of yttrium per km, so 10,000 km of tape holds roughly 70 kg, around 0.001% of world supply. Many tapes use gadolinium or europium instead. Fusion has almost no market leverage over yttrium miners; its leverage is over tape makers, who can choose their oxide suppliers.",
+      "sources": [
+        "S39"
+      ]
+    },
+    "tin": {
+      "text": "World tin mine output was about 290,000 t in 2025; Myanmar 12,000 t, DRC 27,000 t (USGS). ITER's whole Nb3Sn order was 500 t of strand over 2008-2015, at most about 100 t a year, and strand is mostly copper. Even if it were all tin, that is under 0.04% of yearly tin output.",
+      "sources": [
+        "S172",
+        "S59"
+      ]
+    },
+    "niobium": {
+      "text": "World niobium output was about 112,000 t in 2025, 93% from Brazil (USGS). ITER's peak strand output of about 100 t a year would be under 0.1% even if it were pure niobium.",
+      "sources": [
+        "S21",
+        "S59"
+      ]
+    },
+    "tungsten": {
+      "text": "World tungsten output was about 85,000 t in 2025, 67,000 t from China (USGS). We found no public figure for the tonnage of tungsten in ITER's divertor, so fusion's share cannot be stated; it is certainly small next to cutting tools and alloys.",
+      "sources": [
+        "S22"
+      ]
+    },
+    "argument": "Fusion matters as a buyer only at the tape stage. For metals it is a rounding error, so pressure has to work through the handful of tape and strand makers, not through mines."
+  },
+  "nodes": [
+    {
+      "id": "dev-cfs",
+      "label": "Commonwealth Fusion Systems",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "hts",
+      "country": "USA",
+      "materials": [
+        "copper-hts",
+        "nickel",
+        "silver",
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found; no public sourcing due diligence.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/pvo3Wv7gZb9K0hiji7-Nag",
+      "sources": [
+        "S92",
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "dev-proxima",
+      "label": "Proxima Fusion",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "hts",
+      "country": "DEU",
+      "materials": [
+        "nickel",
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "Buys tape from Faraday Factory Japan.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/J8d9yiK_TAYdqoyGwFEmIA",
+      "sources": [
+        "S38"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "dev-energy-singularity",
+      "label": "Energy Singularity",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "hts",
+      "country": "CHN",
+      "materials": [
+        "nickel",
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "All HH70 tape from Shanghai Superconductor; sent sample strip to Moscow.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/S4_YEqahxq-SWxMyyTdcFQ",
+      "sources": [
+        "S95",
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "hts-ffj",
+      "label": "Faraday Factory Japan",
+      "kind": "component",
+      "stage": 4,
+      "lane": "hts",
+      "country": "JPN",
+      "materials": [
+        "copper-hts",
+        "nickel",
+        "silver",
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "No sourcing policy found.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/C13ZLDlfTD93f5CM_BpokA",
+      "sources": [
+        "SY",
+        "S93"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "hts-fujikura",
+      "label": "Fujikura",
+      "kind": "component",
+      "stage": 4,
+      "lane": "hts",
+      "country": "JPN",
+      "materials": [
+        "copper-hts",
+        "nickel",
+        "silver",
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "Has responsible-minerals policy (2019).",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/U7SEXp0vAeOhQOSFYm0SMw",
+      "sources": [
+        "S94",
+        "S37"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "hts-sst",
+      "label": "Shanghai Superconductor",
+      "kind": "component",
+      "stage": 4,
+      "lane": "hts",
+      "country": "CHN",
+      "materials": [
+        "copper-hts",
+        "nickel",
+        "silver",
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "No upstream suppliers in Sayari.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/CzVpMythGmfhjigUOp36BA",
+      "sources": [
+        "S95",
+        "SY"
+      ],
+      "flags": [
+        "modelled"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "hts-sinnov",
+      "label": "S-Innovations (Moscow coating)",
+      "kind": "component",
+      "stage": 4,
+      "lane": "hts",
+      "country": "RUS",
+      "materials": [
+        "copper-hts",
+        "nickel",
+        "silver",
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "Buys targets and strip; state customers on Ukraine sanctions list.",
+      "supply": "high",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/ZhPhawms5E3chJhzhiai8Q",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "tgt-maru",
+      "label": "Maru L&C (yttrium target)",
+      "kind": "component",
+      "stage": 3,
+      "lane": "hts",
+      "country": "KOR",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "No upstream data.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/iE6gw6srw2KFyPqvT9YjkA",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "tgt-toshima",
+      "label": "Toshima Manufacturing (targets)",
+      "kind": "component",
+      "stage": 3,
+      "lane": "hts",
+      "country": "JPN",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "LaMnO3 and IBAD targets.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/j9aD4jNYn_jrCV0wiDvmgg",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "tgt-can",
+      "label": "CAN Superconductors (YBCO targets)",
+      "kind": "component",
+      "stage": 3,
+      "lane": "hts",
+      "country": "CZE",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "No upstream data.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/wFhBCfyCEsio5vYfxkwyEw",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "tgt-rearth",
+      "label": "Shenzhen Rearth (GdBCO target)",
+      "kind": "component",
+      "stage": 3,
+      "lane": "hts",
+      "country": "CHN",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "One 2020 shipment.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/C8bQ7dp3ckc7i6t5OYWLmA",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "buf-ams",
+      "label": "AMS Korea (MgO buffer)",
+      "kind": "component",
+      "stage": 3,
+      "lane": "hts",
+      "country": "KOR",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "none",
+      "harmNote": "MgO for IBAD buffer, 2023.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/9nGYSGcHIBE7Cn0ZyafWvg",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "pol-china-ree-apr2025",
+      "label": "China yttrium export licensing (Apr 2025)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "CHN",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": null,
+      "harmNote": "Prices outside China up 4,400% by Nov 2025.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S40",
+        "S91",
+        "S7"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "y-cn-sep",
+      "label": "China Rare Earth Group & other Chinese separators",
+      "kind": "separator",
+      "stage": 2,
+      "lane": "hts",
+      "country": "CHN",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Origin lost; takes Myanmar ore.",
+      "supply": "high",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/TIrH6TvEUbysicwbvRU5Vw",
+      "sources": [
+        "S1",
+        "S89",
+        "SY"
+      ],
+      "flags": [
+        "soe"
+      ],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "y-border",
+      "label": "Myanmar–China border trade",
+      "kind": "trader",
+      "stage": 1,
+      "lane": "hts",
+      "country": "MMR",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "high",
+      "harmNote": "Revenue to KIA, UWSA, NDAA.",
+      "supply": "high",
+      "blending": true,
+      "sayari_url": null,
+      "sources": [
+        "S88",
+        "S43",
+        "S47"
+      ],
+      "flags": [
+        "conflict"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "y-kachin",
+      "label": "Kachin State mines",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "hts",
+      "country": "MMR",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "high",
+      "harmNote": "Child labour, violence, deaths.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S1",
+        "S3",
+        "S43"
+      ],
+      "flags": [
+        "conflict",
+        "extreme"
+      ],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "y-shan",
+      "label": "Eastern Shan mines (UWSA)",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "hts",
+      "country": "MMR",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Controlling group listed for child recruitment.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S90",
+        "S47"
+      ],
+      "flags": [
+        "conflict"
+      ],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "y-jiangxi",
+      "label": "Jiangxi ionic clays",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "hts",
+      "country": "CHN",
+      "materials": [
+        "yttrium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Environmental damage.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S3",
+        "S89"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "ni-cn-mills",
+      "label": "Chinese C-276 strip suppliers",
+      "kind": "alloy",
+      "stage": 3,
+      "lane": "hts",
+      "country": "CHN",
+      "materials": [
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "No upstream data.",
+      "supply": "moderate",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/9iSMey5wL692dxj1FWT0Gw",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "ni-western-mills",
+      "label": "Haynes / VDM (Acerinox)",
+      "kind": "alloy",
+      "stage": 3,
+      "lane": "hts",
+      "country": "USA",
+      "materials": [
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "Nickel origin not disclosed.",
+      "supply": "moderate",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/uo0xLgiopyhcNTj8j5WklQ",
+      "sources": [
+        "S96",
+        "S98",
+        "S99"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "ni-ulbrich",
+      "label": "Ulbrich (US strip)",
+      "kind": "alloy",
+      "stage": 3,
+      "lane": "hts",
+      "country": "USA",
+      "materials": [
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "One shipment to Moscow.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/W1hTtUJN74Ox-d4n0euOyw",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "ni-cn-refining",
+      "label": "Chinese nickel refining",
+      "kind": "refiner",
+      "stage": 2,
+      "lane": "hts",
+      "country": "CHN",
+      "materials": [
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "Fed by Indonesian matte.",
+      "supply": "high",
+      "blending": true,
+      "sayari_url": null,
+      "sources": [
+        "S101"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "ni-indonesia",
+      "label": "Indonesian nickel (Morowali, Weda Bay)",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "hts",
+      "country": "IDN",
+      "materials": [
+        "nickel"
+      ],
+      "harm": "high",
+      "harmNote": "Deaths, coercive land-taking.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/klq-RgJyVo5_-R6-yINxZA",
+      "sources": [
+        "S12",
+        "S13",
+        "S45",
+        "S100"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "ni-nornickel",
+      "label": "Nornickel, Norilsk",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "hts",
+      "country": "RUS",
+      "materials": [
+        "nickel"
+      ],
+      "harm": "moderate",
+      "harmNote": "2020 diesel spill; Indigenous livelihoods.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/2w1BzoTtHnJW2zRMeSeWLw",
+      "sources": [
+        "S102"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "cu-luvata",
+      "label": "Luvata Pori (copper conductor)",
+      "kind": "component",
+      "stage": 4,
+      "lane": "hts",
+      "country": "FIN",
+      "materials": [
+        "copper-hts"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/3_jALsRJTNkYcLMnwA1jtQ",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "cu-kme",
+      "label": "KME Mansfeld",
+      "kind": "component",
+      "stage": 4,
+      "lane": "hts",
+      "country": "DEU",
+      "materials": [
+        "copper-hts"
+      ],
+      "harm": "none",
+      "harmNote": "Sayari-modelled supplier.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/QwauAn13rGZAHA5IkTXqXA",
+      "sources": [
+        "SY"
+      ],
+      "flags": [
+        "modelled"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "cu-jp-traders",
+      "label": "Japan-based traders (copper articles)",
+      "kind": "trader",
+      "stage": 1,
+      "lane": "hts",
+      "country": "JPN",
+      "materials": [
+        "copper-hts"
+      ],
+      "harm": "none",
+      "harmNote": "38 unspecified copper shipments to Moscow.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/K1onKGjhDjbzdqkbKHkS3Q",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "cu-pt-smelting",
+      "label": "PT Smelting / PT Freeport Indonesia cathode",
+      "kind": "smelter",
+      "stage": 2,
+      "lane": "hts",
+      "country": "IDN",
+      "materials": [
+        "copper-hts"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found at smelters.",
+      "supply": "low",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/BtfejxBBK_FU0jsjYMJaEQ",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "cu-grasberg",
+      "label": "Grasberg mine, Papua",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "hts",
+      "country": "IDN",
+      "materials": [
+        "copper-hts"
+      ],
+      "harm": "moderate",
+      "harmNote": "Killings linked to security forces; tailings; 7 deaths 2025.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/5YEvTOVahFZSO-h1Eh3GEQ",
+      "sources": [
+        "S105",
+        "S106"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "ag-russia",
+      "label": "Russian silver (possible source)",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "hts",
+      "country": "RUS",
+      "materials": [
+        "silver"
+      ],
+      "harm": "none",
+      "harmNote": "Untested.",
+      "supply": "low",
+      "blending": true,
+      "sayari_url": null,
+      "sources": [
+        "S104"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite"
+      ]
+    },
+    {
+      "id": "ag-bolivia",
+      "label": "Bolivian silver (Potosí)",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "hts",
+      "country": "BOL",
+      "materials": [
+        "silver"
+      ],
+      "harm": "high",
+      "harmNote": "Child labour (US DOL).",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S107"
+      ],
+      "flags": [
+        "extreme"
+      ],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "lts-iter",
+      "label": "ITER",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "lts",
+      "country": "FRA",
+      "materials": [
+        "copper-lts",
+        "niobium",
+        "steel",
+        "tin",
+        "tungsten"
+      ],
+      "harm": "none",
+      "harmNote": "No sourcing rule found",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S25",
+        "S115",
+        "S116"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "lts-bruker",
+      "label": "Bruker EAS / Bruker OST",
+      "kind": "component",
+      "stage": 4,
+      "lane": "lts",
+      "country": "USA",
+      "materials": [
+        "copper-lts",
+        "niobium",
+        "tin"
+      ],
+      "harm": "none",
+      "harmNote": "Group smelter list includes Yunnan Tin",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/Rbihne7MHML4jCpyjZ_few",
+      "sources": [
+        "S108",
+        "S109",
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "lts-wst",
+      "label": "Western Superconducting",
+      "kind": "component",
+      "stage": 4,
+      "lane": "lts",
+      "country": "CHN",
+      "materials": [
+        "copper-lts",
+        "niobium",
+        "tin"
+      ],
+      "harm": "none",
+      "harmNote": "State-owned; no sourcing policy found",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/sHd3C6y1EF_j7cxUmp8p4w",
+      "sources": [
+        "S26",
+        "S110"
+      ],
+      "flags": [
+        "soe"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "lts-jastec",
+      "label": "JASTEC",
+      "kind": "component",
+      "stage": 4,
+      "lane": "lts",
+      "country": "JPN",
+      "materials": [
+        "niobium",
+        "tin"
+      ],
+      "harm": "none",
+      "harmNote": "No sourcing policy found",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/z9WnGNHH9qPQwUjXpkZs0g",
+      "sources": [
+        "S25",
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "lts-kat",
+      "label": "Kiswire Advanced Technology",
+      "kind": "component",
+      "stage": 4,
+      "lane": "lts",
+      "country": "KOR",
+      "materials": [
+        "niobium",
+        "tin"
+      ],
+      "harm": "none",
+      "harmNote": "Policy covers DRC region only",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/P3SiemjrjG-A5XFNQPEg3w",
+      "sources": [
+        "S117",
+        "S119"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "lts-chmp",
+      "label": "Chepetsky Mechanical Plant",
+      "kind": "component",
+      "stage": 4,
+      "lane": "lts",
+      "country": "RUS",
+      "materials": [
+        "niobium",
+        "tin"
+      ],
+      "harm": "none",
+      "harmNote": "On Ukraine sanctions list",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/ScWgX1NKgn8TjlBOHc7JmA",
+      "sources": [
+        "S57",
+        "SY"
+      ],
+      "flags": [
+        "sanctioned",
+        "soe"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "lts-other-strand",
+      "label": "Furukawa, SH Copper, Luvata",
+      "kind": "component",
+      "stage": 4,
+      "lane": "lts",
+      "country": "JPN",
+      "materials": [
+        "tin",
+        "niobium"
+      ],
+      "harm": "none",
+      "harmNote": "Furukawa bans conflict-area tin",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S25",
+        "S118"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "sn-jp-kr-traders",
+      "label": "Refined-tin traders (Japan, Korea)",
+      "kind": "trader",
+      "stage": 3,
+      "lane": "lts",
+      "country": "JPN",
+      "materials": [
+        "tin"
+      ],
+      "harm": "moderate",
+      "harmNote": "Halcyon also buys conflict-linked coltan",
+      "supply": "low",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/8-jQnosOi2_GviegkWT5qw",
+      "sources": [
+        "SY",
+        "S15"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "sn-yunnan",
+      "label": "Yunnan Tin",
+      "kind": "smelter",
+      "stage": 2,
+      "lane": "lts",
+      "country": "CHN",
+      "materials": [
+        "tin"
+      ],
+      "harm": "moderate",
+      "harmNote": "Admitted buying Wa ore (2016)",
+      "supply": "high",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/FYt9adhrTCpuo1t8v1oLZQ",
+      "sources": [
+        "S113",
+        "S112",
+        "S108"
+      ],
+      "flags": [
+        "soe"
+      ],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "sn-msc",
+      "label": "Malaysia Smelting Corp",
+      "kind": "smelter",
+      "stage": 2,
+      "lane": "lts",
+      "country": "MYS",
+      "materials": [
+        "tin"
+      ],
+      "harm": "moderate",
+      "harmNote": "Supplied by OFAC-listed Star Dragon",
+      "supply": "moderate",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/pwMtR-67xAIYzs7_EWhcVQ",
+      "sources": [
+        "S49",
+        "SY"
+      ],
+      "flags": [
+        "sanctioned"
+      ],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "sn-ore-traders",
+      "label": "Ore traders (Traxys, Halcyon, Star Dragon...)",
+      "kind": "trader",
+      "stage": 1,
+      "lane": "lts",
+      "country": "ARE",
+      "materials": [
+        "tin",
+        "niobium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Same traders buy Rubaya-linked coltan",
+      "supply": "moderate",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/8eW5KQNdwT7LoG9R3s75kA",
+      "sources": [
+        "S15",
+        "S49",
+        "SY"
+      ],
+      "flags": [
+        "sanctioned"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "sn-manmaw",
+      "label": "Man Maw, Wa State",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "lts",
+      "country": "MMR",
+      "materials": [
+        "tin"
+      ],
+      "harm": "high",
+      "harmNote": "Taxed by US-sanctioned armed group",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/VBDYgwRIxR8tpDS_0jg4Hw",
+      "sources": [
+        "S8",
+        "S47",
+        "S112"
+      ],
+      "flags": [
+        "sanctioned",
+        "conflict"
+      ],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "sn-greatlakes",
+      "label": "Tin ore: DRC, Rwanda, Tanzania",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "lts",
+      "country": "COD",
+      "materials": [
+        "tin"
+      ],
+      "harm": "moderate",
+      "harmNote": "Mine-level origin not recorded",
+      "supply": "moderate",
+      "blending": true,
+      "sayari_url": null,
+      "sources": [
+        "SY",
+        "S49"
+      ],
+      "flags": [
+        "conflict"
+      ],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "nb-citic",
+      "label": "CITIC Metal",
+      "kind": "trader",
+      "stage": 1,
+      "lane": "lts",
+      "country": "CHN",
+      "materials": [
+        "niobium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reports found",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/QjJv5qGSLh-IrVj46JV99g",
+      "sources": [
+        "S111"
+      ],
+      "flags": [
+        "soe"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "nb-ati",
+      "label": "ATI (niobium alloys)",
+      "kind": "alloy",
+      "stage": 3,
+      "lane": "lts",
+      "country": "USA",
+      "materials": [
+        "niobium"
+      ],
+      "harm": "none",
+      "harmNote": "Not researched beyond Bruker filing",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S109"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "nb-otic",
+      "label": "Ningxia Orient Tantalum",
+      "kind": "smelter",
+      "stage": 2,
+      "lane": "lts",
+      "country": "CHN",
+      "materials": [
+        "niobium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Likely processed Rubaya coltan",
+      "supply": "moderate",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/ZpTn4A-iShM17oe5UZ0pbA",
+      "sources": [
+        "S15",
+        "S122",
+        "S123"
+      ],
+      "flags": [
+        "soe"
+      ],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "nb-ulba-taniobis",
+      "label": "Ulba, Taniobis",
+      "kind": "smelter",
+      "stage": 2,
+      "lane": "lts",
+      "country": "KAZ",
+      "materials": [
+        "niobium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Ulba processed conflict-linked coltan",
+      "supply": "moderate",
+      "blending": true,
+      "sayari_url": null,
+      "sources": [
+        "S15",
+        "S108"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "nb-solikamsk",
+      "label": "Solikamsk Magnesium Works",
+      "kind": "smelter",
+      "stage": 2,
+      "lane": "lts",
+      "country": "RUS",
+      "materials": [
+        "niobium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reports found; sanctions risk",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/k_yqWHO2kxlDAa35T40GLg",
+      "sources": [
+        "S121",
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "nb-cbmm",
+      "label": "CBMM, Araxa (Brazil)",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "lts",
+      "country": "BRA",
+      "materials": [
+        "niobium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Legacy barium contamination",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/nVXFM_JqTsjFcOcxBTrmNA",
+      "sources": [
+        "S21",
+        "S56",
+        "S110"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "nb-rwanda",
+      "label": "Rwanda coltan exporters",
+      "kind": "trader",
+      "stage": 1,
+      "lane": "lts",
+      "country": "RWA",
+      "materials": [
+        "niobium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Launder smuggled Congolese ore",
+      "supply": "low",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/X9BAf2KZzwU7tDfYuH4qoA",
+      "sources": [
+        "S15",
+        "S120"
+      ],
+      "flags": [
+        "conflict"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "nb-rubaya",
+      "label": "Rubaya, eastern DRC",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "lts",
+      "country": "COD",
+      "materials": [
+        "niobium",
+        "tin"
+      ],
+      "harm": "high",
+      "harmNote": "Forced labour, killings, torture",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S15",
+        "S50",
+        "S49",
+        "S51"
+      ],
+      "flags": [
+        "conflict",
+        "extreme"
+      ],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "cu-elektrokoppar",
+      "label": "AB Elektrokoppar",
+      "kind": "alloy",
+      "stage": 3,
+      "lane": "lts",
+      "country": "SWE",
+      "materials": [
+        "copper-lts"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reports found",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/BGghTvi60G-MEgWz9i0yrw",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "lts-policy-gap",
+      "label": "US conflict minerals rule (excludes niobium)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "USA",
+      "materials": [
+        "tin",
+        "niobium"
+      ],
+      "harm": null,
+      "harmNote": "Covers tin, not niobium",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S108"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "w-west-east",
+      "label": "WEST (France) / EAST (China) tokamaks",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "plasma",
+      "country": "FRA",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported at this stage.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S28"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "w-almt",
+      "label": "A.L.M.T. (Sumitomo Electric)",
+      "kind": "component",
+      "stage": 4,
+      "lane": "plasma",
+      "country": "JPN",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported at the plant; raw material traced to Nui Phao.",
+      "supply": "high",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/qWODTfaATas3QR0SzgcDcQ",
+      "sources": [
+        "S27",
+        "S52",
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "w-atm",
+      "label": "AT&M (CISRI, state-owned)",
+      "kind": "component",
+      "stage": 4,
+      "lane": "plasma",
+      "country": "CHN",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported; ore sources unrecorded.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/RJjq6Ru7Me8L0pe7UHByBg",
+      "sources": [
+        "S28",
+        "S130"
+      ],
+      "flags": [
+        "soe"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "w-masan",
+      "label": "Masan Tungsten APT plant",
+      "kind": "refiner",
+      "stage": 2,
+      "lane": "plasma",
+      "country": "VNM",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "none",
+      "harmNote": "Part of the Nui Phao complex; Sayari forced-labour flags are modelled only.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/uEVxlKok1dI7gxPTjVtYPg",
+      "sources": [
+        "S124",
+        "S125",
+        "SY"
+      ],
+      "flags": [
+        "modelled"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "w-gtp",
+      "label": "Global Tungsten & Powders (Plansee)",
+      "kind": "refiner",
+      "stage": 2,
+      "lane": "plasma",
+      "country": "USA",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported at the plant.",
+      "supply": "moderate",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/j9FJxh3diwrl4U_GxmQ8lA",
+      "sources": [
+        "S29",
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "w-traxys",
+      "label": "Traxys Europe (trader)",
+      "kind": "trader",
+      "stage": 1,
+      "lane": "plasma",
+      "country": "LUX",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "none",
+      "harmNote": "Buys from Rwanda, Vietnam and DRC exporters; Sayari conflict-minerals flag is modelled.",
+      "supply": "moderate",
+      "blending": true,
+      "sayari_url": "https://graph.sayari.com/resource/entity/49gLiIsaRq1p3s8vhLc4cw",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "w-nuiphao",
+      "label": "Nui Phao mine, Thai Nguyen",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "plasma",
+      "country": "VNM",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "moderate",
+      "harmNote": "Residents' pollution complaints led to a 2016 government inspection; possible evacuation of two hamlets considered.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S127",
+        "S128",
+        "S126"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "w-jiangxi",
+      "label": "Southern Jiangxi tungsten mines",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "plasma",
+      "country": "CHN",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "moderate",
+      "harmNote": "Peer-reviewed study: cadmium and arsenic in farmland and rice near mines above health-risk thresholds.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S129",
+        "S22"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "w-rwanda",
+      "label": "Nyakabingo mine, Rwanda",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "plasma",
+      "country": "RWA",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "none",
+      "harmNote": "No abuses reported at the mine; laundering risk for smuggled Congolese minerals documented for coltan.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/i8S1NHEFxPnL94FD6JUM-Q",
+      "sources": [
+        "S131",
+        "S15"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite"
+      ]
+    },
+    {
+      "id": "w-colombia",
+      "label": "Colombian tungsten exporters",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "plasma",
+      "country": "COL",
+      "materials": [
+        "tungsten"
+      ],
+      "harm": "moderate",
+      "harmNote": "Armed groups such as the ELN have controlled some tungsten mining (sector level).",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/LqcH3h3wxIWrQcFmQLUi6g",
+      "sources": [
+        "S14",
+        "S54"
+      ],
+      "flags": [
+        "conflict"
+      ],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "s-amw",
+      "label": "AMW consortium (Ansaldo, Mangiarotti, Walter Tosto)",
+      "kind": "component",
+      "stage": 4,
+      "lane": "structure",
+      "country": "ITA",
+      "materials": [
+        "steel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S132"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "s-industeel",
+      "label": "Industeel Le Creusot (ArcelorMittal)",
+      "kind": "alloy",
+      "stage": 3,
+      "lane": "structure",
+      "country": "FRA",
+      "materials": [
+        "steel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported at the mill.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/PNp63F8G5LmpdqDH4pbayg",
+      "sources": [
+        "S132",
+        "S133"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "s-forgers",
+      "label": "ThyssenKrupp, Rolf Kind, Valbruna, Forgiatura Vienna",
+      "kind": "alloy",
+      "stage": 3,
+      "lane": "structure",
+      "country": "DEU",
+      "materials": [
+        "steel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported at the forges.",
+      "supply": "low",
+      "blending": true,
+      "sayari_url": null,
+      "sources": [
+        "S132"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "s-saarschmiede",
+      "label": "Saarschmiede / Böhler (EUROFER97)",
+      "kind": "alloy",
+      "stage": 3,
+      "lane": "structure",
+      "country": "DEU",
+      "materials": [
+        "steel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported at the forges.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/XXI51kLWM2wpkhZbxDQ9WA",
+      "sources": [
+        "S33",
+        "S55"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "s-tbm",
+      "label": "EU test blanket modules / DEMO structures",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "structure",
+      "country": "KOR",
+      "materials": [
+        "steel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S33"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "s-chrome-za",
+      "label": "Chrome mines, Limpopo (South Africa)",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "structure",
+      "country": "ZAF",
+      "materials": [
+        "steel"
+      ],
+      "harm": "high",
+      "harmNote": "Police and company security used violence against protesters at the Sefateng chrome mine (HRW 2019).",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S136",
+        "S134"
+      ],
+      "flags": [
+        "extreme"
+      ],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "s-chrome-kz",
+      "label": "Chrome mines, Kazakhstan",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "structure",
+      "country": "KAZ",
+      "materials": [
+        "steel"
+      ],
+      "harm": "none",
+      "harmNote": "Searched; no reports of abuses found.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S134"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite"
+      ]
+    },
+    {
+      "id": "s-vanadium",
+      "label": "Vanadium mines and smelters (China, Russia)",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "structure",
+      "country": "CHN",
+      "materials": [
+        "steel"
+      ],
+      "harm": "moderate",
+      "harmNote": "Farmland contamination and health risk near Chinese vanadium smelters.",
+      "supply": "high",
+      "blending": true,
+      "sayari_url": null,
+      "sources": [
+        "S137",
+        "S135"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "li-developers",
+      "label": "Type One Energy, Gauss Fusion",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "blanket",
+      "country": "USA",
+      "materials": [
+        "lithium6"
+      ],
+      "harm": "none",
+      "harmNote": "No supply chain yet.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S149"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "li-mss",
+      "label": "Molten Salt Solutions",
+      "kind": "separator",
+      "stage": 2,
+      "lane": "blanket",
+      "country": "USA",
+      "materials": [
+        "lithium6"
+      ],
+      "harm": "none",
+      "harmNote": "Non-mercury process; not yet at scale.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/mZaC58BR8U84MxuXiSGSOQ",
+      "sources": [
+        "S149"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "li-nccp",
+      "label": "Novosibirsk Chemical Concentrates Plant (Rosatom)",
+      "kind": "separator",
+      "stage": 2,
+      "lane": "blanket",
+      "country": "RUS",
+      "materials": [
+        "lithium6"
+      ],
+      "harm": "none",
+      "harmNote": "Mercury process; on Ukraine's sanctions list; no documented harm to people found.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/uGeE9Bs2EvxWqf4mTsQFRQ",
+      "sources": [
+        "S138",
+        "S139",
+        "SY"
+      ],
+      "flags": [
+        "sanctioned",
+        "soe"
+      ],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "li-oakridge",
+      "label": "Oak Ridge Y-12 (1950s-60s, history)",
+      "kind": "separator",
+      "stage": 2,
+      "lane": "blanket",
+      "country": "USA",
+      "materials": [
+        "lithium6"
+      ],
+      "harm": "high",
+      "harmNote": "About 1.1 million kg of mercury lost; creek still exceeds criteria.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S152",
+        "S151",
+        "S153"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "li-mines",
+      "label": "Natural lithium mines (Australia, Chile, China, Argentina, US)",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "blanket",
+      "country": "AUS",
+      "materials": [
+        "lithium6"
+      ],
+      "harm": "moderate",
+      "harmNote": "Amnesty 2026: Nevada lithium projects approved without Indigenous consent.",
+      "supply": "low",
+      "blending": true,
+      "sayari_url": null,
+      "sources": [
+        "S140",
+        "S141"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "be-cfs",
+      "label": "Commonwealth Fusion Systems",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "blanket",
+      "country": "USA",
+      "materials": [
+        "beryllium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/pvo3Wv7gZb9K0hiji7-Nag",
+      "sources": [
+        "S154"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "be-demo",
+      "label": "EU DEMO breeding blanket",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "blanket",
+      "country": "DEU",
+      "materials": [
+        "beryllium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S145"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "be-kit",
+      "label": "KIT blanket materials lab",
+      "kind": "component",
+      "stage": 4,
+      "lane": "blanket",
+      "country": "DEU",
+      "materials": [
+        "beryllium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm reported.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/cZqbpSR16wsUn11pe35OyA",
+      "sources": [
+        "S145",
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "be-materion",
+      "label": "Materion (beryllium hydroxide, fluoride)",
+      "kind": "refiner",
+      "stage": 3,
+      "lane": "blanket",
+      "country": "USA",
+      "materials": [
+        "beryllium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Workers' chronic beryllium disease (1998 settlements); 2023 federal sensitisation claim.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/EwrvHuTaV4IXqRX9roWh9Q",
+      "sources": [
+        "S142",
+        "S143",
+        "S144"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "be-ulba",
+      "label": "Ulba Metallurgical Plant (state-owned)",
+      "kind": "refiner",
+      "stage": 3,
+      "lane": "blanket",
+      "country": "KAZ",
+      "materials": [
+        "beryllium"
+      ],
+      "harm": "none",
+      "harmNote": "Searched; no harm reports found. Sayari regulatory-action flag.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/yd4WCfTHQsYYVO6SEoutWA",
+      "sources": [
+        "S146",
+        "SY"
+      ],
+      "flags": [
+        "sanctioned",
+        "soe"
+      ],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "be-ningxia",
+      "label": "Ningxia Orient Tantalum",
+      "kind": "refiner",
+      "stage": 3,
+      "lane": "blanket",
+      "country": "CHN",
+      "materials": [
+        "beryllium"
+      ],
+      "harm": "none",
+      "harmNote": "Searched; no harm reports found.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/ZpTn4A-iShM17oe5UZ0pbA",
+      "sources": [
+        "S142"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "be-spor",
+      "label": "Spor Mountain mine and Delta mill, Utah",
+      "kind": "mine",
+      "stage": 0,
+      "lane": "blanket",
+      "country": "USA",
+      "materials": [
+        "beryllium"
+      ],
+      "harm": "moderate",
+      "harmNote": "Mill worker diagnosed with beryllium sensitisation (2023).",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S142",
+        "S144",
+        "S156"
+      ],
+      "flags": [],
+      "solution": [
+        "satellite",
+        "fingerprint",
+        "grievance"
+      ]
+    },
+    {
+      "id": "dev-tokamak-energy",
+      "label": "Tokamak Energy",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "hts",
+      "country": "GBR",
+      "materials": [
+        "yttrium",
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/0kaH6F5LSYW2ZJn5W8iNHQ",
+      "sources": [
+        "S160"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "dev-type-one",
+      "label": "Type One Energy",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "hts",
+      "country": "USA",
+      "materials": [
+        "yttrium",
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/CbAwSqfFBqN5GJ43jP1ijA",
+      "sources": [
+        "S157",
+        "S158"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "dev-realta",
+      "label": "Realta Fusion",
+      "kind": "developer",
+      "stage": 6,
+      "lane": "hts",
+      "country": "USA",
+      "materials": [
+        "yttrium",
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "high",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/OOguY3-52X3iDfgLIzq9Nw",
+      "sources": [
+        "S157"
+      ],
+      "flags": [],
+      "solution": [
+        "passport",
+        "funding"
+      ]
+    },
+    {
+      "id": "mag-cfs",
+      "label": "CFS magnet factory",
+      "kind": "magnet",
+      "stage": 5,
+      "lane": "hts",
+      "country": "USA",
+      "materials": [
+        "yttrium",
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found at the factory.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/pvo3Wv7gZb9K0hiji7-Nag",
+      "sources": [
+        "S158",
+        "S157"
+      ],
+      "flags": [],
+      "solution": [
+        "passport"
+      ]
+    },
+    {
+      "id": "mag-tokamak-energy",
+      "label": "Tokamak Energy magnets (Demo4)",
+      "kind": "magnet",
+      "stage": 5,
+      "lane": "hts",
+      "country": "GBR",
+      "materials": [
+        "yttrium",
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/0kaH6F5LSYW2ZJn5W8iNHQ",
+      "sources": [
+        "S160"
+      ],
+      "flags": [],
+      "solution": [
+        "passport"
+      ]
+    },
+    {
+      "id": "mag-energy-singularity",
+      "label": "Energy Singularity magnets (HH70, Jingtian)",
+      "kind": "magnet",
+      "stage": 5,
+      "lane": "hts",
+      "country": "CHN",
+      "materials": [
+        "yttrium",
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/TF_-vomEsAVzacW2St3k_w",
+      "sources": [
+        "S95"
+      ],
+      "flags": [],
+      "solution": [
+        "passport"
+      ]
+    },
+    {
+      "id": "mag-proxima",
+      "label": "Proxima Stellarator Model Coil (2027)",
+      "kind": "magnet",
+      "stage": 5,
+      "lane": "hts",
+      "country": "DEU",
+      "materials": [
+        "yttrium",
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/J8d9yiK_TAYdqoyGwFEmIA",
+      "sources": [
+        "S173"
+      ],
+      "flags": [],
+      "solution": [
+        "passport"
+      ]
+    },
+    {
+      "id": "mag-asg",
+      "label": "ASG Superconductors (ITER TF winding packs)",
+      "kind": "magnet",
+      "stage": 5,
+      "lane": "lts",
+      "country": "ITA",
+      "materials": [
+        "tin",
+        "niobium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found. Separate Russian boron imports (2019, Dec 2022).",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/06Ed7KoiwtUgpEEmHhsjgA",
+      "sources": [
+        "S162",
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "passport"
+      ]
+    },
+    {
+      "id": "mag-simic",
+      "label": "SIMIC (ITER TF coil finishing)",
+      "kind": "magnet",
+      "stage": 5,
+      "lane": "lts",
+      "country": "ITA",
+      "materials": [
+        "tin",
+        "niobium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/a1r_D3s8kO-reOHSC9tAWA",
+      "sources": [
+        "S162"
+      ],
+      "flags": [],
+      "solution": [
+        "passport"
+      ]
+    },
+    {
+      "id": "mag-icas",
+      "label": "ICAS consortium: ENEA, Tratos, Criotec (cable-in-conduit conductor)",
+      "kind": "component",
+      "stage": 5,
+      "lane": "lts",
+      "country": "ITA",
+      "materials": [
+        "tin",
+        "niobium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S162"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "mag-qst-japan",
+      "label": "QST with MHI, Mitsubishi Electric, Toshiba ESS, Hyundai Heavy (ITER TF coils)",
+      "kind": "magnet",
+      "stage": 5,
+      "lane": "lts",
+      "country": "JPN",
+      "materials": [
+        "tin",
+        "niobium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found; Sayari flags are modelled.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/PTs_souFGWfq0WJsXyuarw",
+      "sources": [
+        "S161"
+      ],
+      "flags": [
+        "modelled"
+      ],
+      "solution": [
+        "passport"
+      ]
+    },
+    {
+      "id": "mag-ga",
+      "label": "General Atomics (ITER central solenoid)",
+      "kind": "magnet",
+      "stage": 5,
+      "lane": "lts",
+      "country": "USA",
+      "materials": [
+        "tin",
+        "niobium"
+      ],
+      "harm": "none",
+      "harmNote": "No harm found.",
+      "supply": "low",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/AUrDfRD-AStJevddGvTEzQ",
+      "sources": [
+        "S163"
+      ],
+      "flags": [],
+      "solution": [
+        "passport"
+      ]
+    },
+    {
+      "id": "hts-tape-superpower",
+      "label": "SuperPower Inc (Furukawa, US)",
+      "kind": "component",
+      "stage": 4,
+      "lane": "hts",
+      "country": "USA",
+      "materials": [
+        "yttrium",
+        "nickel"
+      ],
+      "harm": "none",
+      "harmNote": "No harm documented at the tape maker; see yttrium and nickel chains for upstream harm.",
+      "supply": "moderate",
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/9HRP47xguFrU7scaFjz-1A",
+      "sources": [
+        "SY"
+      ],
+      "flags": [],
+      "solution": [
+        "screening",
+        "passport"
+      ]
+    },
+    {
+      "id": "pol-china-ree-oct2025",
+      "label": "China October 2025 rare earth controls (extraterritorial rule), suspended for one year",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "CHN",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Added a foreign-direct-product-style rule; suspended after the Trump-Xi deal. The April 2025 controls stayed in force, with general licences to selected exporters.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S7",
+        "S39"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-china-w-feb2025",
+      "label": "China export controls on tungsten items (Feb 2025)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "CHN",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: USGS: China implemented export controls on selected tungsten items in February 2025; tungsten APT price roughly doubled in 2025.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S22"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-ofac-uwsa",
+      "label": "US OFAC sanctions on the United Wa State Army (SDN 7825, since 2003)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "USA",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Narcotics-related listing. The UWSA controls the Man Maw tin mine. Not a minerals sanction, but it makes direct dealings with UWSA entities illegal for US persons.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/VBDYgwRIxR8tpDS_0jg4Hw",
+      "sources": [
+        "SY",
+        "S8"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-ofac-burma-advisory",
+      "label": "US Supplemental Burma Business Advisory (Jan 2024)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "USA",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Warns that regime-linked militias, including Ministry of Defense border guard forces (OFAC-designated June 2023), are involved in rare earth extraction and that Burmese rare earths may be mislabelled as from other countries. Advisory only, not a ban.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S164"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-ofac-drc-2025",
+      "label": "US OFAC sanctions on PARECO-FF, CDMC, East Rise and Star Dragon (Aug 2025)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "USA",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Treasury says CDMC sold minerals smuggled from PARECO-FF-controlled areas of Rubaya to Hong Kong exporters East Rise and Star Dragon.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": "https://graph.sayari.com/resource/entity/EOhsW8l7khZBEzP0r4qzVQ",
+      "sources": [
+        "S49",
+        "SY"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-ukr-nsdc",
+      "label": "Ukraine NSDC sanctions on Chepetsky Mechanical Plant (Oct 2022)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "UKR",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Ukraine lists the Rosatom strand maker; the US, EU and UK do not.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S57",
+        "SY"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-eu-cmr",
+      "label": "EU Conflict Minerals Regulation (3TG), in force for importers since 1 Jan 2021",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "EU",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Covers tin, tantalum, tungsten and gold as ores, concentrates and metals. Niobium is not covered. Applies only to EU importers up to the metal stage; companies 'beyond the metal stage' (strand, tape, magnet makers) have no obligations.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S165"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-us-1502",
+      "label": "US Dodd-Frank s.1502 / SEC Form SD",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "USA",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: SEC-reporting companies must disclose use of tin, tantalum, tungsten and gold from the DRC and adjoining countries. Niobium is not covered; neither is Myanmar. Private fusion firms such as CFS are not SEC reporters and do not file.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S166"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-eu-crma",
+      "label": "EU Critical Raw Materials Act (Reg. 2024/1252)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "EU",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Lists heavy and light rare earths, niobium and tungsten as critical (tungsten also strategic); tin is not listed. Sets 2030 benchmarks: 10% extraction, 40% processing, 25% recycling, no more than 65% from one third country. A supply-security law; human rights appear only in strategic-partnership language.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S167",
+        "S85"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-eu-csddd",
+      "label": "EU CSDDD after Omnibus I (applies from 26 July 2029)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "EU",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Narrowed to companies with over 5,000 employees and EUR1.5bn turnover. Fusion developers are start-ups far below these thresholds, so they fall outside it; only very large suppliers might be covered.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S168"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-doe-milestone",
+      "label": "US DOE Milestone-Based Fusion Development Program",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "USA",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: USD46m to eight firms in 2023 (CFS, Tokamak Energy's US arm, Type One, Realta, Focused, Princeton Stellarators, Xcimer, Zap). Payments tied to technical milestones. No sourcing or human-rights conditions were found in the award announcement.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S169"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-fia",
+      "label": "Fusion Industry Association supply chain report (June 2026)",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "USA",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Tracks USD538m supply-chain spending in 2025. Its public summary does not mention critical minerals, human rights or conflict minerals.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S11"
+      ],
+      "flags": [],
+      "solution": []
+    },
+    {
+      "id": "pol-rmi-itsci",
+      "label": "RMI audits (RMAP) and ITSCI tagging",
+      "kind": "policy",
+      "stage": -1,
+      "lane": "shared",
+      "country": "shared",
+      "materials": [],
+      "harm": null,
+      "harmNote": "Policy lever: Global Witness found all eight smelters sourcing Rwandan coltan passed RMI audits, at least four linked to likely Rubaya conflict coltan, and that smuggled ore was laundered with ITSCI tags. RMI disputes this. ITSCI has suspended or expelled six exporters since 2024.",
+      "supply": null,
+      "blending": false,
+      "sayari_url": null,
+      "sources": [
+        "S15"
+      ],
+      "flags": [],
+      "solution": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "hts-fujikura",
+      "to": "dev-cfs",
+      "label": "tape supply",
+      "status": "reported",
+      "basis": "CFS purchase order for >10,000 km (2026)",
+      "sources": [
+        "S37"
+      ]
+    },
+    {
+      "from": "hts-ffj",
+      "to": "dev-cfs",
+      "label": "tape supply",
+      "status": "reported",
+      "basis": "Faraday Factory press release, 2024",
+      "sources": [
+        "S36"
+      ]
+    },
+    {
+      "from": "hts-ffj",
+      "to": "dev-proxima",
+      "label": "tape supply",
+      "status": "reported",
+      "basis": "Supply agreement, 2025",
+      "sources": [
+        "S38"
+      ]
+    },
+    {
+      "from": "hts-sst",
+      "to": "dev-energy-singularity",
+      "label": "tape supply",
+      "status": "reported",
+      "basis": "Shanghai Superconductor: supplied all HH70 and Jingtian tape",
+      "sources": [
+        "S95"
+      ]
+    },
+    {
+      "from": "hts-sinnov",
+      "to": "hts-ffj",
+      "label": "coated tape",
+      "status": "confirmed",
+      "basis": "369 shipments Feb 2023–Jan 2025 (Russian export + Japanese import records)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "hts-sinnov",
+      "to": "dev-cfs",
+      "label": "coated tape",
+      "status": "confirmed",
+      "basis": "9 export records, Jan–Apr 2022 (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "dev-cfs",
+      "to": "hts-sinnov",
+      "label": "bare Hastelloy strip",
+      "status": "confirmed",
+      "basis": "15 records, May 2022–Dec 2024, ~29 t (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "dev-energy-singularity",
+      "to": "hts-sinnov",
+      "label": "strip sample for testing",
+      "status": "confirmed",
+      "basis": "1 record, 14 kg, Jan 2024 (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "tgt-maru",
+      "to": "hts-sinnov",
+      "label": "yttrium sputtering target",
+      "status": "confirmed",
+      "basis": "1 record, 6.1 kg, Jan 2022 (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "tgt-toshima",
+      "to": "hts-sinnov",
+      "label": "LaMnO3 and IBAD targets",
+      "status": "confirmed",
+      "basis": "2 records, 18.4 kg, Jan 2022 (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "tgt-can",
+      "to": "hts-sinnov",
+      "label": "YBCO laser targets; IBAD target",
+      "status": "confirmed",
+      "basis": "4 records 2020 (~36 kg) + 1 record Feb 2023 (15 kg) (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "tgt-rearth",
+      "to": "hts-sinnov",
+      "label": "GdBCO laser target",
+      "status": "confirmed",
+      "basis": "1 record, 3.5 kg, Jul 2020 (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "buf-ams",
+      "to": "hts-sinnov",
+      "label": "MgO for buffer layer",
+      "status": "confirmed",
+      "basis": "3 records, Apr and Dec 2023 (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "y-cn-sep",
+      "to": "tgt-maru",
+      "label": "rare earth feed for targets",
+      "status": "hypothesis",
+      "basis": "Untested: no upstream records for any target maker",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "y-cn-sep",
+      "to": "tgt-can",
+      "label": "rare earth feed for targets",
+      "status": "hypothesis",
+      "basis": "Untested: no upstream records",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "y-cn-sep",
+      "to": "hts-sst",
+      "label": "yttrium / rare earth oxide",
+      "status": "inferred",
+      "basis": "Market structure: Chinese tape maker, Chinese separation monopoly",
+      "sources": [
+        "S40",
+        "S39"
+      ]
+    },
+    {
+      "from": "y-cn-sep",
+      "to": "hts-fujikura",
+      "label": "rare earth oxide",
+      "status": "hypothesis",
+      "basis": "No Japanese import record links Fujikura to any separator",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "pol-china-ree-apr2025",
+      "to": "y-cn-sep",
+      "label": "export licensing",
+      "status": "reported",
+      "basis": "Yttrium licensing since 4 Apr 2025",
+      "sources": [
+        "S40",
+        "S91"
+      ]
+    },
+    {
+      "from": "y-border",
+      "to": "y-cn-sep",
+      "label": "rare earth oxide/ore into China",
+      "status": "reported",
+      "basis": "Myanmar >28,000 t, US$624m, Jan–Sep 2025 (GACC via ISP-Myanmar); REGCC subsidiaries plan on Myanmar imports (Global Witness)",
+      "sources": [
+        "S88",
+        "S1",
+        "S89"
+      ]
+    },
+    {
+      "from": "y-kachin",
+      "to": "y-border",
+      "label": "ore to border",
+      "status": "reported",
+      "basis": "Global Witness 2024; ISP-Myanmar 2025",
+      "sources": [
+        "S1",
+        "S43",
+        "S88"
+      ]
+    },
+    {
+      "from": "y-shan",
+      "to": "y-border",
+      "label": "ore to border",
+      "status": "reported",
+      "basis": "Reuters 2025",
+      "sources": [
+        "S90"
+      ]
+    },
+    {
+      "from": "y-jiangxi",
+      "to": "y-cn-sep",
+      "label": "domestic ore",
+      "status": "inferred",
+      "basis": "Quota-capped domestic supply",
+      "sources": [
+        "S89"
+      ]
+    },
+    {
+      "from": "ni-cn-mills",
+      "to": "hts-sinnov",
+      "label": "C-276 strip",
+      "status": "confirmed",
+      "basis": "~12 records 2022–2024 from Chinese firms (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "ni-ulbrich",
+      "to": "hts-sinnov",
+      "label": "nickel-alloy strip",
+      "status": "confirmed",
+      "basis": "1 record (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "ni-western-mills",
+      "to": "dev-cfs",
+      "label": "C-276 strip",
+      "status": "hypothesis",
+      "basis": "CFS's strip source is not in trade records",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "ni-western-mills",
+      "to": "hts-fujikura",
+      "label": "C-276 strip",
+      "status": "hypothesis",
+      "basis": "No Japanese import record of strip for Fujikura",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "ni-cn-refining",
+      "to": "ni-cn-mills",
+      "label": "refined nickel",
+      "status": "inferred",
+      "basis": "Market structure",
+      "sources": [
+        "S101"
+      ]
+    },
+    {
+      "from": "ni-indonesia",
+      "to": "ni-cn-refining",
+      "label": "nickel matte",
+      "status": "reported",
+      "basis": "US$8.15bn of matte to China, 2025 (UN COMTRADE)",
+      "sources": [
+        "S101"
+      ]
+    },
+    {
+      "from": "ni-indonesia",
+      "to": "ni-western-mills",
+      "label": "nickel",
+      "status": "hypothesis",
+      "basis": "Untested; Haynes names no supplier; no Indonesian partner in Sayari",
+      "sources": [
+        "S96",
+        "SY"
+      ]
+    },
+    {
+      "from": "ni-nornickel",
+      "to": "ni-western-mills",
+      "label": "nickel",
+      "status": "hypothesis",
+      "basis": "Untested; no trade link found",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "cu-luvata",
+      "to": "dev-cfs",
+      "label": "copper hollow conductor",
+      "status": "confirmed",
+      "basis": "5 records, Aug 2022–Jan 2023 (US imports)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "cu-kme",
+      "to": "dev-cfs",
+      "label": "copper products",
+      "status": "inferred",
+      "basis": "Sayari upstream model (DEU→USA); product not confirmed",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "cu-jp-traders",
+      "to": "hts-sinnov",
+      "label": "copper articles (unspecified)",
+      "status": "confirmed",
+      "basis": "38 records HS 741980, 2022–2025 (Russian customs)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "cu-pt-smelting",
+      "to": "cu-luvata",
+      "label": "copper cathode",
+      "status": "confirmed",
+      "basis": "2 records naming Luvata Pori as buyer, Apr and Nov 2025 (Indonesian exports)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "cu-grasberg",
+      "to": "cu-pt-smelting",
+      "label": "copper concentrate",
+      "status": "hypothesis",
+      "basis": "PT Freeport Indonesia ships cathode directly; concentrate route to PT Smelting not checked",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "ag-russia",
+      "to": "hts-sinnov",
+      "label": "silver",
+      "status": "hypothesis",
+      "basis": "No silver imports recorded by S-Innovations; domestic purchase likely",
+      "sources": [
+        "SY",
+        "S104"
+      ]
+    },
+    {
+      "from": "ag-bolivia",
+      "to": "hts-ffj",
+      "label": "silver",
+      "status": "hypothesis",
+      "basis": "Untested; no record links Bolivian silver to any tape maker",
+      "sources": [
+        "S107"
+      ]
+    },
+    {
+      "from": "lts-bruker",
+      "to": "lts-iter",
+      "label": "Nb3Sn strand",
+      "status": "reported",
+      "basis": "Vostner et al. 2017 (ITER TF strand suppliers)",
+      "sources": [
+        "S25"
+      ]
+    },
+    {
+      "from": "lts-wst",
+      "to": "lts-iter",
+      "label": "~35 t Nb3Sn strand",
+      "status": "reported",
+      "basis": "ITER Organization 2015",
+      "sources": [
+        "S26"
+      ]
+    },
+    {
+      "from": "lts-jastec",
+      "to": "lts-iter",
+      "label": "Nb3Sn strand",
+      "status": "reported",
+      "basis": "Vostner et al. 2017",
+      "sources": [
+        "S25"
+      ]
+    },
+    {
+      "from": "lts-kat",
+      "to": "lts-iter",
+      "label": "137 t Nb3Sn strand, 2009-16",
+      "status": "reported",
+      "basis": "KAT company history",
+      "sources": [
+        "S119"
+      ]
+    },
+    {
+      "from": "lts-chmp",
+      "to": "lts-iter",
+      "label": "Nb3Sn strand",
+      "status": "reported",
+      "basis": "Vostner et al. 2017",
+      "sources": [
+        "S25"
+      ]
+    },
+    {
+      "from": "lts-other-strand",
+      "to": "lts-iter",
+      "label": "Nb3Sn strand",
+      "status": "reported",
+      "basis": "Vostner et al. 2017",
+      "sources": [
+        "S25"
+      ]
+    },
+    {
+      "from": "sn-yunnan",
+      "to": "lts-bruker",
+      "label": "tin smelter in Bruker group supply chain",
+      "status": "reported",
+      "basis": "Bruker 2025 Conflict Minerals Report, Exhibit A (company-wide, not strand-specific)",
+      "sources": [
+        "S108"
+      ]
+    },
+    {
+      "from": "sn-msc",
+      "to": "lts-bruker",
+      "label": "tin smelter in Bruker group supply chain",
+      "status": "reported",
+      "basis": "Bruker 2025 Conflict Minerals Report, Exhibit A (company-wide)",
+      "sources": [
+        "S108"
+      ]
+    },
+    {
+      "from": "sn-msc",
+      "to": "sn-jp-kr-traders",
+      "label": "refined tin, 981 rows; Japan 555, Korea 123",
+      "status": "confirmed",
+      "basis": "Sayari shipment records (HS 8001), to 2026",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "sn-jp-kr-traders",
+      "to": "lts-jastec",
+      "label": "domestic tin resale",
+      "status": "hypothesis",
+      "basis": "Japanese strand makers buy tin domestically; no record",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "sn-jp-kr-traders",
+      "to": "lts-kat",
+      "label": "domestic tin resale",
+      "status": "hypothesis",
+      "basis": "No record",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "sn-yunnan",
+      "to": "lts-wst",
+      "label": "Chinese refined tin",
+      "status": "inferred",
+      "basis": "Market structure: WST is in China, Yunnan Tin is China's largest smelter; no record",
+      "sources": [
+        "S112"
+      ]
+    },
+    {
+      "from": "sn-manmaw",
+      "to": "sn-yunnan",
+      "label": "tin ore; 44,069 t to China H1 2026",
+      "status": "reported",
+      "basis": "Chinese customs via Fastmarkets; Yunnan Tin board to Reuters 2016",
+      "sources": [
+        "S112",
+        "S113"
+      ]
+    },
+    {
+      "from": "sn-ore-traders",
+      "to": "sn-msc",
+      "label": "tin concentrate (HS 2609)",
+      "status": "confirmed",
+      "basis": "Sayari shipments: Star Dragon 10 lots 2024-25; Traxys, GM Trading, Halcyon, Sizer 2025-26",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "sn-greatlakes",
+      "to": "sn-ore-traders",
+      "label": "tin concentrate from DRC, Rwanda, Tanzania",
+      "status": "confirmed",
+      "basis": "Sayari shipment departure countries",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "sn-msc",
+      "to": "sn-ore-traders",
+      "label": "refined tin to Halcyon and Traxys Belgium (Korea)",
+      "status": "confirmed",
+      "basis": "Sayari: Halcyon 3 shipments to 2024-06; Traxys Belgium 21 to 2024-07",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "nb-cbmm",
+      "to": "lts-wst",
+      "label": "224 t niobium ingots for ITER strand, 2016-17",
+      "status": "confirmed",
+      "basis": "WST IPO prospectus related-party table (2019)",
+      "sources": [
+        "S110"
+      ]
+    },
+    {
+      "from": "nb-cbmm",
+      "to": "nb-citic",
+      "label": "all of CITIC Metal's niobium",
+      "status": "confirmed",
+      "basis": "CITIC Metal IPO prospectus (2023)",
+      "sources": [
+        "S111"
+      ]
+    },
+    {
+      "from": "nb-citic",
+      "to": "lts-wst",
+      "label": "niobium products, RMB 74-125m a year 2019-22",
+      "status": "confirmed",
+      "basis": "CITIC Metal prospectus related-party sales; Sayari shareholding",
+      "sources": [
+        "S111",
+        "SY"
+      ]
+    },
+    {
+      "from": "nb-ati",
+      "to": "lts-bruker",
+      "label": "niobium superconductor development",
+      "status": "reported",
+      "basis": "Bruker 10-K: joint technology development agreement with ATI",
+      "sources": [
+        "S109"
+      ]
+    },
+    {
+      "from": "nb-otic",
+      "to": "lts-wst",
+      "label": "superconducting-grade niobium",
+      "status": "hypothesis",
+      "basis": "OTIC makes superconducting Nb and supplies fusion; no WST record",
+      "sources": [
+        "S122",
+        "S123"
+      ]
+    },
+    {
+      "from": "nb-solikamsk",
+      "to": "lts-chmp",
+      "label": "Russian niobium",
+      "status": "hypothesis",
+      "basis": "Solikamsk makes all Russian niobium; both under Rosatom; no record",
+      "sources": [
+        "S121"
+      ]
+    },
+    {
+      "from": "nb-rwanda",
+      "to": "nb-otic",
+      "label": "coltan (via Sunrise Metal)",
+      "status": "reported",
+      "basis": "Global Witness",
+      "sources": [
+        "S15"
+      ]
+    },
+    {
+      "from": "nb-rwanda",
+      "to": "nb-ulba-taniobis",
+      "label": "coltan",
+      "status": "reported",
+      "basis": "Global Witness",
+      "sources": [
+        "S15"
+      ]
+    },
+    {
+      "from": "nb-rubaya",
+      "to": "nb-rwanda",
+      "label": "smuggled coltan; up to 120 t/month in 2025",
+      "status": "reported",
+      "basis": "UN Group of Experts via Oakland Institute; Global Witness",
+      "sources": [
+        "S120",
+        "S15"
+      ]
+    },
+    {
+      "from": "nb-rwanda",
+      "to": "sn-ore-traders",
+      "label": "coltan to the same traders",
+      "status": "confirmed",
+      "basis": "Sayari HS 2615 shipments",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "cu-elektrokoppar",
+      "to": "lts-bruker",
+      "label": "copper wire, 1 shipment 2020",
+      "status": "confirmed",
+      "basis": "Sayari US import record 2020-06-03",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "lts-policy-gap",
+      "to": "lts-bruker",
+      "label": "Form SD covers tin, not niobium",
+      "status": "reported",
+      "basis": "Bruker 2025 CMR scope",
+      "sources": [
+        "S108"
+      ]
+    },
+    {
+      "from": "w-nuiphao",
+      "to": "w-masan",
+      "label": "ore to on-site APT plant",
+      "status": "reported",
+      "basis": "Integrated complex (Reuters 2025; Mitsubishi Materials 2020)",
+      "sources": [
+        "S124",
+        "S125"
+      ]
+    },
+    {
+      "from": "w-masan",
+      "to": "w-almt",
+      "label": "ammonium paratungstate",
+      "status": "confirmed",
+      "basis": "12 shipment records 2023-Aug 2026 (Vietnamese export data)",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "w-almt",
+      "to": "lts-iter",
+      "label": "divertor monoblocks and targets",
+      "status": "reported",
+      "basis": "ITER contract (Sumitomo 2021); F4E inner vertical target",
+      "sources": [
+        "S27",
+        "S52"
+      ]
+    },
+    {
+      "from": "w-atm",
+      "to": "w-west-east",
+      "label": "divertor parts",
+      "status": "reported",
+      "basis": "AT&M product page",
+      "sources": [
+        "S28"
+      ]
+    },
+    {
+      "from": "w-jiangxi",
+      "to": "w-atm",
+      "label": "tungsten ore/APT",
+      "status": "hypothesis",
+      "basis": "AT&M is Chinese; no supplier record exists",
+      "sources": [
+        "S22",
+        "SY"
+      ]
+    },
+    {
+      "from": "w-nuiphao",
+      "to": "w-traxys",
+      "label": "unspecified goods",
+      "status": "inferred",
+      "basis": "Sayari receives_from to a sparse 'Nuiphao Mining' record; goods not given",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "w-rwanda",
+      "to": "w-traxys",
+      "label": "tungsten ore",
+      "status": "confirmed",
+      "basis": "4 HS 2611 shipments, July 2026",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "w-traxys",
+      "to": "w-gtp",
+      "label": "tungsten concentrate",
+      "status": "confirmed",
+      "basis": "HS 2611 shipment, October 2026",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "w-colombia",
+      "to": "w-gtp",
+      "label": "tungsten concentrate",
+      "status": "confirmed",
+      "basis": "8 HS 2611 shipments 2012-13",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "w-gtp",
+      "to": "lts-iter",
+      "label": "tungsten for divertor",
+      "status": "hypothesis",
+      "basis": "Plansee made F4E test pieces; no production contract found",
+      "sources": [
+        "S53",
+        "S29"
+      ]
+    },
+    {
+      "from": "s-industeel",
+      "to": "s-amw",
+      "label": "316L(N)-IG plates",
+      "status": "reported",
+      "basis": "F4E: 150 plates, 1,120 t",
+      "sources": [
+        "S132"
+      ]
+    },
+    {
+      "from": "s-forgers",
+      "to": "s-amw",
+      "label": "316L(N)-IG forgings",
+      "status": "reported",
+      "basis": "F4E: about 1,100 forgings, 1,900 t",
+      "sources": [
+        "S132"
+      ]
+    },
+    {
+      "from": "s-amw",
+      "to": "lts-iter",
+      "label": "vacuum vessel sectors",
+      "status": "reported",
+      "basis": "F4E contract; sectors shipped from Italy",
+      "sources": [
+        "S132"
+      ]
+    },
+    {
+      "from": "s-saarschmiede",
+      "to": "s-tbm",
+      "label": "EUROFER97 steel",
+      "status": "reported",
+      "basis": "F4E: steel for test blanket modules shipped to Korea",
+      "sources": [
+        "S33"
+      ]
+    },
+    {
+      "from": "s-chrome-za",
+      "to": "s-industeel",
+      "label": "chromium (ferrochrome)",
+      "status": "hypothesis",
+      "basis": "South Africa is the leading chromite source; no purchase record",
+      "sources": [
+        "S134"
+      ]
+    },
+    {
+      "from": "s-chrome-za",
+      "to": "s-saarschmiede",
+      "label": "chromium (ferrochrome)",
+      "status": "hypothesis",
+      "basis": "No purchase record",
+      "sources": [
+        "S134"
+      ]
+    },
+    {
+      "from": "s-chrome-kz",
+      "to": "s-saarschmiede",
+      "label": "chromium (ferrochrome)",
+      "status": "hypothesis",
+      "basis": "No purchase record",
+      "sources": [
+        "S134"
+      ]
+    },
+    {
+      "from": "s-vanadium",
+      "to": "s-saarschmiede",
+      "label": "vanadium (ferrovanadium)",
+      "status": "hypothesis",
+      "basis": "China and Russia dominate supply; no purchase record",
+      "sources": [
+        "S135"
+      ]
+    },
+    {
+      "from": "w-gtp",
+      "to": "s-saarschmiede",
+      "label": "tungsten alloying",
+      "status": "hypothesis",
+      "basis": "EUROFER97 contains about 1.1% tungsten; source not traced",
+      "sources": [
+        "S55"
+      ]
+    },
+    {
+      "from": "li-mss",
+      "to": "li-developers",
+      "label": "enriched lithium (from 2027)",
+      "status": "reported",
+      "basis": "Supply agreements March 2026",
+      "sources": [
+        "S149"
+      ]
+    },
+    {
+      "from": "li-mines",
+      "to": "li-mss",
+      "label": "natural lithium feed",
+      "status": "hypothesis",
+      "basis": "Feedstock source not disclosed",
+      "sources": [
+        "S149"
+      ]
+    },
+    {
+      "from": "li-mines",
+      "to": "li-nccp",
+      "label": "natural lithium feed",
+      "status": "hypothesis",
+      "basis": "Feedstock source not disclosed",
+      "sources": [
+        "S138"
+      ]
+    },
+    {
+      "from": "li-nccp",
+      "to": "li-developers",
+      "label": "enriched lithium",
+      "status": "hypothesis",
+      "basis": "Russian supply 'not known to be available' to others; no shipment found",
+      "sources": [
+        "S148",
+        "SY"
+      ]
+    },
+    {
+      "from": "be-spor",
+      "to": "be-materion",
+      "label": "bertrandite ore to Delta mill",
+      "status": "reported",
+      "basis": "Materion 10-K",
+      "sources": [
+        "S142"
+      ]
+    },
+    {
+      "from": "be-materion",
+      "to": "be-cfs",
+      "label": "beryllium fluoride",
+      "status": "reported",
+      "basis": "Supply agreement",
+      "sources": [
+        "S154"
+      ]
+    },
+    {
+      "from": "be-ulba",
+      "to": "be-kit",
+      "label": "beryllium and beryllide blocks",
+      "status": "confirmed",
+      "basis": "Kazakh export records 2019, 2020, Feb 2026",
+      "sources": [
+        "SY",
+        "S145"
+      ]
+    },
+    {
+      "from": "be-kit",
+      "to": "be-demo",
+      "label": "beryllide blanket material",
+      "status": "reported",
+      "basis": "KIT: reference multiplier for EU DEMO HCPB",
+      "sources": [
+        "S145"
+      ]
+    },
+    {
+      "from": "hts-fujikura",
+      "to": "mag-cfs",
+      "label": "HTS tape (10,000+ km order)",
+      "status": "reported",
+      "basis": "CFS press release, 2026",
+      "sources": [
+        "S37"
+      ]
+    },
+    {
+      "from": "hts-ffj",
+      "to": "mag-cfs",
+      "label": "HTS tape",
+      "status": "reported",
+      "basis": "Faraday Factory press release",
+      "sources": [
+        "S36"
+      ]
+    },
+    {
+      "from": "hts-sinnov",
+      "to": "mag-cfs",
+      "label": "coated Hastelloy tape, Jan-Apr 2022",
+      "status": "confirmed",
+      "basis": "9 Russian customs records, 2022",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "mag-cfs",
+      "to": "hts-sinnov",
+      "label": "uncoated Hastelloy tape back to Moscow, 2022-24",
+      "status": "confirmed",
+      "basis": "15 records, about 29 t",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "hts-sst",
+      "to": "mag-cfs",
+      "label": "110+ km of ST-04-E HTS tape",
+      "status": "reported",
+      "basis": "Shanghai Superconductor customer page (no date); not visible in Sayari trade data",
+      "sources": [
+        "S95"
+      ]
+    },
+    {
+      "from": "hts-sst",
+      "to": "mag-tokamak-energy",
+      "label": "wide HTS tape, 2017-2020",
+      "status": "reported",
+      "basis": "Shanghai Superconductor customer page",
+      "sources": [
+        "S95"
+      ]
+    },
+    {
+      "from": "hts-tape-superpower",
+      "to": "mag-tokamak-energy",
+      "label": "several hundred km HTS tape (ST80-HTS), 2023",
+      "status": "reported",
+      "basis": "WNN, Jan 2023 (Furukawa agreement)",
+      "sources": [
+        "S159"
+      ]
+    },
+    {
+      "from": "hts-sst",
+      "to": "mag-energy-singularity",
+      "label": "all tape for HH70 and Jingtian magnet",
+      "status": "reported",
+      "basis": "Shanghai Superconductor customer page",
+      "sources": [
+        "S95"
+      ]
+    },
+    {
+      "from": "hts-ffj",
+      "to": "mag-proxima",
+      "label": "HTS tape for demo stellarator",
+      "status": "reported",
+      "basis": "Faraday Factory Japan agreement",
+      "sources": [
+        "S38"
+      ]
+    },
+    {
+      "from": "hts-fujikura",
+      "to": "mag-proxima",
+      "label": "HTS manufacturing partnership (Germany)",
+      "status": "hypothesis",
+      "basis": "Headline on Proxima site only; details not checked",
+      "sources": [
+        "S173"
+      ]
+    },
+    {
+      "from": "hts-sinnov",
+      "to": "hts-ffj",
+      "label": "369 shipments of tape, to Jan 2025",
+      "status": "confirmed",
+      "basis": "Russian export / Japanese import records",
+      "sources": [
+        "SY"
+      ]
+    },
+    {
+      "from": "mag-cfs",
+      "to": "dev-cfs",
+      "label": "magnets for SPARC/ARC",
+      "status": "reported",
+      "basis": "CFS factory makes SPARC magnets",
+      "sources": [
+        "S158"
+      ]
+    },
+    {
+      "from": "mag-cfs",
+      "to": "dev-realta",
+      "label": "HTS magnets (WHAM 2024; multi-year deal 2026)",
+      "status": "reported",
+      "basis": "ANS, Apr 2026",
+      "sources": [
+        "S157"
+      ]
+    },
+    {
+      "from": "mag-cfs",
+      "to": "dev-type-one",
+      "label": "licence for HTS cable technology (no magnets yet)",
+      "status": "reported",
+      "basis": "ANS / TechCrunch, 2025-26",
+      "sources": [
+        "S157",
+        "S158"
+      ]
+    },
+    {
+      "from": "mag-tokamak-energy",
+      "to": "dev-tokamak-energy",
+      "label": "Demo4 magnet set (44 coils, 38 km tape)",
+      "status": "reported",
+      "basis": "WNN, Feb 2023",
+      "sources": [
+        "S160"
+      ]
+    },
+    {
+      "from": "mag-energy-singularity",
+      "to": "dev-energy-singularity",
+      "label": "HH70 magnets",
+      "status": "reported",
+      "basis": "Shanghai Superconductor page",
+      "sources": [
+        "S95"
+      ]
+    },
+    {
+      "from": "mag-proxima",
+      "to": "dev-proxima",
+      "label": "Stellarator Model Coil, 2027",
+      "status": "reported",
+      "basis": "Proxima, Feb 2025",
+      "sources": [
+        "S173"
+      ]
+    },
+    {
+      "from": "mag-asg",
+      "to": "lts-iter",
+      "label": "toroidal-field coils",
+      "status": "reported",
+      "basis": "F4E / ITER",
+      "sources": [
+        "S162",
+        "S161"
+      ]
+    },
+    {
+      "from": "mag-simic",
+      "to": "lts-iter",
+      "label": "toroidal-field coils",
+      "status": "reported",
+      "basis": "F4E / ITER",
+      "sources": [
+        "S162",
+        "S161"
+      ]
+    },
+    {
+      "from": "mag-qst-japan",
+      "to": "lts-iter",
+      "label": "toroidal-field coils",
+      "status": "reported",
+      "basis": "F4E / ITER",
+      "sources": [
+        "S162",
+        "S161"
+      ]
+    },
+    {
+      "from": "mag-icas",
+      "to": "mag-asg",
+      "label": "cable-in-conduit conductor",
+      "status": "reported",
+      "basis": "F4E",
+      "sources": [
+        "S162"
+      ]
+    },
+    {
+      "from": "mag-ga",
+      "to": "lts-iter",
+      "label": "central solenoid modules (completed Aug 2025)",
+      "status": "reported",
+      "basis": "General Atomics, 2025",
+      "sources": [
+        "S163"
+      ]
+    },
+    {
+      "from": "lts-wst",
+      "to": "mag-icas",
+      "label": "Nb3Sn strand for ITER conductor",
+      "status": "inferred",
+      "basis": "ITER bought 500 t of strand from nine suppliers; which strand went into which coil-maker's conductor is not public",
+      "sources": [
+        "S59",
+        "S25"
+      ]
+    },
+    {
+      "from": "lts-bruker",
+      "to": "mag-icas",
+      "label": "Nb3Sn strand for ITER conductor",
+      "status": "inferred",
+      "basis": "ITER bought 500 t of strand from nine suppliers; which strand went into which coil-maker's conductor is not public",
+      "sources": [
+        "S59",
+        "S25"
+      ]
+    },
+    {
+      "from": "lts-jastec",
+      "to": "mag-qst-japan",
+      "label": "Nb3Sn strand for ITER conductor",
+      "status": "inferred",
+      "basis": "ITER bought 500 t of strand from nine suppliers; which strand went into which coil-maker's conductor is not public",
+      "sources": [
+        "S59",
+        "S25"
+      ]
+    },
+    {
+      "from": "lts-kat",
+      "to": "mag-icas",
+      "label": "Nb3Sn strand for ITER conductor",
+      "status": "inferred",
+      "basis": "ITER bought 500 t of strand from nine suppliers; which strand went into which coil-maker's conductor is not public",
+      "sources": [
+        "S59",
+        "S25"
+      ]
+    },
+    {
+      "from": "lts-chmp",
+      "to": "mag-icas",
+      "label": "Nb3Sn strand for ITER conductor",
+      "status": "inferred",
+      "basis": "ITER bought 500 t of strand from nine suppliers; which strand went into which coil-maker's conductor is not public",
+      "sources": [
+        "S59",
+        "S25"
+      ]
+    },
+    {
+      "from": "pol-china-ree-apr2025",
+      "to": "y-cn-sep",
+      "label": "licences required for yttrium exports",
+      "status": "reported",
+      "basis": "CSIS Apr 2025; USGS 2026",
+      "sources": [
+        "S40",
+        "S39"
+      ]
+    },
+    {
+      "from": "pol-china-ree-apr2025",
+      "to": "hts-fujikura",
+      "label": "yttrium oxide supply to Japanese tape makers squeezed (Japan is top destination for Chinese yttrium)",
+      "status": "inferred",
+      "basis": "USGS: Japan was the leading destination for China's 1,600 t yttrium exports in 2025",
+      "sources": [
+        "S39"
+      ]
+    },
+    {
+      "from": "pol-china-ree-oct2025",
+      "to": "y-cn-sep",
+      "label": "extraterritorial controls (suspended)",
+      "status": "reported",
+      "basis": "CSIS 2026",
+      "sources": [
+        "S7"
+      ]
+    },
+    {
+      "from": "pol-china-w-feb2025",
+      "to": "w-jiangxi",
+      "label": "export controls on tungsten items",
+      "status": "reported",
+      "basis": "USGS 2026",
+      "sources": [
+        "S22"
+      ]
+    },
+    {
+      "from": "pol-ofac-uwsa",
+      "to": "sn-manmaw",
+      "label": "sanctions on the armed group controlling the mine",
+      "status": "reported",
+      "basis": "OFAC SDN 7825 (Sayari); Crisis Group",
+      "sources": [
+        "SY",
+        "S8"
+      ]
+    },
+    {
+      "from": "pol-ofac-burma-advisory",
+      "to": "y-kachin",
+      "label": "warns on militia-run rare earth mining",
+      "status": "reported",
+      "basis": "US advisory, Jan 2024",
+      "sources": [
+        "S164"
+      ]
+    },
+    {
+      "from": "pol-ofac-drc-2025",
+      "to": "nb-rubaya",
+      "label": "sanctions buyers of Rubaya minerals (Star Dragon, East Rise)",
+      "status": "reported",
+      "basis": "Treasury, Aug 2025",
+      "sources": [
+        "S49"
+      ]
+    },
+    {
+      "from": "pol-ukr-nsdc",
+      "to": "lts-chmp",
+      "label": "sanctions listing (Ukraine only)",
+      "status": "reported",
+      "basis": "OpenSanctions",
+      "sources": [
+        "S57"
+      ]
+    },
+    {
+      "from": "pol-eu-cmr",
+      "to": "sn-yunnan",
+      "label": "due diligence for EU tin/tungsten importers (not niobium; not strand/tape makers)",
+      "status": "reported",
+      "basis": "European Commission",
+      "sources": [
+        "S165"
+      ]
+    },
+    {
+      "from": "pol-us-1502",
+      "to": "nb-rubaya",
+      "label": "disclosure for DRC-region tin, tantalum, tungsten (not niobium)",
+      "status": "reported",
+      "basis": "SEC 2012",
+      "sources": [
+        "S166"
+      ]
+    },
+    {
+      "from": "pol-eu-crma",
+      "to": "y-cn-sep",
+      "label": "65% single-country cap benchmark targets rare earth dependence",
+      "status": "reported",
+      "basis": "EU CRMA",
+      "sources": [
+        "S167",
+        "S85"
+      ]
+    },
+    {
+      "from": "pol-eu-csddd",
+      "to": "dev-proxima",
+      "label": "thresholds exclude fusion firms",
+      "status": "inferred",
+      "basis": "Omnibus I thresholds vs firm size",
+      "sources": [
+        "S168"
+      ]
+    },
+    {
+      "from": "pol-doe-milestone",
+      "to": "dev-cfs",
+      "label": "milestone funding, no sourcing conditions",
+      "status": "reported",
+      "basis": "WNN 2023",
+      "sources": [
+        "S169"
+      ]
+    },
+    {
+      "from": "pol-doe-milestone",
+      "to": "dev-type-one",
+      "label": "milestone funding",
+      "status": "reported",
+      "basis": "WNN 2023",
+      "sources": [
+        "S169"
+      ]
+    },
+    {
+      "from": "pol-doe-milestone",
+      "to": "dev-realta",
+      "label": "milestone funding",
+      "status": "reported",
+      "basis": "WNN 2023",
+      "sources": [
+        "S169"
+      ]
+    },
+    {
+      "from": "pol-doe-milestone",
+      "to": "dev-tokamak-energy",
+      "label": "milestone funding (US subsidiary)",
+      "status": "reported",
+      "basis": "WNN 2023",
+      "sources": [
+        "S169"
+      ]
+    },
+    {
+      "from": "pol-rmi-itsci",
+      "to": "nb-rubaya",
+      "label": "audits and tags failed to stop laundering",
+      "status": "reported",
+      "basis": "Global Witness 2026",
+      "sources": [
+        "S15"
+      ]
+    },
+    {
+      "from": "pol-fia",
+      "to": "dev-cfs",
+      "label": "industry supply chain tracking; silent on minerals",
+      "status": "reported",
+      "basis": "FIA 2026",
+      "sources": [
+        "S11"
+      ]
+    }
+  ]
+}

@@ -3,38 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Method &amp; Limits · The Magnet Problem</title>
-  <meta name="description" content="How The Magnet Problem traces fusion materials, what its evidence levels mean, and what the data cannot show.">
+  <title>Method & Limits · The Magnet Problem</title>
+  <meta name="description" content="How The Magnet Problem knows what it claims: sources, evidence rules, the harm-rating rule, what the data cannot show, and how AI was used.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz@9..40&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="method">
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="wrap site-header__inner">
-      <a class="site-header__title" href="index.html">The Magnet Problem</a>
-      <nav aria-label="Sections">
-        <ul class="site-nav">
-          <li><a href="index.html#reactor">Reactor</a></li>
-          <li><a href="index.html#case-file">Case file</a></li>
-          <li><a href="index.html#scores">Scores</a></li>
-          <li><a href="index.html#policy">Policy brief</a></li>
-          <li><a href="method.html" aria-current="page">Method &amp; limits</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <header id="site-header"></header>
 
   <main id="main">
     <div id="load-error" class="wrap load-error" role="alert" hidden></div>
-
-    <section class="hero wrap" aria-labelledby="method-title">
+<section class="section section--first wrap" aria-labelledby="method-title">
       <div class="col-main">
-        <p class="eyebrow">Method &amp; limits</p>
-        <h1 id="method-title">How this site knows what it claims, and where it doesn't</h1>
+        <p class="eyebrow">08 · Method &amp; limits</p>
+        <h1 id="method-title" class="page-title">How this site knows what it claims, and where it doesn't</h1>
       </div>
     </section>
 
@@ -64,7 +49,7 @@
         <h2 id="m3">Data sources</h2>
         <ul class="method-list">
           <li><strong>Sayari</strong>: corporate registries, ownership, sanctions and watchlists, and customs trade records. It is the main source for which companies sit at each stage and how goods moved between them. Every Sayari finding on the site names the entity, links to it in the Sayari graph and is marked <em>Confirmed</em> (backed by a record such as a shipment or registry filing) or <em>Inferred</em> (a modelled or possible link, including Sayari's "possible supply adjacency" and sub-tier risk indicators). Risk flags are quoted by their Sayari name and are modelled indicators, not findings about a company's conduct.</li>
-          <li><strong>Tavily</strong>: web research on NGO, UN, government and news sources.</li>
+          <li><strong>Tavily</strong>: web research on NGO, UN, government and news sources, company filings (stock-market prospectuses, SEC conflict-minerals reports, annual reports) and peer-reviewed papers. Every cited page was opened, not taken from search snippets.</li>
           <li><strong>Public reports</strong>: every document cited on the site, listed below.</li>
         </ul>
         <ol class="source-table" id="source-table"></ol>
@@ -108,6 +93,10 @@
         <h2 id="m7">Iteration log</h2>
         <ol class="log">
           <li>
+            <time datetime="2026-11-09">9 Nov 2026</time>
+            <div><p><strong>Iteration 4.</strong> The site split into separate pages with a plain-language overview. Deeper Sayari and public-source research filled every stage of every material, including the magnet makers, the copper and silver in the tape, and lithium-6 and beryllium. New systems map of the whole magnet supply chain, with the rules and levers that act on it. New case files for every material, following the records step by step. A researched tech-enabled solution (MagnetTrace) with a working Supplier Check. Stages where searching found nothing are now marked "No evidence found" rather than left unresearched.</p></div>
+          </li>
+          <li>
             <time datetime="2026-11-08">8 Nov 2026</time>
             <div><p><strong>Iteration 3.</strong> Every claim re-checked against its cited source (Tavily) and every Sayari figure re-run. Weak sources replaced (an industry aggregator page swapped for USGS and CSIS), outdated facts corrected (Kachin mines now under the Kachin Independence Army; the Man Maw restart), new evidence added (Amnesty International and US Treasury on forced labour and killings at Rubaya; the 2023 Morowali smelter explosion). Harm colours now follow a fixed rule. Exposure Pathway scores filled in as a first judgement for the author's review. Lithium-6 and beryllium removed until their data is complete. Full-width layout on large screens.</p></div>
           </li>
@@ -123,12 +112,14 @@
         </ol>
       </div>
     </section>
+    <div class="wrap page-next-wrap"><div id="page-next" class="col-main"></div></div>
   </main>
 
   <footer class="site-footer">
     <div class="wrap site-footer__inner" id="footer"></div>
   </footer>
 
-  <script type="module" src="js/method.js"></script>
+  <div id="live" class="visually-hidden" aria-live="polite"></div>
+  <script type="module" src="js/pages/method.js"></script>
 </body>
 </html>

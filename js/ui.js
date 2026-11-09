@@ -1,6 +1,10 @@
 // Shared rendering helpers: icons, evidence badges, source links, colour scales.
 
 export const ICONS = {
+  x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+  search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
+  check: '<path d="M20 6 9 17l-5-5"/>',
+  stop: '<circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/>',
   external: '<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
   merge: '<circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/>',
   fork: '<circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"/><path d="M12 12v3"/>',
@@ -29,6 +33,7 @@ const EVIDENCE_GLYPH = {
   likely: '<circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 1.5a4.5 4.5 0 0 1 0 9z" fill="currentColor"/>',
   hypothesis: '<circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/>',
   'not-researched': '<circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>',
+  'no-evidence': '<circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 6h5" stroke="currentColor" stroke-width="1.5"/>',
 };
 
 export const EVIDENCE_LABEL = {
@@ -36,6 +41,7 @@ export const EVIDENCE_LABEL = {
   likely: 'Likely pathway',
   hypothesis: 'Hypothesis',
   'not-researched': 'Not yet researched',
+  'no-evidence': 'No evidence found',
 };
 
 export function evidenceBadge(ev, levels) {
@@ -85,10 +91,10 @@ export const RATING_ORDER = { high: 3, moderate: 2, low: 1, unknown: 0 };
 
 export const SCALE = {
   security: {
-    high: { colour: '#085CEC', label: 'High supply risk' },
-    moderate: { colour: '#1F4E9E', label: 'Moderate supply risk' },
-    low: { colour: '#233350', label: 'Low supply risk' },
-    unknown: { colour: '#3A3731', label: 'Not yet assessed' },
+    high: { colour: '#6EA4FF', label: 'High supply risk' },
+    moderate: { colour: '#2F5FC4', label: 'Moderate supply risk' },
+    low: { colour: '#1C2B48', label: 'Low supply risk' },
+    unknown: { colour: '#3A3731', label: 'Not assessed' },
   },
   people: {
     high: { colour: '#E55F53', label: 'Severe harm' },
@@ -126,7 +132,8 @@ export function renderFooter(site) {
     : null;
   const links = [
     '<li><a href="method.html">Method &amp; limits</a></li>',
-    '<li><a href="index.html#policy">Policy brief</a></li>',
+    '<li><a href="policy.html">Policy brief</a></li>',
+    '<li><a href="solution.html">The solution</a></li>',
     site?.repoUrl ? `<li><a href="${esc(site.repoUrl)}" rel="noopener">GitHub repository</a></li>` : '',
   ].join('');
   el.innerHTML = `

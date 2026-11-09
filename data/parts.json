@@ -9,7 +9,9 @@
       "descriptionSources": [],
       "materials": [
         "yttrium",
-        "nickel"
+        "nickel",
+        "copper-hts",
+        "silver"
       ],
       "caseFile": "yttrium"
     },
@@ -21,7 +23,8 @@
       "descriptionSources": [],
       "materials": [
         "tin",
-        "niobium"
+        "niobium",
+        "copper-lts"
       ]
     },
     {
@@ -41,10 +44,12 @@
       "id": "blanket",
       "label": "Breeding blanket",
       "short": "Breeds tritium fuel, absorbs neutrons",
-      "description": "The breeding blanket breeds tritium fuel and absorbs neutrons. Its key materials, enriched lithium-6 and beryllium, are not traced in this iteration: the public and Sayari data on them is not yet complete enough to show a full chain.",
+      "description": "The breeding blanket surrounds the plasma, breeds tritium fuel from lithium-6 and absorbs neutrons. Beryllium multiplies neutrons so the blanket breeds enough fuel.",
       "descriptionSources": [],
-      "materials": [],
-      "notTraced": true
+      "materials": [
+        "lithium6",
+        "beryllium"
+      ]
     },
     {
       "id": "vacuum-vessel",

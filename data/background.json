@@ -1,0 +1,17 @@
+{
+  "_note": "Glossary shown on the home page. Plain-English definitions for non-specialists.",
+  "glossary": [
+    { "term": "Tokamak", "def": "A doughnut-shaped fusion reactor that holds its plasma in place with magnetic fields." },
+    { "term": "Plasma", "def": "Gas heated so far that its atoms split into charged particles. Fusion fuel is a plasma of about 150 million °C." },
+    { "term": "Superconductor", "def": "A material that carries electric current with no resistance once it is cooled far enough. Fusion magnets are wound from superconductors." },
+    { "term": "REBCO tape", "def": "\"Rare-earth barium copper oxide\": the high-temperature superconductor used in compact fusion magnets. It is a thin metal tape coated in layers; the rare earth is usually yttrium or gadolinium." },
+    { "term": "Nb₃Sn strand", "def": "Niobium-tin wire: the low-temperature superconductor used in ITER-style magnets." },
+    { "term": "Rare earths", "def": "A group of 17 metals, including yttrium, used in magnets and electronics. Heavy rare earths are mined mainly from clay deposits in southern China and Myanmar." },
+    { "term": "Separation / smelting", "def": "The processing step that turns ore into pure metal or oxide. Ore from many mines is mixed here, which is where its origin is usually lost." },
+    { "term": "Blending point", "def": "Any step where material from different sources is mixed, so a buyer further down the chain can no longer tell which mine it came from." },
+    { "term": "Sayari", "def": "A database of company registries, ownership, sanctions lists and customs records. This site uses it to show who trades with whom." },
+    { "term": "Confirmed vs inferred", "def": "A confirmed link rests on a specific record, such as a shipment or a registry filing. An inferred link is modelled or assumed from market structure." },
+    { "term": "3TG / conflict minerals", "def": "Tin, tantalum, tungsten and gold: minerals that US and EU rules single out because their trade has financed armed groups." },
+    { "term": "Sanctions (OFAC)", "def": "Legal restrictions on dealing with named people or companies. OFAC is the US Treasury office that keeps the main US list." }
+  ]
+}

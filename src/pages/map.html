@@ -1,0 +1,43 @@
+<!--
+title: Systems map · The Magnet Problem
+description: The fusion magnet supply chain on one map: mines, traders, separators and smelters, tape and wire makers, magnet makers and fusion developers, with human rights risks and the rules that act on them.
+-->
+    <section class="section section--first wrap" aria-labelledby="map-title">
+      <div class="col-main">
+        <p class="eyebrow">02 · Systems map</p>
+        <h1 id="map-title" class="page-title">Fusion's magnets sit at the end of chains that start in conflict zones, then disappear into a few processing plants.</h1>
+        <p class="lead">Read left to right, from mine to magnet. Each box is a place or company; each line is a flow of material, drawn by how strong the evidence for it is. Click anything to see the evidence.</p>
+      </div>
+
+      <div class="map-controls">
+        <div class="lens-toggle" role="group" aria-label="Choose a lens" data-lens-toggle>
+          <button type="button" data-lens="security" aria-pressed="false"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>Security lens</button>
+          <button type="button" data-lens="people" aria-pressed="true"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>People lens</button>
+        </div>
+        <div class="chip-group" role="group" aria-label="Show part of the chain" id="lane-filter"></div>
+        <label class="switch"><input type="checkbox" id="show-policy"> <span>Show rules and levers</span></label>
+        <label class="switch"><input type="checkbox" id="show-solution"> <span>Show where the solution acts</span></label>
+        <div class="view-toggle" role="group" aria-label="View">
+          <button type="button" data-view="map" aria-pressed="true">Map</button>
+          <button type="button" data-view="list" aria-pressed="false">List</button>
+        </div>
+      </div>
+
+      <div class="map-layout">
+        <div class="map-canvas" id="map-canvas">
+          <p class="map-hint">Scroll sideways to see the whole chain.</p>
+          <div class="map-scroll" tabindex="0" role="region" aria-label="Systems map diagram"><svg id="map-svg" role="group" aria-labelledby="map-title"></svg></div>
+          <div class="map-list" id="map-list" hidden></div>
+        </div>
+        <aside class="map-detail" id="map-detail" aria-live="polite">
+          <p class="map-detail__empty">Select a box or a line on the map to see who it is, what is known, and the evidence.</p>
+        </aside>
+      </div>
+
+      <div class="map-legend" id="map-legend"></div>
+
+      <div class="col-main map-read">
+        <h2 class="h3">How to read the system</h2>
+        <ul class="method-list" id="map-insights"></ul>
+      </div>
+    </section>

@@ -40,7 +40,7 @@
       },
       "notes": {
         "harm": "Child miners' deaths, violence and sexual exploitation of workers, deadly landslides, armed-group control.",
-        "evidence": "Myanmar supplies a significant share of world yttrium, but no record traces it into tape.",
+        "evidence": "Chinese customs data show 28,000+ t of rare earths from Myanmar in Jan–Sep 2025, but no record traces any of it into tape.",
         "traceability": "Ore is mixed into Chinese separation plants and leaves as Chinese product.",
         "leverage": "Fusion is now a main customer of HTS tape makers, but has no leverage over separators or mines alone."
       },
@@ -49,6 +49,7 @@
         "S3",
         "S39",
         "S43",
+        "S88",
         "SY"
       ]
     },
@@ -95,15 +96,17 @@
       },
       "notes": {
         "harm": "Controlled by a US-sanctioned armed group listed by the UN for child recruitment; 2022 explosion killed nine.",
-        "evidence": "Man Maw is a major share of world tin supply; the link is market-level, not traced.",
+        "evidence": "Yunnan Tin told Reuters some of its tin came from the Wa mine, and Bruker's group smelter list names Yunnan Tin; the link into strand is likely, not proven.",
         "traceability": "No smelters in Wa; ore is smelted in Yunnan and no trade records show the flow.",
         "leverage": "Fusion's tin demand is tiny next to electronics solder; only a cross-sector pool could move it."
       },
       "sources": [
-        "S8",
+        "S108",
+        "S113",
+        "S46",
         "S47",
         "S48",
-        "S46"
+        "S8"
       ]
     },
     {
@@ -164,6 +167,34 @@
       ]
     },
     {
+      "id": "niobium-brazil",
+      "label": "Niobium",
+      "route": "CBMM, Brazil → Western Superconducting (ITER)",
+      "material": "niobium",
+      "evidence": {
+        "harm": "documented",
+        "link": "documented"
+      },
+      "scores": {
+        "harm": 1,
+        "evidence": 3,
+        "traceability": 1,
+        "leverage": 3
+      },
+      "notes": {
+        "harm": "Legacy barium contamination under a prosecutors' agreement; no reports of conflict, forced or child labour.",
+        "evidence": "Western Superconducting's prospectus records niobium bought from CBMM to meet ITER's requirements.",
+        "traceability": "One industrial mine and a named distributor (CITIC Metal): the route is visible end to end.",
+        "leverage": "Superconductor niobium is a sliver of a market dominated by steelmaking."
+      },
+      "sources": [
+        "S110",
+        "S111",
+        "S21",
+        "S56"
+      ]
+    },
+    {
       "id": "nickel-indonesia",
       "label": "Nickel",
       "route": "Indonesia (Morowali, Weda Bay)",
@@ -188,6 +219,33 @@
         "S12",
         "S13",
         "S45",
+        "SY"
+      ]
+    },
+    {
+      "id": "copper-grasberg",
+      "label": "Copper",
+      "route": "Grasberg, Papua → Luvata → CFS coils",
+      "material": "copper-hts",
+      "evidence": {
+        "harm": "documented",
+        "link": "likely"
+      },
+      "scores": {
+        "harm": 2,
+        "evidence": 2,
+        "traceability": 2,
+        "leverage": 3
+      },
+      "notes": {
+        "harm": "Tailings damage to rivers and killings linked to security forces reported; seven workers died in a 2025 mine disaster.",
+        "evidence": "CFS's copper conductor came from Luvata Pori, which buys Indonesian cathode; the cathode-to-conductor link is not batch-traced.",
+        "traceability": "Cathode carries its smelter of origin, but mixes with other supply at the conductor maker.",
+        "leverage": "Fusion is a negligible share of world copper demand."
+      },
+      "sources": [
+        "S105",
+        "S106",
         "SY"
       ]
     },
@@ -217,6 +275,89 @@
         "S54",
         "S22",
         "SY"
+      ]
+    },
+    {
+      "id": "tungsten-vietnam",
+      "label": "Tungsten",
+      "route": "Nui Phao, Vietnam → A.L.M.T. (ITER divertor)",
+      "material": "tungsten",
+      "evidence": {
+        "harm": "documented",
+        "link": "likely"
+      },
+      "scores": {
+        "harm": 2,
+        "evidence": 2,
+        "traceability": 2,
+        "leverage": 2
+      },
+      "notes": {
+        "harm": "Residents' pollution complaints led to a 2016 government inspection; no documented abuses against workers.",
+        "evidence": "Sayari shows A.L.M.T. taking tungsten APT only from Masan at Nui Phao (2023–26); which batches went to ITER is not recorded.",
+        "traceability": "One mine-to-processor complex feeds one maker, so origin survives further than in most chains.",
+        "leverage": "A.L.M.T. is one of very few fusion-grade suppliers; ITER and F4E are significant customers of its fusion line."
+      },
+      "sources": [
+        "S27",
+        "S127",
+        "S128",
+        "SY"
+      ]
+    },
+    {
+      "id": "beryllium-us",
+      "label": "Beryllium",
+      "route": "Spor Mountain, Utah → Materion → CFS",
+      "material": "beryllium",
+      "evidence": {
+        "harm": "documented",
+        "link": "documented"
+      },
+      "scores": {
+        "harm": 2,
+        "evidence": 3,
+        "traceability": 1,
+        "leverage": 2
+      },
+      "notes": {
+        "harm": "Chronic beryllium disease among workers is documented (settlements; a 2023 federal claim from the Utah mill).",
+        "evidence": "Materion has a public supply agreement with Commonwealth Fusion Systems.",
+        "traceability": "A single US mine and mill: origin is clear.",
+        "leverage": "Fusion is a new but visible customer of a small specialist supplier."
+      },
+      "sources": [
+        "S154",
+        "S142",
+        "S143",
+        "S144",
+        "S155"
+      ]
+    },
+    {
+      "id": "chromium-limpopo",
+      "label": "Chromium (steel)",
+      "route": "Limpopo chrome mines → stainless steel",
+      "material": "steel",
+      "evidence": {
+        "harm": "documented",
+        "link": "hypothesis"
+      },
+      "scores": {
+        "harm": 3,
+        "evidence": 1,
+        "traceability": 3,
+        "leverage": 3
+      },
+      "notes": {
+        "harm": "Human Rights Watch documents police and company violence against protesters at a Limpopo chrome mine.",
+        "evidence": "No record links this chrome to the mills that made ITER's or EUROFER97 steel.",
+        "traceability": "Chrome is alloyed into steel at the mill; origin is not tracked.",
+        "leverage": "Fusion's steel demand is tiny next to the stainless steel industry."
+      },
+      "sources": [
+        "S136",
+        "S134"
       ]
     }
   ],
