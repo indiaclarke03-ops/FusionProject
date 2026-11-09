@@ -1,7 +1,7 @@
 import { loadData, showLoadError } from './data.js';
 import {
   icon, esc, evidenceBadge, sourceLinks, fillCitations,
-  SCALE, ratingKey, allStages, maxRating, renderFooter,
+  SCALE, ratingKey, allStages, maxRating, renderFooter, sayariBlock,
 } from './ui.js';
 
 const state = {
@@ -149,7 +149,7 @@ function lensToggleHtml() {
 /* ---------- Trace panel ---------- */
 
 function isUnresearched(stage) {
-  return !stage.security && !stage.people && stage.evidence.every((e) => e.level === 'not-researched');
+  return !stage.security && !stage.people && !(stage.sayari || []).length && stage.evidence.every((e) => e.level === 'not-researched');
 }
 
 function lensBlock(stage, lens) {
@@ -178,6 +178,7 @@ function nodeHtml(stage, { lenses = [state.lens], ratingLens = state.lens } = {}
   const body = nyr
     ? '<p class="node__empty">Not yet researched. This stage is a visible gap for iteration 2.</p>'
     : lenses.map((l) => lensBlock(stage, l)).join('');
+  const sayari = sayariBlock(stage.sayari);
   const note = stage.evidenceNote ? `<p class="node__note">${esc(stage.evidenceNote)}</p>` : '';
   const todo = stage.todo ? `<p class="node__todo">To research: ${esc(stage.todo)}</p>` : '';
   const ratingText = nyr ? '' : `<span class="node__rating"><span class="swatch" style="background:${colour}"></span>${esc(SCALE[ratingLens][r].label)}</span>`;
@@ -191,7 +192,7 @@ function nodeHtml(stage, { lenses = [state.lens], ratingLens = state.lens } = {}
     ${hist}${blend}
     <div class="node__lenses">${body}</div>
     <div class="badges">${stage.evidence.map((e) => evidenceBadge(e, D.chains.evidenceLevels)).join('')}</div>
-    ${note}${todo}
+    ${sayari}${note}${todo}
   </li>`;
 }
 
@@ -395,6 +396,31 @@ function renderCaseFile() {
     `<p>${esc(m.bottomLine)}</p><cite>Bottom line · ${esc(m.name)}</cite>`;
 }
 
+/* ---------- Sayari findings ---------- */
+
+function renderFindings() {
+  const ol = document.getElementById('findings-list');
+  if (!ol || !D.findings) return;
+  ol.innerHTML = D.findings.findings.map((f) => {
+    const part = D.parts.parts.find((p) => p.materials.includes(f.material));
+    const ents = (f.sayari || []).map((e) => `<li><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.name)}${icon('external', 'icon icon--sm')}<span class="visually-hidden"> (Sayari, opens in a new tab)</span></a></li>`).join('');
+    return `<li class="finding">
+      <p class="finding__lead">${esc(f.lead)}</p>
+      <p>${esc(f.body)}</p>
+      <div class="badges">${f.evidence.map((e) => evidenceBadge(e, D.chains.evidenceLevels)).join('')}</div>
+      ${ents ? `<div class="finding__sayari"><span class="sayari__label">Sayari records</span><ul>${ents}</ul></div>` : ''}
+      ${sourceLinks(f.sources, D.sourceIndex)}
+      ${part ? `<button type="button" class="btn-link" data-open-part="${esc(part.id)}" data-material="${esc(f.material)}">Trace ${esc(D.chains.materials[f.material].name.toLowerCase())}${icon('arrowRight', 'icon icon--sm')}</button>` : ''}
+    </li>`;
+  }).join('');
+  ol.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-open-part]');
+    if (!b) return;
+    openTrace(b.dataset.openPart, b);
+    if (b.dataset.material && b.dataset.material !== state.materialKey) selectMaterial(b.dataset.material);
+  });
+}
+
 /* ---------- Scores ---------- */
 
 function renderScores() {
@@ -475,6 +501,7 @@ async function init() {
   renderColourKey();
   setupPanel();
   renderCaseFile();
+  renderFindings();
   renderScores();
   fillCitations(document, D.sourceIndex);
   renderFooter(D.site);

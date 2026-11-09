@@ -62,7 +62,7 @@
       <div class="col-main">
         <h2 id="m3">Data sources</h2>
         <ul class="method-list">
-          <li><strong>Sayari</strong>: corporate ownership, trade and shipment data. Planned for the tape-maker, alloy-supplier and yttrium shipment traces; no Sayari-derived findings are shown in iteration 1. When added, each will be marked <em>inferred</em> or <em>confirmed</em> following Sayari's own labelling.</li>
+          <li><strong>Sayari</strong>: corporate registries, ownership, sanctions and watchlists, and customs trade records. It is the main source for which companies sit at each stage and how goods moved between them. Every Sayari finding on the site names the entity, links to it in the Sayari graph and is marked <em>Confirmed</em> (backed by a record such as a shipment or registry filing) or <em>Inferred</em> (a modelled or possible link, including Sayari's "possible supply adjacency" and sub-tier risk indicators). Risk flags are quoted by their Sayari name and are modelled indicators, not findings about a company's conduct.</li>
           <li><strong>Tavily</strong>: web research on NGO, UN, government and news sources.</li>
           <li><strong>Public reports</strong>: every document cited on the site, listed below.</li>
         </ul>
@@ -78,6 +78,8 @@
           <li>Trade data loses origin at blending points. After a separation plant or smelter, ore from a conflict area and ore from elsewhere look the same on paper.</li>
           <li>The absence of a link is not proof that there is no link.</li>
           <li>Every source has a date. Mines open, close and change hands; findings may have moved on since publication.</li>
+          <li>Sayari's trade coverage is uneven. It holds no Myanmar-to-China rare earth or tin ore records, so the Kachin and Wa State routes rest on NGO and press sources. Japan publishes no shipment-level import data, so what Japanese tape makers buy is invisible. Domestic sales (for example within the US) do not appear in customs data.</li>
+          <li>A "one-hop" link to a sanctioned party means Sayari records a direct relationship; where the goods behind it were not retrieved, the site says so.</li>
         </ul>
       </div>
     </section>
@@ -104,6 +106,10 @@
       <div class="col-main">
         <h2 id="m7">Iteration log</h2>
         <ol class="log">
+          <li>
+            <time datetime="2026-11-08">8 Nov 2026</time>
+            <div><p><strong>Iteration 2.</strong> Sayari research merged into every material chain: named companies at each stage, shipment and registry evidence marked confirmed or inferred, watchlist screening, and USGS production shares. New "What the trade records show" section. Main results: the Indonesian nickel hypothesis was not confirmed; a Moscow coating step in the HTS tape chain was documented; tin and coltan routes share the same traders; no record traces yttrium into a tape maker.</p></div>
+          </li>
           <li>
             <time datetime="2026-11-08">8 Nov 2026</time>
             <div><p><strong>Iteration 1.</strong> Interactive reactor with five parts, security and people lenses, trace panel with evidence badges and blending points, yttrium case file, Exposure Pathway table (scores pending), policy brief with a Fusion Supplier Check mock-up, and this page. All content is loaded from the JSON files in <code>/data</code>.</p>

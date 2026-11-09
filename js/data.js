@@ -6,6 +6,7 @@ const FILES = {
   sources: 'data/sources.json',
   scores: 'data/scores.json',
   site: 'data/site.json',
+  findings: 'data/findings.json',
 };
 
 async function loadOne(key, url) {

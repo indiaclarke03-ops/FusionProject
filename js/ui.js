@@ -136,3 +136,29 @@ export function renderFooter(site) {
     </div>
     <ul class="site-footer__links">${links}</ul>`;
 }
+
+// Sayari evidence: each entity links to the Sayari graph and is labelled confirmed vs inferred,
+// following Sayari's own labelling (record-backed vs modelled/possible links).
+// A screening line with nothing adverse in it is shown neutrally, not as a warning.
+function isCleanWatch(text) {
+  return /^(not sanctioned[;,.]?\s*)?((no watchlist hits|watchlist \(1 hop\): no hits)\.?)?$/i.test(text.trim());
+}
+
+export function sayariBlock(items) {
+  if (!items || !items.length) return '';
+  const li = items.map((e) => {
+    const status = e.link_status === 'confirmed' ? 'confirmed' : 'inferred';
+    const name = e.entity_url
+      ? `<a href="${esc(e.entity_url)}" target="_blank" rel="noopener">${esc(e.name)}${icon('external', 'icon icon--sm')}<span class="visually-hidden"> (Sayari, opens in a new tab)</span></a>`
+      : esc(e.name);
+    return `<li class="sayari__item">
+      <p class="sayari__name">${name}${e.country ? `<span class="sayari__country">${esc(e.country)}</span>` : ''}<span class="chip chip--${status}" title="${status === 'confirmed' ? 'Backed by a source record such as a shipment or registry filing' : 'Modelled or possible link; not backed by a direct record'}">${status === 'confirmed' ? 'Confirmed' : 'Inferred'}</span></p>
+      ${e.role ? `<p class="sayari__role">${esc(e.role)}</p>` : ''}
+      ${e.basis ? `<p class="sayari__basis">${esc(e.basis)}</p>` : ''}
+      ${e.watchlist ? (isCleanWatch(e.watchlist)
+        ? `<p class="sayari__clean">${esc(e.watchlist)}</p>`
+        : `<p class="sayari__watch">${icon('alert', 'icon icon--sm')}${esc(e.watchlist)}</p>`) : ''}
+    </li>`;
+  }).join('');
+  return `<div class="sayari"><p class="sayari__label">Sayari evidence</p><ul class="sayari__list">${li}</ul></div>`;
+}
