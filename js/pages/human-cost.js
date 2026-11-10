@@ -76,7 +76,7 @@ function geoNodes() {
 async function initGeo() {
   const svg = d3.select('#geo-svg').attr('viewBox', `0 0 ${GW} ${GH}`);
   try {
-    const topo = await d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json');
+    const topo = await d3.json('vendor/countries-110m.json');
     geo.world = topojson.feature(topo, topo.objects.countries);
   } catch (e) { geo.world = { type: 'FeatureCollection', features: [] }; }
   geo.proj = d3.geoNaturalEarth1().scale(175).center(REGIONS[0].center).translate([GW / 2, GH / 2]);

@@ -1409,3 +1409,5 @@ section > .more, .wrap > .more { grid-column: 2 / -2; }
 .hero-fact__k { color: var(--text-muted); font-size: var(--fs-16); }
 .hero-fact__cta { margin-top: auto; display: inline-flex; align-items: center; gap: 6px; color: var(--accent-text); font-size: var(--fs-13); }
 @media (prefers-reduced-motion: reduce) { .hm-pulse, .hm-ping { display: none; } }
+
+.hero__mapfail { margin: 0; padding: var(--s-64) var(--s-24); text-align: center; color: #C9D3DD; }

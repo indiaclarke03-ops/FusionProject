@@ -33,7 +33,7 @@ async function heroMap(D, G) {
   const W = 1000, Hh = 500;
   let world = { type: 'FeatureCollection', features: [] };
   try {
-    const topo = await d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json');
+    const topo = await d3.json('vendor/countries-110m.json');
     world = topojson.feature(topo, topo.objects.countries);
     world.features = world.features.filter((f) => f.properties.name !== 'Antarctica');
   } catch (e) { /* map still draws routes without land */ }
@@ -113,7 +113,13 @@ boot('home', ['background', 'scores', 'map', 'human'], async (D) => {
   drawFilaments();
   const G = makeGraph(D.map);
   let stats = { arcs: 0, sites: 0 };
-  try { stats = await heroMap(D, G); } catch (e) { console.warn('hero map', e); }
+  try {
+    if (typeof d3 === 'undefined' || typeof topojson === 'undefined') throw new Error('map library did not load');
+    stats = await heroMap(D, G);
+  } catch (e) {
+    console.warn('hero map', e);
+    document.querySelector('.hero__maplink').innerHTML = '<p class="hero__mapfail">The map could not load. Refresh the page, or open the risk tracer to see every route.</p>';
+  }
   heroFacts(D, G, stats);
   const proven = D.scores.routes.filter((r) => r.evidence.link === 'documented').length;
   const el = document.getElementById('stat-proven');
